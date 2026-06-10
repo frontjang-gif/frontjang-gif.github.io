@@ -1,5 +1,5 @@
-/* Office Reader - Slide Viewer with Left Sidebar */
-document.addEventListener("DOMContentLoaded", () => {
+/* Office Reader - Slide Viewer with Left Sidebar v=2026.06.11 */
+window.addEventListener("load", () => {
   const pages = document.querySelectorAll(".or-page");
   const extras = document.querySelectorAll("div.or-extra");
   if (!pages.length) return;
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
         row.style.cursor = "pointer";
         row.onclick = () => goToSlide(i);
         row.style.background = i === cur ? "#e8f0fe" : "";
-        const dot = (v, tabIdx) => v ? `<span style="cursor:pointer;font-size:16px;padding:2px 4px;" data-tab="${tabIdx}">●</span>` : '';
+        const dot = (v, tabIdx) => v ? `<span style="cursor:pointer;font-size:10px;padding:0 3px;line-height:1;" data-tab="${tabIdx}">●</span>` : '';
         row.innerHTML = `<td style="padding:2px 4px;border-bottom:1px solid #eee;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:80px;">${p.dataset.page||i+1}. ${p.dataset.title||""}</td><td style="text-align:center;color:#4caf50;padding:2px;">${dot(types.Notes,0)}</td><td style="text-align:center;color:#ff9800;padding:2px;">${dot(types.Comments,1)}</td><td style="text-align:center;color:#2196f3;padding:2px;">${dot(types.Tables,2)}</td><td style="text-align:center;color:#9c27b0;padding:2px;">${dot(types.PlantUML,3)}</td>`;
         row.querySelectorAll("span[data-tab]").forEach(sp => {
           sp.onclick = (e) => { e.stopPropagation(); rActiveTab = parseInt(sp.dataset.tab); localStorage.setItem("or-rtab", rActiveTab); if (!rSidebarOpen) toggleRightSidebar(); goToSlide(i); updateRightPanel(); updateRTabStyles(); };
