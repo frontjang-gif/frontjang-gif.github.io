@@ -1,13 +1,3 @@
-document.addEventListener("DOMContentLoaded",()=>{
-  document.querySelectorAll("[data-layout]").forEach(el=>{
-    const tpl=document.querySelector(`template[data-name="${el.dataset.layout}"]`);
-    if(tpl)el.prepend(tpl.content.cloneNode(true));
-    const pn=el.id.replace("page-","");
-    el.querySelectorAll("span").forEach(s=>{if(s.textContent.includes("{{PAGENUM}}"))s.textContent=s.textContent.replace("{{PAGENUM}}",pn);});
-  });
-});
-</script>
-  <script>
 /* Office Reader - Slide Viewer with Left Sidebar */
 document.addEventListener("DOMContentLoaded", () => {
   const pages = document.querySelectorAll(".or-page");
