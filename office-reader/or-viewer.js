@@ -1,8 +1,12 @@
 /* Office Reader - Slide Viewer with Left Sidebar v=2026.06.11 */
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const pages = document.querySelectorAll(".or-page");
   const extras = document.querySelectorAll("div.or-extra");
   if (!pages.length) return;
+  // Lock scrolling - viewer handles navigation
+  document.documentElement.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
+  document.body.style.height = "100vh";
 
   // --- Left Sidebar ---
   let tocWidth = parseInt(localStorage.getItem("or-toc-width") || "200");
@@ -38,7 +42,7 @@ window.addEventListener("load", () => {
     t.textContent = icon;
     t.title = tabLabels[i];
     t.style.cssText = "flex:1;border:none;padding:6px;cursor:pointer;font-size:13px;background:" + (i == activeTab ? "#fff" : "#eee") + ";border-bottom:" + (i == activeTab ? "2px solid #0082F0" : "2px solid transparent") + ";";
-    t.onclick = () => { activeTab = i; localStorage.setItem("or-toc-mode", i); tabs.forEach((_, j) => { tabBar.children[j].style.background = j == i ? "#fff" : "#eee"; tabBar.children[j].style.borderBottom = j == i ? "2px solid #0082F0" : "2px solid transparent"; }); renderToc(); };
+    t.onclick = () => { activeTab = i; localStorage.setItem("or-toc-mode", i); tabs.forEach((_, j) => { tabBar.children[j].style.background = j == i ? "#fff" : "#eee"; tabBar.children[j].style.borderBottom = j == i ? "2px solid #0082F0" : "2px solid transparent"; }); requestAnimationFrame(renderToc); };
     tabBar.appendChild(t);
   });
   sidebar.appendChild(tabBar);
@@ -134,12 +138,16 @@ window.addEventListener("load", () => {
   // Build clone cache lazily
   function ensureClone(i) {
     if (cloneCache[i]) return cloneCache[i];
+    const wasHidden = pages[i].style.display === "none";
+    if (wasHidden) pages[i].style.display = "";
     const clone = pages[i].cloneNode(true);
+    if (wasHidden) pages[i].style.display = "none";
     clone.style.margin = "0";
     clone.style.transformOrigin = "top left";
     clone.style.position = "absolute";
     clone.style.top = "0";
     clone.style.left = "0";
+    clone.style.display = "";
     clone.style.pointerEvents = "none";
     clone.style.boxShadow = "none";
     clone.querySelectorAll("details").forEach(d => d.remove());
@@ -195,7 +203,7 @@ window.addEventListener("load", () => {
 
   function renderToc() {
     tocContent.innerHTML = "";
-    const availW = tocContent.clientWidth;
+    const availW = tocContent.clientWidth || 200;
     let lastSection = "";
     const query = searchBox.value.toLowerCase();
     // Status tab - show overview grid
@@ -1191,7 +1199,7 @@ window.addEventListener("load", () => {
   // --- Page mode navigation ---
   function goToSlide(idx) {
     cur = Math.max(0, Math.min(pages.length - 1, idx));
-    history.replaceState(null, "", "#" + pages[cur].id);
+    if (location.protocol !== "file:") history.replaceState(null, "", "#" + pages[cur].id);
     if (layoutMode.includes("page")) {
       applyLayout();
     } else {
@@ -1204,7 +1212,7 @@ window.addEventListener("load", () => {
     if (rSidebarOpen) updateRightPanel();
     info.textContent = `Slide ${pages[cur].dataset.page || cur + 1} / ${pages.length}` + (pages[cur].dataset.title ? ` — ${pages[cur].dataset.title}` : "");
     info.dataset.init = "1";
-    history.replaceState(null, "", "#" + pages[cur].id);
+    if (location.protocol !== "file:") history.replaceState(null, "", "#" + pages[cur].id);
     const curA = tocContent.querySelector(`a[data-idx="${cur}"]`);
     if (curA) {
       const top = curA.offsetTop - tocContent.offsetTop;
@@ -1221,6 +1229,8 @@ window.addEventListener("load", () => {
     if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
     if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === "PageDown") { e.preventDefault(); goToSlide(cur + 1); }
     else if (e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "PageUp") { e.preventDefault(); goToSlide(cur - 1); }
+    else if (e.key === "Home") { e.preventDefault(); goToSlide(0); }
+    else if (e.key === "End") { e.preventDefault(); goToSlide(pages.length - 1); }
   });
   // Mouse wheel for page mode
   document.addEventListener("wheel", (e) => {
