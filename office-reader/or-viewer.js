@@ -135,25 +135,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const slidePh = parseFloat(getComputedStyle(pages[0]).height);
   // Cache cloned DOMs - clone once, rescale on resize
   const cloneCache = [];
-  // Build clone cache lazily
-  function ensureClone(i) {
-    if (cloneCache[i]) return cloneCache[i];
-    const wasHidden = pages[i].style.display === "none";
-    if (wasHidden) pages[i].style.display = "";
-    const clone = pages[i].cloneNode(true);
-    if (wasHidden) pages[i].style.display = "none";
-    clone.style.margin = "0";
-    clone.style.transformOrigin = "top left";
-    clone.style.position = "absolute";
-    clone.style.top = "0";
-    clone.style.left = "0";
-    clone.style.display = "";
-    clone.style.pointerEvents = "none";
-    clone.style.boxShadow = "none";
+  // Pre-build all clones while pages are visible
+  pages.forEach((p, i) => {
+    const clone = p.cloneNode(true);
+    clone.style.cssText = "margin:0;transform-origin:top left;position:absolute;top:0;left:0;pointer-events:none;box-shadow:none;display:block;";
     clone.querySelectorAll("details").forEach(d => d.remove());
     cloneCache[i] = clone;
-    return clone;
-  }
+  });
+  function ensureClone(i) { return cloneCache[i]; }
   function mkThumb(idx, w, showNum = true) {
     const p = pages[idx];
     const thumb = document.createElement("div");
