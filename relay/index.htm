@@ -5,150 +5,95 @@
 <title>WebRTC P2P Relay</title>
 <style>
 body { font-family: monospace; max-width: 800px; margin: 20px auto; background: #1a1a1a; color: #eee; }
-button { background: #333; color: #eee; border: 1px solid #555; padding: 8px 16px; cursor: pointer; margin: 4px; }
-button:hover { background: #555; }
-input { background: #222; color: #eee; border: 1px solid #444; padding: 6px; width: 300px; }
 #log { white-space: pre-wrap; background: #111; padding: 10px; border: 1px solid #333; height: 400px; overflow-y: auto; }
 .section { margin: 16px 0; padding: 12px; border: 1px solid #333; }
-h3 { margin: 4px 0; color: #aaa; }
+input { background: #222; color: #eee; border: 1px solid #444; padding: 6px; }
+button { background: #333; color: #eee; border: 1px solid #555; padding: 8px 16px; cursor: pointer; }
 </style>
 </head>
 <body>
 <h2>WebRTC P2P Relay</h2>
-
 <div class="section">
-<h3>Config</h3>
-<label>Secret Key: </label><input id="secret" type="password" placeholder="shared secret key"><br><br>
-<label>Local WS port: </label><input id="wsport" value="9000" size="6"><br><br>
-<button onclick="start('A')">Machine A (Create Offer)</button>
-<button onclick="start('B')">Machine B (Wait for Offer)</button>
+<label>WS Port: </label><input id="wsport" value="9000" size="6">
+<button onclick="connect()">Connect to Bridge</button>
 </div>
-
-<div class="section">
-<h3>Log</h3>
-<div id="log"></div>
-</div>
+<div class="section"><div id="log"></div></div>
 
 <script>
-const PAD_URL = 'https://pad-dev.etherpad.org/p/ZOxYQ9aGs_8304EjYoBC';
 const ICE = { iceServers: [
   { urls: 'stun:stun.l.google.com:19302' },
-  { urls: 'stun:stun1.l.google.com:19302' },
   { urls: 'turn:openrelay.metered.ca:80', username: 'openrelayproject', credential: 'openrelayproject' },
   { urls: 'turn:openrelay.metered.ca:443', username: 'openrelayproject', credential: 'openrelayproject' },
 ]};
-
-let pc, dc, role, pollTimer, ws;
+let pc, dc, ws;
 const log = m => { const el = document.getElementById('log'); el.textContent += m + '\n'; el.scrollTop = el.scrollHeight; };
 
-// --- Encryption ---
-async function getKey() {
-  const secret = document.getElementById('secret').value;
-  if (!secret) { alert('Enter secret key first'); throw 'no key'; }
-  const enc = new TextEncoder();
-  const km = await crypto.subtle.importKey('raw', enc.encode(secret), 'PBKDF2', false, ['deriveKey']);
-  return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: enc.encode('webrtc-relay-salt'), iterations: 100000, hash: 'SHA-256' }, km, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
-}
-async function encrypt(text) {
-  const key = await getKey(), iv = crypto.getRandomValues(new Uint8Array(12));
-  const ct = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, new TextEncoder().encode(text));
-  return btoa(String.fromCharCode(...iv) + String.fromCharCode(...new Uint8Array(ct)));
-}
-async function decrypt(b64) {
-  const key = await getKey(), raw = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
-  const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: raw.slice(0,12) }, key, raw.slice(12));
-  return new TextDecoder().decode(pt);
-}
-
-// --- Etherpad via export/import ---
-async function padRead() {
-  const r = await fetch(PAD_URL + '/export/txt');
-  return (await r.text()).trim();
-}
-async function padWrite(content) {
-  const fd = new FormData();
-  fd.append('file', new Blob([content], {type:'text/plain'}), 'pad.txt');
-  await fetch(PAD_URL + '/import', { method: 'POST', body: fd });
-}
-async function writeSignal(label, data) {
-  const enc = await encrypt(JSON.stringify(data));
-  const text = await padRead();
-  const lines = text ? text.split('\n') : [];
-  const entry = label + ':' + enc;
-  const idx = lines.findIndex(l => l.startsWith(label + ':'));
-  if (idx >= 0) lines[idx] = entry; else lines.push(entry);
-  await padWrite(lines.join('\n'));
-}
-async function readSignal(label) {
-  const text = await padRead();
-  const line = text.split('\n').find(l => l.startsWith(label + ':'));
-  if (!line) return null;
-  try { return JSON.parse(await decrypt(line.substring(label.length + 1))); } catch { return null; }
-}
-
-// --- Local WebSocket bridge ---
-function connectWS() {
+function connect() {
   const port = document.getElementById('wsport').value;
   ws = new WebSocket(`ws://127.0.0.1:${port}`);
-  ws.onopen = () => log('[WS] Connected to local bridge');
-  ws.onmessage = e => {
-    if (dc && dc.readyState === 'open') { dc.send(e.data); log('[WS→P2P] ' + e.data); }
-  };
-  ws.onclose = () => log('[WS] Bridge disconnected');
-  ws.onerror = () => log('[WS] No local bridge (optional - run relay_bridge.py)');
-}
-
-// --- WebRTC ---
-function setupPC() {
-  pc = new RTCPeerConnection(ICE);
-  pc.onicecandidate = async e => {
-    if (!e.candidate) {
-      const label = role === 'A' ? 'OFFER' : 'ANSWER';
-      await writeSignal(label, pc.localDescription);
-      log('✓ ' + label + ' written to pad');
+  ws.onopen = () => log('[WS] Connected to Python bridge');
+  ws.onclose = () => log('[WS] Disconnected');
+  ws.onmessage = async e => {
+    const msg = e.data;
+    if (msg === 'CMD:CREATE_OFFER') {
+      await createOffer();
+    } else if (msg.startsWith('CMD:SET_ANSWER:')) {
+      const sdp = JSON.parse(msg.substring(15));
+      await pc.setRemoteDescription(sdp);
+      log('[WebRTC] Remote answer set');
+    } else if (msg.startsWith('CMD:SET_OFFER:')) {
+      const sdp = JSON.parse(msg.substring(14));
+      await acceptOffer(sdp);
+    } else {
+      // Data message -> send via WebRTC
+      if (dc && dc.readyState === 'open') dc.send(msg);
     }
   };
-  pc.onconnectionstatechange = () => log('[WebRTC] ' + pc.connectionState);
-  pc.oniceconnectionstatechange = () => log('[ICE] ' + pc.iceConnectionState);
 }
+
 function setupDC(channel) {
   dc = channel;
-  dc.onopen = () => { log('✓ DataChannel OPEN'); connectWS(); };
+  dc.onopen = () => log('✓ DataChannel OPEN');
   dc.onclose = () => log('✗ DataChannel closed');
   dc.onmessage = e => {
-    log('[P2P←] ' + e.data);
+    log('[←] ' + e.data.substring(0, 80));
     if (ws && ws.readyState === 1) ws.send(e.data);
   };
 }
 
-async function start(r) {
-  role = r;
-  await getKey();
-  if (role === 'A') await padWrite('');
-  setupPC();
-  if (role === 'A') {
-    setupDC(pc.createDataChannel('relay'));
-    const offer = await pc.createOffer();
-    await pc.setLocalDescription(offer);
-    log('Creating offer, gathering ICE...');
-    pollTimer = setInterval(async () => {
-      const answer = await readSignal('ANSWER');
-      if (answer) { clearInterval(pollTimer); await pc.setRemoteDescription(answer); log('✓ Got answer'); }
-    }, 2000);
-  } else {
-    pc.ondatachannel = e => setupDC(e.channel);
-    log('Waiting for offer...');
-    pollTimer = setInterval(async () => {
-      const offer = await readSignal('OFFER');
-      if (offer) {
-        clearInterval(pollTimer);
-        await pc.setRemoteDescription(offer);
-        const answer = await pc.createAnswer();
-        await pc.setLocalDescription(answer);
-        log('Got offer, creating answer...');
-      }
-    }, 2000);
-  }
+async function createOffer() {
+  pc = new RTCPeerConnection(ICE);
+  pc.oniceconnectionstatechange = () => log('[ICE] ' + pc.iceConnectionState);
+  const channel = pc.createDataChannel('relay');
+  setupDC(channel);
+
+  pc.onicecandidate = e => {
+    if (!e.candidate) {
+      // All candidates gathered - send complete offer to Python
+      ws.send('SIG:' + JSON.stringify(pc.localDescription));
+      log('[WebRTC] Offer sent to bridge');
+    }
+  };
+  const offer = await pc.createOffer();
+  await pc.setLocalDescription(offer);
+  log('[WebRTC] Creating offer...');
+}
+
+async function acceptOffer(sdp) {
+  pc = new RTCPeerConnection(ICE);
+  pc.oniceconnectionstatechange = () => log('[ICE] ' + pc.iceConnectionState);
+  pc.ondatachannel = e => setupDC(e.channel);
+
+  pc.onicecandidate = e => {
+    if (!e.candidate) {
+      ws.send('SIG:' + JSON.stringify(pc.localDescription));
+      log('[WebRTC] Answer sent to bridge');
+    }
+  };
+  await pc.setRemoteDescription(sdp);
+  const answer = await pc.createAnswer();
+  await pc.setLocalDescription(answer);
+  log('[WebRTC] Answer created...');
 }
 </script>
 </body>
