@@ -22,8 +22,9 @@ button { background: #333; color: #eee; border: 1px solid #555; padding: 8px 16p
 <script>
 const ICE = { iceServers: [
   { urls: 'stun:stun.l.google.com:19302' },
-  { urls: 'turn:openrelay.metered.ca:80', username: 'openrelayproject', credential: 'openrelayproject' },
-  { urls: 'turn:openrelay.metered.ca:443', username: 'openrelayproject', credential: 'openrelayproject' },
+  { urls: 'stun:stun.relay.metered.ca:80' },
+  { urls: 'turn:relay1.expressturn.com:3478', username: 'efLNIU5GZJ4V0HHK6Y', credential: 'lOSdXaEkT2f93H8p' },
+  { urls: 'turns:relay1.expressturn.com:5349', username: 'efLNIU5GZJ4V0HHK6Y', credential: 'lOSdXaEkT2f93H8p' },
 ]};
 let pc, dc, ws;
 const log = m => { const el = document.getElementById('log'); el.textContent += m + '\n'; el.scrollTop = el.scrollHeight; };
