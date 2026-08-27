@@ -269,10 +269,13 @@ p > img {
 }
 
 .masthead {
+  display: flex;
+  align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
+    flex-direction: column;
     text-align: center;
   }
 }
@@ -298,10 +301,9 @@ p > img {
 }
 
 .site-info {
-  float: left;
+  flex: 1;
 
   @include mobile {
-    float: none;
     display: block;
     margin: 0 auto;
   }
@@ -333,13 +335,11 @@ p > img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 0;
   font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
