@@ -16,7 +16,10 @@ Jekyll을 사용하려면 Ruby를 설치해야 한다는 점이 부담스러워�
 
 [Reverie의 템플릿 생성 페이지](https://github.com/amitmerchant1990/reverie/generate)에서 테마를 내 저장소로 복제할 수 있습니다. GitHub Pages용 저장소 이름은 `{사용자명}.github.io` 형식이어야 하므로 `frontjang-gif.github.io`로 만들었습니다. 버튼을 누르고 몇 분이 지나자 배포가 완료되었고, [블로그](https://frontjang-gif.github.io)에서 결과를 확인할 수 있었습니다.
 
-![GitHub Pages 저장소 생성 화면](../images/1787854668201.png)
+<figure>
+	<img src="../images/1787854668201.png" alt="GitHub Pages 저장소 생성 화면">
+	<figcaption>GitHub Pages 저장소 생성 화면</figcaption>
+</figure>
 
 ## Codespaces에서 환경 설정하기
 
@@ -38,7 +41,10 @@ VS Code 설정에서 `markdown.copyFiles.destination`을 찾아 다음과 같이
 /_posts/*, /images/${unixTime}.${fileExtName}
 ```
 
-![VS Code Markdown 이미지 저장 경로 설정](../images/1787855049878.png)
+<figure>
+	<img src="../images/1787855049878.png" alt="VS Code Markdown 이미지 저장 경로 설정">
+	<figcaption>VS Code Markdown 이미지 저장 경로 설정</figcaption>
+</figure>
 
 ## 마무리
 

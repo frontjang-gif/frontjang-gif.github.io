@@ -694,9 +694,31 @@ Modules - reusable parts of our design
   line-height: 0;
 }
 
-.post-tags {
+.post-category {
   text-align: center;
   line-height: 35px;
+}
+
+.post-category a {
+  font-size: 14.5px;
+  padding: 2px 13px;
+  border: none;
+  background-color: #4CAF50;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.post-tags {
+  clear: both;
+  margin-top: 28px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.post-tags span {
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .post-tags a {
@@ -709,7 +731,10 @@ Modules - reusable parts of our design
 }
 
 .post-toc {
+  clear: both;
+  box-sizing: border-box;
   margin: 28px 0;
+  width: 100%;
   padding: 16px 20px;
   border-left: 3px solid #4CAF50;
   background-color: #f7f9f8;
@@ -733,6 +758,27 @@ Modules - reusable parts of our design
 .post-toc li.h3 {
   padding-left: 18px;
   font-size: 0.92em;
+}
+
+.entry figure {
+  margin: 28px auto;
+  text-align: center;
+}
+
+.entry figure img {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  border: 1px solid #d5dede;
+  border-radius: 3px;
+}
+
+.entry figcaption {
+  margin-top: 8px;
+  color: #687477;
+  font-size: 0.85em;
+  text-align: center;
 }
 
 .pagination a, .pagination span {

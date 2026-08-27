@@ -10,13 +10,9 @@ layout: default
     {% if page.last_modified_at %}
     <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
     {% endif %}
-    <div class="post-tags">
+    <div class="post-category">
       {% for category in page.categories %}
         <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-      {% for tag in page.tags %}
-        <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>
@@ -30,6 +26,16 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+
+  {% if page.tags %}
+  <div class="post-tags">
+    <span>Tags:</span>
+    {% for tag in page.tags %}
+      <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
   <!--<div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
