@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitHub Pages + Codespaces + VS Code + Copilot으로 블로그 만들기"
-date: 2026-08-27
+date: 2026-08-27 17:31:14 +0000
 category: 개발
 tags: [GitHub Pages, Codespaces, VS Code, Copilot]
 ---
