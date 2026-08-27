@@ -69,5 +69,27 @@ layout: default
     });
 
     toc.hidden = false;
+
+    entry.querySelectorAll('img').forEach(function (image) {
+      if (image.closest('figure')) {
+        return;
+      }
+
+      var figure = document.createElement('figure');
+      var caption = document.createElement('figcaption');
+      var parent = image.parentElement;
+
+      caption.textContent = image.alt;
+      if (parent && parent.tagName === 'P' && parent.children.length === 1 && parent.textContent.trim() === '') {
+        parent.parentNode.replaceChild(figure, parent);
+      } else {
+        image.parentNode.insertBefore(figure, image);
+      }
+
+      figure.appendChild(image);
+      if (image.alt) {
+        figure.appendChild(caption);
+      }
+    });
   });
 </script>
