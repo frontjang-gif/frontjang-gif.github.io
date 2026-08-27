@@ -741,6 +741,10 @@ Modules - reusable parts of our design
   text-align: left;
 }
 
+.post-toc[hidden] {
+  display: none;
+}
+
 .post-toc strong {
   display: block;
   margin-bottom: 6px;
