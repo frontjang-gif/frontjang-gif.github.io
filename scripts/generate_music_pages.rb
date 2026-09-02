@@ -117,7 +117,7 @@ def parse_movie(path)
   source = File.read(path)
   frontmatter = source.match(/\A---\s*\n(.*?)\n---\s*\n/m)
   metadata = frontmatter ? (YAML.safe_load(frontmatter[1], permitted_classes: [Date, Time]) || {}) : {}
-  { title: metadata["title"] || File.basename(path, ".md"), year: metadata["year"], directors: Array(metadata["directors"]), cast: Array(metadata["cast"]), genres: Array(metadata["genres"]), path: path }
+  { title: metadata["title"] || File.basename(path, ".md"), year: metadata["year"], rating: metadata["rating"], directors: Array(metadata["directors"]), cast: Array(metadata["cast"]), genres: Array(metadata["genres"]), path: path }
 end
 
 def existing_work_page(composer, title)
@@ -185,6 +185,7 @@ movie_groups = {
   "directors" => movies.flat_map { |movie| movie[:directors].map { |value| [value, movie] } },
   "cast" => movies.flat_map { |movie| movie[:cast].map { |value| [value, movie] } },
   "genres" => movies.flat_map { |movie| movie[:genres].map { |value| [value, movie] } },
+  "ratings" => movies.reject { |movie| movie[:rating].nil? }.map { |movie| [movie[:rating].to_i.to_s, movie] },
   "years" => movies.map { |movie| ["#{movie[:year].to_i / 10 * 10}s", movie] }
 }.transform_values { |entries| entries.group_by(&:first).transform_values { |items| items.map(&:last).uniq } }
 
@@ -220,7 +221,13 @@ end
 composer_links = composers.keys.sort.map do |composer|
     page_link("/composers/#{slug(composer)}/", composer)
 end
-write_page(File.join(OUTPUT_ROOT, "composers.md"), "Composers", content: composer_links.join("\n"))
+work_links = composers.keys.sort.flat_map do |composer|
+  composers[composer].sort_by { |work| work[:title] }.map do |work|
+    page_link("/composers/#{slug(composer)}/#{slug(work[:title])}/", "#{composer}: #{work[:title]}")
+  end
+end
+composer_content = "## Composers\n\n#{composer_links.join("\n")}\n\n## Works\n\n#{work_links.join("\n")}"
+write_page(File.join(OUTPUT_ROOT, "composers.md"), "Composers", content: composer_content)
 
 composers.each do |composer, composer_works|
   links = composer_works.sort_by { |work| work[:title] }.map do |work|

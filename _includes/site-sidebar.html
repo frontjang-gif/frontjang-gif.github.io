@@ -34,11 +34,12 @@
   <details class="sidebar-group" open>
     <summary>Music <span class="sidebar-count">{{ music_count }}</span></summary>
     <nav>
-      <a href="{{ site.baseurl }}/albums/">Albums <span>{{ music_count }}</span></a>
-      <span class="sidebar-subgroup">
+      <details class="sidebar-subgroup" open>
+        <summary>Albums <span>{{ music_count }}</span></summary>
+        <a href="{{ site.baseurl }}/albums/">All albums</a>
         <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_count }}</span></a>
         <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_count }}</span></a>
-      </span>
+      </details>
       <a href="{{ site.baseurl }}/artists/">Artists</a>
       <a href="{{ site.baseurl }}/composers/">Composers</a>
     </nav>
@@ -51,6 +52,7 @@
       <a href="{{ site.baseurl }}/movies/directors/">Directors</a>
       <a href="{{ site.baseurl }}/movies/cast/">Cast</a>
       <a href="{{ site.baseurl }}/movies/genres/">Genres</a>
+      <a href="{{ site.baseurl }}/movies/ratings/">Ratings</a>
       <a href="{{ site.baseurl }}/movies/years/">Years</a>
     </nav>
   </details>

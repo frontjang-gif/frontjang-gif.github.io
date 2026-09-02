@@ -14,7 +14,6 @@ genres:
 language: Japanese
 source: https://www.themoviedb.org/movie/00000
 poster: https://example.com/poster.jpg
-watched: false
 rating: null
 mediaFolder: Director\\Director name
 ---

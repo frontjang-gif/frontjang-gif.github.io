@@ -1,16 +1,12 @@
 ---
 layout: page
-title: Movie Years
+title: Movie Ratings
 ---
 
-## 1920s
+## 2
 
 - [Un Chien Andalou]({{ site.baseurl }}/movies/un-chien-andalou/)
 
-## 1930s
+## 4
 
 - [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)
-
-## 1950s
-
-- [Flavor of Green Tea Over Rice]({{ site.baseurl }}/movies/flavor-of-green-tea-over-rice/)

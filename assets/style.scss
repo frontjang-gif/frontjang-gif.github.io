@@ -550,6 +550,17 @@ nav {
   border-left: 1px solid $lightGray;
 }
 
+.site-sidebar .sidebar-subgroup summary {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.site-sidebar .sidebar-subgroup summary::before {
+  width: 1em;
+  font-size: 0.9em;
+}
+
 .site-sidebar .sidebar-subgroup a {
   padding: 3px 0;
 }

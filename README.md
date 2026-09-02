@@ -128,7 +128,7 @@ For Classical albums, artist names normally use `Last name, First name`, but est
 
 Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
 
-Movies automatically generate navigator pages from `directors`, `cast`, `genres`, and `year`. For example, movie pages are available under `/movies/directors/`, `/movies/cast/`, `/movies/genres/`, and `/movies/years/`, with year pages grouped by decade such as `/movies/years/1950s/`.
+Movies automatically generate navigator pages from `directors`, `cast`, `genres`, `rating`, and `year`. Rating pages group decimal ratings by their integer part, so `2.5` appears on `/movies/ratings/2/`. Movie pages are available under `/movies/directors/`, `/movies/cast/`, `/movies/genres/`, `/movies/ratings/`, and `/movies/years/`, with year pages grouped by decade such as `/movies/years/1950s/`.
 
 The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/daily/` and `_posts/tech/`. Music is a Blog branch under `_posts/music/`, with albums physically grouped under `_posts/music/classical/` and `_posts/music/jazz/`; their `music_category` front matter drives the generated category pages.
 
