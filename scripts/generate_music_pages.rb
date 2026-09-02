@@ -113,6 +113,13 @@ def parse_album(path)
   { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, works: works, path: path }
 end
 
+def parse_movie(path)
+  source = File.read(path)
+  frontmatter = source.match(/\A---\s*\n(.*?)\n---\s*\n/m)
+  metadata = frontmatter ? (YAML.safe_load(frontmatter[1], permitted_classes: [Date, Time]) || {}) : {}
+  { title: metadata["title"] || File.basename(path, ".md"), year: metadata["year"], directors: Array(metadata["directors"]), cast: Array(metadata["cast"]), genres: Array(metadata["genres"]), path: path }
+end
+
 def existing_work_page(composer, title)
   $preserved_frontmatter.each do |path, metadata|
     next unless path.match?(%r{/_generated/composers/})
@@ -159,6 +166,7 @@ end
 albums = Dir[File.join(SOURCE_ROOT, "_posts", "music", "**", "*.md")].map do |path|
   parse_album(path)
 end
+movies = Dir[File.join(SOURCE_ROOT, "_posts", "movie", "*.md")].map { |path| parse_movie(path) }
 works = albums.flat_map { |album| album[:works] }.uniq { |work| [work[:composer], work[:title]] }
 composers = works.group_by { |work| work[:composer] }
 artists = albums.flat_map do |album|
@@ -171,6 +179,27 @@ end
 
 FileUtils.rm_rf(OUTPUT_ROOT)
 FileUtils.mkdir_p(OUTPUT_ROOT)
+
+movie_path = ->(movie) { "/movies/#{slug(movie[:title])}/" }
+movie_groups = {
+  "directors" => movies.flat_map { |movie| movie[:directors].map { |value| [value, movie] } },
+  "cast" => movies.flat_map { |movie| movie[:cast].map { |value| [value, movie] } },
+  "genres" => movies.flat_map { |movie| movie[:genres].map { |value| [value, movie] } },
+  "years" => movies.map { |movie| ["#{movie[:year].to_i / 10 * 10}s", movie] }
+}.transform_values { |entries| entries.group_by(&:first).transform_values { |items| items.map(&:last).uniq } }
+
+movie_groups.each do |group, values|
+  group_content = values.keys.sort.map do |value|
+    links = values[value].sort_by { |movie| movie[:title] }.map { |movie| page_link(movie_path.call(movie), movie[:title]) }
+    "## #{value}\n\n#{links.join("\n")}"
+  end.join("\n\n")
+  write_page(File.join(OUTPUT_ROOT, "movies", "#{group}.md"), "Movie #{group.capitalize}", content: group_content)
+
+  values.each do |value, value_movies|
+    links = value_movies.sort_by { |movie| movie[:title] }.map { |movie| page_link(movie_path.call(movie), movie[:title]) }
+    write_page(File.join(OUTPUT_ROOT, "movies", group, "#{slug(value)}.md"), value, content: links.join("\n"))
+  end
+end
 
 category_content = categories.keys.sort.map do |category|
   albums_in_category = categories[category].sort_by { |album| album[:title] }

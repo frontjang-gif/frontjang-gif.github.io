@@ -65,11 +65,13 @@ tags: [tag1, tag2]
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
 - Add a music `category` such as `Classical` or `Jazz` for genre navigation.
+- Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
 ## Movie Writing Guidelines
 
 - Store movies under `_posts/movie/` and preserve the `schema: movie-vault/v1` front matter.
 - Keep movie metadata in front matter, including `title`, `titleKo`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `watched`, `rating`, and `mediaFolder`.
+- Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.
 - Remove accents, diacritics, and unsupported special characters from artist page names and filenames. Preserve the original spelling in the artist page's `original_name` front matter.

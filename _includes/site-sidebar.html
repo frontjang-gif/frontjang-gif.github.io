@@ -28,7 +28,6 @@
       <a href="{{ site.baseurl }}/tags">Tags</a>
       <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_count }}</span></a>
       <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_count }}</span></a>
-      <a href="{{ site.baseurl }}/movies/">Movies <span>{{ movie_count }}</span></a>
     </nav>
   </section>
 
@@ -36,10 +35,24 @@
     <h2>Music <span class="sidebar-count">{{ music_count }}</span></h2>
     <nav>
       <a href="{{ site.baseurl }}/albums/">Albums <span>{{ music_count }}</span></a>
-      <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_count }}</span></a>
-      <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_count }}</span></a>
+      <span class="sidebar-subgroup">
+        <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_count }}</span></a>
+        <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_count }}</span></a>
+      </span>
       <a href="{{ site.baseurl }}/artists/">Artists</a>
       <a href="{{ site.baseurl }}/composers/">Composers</a>
     </nav>
   </section>
+
+  <section class="sidebar-group">
+    <h2>Movie <span class="sidebar-count">{{ movie_count }}</span></h2>
+    <nav>
+      <a href="{{ site.baseurl }}/movies/">Movies <span>{{ movie_count }}</span></a>
+      <a href="{{ site.baseurl }}/movies/directors/">Directors</a>
+      <a href="{{ site.baseurl }}/movies/cast/">Cast</a>
+      <a href="{{ site.baseurl }}/movies/genres/">Genres</a>
+      <a href="{{ site.baseurl }}/movies/years/">Years</a>
+    </nav>
+  </section>
+
 </aside>

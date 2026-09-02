@@ -373,6 +373,12 @@ nav {
     border-left: 1px solid $lightGray;
   }
 
+  .nav-movie {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid $lightGray;
+  }
+
   @include mobile {
     .nav-group {
       display: block;
@@ -384,6 +390,13 @@ nav {
     }
 
     .nav-music {
+      margin: 12px 0 0;
+      padding: 12px 0 0;
+      border-top: 1px solid $lightGray;
+      border-left: 0;
+    }
+
+    .nav-movie {
       margin: 12px 0 0;
       padding: 12px 0 0;
       border-top: 1px solid $lightGray;
@@ -503,6 +516,17 @@ nav {
   padding: 5px 0;
   color: $darkGray;
   text-align: left;
+}
+
+.site-sidebar .sidebar-subgroup {
+  display: block;
+  margin: 2px 0 4px 14px;
+  padding-left: 10px;
+  border-left: 1px solid $lightGray;
+}
+
+.site-sidebar .sidebar-subgroup a {
+  padding: 3px 0;
 }
 
 .wrapper-footer {
