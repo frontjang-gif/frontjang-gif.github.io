@@ -32,7 +32,8 @@ def person_surname(value)
 end
 
 def existing_artist_page(name)
-  $preserved_frontmatter.each do |path, metadata|
+  $preserved_pages.each do |path, page|
+    metadata = page[:metadata]
     next unless path.match?(%r{/_generated/artists/})
 
     aliases = Array(metadata["aliases"])
@@ -45,6 +46,7 @@ def existing_artist_page(name)
       previous_title = metadata["title"]
       metadata["title"] = name if matches_full_name || matches_surname
       metadata["aliases"] = ([previous_title, *aliases, File.basename(path, ".md")]).compact.uniq
+      metadata["_generated_content"] = page[:content]
       return metadata
     end
   end
@@ -63,6 +65,23 @@ def existing_composer_page(name)
 end
 def page_link(path, label)
   "- [#{label}](\u007b\u007b site.baseurl \u007d\u007d#{path})"
+end
+
+RATING_LABELS = {
+  "5" => "★★★★★ 인생작 (손가락 안에 꼽는)",
+  "4.5" => "★★★★☆ 아쉽게도 미끄러진 인생작",
+  "4" => "★★★★ 명작 (영화 이름이 기억에 남는, 종종 보고 싶은)",
+  "3.5" => "★★★☆ 수작 (추천할 만한, 가끔 볼 만한)",
+  "3" => "★★★ 괜찮게 만든, 3번은 볼 수 있는",
+  "2.5" => "★★☆ 그저 그런, 2번만 볼",
+  "2" => "★★ 1번만 보고 기억에서 사라질",
+  "1.5" => "★☆ 1번 보기도 아까운",
+  "1" => "★ 투자자가 불쌍한 괴작",
+  "0.5" => "☆ 널리 알려져 있을 정도의 데이터 낭비"
+}.freeze
+
+def rating_label(value)
+  RATING_LABELS[value.to_s] || value.to_s
 end
 
 def escape_yaml(value)
@@ -94,8 +113,8 @@ def parse_album(path)
       saved = existing_work_page(composer, raw_title)
       work = { composer: composer, title: saved ? saved["title"] : raw_title, movements: [], metadata: saved || {} }
       works << work
-    elsif composer && (match = line.match(/^\s*\d+\.\s+(.+)$/))
-      item = match[1].strip
+    elsif composer && (match = line.match(/^\s*(\d+[A-Za-z]?)\.\s+(.+)$/))
+      item = match[2].strip
       if work
         work[:movements] << item
       else
@@ -121,14 +140,19 @@ def parse_movie(path)
 end
 
 def existing_work_page(composer, title)
-  $preserved_frontmatter.each do |path, metadata|
+  $preserved_pages.each do |path, page|
+    metadata = page[:metadata]
     next unless path.match?(%r{/_generated/composers/})
 
     aliases = Array(metadata["aliases"])
     old_slug = File.basename(path, ".md")
     old_slug = File.basename(File.dirname(path)) if old_slug == "index"
     same_composer = person_surname(metadata["composer"]) == person_surname(composer)
-    return metadata if same_composer && (([metadata["title"]] + aliases).include?(title) || old_slug == slug(title))
+    if same_composer && (([metadata["title"]] + aliases).include?(title) || old_slug == slug(title))
+      metadata = metadata.dup
+      metadata["_generated_content"] = page[:content]
+      return metadata
+    end
   end
   nil
 end
@@ -145,6 +169,8 @@ end
 def write_page(path, title, body)
   FileUtils.mkdir_p(File.dirname(path))
   metadata = (body[:metadata] || {}).merge(existing_frontmatter(path))
+  content = metadata.delete("_generated_content") || body[:content]
+  content = content.to_s.rstrip
   metadata.delete("permalink")
   metadata.merge!("layout" => "page", "title" => title)
   File.write(path, <<~MARKDOWN)
@@ -152,15 +178,20 @@ def write_page(path, title, body)
     #{metadata.to_yaml.sub("---\n", "").strip}
     ---
 
-    #{body[:content]}
+    #{content}
   MARKDOWN
 end
 
 $preserved_frontmatter = {}
+$preserved_pages = {}
 Dir[File.join(OUTPUT_ROOT, "**", "*.md")].each do |path|
   content = File.read(path)
   match = content.match(/\A---\s*\n(.*?)\n---\s*\n/m)
-  $preserved_frontmatter[path] = YAML.safe_load(match[1]) || {} if match
+  if match
+    metadata = YAML.safe_load(match[1]) || {}
+    $preserved_frontmatter[path] = metadata
+    $preserved_pages[path] = { metadata: metadata, content: content[match.end(0)..] }
+  end
 end
 
 albums = Dir[File.join(SOURCE_ROOT, "_posts", "music", "**", "*.md")].map do |path|
@@ -185,20 +216,23 @@ movie_groups = {
   "directors" => movies.flat_map { |movie| movie[:directors].map { |value| [value, movie] } },
   "cast" => movies.flat_map { |movie| movie[:cast].map { |value| [value, movie] } },
   "genres" => movies.flat_map { |movie| movie[:genres].map { |value| [value, movie] } },
-  "ratings" => movies.reject { |movie| movie[:rating].nil? }.map { |movie| [movie[:rating].to_i.to_s, movie] },
+  "ratings" => movies.reject { |movie| movie[:rating].nil? }.map { |movie| [movie[:rating].to_s, movie] },
   "years" => movies.map { |movie| ["#{movie[:year].to_i / 10 * 10}s", movie] }
 }.transform_values { |entries| entries.group_by(&:first).transform_values { |items| items.map(&:last).uniq } }
 
 movie_groups.each do |group, values|
-  group_content = values.keys.sort.map do |value|
+  rating_values = group == "ratings" ? values.keys.sort_by(&:to_f).reverse : values.keys.sort
+  group_content = rating_values.map do |value|
     links = values[value].sort_by { |movie| movie[:title] }.map { |movie| page_link(movie_path.call(movie), movie[:title]) }
-    "## #{value}\n\n#{links.join("\n")}"
+    heading = group == "ratings" ? "#{value} - #{rating_label(value)}" : value
+    "## #{heading}\n\n#{links.join("\n")}"
   end.join("\n\n")
   write_page(File.join(OUTPUT_ROOT, "movies", "#{group}.md"), "Movie #{group.capitalize}", content: group_content)
 
   values.each do |value, value_movies|
     links = value_movies.sort_by { |movie| movie[:title] }.map { |movie| page_link(movie_path.call(movie), movie[:title]) }
-    write_page(File.join(OUTPUT_ROOT, "movies", group, "#{slug(value)}.md"), value, content: links.join("\n"))
+    page_title = group == "ratings" ? "#{value} - #{rating_label(value)}" : value
+    write_page(File.join(OUTPUT_ROOT, "movies", group, "#{slug(value)}.md"), page_title, content: links.join("\n"))
   end
 end
 
@@ -241,13 +275,15 @@ composers.each do |composer, composer_works|
 
   composer_works.each do |work|
     references = albums.select { |album| album[:works].any? { |candidate| candidate[:title] == work[:title] } }
-    movements = work[:movements].map { |movement| "1. #{movement.sub(/^\d+\.\s*/, "")}" }
+    movements = work[:movements].each_with_index.map do |movement, index|
+      "#{index + 1}. #{movement.sub(/^\d+[A-Za-z]?\.\s*/, "")}"
+    end
     content = ""
     content += "#{movements.join("\n")}\n\n" unless movements.empty?
     content += "## Referenced by\n\n"
     content += references.map { |album| page_link("#{album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")}", album[:title]) }.join("\n")
     work_path = File.join(OUTPUT_ROOT, "composers", "#{slug(composer)}", "#{slug(work[:title])}.md")
-    metadata = { "composer" => composer, "imslp" => "" }.merge(work[:metadata] || {})
+    metadata = { "composer" => composer, "imslp" => "", "favorite" => false }.merge(work[:metadata] || {})
     write_page(work_path, work[:title], content: content, metadata: metadata)
   end
 end

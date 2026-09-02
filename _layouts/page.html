@@ -14,6 +14,10 @@ layout: default
   <p class="page-parent"><a href="{{ site.baseurl }}/composers/{{ page.composer | slugify }}/">{{ page.composer }}</a></p>
   {% endif %}
 
+  {% if page.favorite %}
+  <p class="page-favorite">Favorite</p>
+  {% endif %}
+
   {% if page.wiki or page.imslp %}
   <p class="page-references">
     {% if page.wiki %}<a href="{{ page.wiki }}">Wikipedia</a>{% endif %}

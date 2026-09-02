@@ -1,6 +1,7 @@
 ---
 composer: Debussy, Claude
 imslp: ''
+favorite: false
 layout: page
 title: Masques, L 105
 ---

@@ -65,6 +65,8 @@ tags: [tag1, tag2]
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
 - Add a music `music_category` such as `Classical` or `Jazz` for genre navigation; this stays separate from Blog `categories`.
+- Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
+- Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
 ## Movie Writing Guidelines
@@ -90,3 +92,4 @@ tags: [tag1, tag2]
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
 - Number movements from `1` within each work; the album layout displays the continuous track number separately.
+- Accept non-standard source numbering such as `1a.` and `1b.` when parsing tracks; normalize the generated movement list to sequential numbers.

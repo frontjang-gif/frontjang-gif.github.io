@@ -1,7 +1,6 @@
 ---
 layout: page
-title: 1930s
+title: Emiko Yagumo
 ---
 
 - [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
-- [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)

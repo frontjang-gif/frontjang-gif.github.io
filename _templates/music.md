@@ -8,6 +8,7 @@ music_category: Classical
 year: release year
 recording: Label
 cover: https://example.com/cover.jpg
+favorite: false
 ---
 
 ## Album

@@ -1,6 +1,7 @@
 ---
 composer: Debussy, Claude
 imslp: ''
+favorite: false
 layout: page
 title: "...D'un cahier d'esquisses, L 100"
 ---

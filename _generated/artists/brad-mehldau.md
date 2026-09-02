@@ -11,5 +11,3 @@ title: Brad Mehldau
 ## Unknown
 
 - [Brad Mehldau - Introducing Brad Mehldau]({{ site.baseurl }}/albums/jazz/2021-05-24-introducing-brad-mehldau-mehldau/)
-
-

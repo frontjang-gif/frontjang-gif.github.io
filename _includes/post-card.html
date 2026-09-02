@@ -10,6 +10,7 @@
   <a href="{{ site.baseurl }}{{ post.url }}">
     <h1>{{ post.title }}</h1>
     <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+    {% if post.favorite %}<span class="post-favorite">Favorite</span>{% endif %}
   </a>
   {% if preview_url %}<img class="post-preview" src="{{ preview_url }}" alt="" loading="lazy" decoding="async">{% endif %}
   <div class="entry">{{ post.content | strip_html | truncatewords: 40 }}</div>

@@ -1,13 +1,14 @@
 ---
 composer: Debussy, Claude
 imslp: ''
+favorite: false
 layout: page
 title: Estampes, L 100
 ---
 
 1. Pagodes
-1. La soiree dans Grenade
-1. Jardins sous la pluie
+2. La soiree dans Grenade
+3. Jardins sous la pluie
 
 ## Referenced by
 

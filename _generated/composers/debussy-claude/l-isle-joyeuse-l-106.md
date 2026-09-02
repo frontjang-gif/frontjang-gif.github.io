@@ -1,6 +1,7 @@
 ---
 composer: Debussy, Claude
 imslp: ''
+favorite: false
 layout: page
 title: L'isle joyeuse, L 106
 ---

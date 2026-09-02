@@ -1,16 +1,17 @@
 ---
 composer: Debussy, Claude
 imslp: ''
+favorite: false
 layout: page
 title: Children's Corner, L 113
 ---
 
 1. Doctor Gradus ad Parnassum
-1. Jimbo's lullaby
-1. Serenade for the doll
-1. The snow is dancing
-1. The little shepherd
-1. Golliwogg's cake-walk
+2. Jimbo's lullaby
+3. Serenade for the doll
+4. The snow is dancing
+5. The little shepherd
+6. Golliwogg's cake-walk
 
 ## Referenced by
 
