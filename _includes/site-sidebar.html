@@ -1,32 +1,41 @@
-{% assign blog_posts = site.posts | where_exp: "post", "post.path contains '_posts/' and post.path does not contain '_posts/music/'" %}
-{% assign daily_posts = site.posts | where_exp: "post", "post.path contains '_posts/daily/'" %}
-{% assign tech_posts = site.posts | where_exp: "post", "post.path contains '_posts/tech/'" %}
-{% assign music_posts = site.posts | where_exp: "post", "post.path contains '_posts/music/'" %}
-{% assign classical_posts = site.posts | where_exp: "post", "post.path contains '_posts/music/classical/'" %}
-{% assign jazz_posts = site.posts | where_exp: "post", "post.path contains '_posts/music/jazz/'" %}
-{% assign generated_composers = site.generated | where_exp: "page", "page.path contains '/composers/'" %}
-
+{% assign blog_count = 0 %}
+{% assign daily_count = 0 %}
+{% assign tech_count = 0 %}
+{% assign music_count = 0 %}
+{% assign classical_count = 0 %}
+{% assign jazz_count = 0 %}
+{% for post in site.posts %}
+  {% if post.path contains '_posts/music/' %}
+    {% assign music_count = music_count | plus: 1 %}
+    {% if post.path contains '_posts/music/classical/' %}{% assign classical_count = classical_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/music/jazz/' %}{% assign jazz_count = jazz_count | plus: 1 %}{% endif %}
+  {% else %}
+    {% assign blog_count = blog_count | plus: 1 %}
+    {% if post.path contains '_posts/daily/' %}{% assign daily_count = daily_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/tech/' %}{% assign tech_count = tech_count | plus: 1 %}{% endif %}
+  {% endif %}
+{% endfor %}
 <aside class="site-sidebar" aria-label="Site navigation">
   <section class="sidebar-group">
-    <h2>Blog <span class="sidebar-count">{{ blog_posts.size }}</span></h2>
+    <h2>Blog <span class="sidebar-count">{{ blog_count }}</span></h2>
     <nav>
       <a href="{{ site.baseurl }}/">Home</a>
       <a href="{{ site.baseurl }}/archive">Archive</a>
       <a href="{{ site.baseurl }}/categories">Categories</a>
       <a href="{{ site.baseurl }}/tags">Tags</a>
-      <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_posts.size }}</span></a>
-      <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_posts.size }}</span></a>
+      <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_count }}</span></a>
+      <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_count }}</span></a>
     </nav>
   </section>
 
   <section class="sidebar-group">
-    <h2>Music <span class="sidebar-count">{{ music_posts.size }}</span></h2>
+    <h2>Music <span class="sidebar-count">{{ music_count }}</span></h2>
     <nav>
-      <a href="{{ site.baseurl }}/albums/">Albums <span>{{ music_posts.size }}</span></a>
-      <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_posts.size }}</span></a>
-      <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_posts.size }}</span></a>
+      <a href="{{ site.baseurl }}/albums/">Albums <span>{{ music_count }}</span></a>
+      <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_count }}</span></a>
+      <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_count }}</span></a>
       <a href="{{ site.baseurl }}/artists/">Artists</a>
-      <a href="{{ site.baseurl }}/composers/">Composers <span>{{ generated_composers.size }}</span></a>
+      <a href="{{ site.baseurl }}/composers/">Composers</a>
     </nav>
   </section>
 </aside>
