@@ -37,3 +37,48 @@ tags: [tag1, tag2]
 - Use Markdown links such as `[Link text](https://example.com)` instead of bare URLs.
 - Category links appear above the post body and tag links appear below it.
 - Add referenced image files to Git. Do not commit local `.vscode/` settings or temporary `_posts/image*.png` files unless explicitly requested.
+
+## Album Writing Guidelines
+
+### Cover Image
+
+- Attach a cover image that is at least 1000px wide.
+- Use an image from a public website such as Amazon, AllMusic, Naxos, or Apple Music.
+- Prefer official or reliable sources over Discogs.
+- Keep the image in `images/` and preserve its source link in the album post when possible.
+
+### Title
+
+- Use the format `Composer: Work - Performer or Orchestra (release year)`. Omit the year when it is unavailable.
+- Include only enough information to distinguish the album.
+- Use the Wikipedia spelling for composer names, such as `Rachmaninov` rather than `Rachmaninoff`.
+- Use `Last name, First name` for composers, except for established single-name or conventional exceptions.
+- Use performers' last names. If multiple performers share a last name, use the shared last name only.
+- Add a first-name initial before a less-famous composer with a duplicated last name, such as `B.Tchaikovsky` or `CPE.Bach`.
+- Use the orchestra's historical name from the recording period; put its latest name in the tags instead.
+- Expand shortened orchestra names and do not use abbreviations.
+- Write work numbers as `No.` or `Nos.` with a period and a space.
+- Remove accents, diacritics, and unsupported special characters from titles and filenames. Allowed punctuation is `;`, `&`, `,`, `.`, and `-`.
+- Use `;` between composers, `&` to combine composers or the final item in a work list, and `,` between works by the same composer.
+
+### Tags
+
+- Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
+- Add a music `category` such as `Classical` or `Jazz` for genre navigation.
+- Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
+- For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.
+- Remove accents, diacritics, and unsupported special characters from artist page names and filenames. Preserve the original spelling in the artist page's `original_name` front matter.
+
+### Work Names
+
+- Use the composer and work headings in album Markdown as the canonical names.
+- Use Wikipedia or IMSLP for canonical spelling and catalog information; use Discogs only as a secondary source for recording metadata.
+- Preserve alternate spellings in generated page front matter when needed instead of creating duplicate work pages.
+
+### Tracklist
+
+- Use heading hierarchy to distinguish topics, discs, works, chapters, and tracks: `## topic` > `### CD1` > `#### work` > `##### chapter` > track.
+- For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
+- Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
+- Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
+- Number movements from `1` within each work; the album layout displays the continuous track number separately.

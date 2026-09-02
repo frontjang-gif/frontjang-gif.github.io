@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="post detailed">
+  <h1>{{ page.title }}</h1>
+
+  <div>
+    {% if page.artist %}<p class="author_title">{% if page.artist.first %}{{ page.artist | join: ", " }}{% else %}{{ page.artist }}{% endif %}{% if page.date %}  ·  {{ page.date | date: "%B %e, %Y" }}{% endif %}</p>{% endif %}
+    {% if page.year %}<p class="author_title">발매 연도: {{ page.year }}</p>{% endif %}
+  </div>
+
+  {% if page.cover %}
+  <figure class="album-cover">
+    <img src="{{ page.cover }}" alt="{{ page.title }}">
+  </figure>
+  {% endif %}
+
+  <div class="entry album-entry">
+    {{ content }}
+  </div>
+
+  {% if page.tags %}
+  <div class="post-tags">
+    <span>Tags:</span>
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags/#{{ tag | slugize }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>

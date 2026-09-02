@@ -63,6 +63,26 @@ baseurl:
 
 permalink: /:title/
 
+collections:
+  albums:
+    output: true
+    permalink: /albums/:path/
+  generated:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "_albums"
+      type: "albums"
+    values:
+      layout: album
+  - scope:
+      path: "_generated"
+      type: "generated"
+    values:
+      layout: page
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 

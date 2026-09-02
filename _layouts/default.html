@@ -28,19 +28,33 @@
             </div>
 
             <nav>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
-              <a href="{{ site.baseurl }}/archive">Archive</a>
-              <a href="{{ site.baseurl }}/categories">Categories</a>
-              <a href="{{ site.baseurl }}/tags">Tags</a>
+              <span class="nav-group nav-site">
+                <span class="nav-label">Blog</span>
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/search">Search</a>
+                <a href="{{ site.baseurl }}/archive">Archive</a>
+                <a href="{{ site.baseurl }}/categories">Categories</a>
+                <a href="{{ site.baseurl }}/tags">Tags</a>
+              </span>
+              <span class="nav-group nav-music">
+                <span class="nav-label">Music</span>
+                <a href="{{ site.baseurl }}/albums/">Albums</a>
+                <a href="{{ site.baseurl }}/albums/classical/">Classical</a>
+                <a href="{{ site.baseurl }}/albums/jazz/">Jazz</a>
+                <a href="{{ site.baseurl }}/artists/">Artists</a>
+                <a href="{{ site.baseurl }}/composers/">Composers</a>
+              </span>
             </nav>
           </header>
         </div>
       </div>
 
       <div class="wrapper-main">
-        <div id="main" role="main" class="container">
-          {{ content }}
+        <div class="main-layout">
+          {% include music-sidebar.html %}
+          <div id="main" role="main" class="container">
+            {{ content }}
+          </div>
         </div>
       </div>
 

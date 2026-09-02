@@ -106,6 +106,28 @@ categories: [PHP, Laravel]
 
 The categorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
 
+## Deploying with GitHub Actions
+
+This repository uses `.github/workflows/pages.yml` to build and deploy the site with GitHub Pages. The workflow generates the automatic music and artist navigator Markdown pages with `ruby scripts/generate_music_pages.rb`, then runs `bundle exec jekyll build`.
+
+In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**. After that, pushes to `master` and manual workflow runs publish the generated `_site` directory.
+
+## Managing Work Pages
+
+Composer and work pages are generated automatically in `/composers/` from the `####` composer and `#####` work headings in album Markdown. No separate registry or album front matter is required. Generated pages are kept in `_generated/` as a Jekyll collection so their front matter can be reviewed and edited manually. The front matter `title` is the displayed name; the body contains only movements and references, without a duplicate title heading. URLs come from the `_generated/` folder path, not a page-level `permalink`, so renaming or moving a generated file updates its URL automatically. Existing `title`, `aliases`, `source`, and other front matter are preserved when pages are regenerated. If no matching page exists, a new one is created.
+
+Use Wikipedia or IMSLP when choosing work names and catalog numbers. Use Discogs only as a secondary source for recording metadata. Run `ruby scripts/generate_music_pages.rb` followed by `bundle exec jekyll build` to verify new work pages.
+
+Artist pages are also generated in `_generated/artists/`. New pages include empty `wiki` and `born` front matter placeholders plus `original_name`, which stores the source spelling when accents or unsupported characters are removed from the displayed artist name. Fill these fields manually; existing artist front matter is preserved on regeneration.
+
+Composer pages use the same `wiki`, `born`, and `original_name` front matter placeholders and preserve manual edits during regeneration.
+
+For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
+
+Albums can use `category` for genre navigation, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`.
+
+The site navigation treats `_posts/` as the Blog branch and `_albums/` as the Music branch. Music albums are grouped below the Music branch by their `category`, such as Classical and Jazz.
+
 ## Pagination
 
 Pagination of posts in Reverie works out-of-the-box. You only need to specify the number of posts you want on a single page in `_config.yml` and Reverie will take care of the rest.

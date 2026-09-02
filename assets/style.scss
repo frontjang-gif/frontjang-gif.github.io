@@ -357,6 +357,39 @@ nav {
       color: $blue;
     }
   }
+
+  .nav-group {
+    display: inline-block;
+  }
+
+  .nav-label {
+    color: $darkGray;
+    font-weight: bold;
+  }
+
+  .nav-music {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid $lightGray;
+  }
+
+  @include mobile {
+    .nav-group {
+      display: block;
+    }
+
+    .nav-label {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .nav-music {
+      margin: 12px 0 0;
+      padding: 12px 0 0;
+      border-top: 1px solid $lightGray;
+      border-left: 0;
+    }
+  }
 }
 
 //
@@ -413,6 +446,49 @@ nav {
   padding-bottom: 134px;
 }
 
+.main-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-layout #main {
+  flex: 1;
+  min-width: 0;
+  max-width: 900px;
+  padding: 0;
+}
+
+.music-sidebar {
+  flex: 0 0 180px;
+  position: sticky;
+  top: 24px;
+  padding: 14px 16px;
+  border-right: 1px solid $lightGray;
+  font-size: 15px;
+}
+
+.music-sidebar h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.music-sidebar nav {
+  margin: 0;
+}
+
+.music-sidebar nav a {
+  display: block;
+  margin: 0;
+  padding: 4px 0;
+  color: $darkGray;
+  text-align: left;
+}
+
 .wrapper-footer {
   position: absolute;
   bottom: 0;
@@ -464,6 +540,15 @@ body:after {
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
   line-height: 1.2;
+}
+
+.page-parent {
+  text-align: center;
+}
+
+.page-original-name {
+  color: #939aa1;
+  text-align: center;
 }
 
 .author_title{
@@ -806,6 +891,27 @@ Modules - reusable parts of our design
 }
 
 @media only screen and (min-width: 320px) and (max-width: 759px) {
+  .main-layout {
+    display: block;
+    padding: 0 10px;
+  }
+
+  .music-sidebar {
+    position: static;
+    padding: 10px 0;
+    border-right: 0;
+    border-bottom: 1px solid $lightGray;
+  }
+
+  .music-sidebar nav a {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  .main-layout #main {
+    padding: 0;
+  }
+
   #carbonads {
     float: none;
     margin: 0 auto;

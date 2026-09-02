@@ -6,6 +6,14 @@ layout: default
 
   <h1>{{ page.title }}</h1>
 
+  {% if page.original_name and page.original_name != page.title %}
+  <p class="page-original-name">{{ page.original_name }}</p>
+  {% endif %}
+
+  {% if page.composer %}
+  <p class="page-parent"><a href="{{ site.baseurl }}/composers/{{ page.composer | slugify }}/">{{ page.composer }}</a></p>
+  {% endif %}
+
   <div class="entry">
     {{ content }}
   </div>
