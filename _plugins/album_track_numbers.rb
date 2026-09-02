@@ -1,24 +1,22 @@
 require "nokogiri"
 
-Jekyll::Hooks.register :documents, :post_render do |document|
-  next unless document.collection.label == "albums"
+Jekyll::Hooks.register :posts, :post_render do |post|
+  next unless post.path.include?("/_posts/music/")
 
-  fragment = Nokogiri::HTML::DocumentFragment.parse(document.output)
+  document = Nokogiri::HTML::Document.parse(post.output)
   track_number = 0
+  tracklists = document.css(".album-entry ol")
 
-  fragment.xpath(".//ol[not(ancestor::ol)]").each do |list|
+  tracklists.each do |list|
     work_heading = list.previous_element
     has_movements = work_heading && work_heading.name == "h5"
-    rows = Nokogiri::XML::NodeSet.new(list.document)
+    rows = Nokogiri::XML::NodeSet.new(document)
 
     list.xpath("./li").each_with_index do |track, movement_index|
       track_number += 1
-      row = track.document.create_element("div")
-      row.content = if has_movements
-        "#{track_number}. #{movement_index + 1}. "
-      else
-        "#{track_number}. "
-      end
+      row = document.create_element("div")
+      number = has_movements ? "#{track_number}. #{movement_index + 1}. " : "#{track_number}. "
+      row.add_child(document.create_text_node(number))
       track.children.each { |child| row.add_child(child.dup) }
       rows << row
     end
@@ -27,5 +25,5 @@ Jekyll::Hooks.register :documents, :post_render do |document|
     list.remove
   end
 
-  document.output = fragment.to_html
+  post.output = document.to_html
 end

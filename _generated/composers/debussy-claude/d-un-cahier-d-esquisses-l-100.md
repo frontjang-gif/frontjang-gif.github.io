@@ -3,7 +3,7 @@ composer: Debussy, Claude
 imslp: ''
 favorite: false
 layout: page
-title: "...D'un cahier d'esquisses, L 100"
+title: "…D’un cahier d’esquisses, L 100"
 ---
 
 ## Referenced by

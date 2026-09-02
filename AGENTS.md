@@ -91,5 +91,5 @@ tags: [tag1, tag2]
 - For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
-- Number movements from `1` within each work; the album layout displays the continuous track number separately.
+- Number movements from `1` within each work; generated work pages preserve this movement numbering.
 - Accept non-standard source numbering such as `1a.` and `1b.` when parsing tracks; normalize the generated movement list to sequential numbers.

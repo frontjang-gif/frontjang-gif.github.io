@@ -247,7 +247,7 @@ end.join("\n\n")
 write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
 
 favorite_content = "{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}"
-write_page(File.join(OUTPUT_ROOT, "albums", "favorites.md"), "Favorite Albums", content: favorite_content)
+write_page(File.join(OUTPUT_ROOT, "favorites.md"), "Favorite Albums", content: favorite_content)
 
 categories.each do |category, category_albums|
   content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n"
@@ -259,13 +259,7 @@ end
 composer_links = composers.keys.sort.map do |composer|
     page_link("/composers/#{slug(composer)}/", composer)
 end
-work_links = composers.keys.sort.flat_map do |composer|
-  composers[composer].sort_by { |work| work[:title] }.map do |work|
-    page_link("/composers/#{slug(composer)}/#{slug(work[:title])}/", "#{composer}: #{work[:title]}")
-  end
-end
-composer_content = "## Composers\n\n#{composer_links.join("\n")}\n\n## Works\n\n#{work_links.join("\n")}"
-write_page(File.join(OUTPUT_ROOT, "composers.md"), "Composers", content: composer_content)
+write_page(File.join(OUTPUT_ROOT, "composers.md"), "Composers", content: composer_links.join("\n"))
 
 composers.each do |composer, composer_works|
   links = composer_works.sort_by { |work| work[:title] }.map do |work|

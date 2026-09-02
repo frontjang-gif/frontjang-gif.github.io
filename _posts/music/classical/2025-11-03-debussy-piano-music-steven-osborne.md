@@ -12,8 +12,9 @@ cover: https://blog.kakaocdn.net/dna/oGTCL/dJMcah3MxKL/AAAAAAAAAAAAAAAAAAAAABLvb
 ## Album
 ### CD1 
 #### Debussy, Claude
+
 1. Masques, L 105
-2. ...D'un cahier d'esquisses, L 100
+2. …D’un cahier d’esquisses, L 100
 3. L'isle joyeuse, L 106
 
 ##### Images pour piano - Book I, L 105

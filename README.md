@@ -126,7 +126,7 @@ Composer pages use the same `wiki`, `born`, and `original_name` front matter pla
 
 For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
 
-Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. Favorite recordings can use `favorite: true` and appear at `/albums/favorites/`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
+Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. Favorite recordings can use `favorite: true` and appear at `/favorites/`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
 
 Generated composer work pages include `favorite: false`. Change it to `favorite: true` in the work page front matter to mark a favorite work; the value is preserved when pages are regenerated.
 
