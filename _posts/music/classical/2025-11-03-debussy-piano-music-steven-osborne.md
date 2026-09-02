@@ -1,7 +1,8 @@
 ---
 title: "Debussy: Piano Music - Osborne"
 date: 2025-11-03 07:11:32 +0900
-artist: [Osborne, Steven]
+artist:
+  - Osborne, Steven
 category: Classical
 year: 2017
 recording: Hyperion
@@ -40,6 +41,5 @@ cover: https://blog.kakaocdn.net/dna/oGTCL/dJMcah3MxKL/AAAAAAAAAAAAAAAAAAAAABLvb
 
 ## Sources
 
-- [Cover image source: frontjang's archive](https://frontjang1.tistory.com/1417)
 - [Hyperion Records](https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68161)
 - [Presto Music](https://www.prestomusic.com/classical/products/8345718--debussy-piano-music)

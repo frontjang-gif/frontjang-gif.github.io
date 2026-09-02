@@ -4,5 +4,5 @@ title: Composers
 ---
 
 - [Bartok, Bela]({{ site.baseurl }}/composers/bartok-bela/)
-- [Claude Debussy]({{ site.baseurl }}/composers/claude-debussy/)
+- [Debussy, Claude]({{ site.baseurl }}/composers/debussy-claude/)
 - [Khachaturian, Aram]({{ site.baseurl }}/composers/khachaturian-aram/)

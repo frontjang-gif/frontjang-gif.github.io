@@ -64,19 +64,17 @@ baseurl:
 permalink: /:title/
 
 collections:
-  albums:
-    output: true
-    permalink: /albums/:path/
   generated:
     output: true
     permalink: /:path/
 
 defaults:
   - scope:
-      path: "_albums"
-      type: "albums"
+      path: "_posts/music"
+      type: "posts"
     values:
       layout: album
+      permalink: /albums/:title/
   - scope:
       path: "_generated"
       type: "generated"

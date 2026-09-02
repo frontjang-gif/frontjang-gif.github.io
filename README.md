@@ -120,13 +120,15 @@ Use Wikipedia or IMSLP when choosing work names and catalog numbers. Use Discogs
 
 Artist pages are also generated in `_generated/artists/`. New pages include empty `wiki` and `born` front matter placeholders plus `original_name`, which stores the source spelling when accents or unsupported characters are removed from the displayed artist name. Fill these fields manually; existing artist front matter is preserved on regeneration.
 
+Composer pages use `wiki`, `born`, and `original_name`. Work pages use `imslp` for the canonical IMSLP reference. These fields are generated empty when needed and preserve manual values. Verify the referenced page before filling a URL.
+
 Composer pages use the same `wiki`, `born`, and `original_name` front matter placeholders and preserve manual edits during regeneration.
 
 For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
 
 Albums can use `category` for genre navigation, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`.
 
-The site navigation treats `_posts/` as the Blog branch and `_albums/` as the Music branch. Music albums are grouped below the Music branch by their `category`, such as Classical and Jazz.
+The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/daily/` and `_posts/tech/`. Music is a Blog branch under `_posts/music/`, with albums physically grouped under `_posts/music/classical/` and `_posts/music/jazz/`; their `category` front matter drives the generated category pages.
 
 ## Pagination
 

@@ -32,7 +32,6 @@ cover: https://blog.kakaocdn.net/dna/904Vk/dJMcaelFXeH/AAAAAAAAAAAAAAAAAAAAADAtX
 
 ## Sources
 
-- [Cover image source: frontjang's archive](https://frontjang1.tistory.com/1414)
 - [Presto Music](https://www.prestomusic.com/classical/products/7996973--bartok-khachaturian-violin-concertos)
 - [Apple Music](https://music.apple.com/us/album/ida-haendel-plays-khachaturian-and-bartok/426552257)
 - [Discogs](https://www.discogs.com/release/9251331-Khachaturian-Bart%C3%B3k-Ida-Haendel-Radio-Sinfonieorchester-Stuttgart-Hans-M%C3%BCller-Kray-Violin-Concerto)

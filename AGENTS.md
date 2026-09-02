@@ -74,6 +74,7 @@ tags: [tag1, tag2]
 - Use the composer and work headings in album Markdown as the canonical names.
 - Use Wikipedia or IMSLP for canonical spelling and catalog information; use Discogs only as a secondary source for recording metadata.
 - Preserve alternate spellings in generated page front matter when needed instead of creating duplicate work pages.
+- Use `wiki` for artist and composer reference URLs and `imslp` for canonical work references. Verify the page itself before recording a URL; do not invent or infer reference URLs.
 
 ### Tracklist
 

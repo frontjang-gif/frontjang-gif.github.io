@@ -1,7 +1,8 @@
 ---
 title: "Debussy: Preludes, Books I & II - Osborne"
 date: 2025-11-03 06:16:34 +0900
-artist: [Osborne, Steven]
+artist:
+  - Osborne, Steven
 category: Classical
 year: 2006
 recording: Hyperion
@@ -45,6 +46,5 @@ cover: https://blog.kakaocdn.net/dna/mKRjc/dJMcah3MxAy/AAAAAAAAAAAAAAAAAAAAAPml1
 
 ## Sources
 
-- [Cover image source: frontjang's archive](https://frontjang1.tistory.com/1416)
 - [Hyperion Records](https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA67530)
 - [Steven Osborne](https://www.stevenosborne.com/recordings-list/debussy-preludes)

@@ -86,6 +86,8 @@ def parse_album(path)
   lines.each do |line|
     if (match = line.match(/^#### ([^#].*)$/))
       composer = match[1].strip
+      saved_composer = existing_composer_page(composer)
+      composer = saved_composer["title"] if saved_composer && saved_composer["title"]
       work = nil
     elsif (match = line.match(/^##### ([^#].*)$/)) && composer
       raw_title = match[1].strip
@@ -154,7 +156,7 @@ Dir[File.join(OUTPUT_ROOT, "**", "*.md")].each do |path|
   $preserved_frontmatter[path] = YAML.safe_load(match[1]) || {} if match
 end
 
-albums = Dir[File.join(SOURCE_ROOT, "_albums", "*.md")].map do |path|
+albums = Dir[File.join(SOURCE_ROOT, "_posts", "music", "**", "*.md")].map do |path|
   parse_album(path)
 end
 works = albums.flat_map { |album| album[:works] }.uniq { |work| [work[:composer], work[:title]] }
@@ -173,7 +175,7 @@ FileUtils.mkdir_p(OUTPUT_ROOT)
 category_content = categories.keys.sort.map do |category|
   albums_in_category = categories[category].sort_by { |album| album[:title] }
   "## #{category}\n\n" + albums_in_category.map do |album|
-    album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_albums}, "/albums").sub(/\.md$/, "/")
+    album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
     page_link(album_path, album[:title])
   end.join("\n")
 end.join("\n\n")
@@ -182,7 +184,7 @@ write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories"
 categories.each do |category, category_albums|
   content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n"
   content += category_albums.sort_by { |album| album[:title] }.map do |album|
-    album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_albums}, "/albums").sub(/\.md$/, "/")
+    album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
     page_link(album_path, album[:title])
   end.join("\n")
   category_path = File.join(OUTPUT_ROOT, "albums", slug(category) + ".md")
@@ -210,9 +212,9 @@ composers.each do |composer, composer_works|
     content = ""
     content += "#{movements.join("\n")}\n\n" unless movements.empty?
     content += "## Referenced by\n\n"
-    content += references.map { |album| page_link("#{album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_albums}, "/albums").sub(/\.md$/, "/")}", album[:title]) }.join("\n")
+    content += references.map { |album| page_link("#{album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")}", album[:title]) }.join("\n")
     work_path = File.join(OUTPUT_ROOT, "composers", "#{slug(composer)}", "#{slug(work[:title])}.md")
-    metadata = (work[:metadata] || {}).merge("composer" => composer)
+    metadata = { "composer" => composer, "imslp" => "" }.merge(work[:metadata] || {})
     write_page(work_path, work[:title], content: content, metadata: metadata)
   end
 end
@@ -226,7 +228,7 @@ artists.each do |artist, artist_albums|
   grouped.keys.sort.reverse.each do |year|
     content += "## #{year}\n\n"
     content += grouped[year].sort_by { |album| album[:title] }.map do |album|
-      album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_albums}, "/albums").sub(/\.md$/, "/")
+      album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
       page_link(album_path, album[:title])
     end.join("\n") + "\n\n"
   end

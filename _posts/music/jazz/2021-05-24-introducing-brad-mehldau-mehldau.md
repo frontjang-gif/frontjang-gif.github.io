@@ -1,5 +1,5 @@
 ---
-title: "Introducing Brad Mehldau - Mehldau"
+title: "Brad Mehldau - Introducing Brad Mehldau"
 date: 2021-05-24 03:01:47 +0900
 artist:
   - Brad Mehldau
@@ -21,4 +21,3 @@ cover: https://blog.kakaocdn.net/dna/dIwTuA/btq5C9xhAdC/AAAAAAAAAAAAAAAAAAAAAD7l
 
 ## Sources
 
-- [Cover image source: frontjang's archive](https://frontjang1.tistory.com/589)

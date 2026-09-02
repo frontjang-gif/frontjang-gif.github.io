@@ -462,7 +462,7 @@ nav {
   padding: 0;
 }
 
-.music-sidebar {
+.site-sidebar {
   flex: 0 0 180px;
   position: sticky;
   top: 24px;
@@ -471,17 +471,59 @@ nav {
   font-size: 15px;
 }
 
-.music-sidebar h2 {
+.site-sidebar h2 {
   margin: 0 0 8px;
   font-size: 20px;
   text-align: left;
 }
 
-.music-sidebar nav {
+.sidebar-group + .sidebar-group {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid $lightGray;
+}
+
+.sidebar-count,
+.site-sidebar nav a span {
+  color: $gray;
+  font-size: 0.85em;
+}
+
+.site-sidebar nav a span {
+  float: right;
+}
+
+.site-sidebar nav {
   margin: 0;
 }
 
-.music-sidebar nav a {
+.site-sidebar nav a {
+  display: block;
+  margin: 0;
+  padding: 4px 0;
+  color: $darkGray;
+  text-align: left;
+}
+.site-sidebar {
+  flex: 0 0 180px;
+  position: sticky;
+  top: 24px;
+  padding: 14px 16px;
+  border-right: 1px solid $lightGray;
+  font-size: 15px;
+}
+.site-sidebar h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  text-align: left;
+}
+.site-sidebar nav a span {
+  float: right;
+}
+.site-sidebar nav {
+  margin: 0;
+}
+.site-sidebar nav a {
   display: block;
   margin: 0;
   padding: 4px 0;
@@ -548,6 +590,12 @@ body:after {
 
 .page-original-name {
   color: #939aa1;
+  text-align: center;
+}
+
+.page-references {
+  color: #939aa1;
+  font-size: 0.85em;
   text-align: center;
 }
 
@@ -896,14 +944,14 @@ Modules - reusable parts of our design
     padding: 0 10px;
   }
 
-  .music-sidebar {
+  .site-sidebar {
     position: static;
     padding: 10px 0;
     border-right: 0;
     border-bottom: 1px solid $lightGray;
   }
 
-  .music-sidebar nav a {
+  .site-sidebar nav a {
     display: inline-block;
     margin-right: 12px;
   }
