@@ -4,11 +4,14 @@
 {% assign music_count = 0 %}
 {% assign classical_count = 0 %}
 {% assign jazz_count = 0 %}
+{% assign movie_count = 0 %}
 {% for post in site.posts %}
   {% if post.path contains '_posts/music/' %}
     {% assign music_count = music_count | plus: 1 %}
     {% if post.path contains '_posts/music/classical/' %}{% assign classical_count = classical_count | plus: 1 %}{% endif %}
     {% if post.path contains '_posts/music/jazz/' %}{% assign jazz_count = jazz_count | plus: 1 %}{% endif %}
+  {% elsif post.path contains '_posts/movie/' %}
+    {% assign movie_count = movie_count | plus: 1 %}
   {% else %}
     {% assign blog_count = blog_count | plus: 1 %}
     {% if post.path contains '_posts/daily/' %}{% assign daily_count = daily_count | plus: 1 %}{% endif %}
@@ -25,6 +28,7 @@
       <a href="{{ site.baseurl }}/tags">Tags</a>
       <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_count }}</span></a>
       <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_count }}</span></a>
+      <a href="{{ site.baseurl }}/movies/">Movies <span>{{ movie_count }}</span></a>
     </nav>
   </section>
 

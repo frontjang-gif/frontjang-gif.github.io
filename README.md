@@ -130,6 +130,16 @@ Albums can use `category` for genre navigation, for example `Classical` or `Jazz
 
 The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/daily/` and `_posts/tech/`. Music is a Blog branch under `_posts/music/`, with albums physically grouped under `_posts/music/classical/` and `_posts/music/jazz/`; their `category` front matter drives the generated category pages.
 
+## Post Templates
+
+Templates are stored in `_templates/`:
+
+- `default.md` for daily and tech posts
+- `music.md` for music albums
+- `movie.md` for Movie Vault entries
+
+Copy the appropriate template into its target `_posts/` subdirectory, then replace the placeholder values. Music and movie layouts use their front matter to render album covers, metadata, and navigation automatically.
+
 ## Pagination
 
 Pagination of posts in Reverie works out-of-the-box. You only need to specify the number of posts you want on a single page in `_config.yml` and Reverie will take care of the rest.

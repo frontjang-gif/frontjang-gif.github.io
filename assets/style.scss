@@ -449,10 +449,10 @@ nav {
 .main-layout {
   display: flex;
   align-items: flex-start;
-  gap: 28px;
-  max-width: 1180px;
+  gap: 36px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .main-layout #main {
@@ -463,12 +463,12 @@ nav {
 }
 
 .site-sidebar {
-  flex: 0 0 180px;
+  flex: 0 0 168px;
   position: sticky;
-  top: 24px;
-  padding: 14px 16px;
+  top: 20px;
+  padding: 8px 20px 8px 0;
   border-right: 1px solid $lightGray;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .site-sidebar h2 {
@@ -500,33 +500,7 @@ nav {
 .site-sidebar nav a {
   display: block;
   margin: 0;
-  padding: 4px 0;
-  color: $darkGray;
-  text-align: left;
-}
-.site-sidebar {
-  flex: 0 0 180px;
-  position: sticky;
-  top: 24px;
-  padding: 14px 16px;
-  border-right: 1px solid $lightGray;
-  font-size: 15px;
-}
-.site-sidebar h2 {
-  margin: 0 0 8px;
-  font-size: 20px;
-  text-align: left;
-}
-.site-sidebar nav a span {
-  float: right;
-}
-.site-sidebar nav {
-  margin: 0;
-}
-.site-sidebar nav a {
-  display: block;
-  margin: 0;
-  padding: 4px 0;
+  padding: 5px 0;
   color: $darkGray;
   text-align: left;
 }
@@ -941,7 +915,7 @@ Modules - reusable parts of our design
 @media only screen and (min-width: 320px) and (max-width: 759px) {
   .main-layout {
     display: block;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .site-sidebar {
@@ -953,7 +927,7 @@ Modules - reusable parts of our design
 
   .site-sidebar nav a {
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 14px;
   }
 
   .main-layout #main {
