@@ -5,108 +5,152 @@ title: Movie Cast
 
 ## Alfonso Mejia
 
-- [The Young and the Damned]({{ site.baseurl }}/movies/the-young-and-the-damned/)
+- [1950 잊혀진 사람들 (The Young and the Damned)]({{ site.baseurl }}/movies/1950-the-young-and-the-damned/)
 
 ## Alma Delia Fuentes
 
-- [The Young and the Damned]({{ site.baseurl }}/movies/the-young-and-the-damned/)
+- [1950 잊혀진 사람들 (The Young and the Damned)]({{ site.baseurl }}/movies/1950-the-young-and-the-damned/)
+
+## Birger Malmsten
+
+- [1950 즐거움 (To Joy)]({{ site.baseurl }}/movies/1950-to-joy/)
 
 ## Caridad de Laberdesque
 
-- [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)
+- [1930 황금시대 (L'Âge d'or)]({{ site.baseurl }}/movies/1930-l-age-d-or/)
 
 ## Chikage Awashima
 
-- [Flavor of Green Tea Over Rice]({{ site.baseurl }}/movies/flavor-of-green-tea-over-rice/)
+- [1951 초여름 (Early Summer)]({{ site.baseurl }}/movies/1951-early-summer/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+
+## Chishu Ryu
+
+- [1951 초여름 (Early Summer)]({{ site.baseurl }}/movies/1951-early-summer/)
 
 ## Choko Iida
 
-- [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
+- [1934 부초 이야기 (A Story of Floating Weeds)]({{ site.baseurl }}/movies/1934-a-story-of-floating-weeds/)
 
 ## Emiko Yagumo
 
-- [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
+- [1934 부초 이야기 (A Story of Floating Weeds)]({{ site.baseurl }}/movies/1934-a-story-of-floating-weeds/)
 
 ## Estela Inda
 
-- [The Young and the Damned]({{ site.baseurl }}/movies/the-young-and-the-damned/)
+- [1950 잊혀진 사람들 (The Young and the Damned)]({{ site.baseurl }}/movies/1950-the-young-and-the-damned/)
 
 ## Gaston Modot
 
-- [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)
+- [1930 황금시대 (L'Âge d'or)]({{ site.baseurl }}/movies/1930-l-age-d-or/)
+
+## Ichiro Sugai
+
+- [1951 초여름 (Early Summer)]({{ site.baseurl }}/movies/1951-early-summer/)
+
+## John Ekman
+
+- [1950 즐거움 (To Joy)]({{ site.baseurl }}/movies/1950-to-joy/)
 
 ## Josep Llorens Artigas
 
-- [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)
+- [1930 황금시대 (L'Âge d'or)]({{ site.baseurl }}/movies/1930-l-age-d-or/)
 
 ## Keiko Tsushima
 
-- [Flavor of Green Tea Over Rice]({{ site.baseurl }}/movies/flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
 
 ## Koji Mitsui
 
-- [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
+- [1934 부초 이야기 (A Story of Floating Weeds)]({{ site.baseurl }}/movies/1934-a-story-of-floating-weeds/)
 
 ## Koji Tsuruta
 
-- [Flavor of Green Tea Over Rice]({{ site.baseurl }}/movies/flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+
+## Kuniko Miyake
+
+- [1951 초여름 (Early Summer)]({{ site.baseurl }}/movies/1951-early-summer/)
 
 ## Luis Bunuel
 
-- [Un Chien Andalou]({{ site.baseurl }}/movies/un-chien-andalou/)
+- [1929 안달루시아의 개 (Un Chien Andalou)]({{ site.baseurl }}/movies/1929-un-chien-andalou/)
+- [1929 안달루시아의 개 (Un Chien Andalou)]({{ site.baseurl }}/movies/1929-un-chien-andalou/)
 
 ## Lya Lys
 
-- [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)
+- [1930 황금시대 (L'Âge d'or)]({{ site.baseurl }}/movies/1930-l-age-d-or/)
 
 ## Machiko Kyo
 
-- [Rashomon]({{ site.baseurl }}/movies/rashomon/)
+- [1950 라쇼몽 (Rashomon)]({{ site.baseurl }}/movies/1950-rashomon/)
+
+## Maj-Britt Nilsson
+
+- [1950 즐거움 (To Joy)]({{ site.baseurl }}/movies/1950-to-joy/)
+
+## Margit Carlqvist
+
+- [1950 즐거움 (To Joy)]({{ site.baseurl }}/movies/1950-to-joy/)
 
 ## Masayuki Mori
 
-- [Rashomon]({{ site.baseurl }}/movies/rashomon/)
+- [1950 라쇼몽 (Rashomon)]({{ site.baseurl }}/movies/1950-rashomon/)
 
 ## Max Ernst
 
-- [L'Âge d'or]({{ site.baseurl }}/movies/l-age-d-or/)
+- [1930 황금시대 (L'Âge d'or)]({{ site.baseurl }}/movies/1930-l-age-d-or/)
 
 ## Michiyo Kogure
 
-- [Flavor of Green Tea Over Rice]({{ site.baseurl }}/movies/flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
 
 ## Miguel Inclan
 
-- [The Young and the Damned]({{ site.baseurl }}/movies/the-young-and-the-damned/)
+- [1950 잊혀진 사람들 (The Young and the Damned)]({{ site.baseurl }}/movies/1950-the-young-and-the-damned/)
 
 ## Minoru Chiaki
 
-- [Rashomon]({{ site.baseurl }}/movies/rashomon/)
+- [1950 라쇼몽 (Rashomon)]({{ site.baseurl }}/movies/1950-rashomon/)
 
 ## Roberto Cobo
 
-- [The Young and the Damned]({{ site.baseurl }}/movies/the-young-and-the-damned/)
+- [1950 잊혀진 사람들 (The Young and the Damned)]({{ site.baseurl }}/movies/1950-the-young-and-the-damned/)
 
 ## Salvador Dali
 
-- [Un Chien Andalou]({{ site.baseurl }}/movies/un-chien-andalou/)
+- [1929 안달루시아의 개 (Un Chien Andalou)]({{ site.baseurl }}/movies/1929-un-chien-andalou/)
+- [1929 안달루시아의 개 (Un Chien Andalou)]({{ site.baseurl }}/movies/1929-un-chien-andalou/)
+
+## Setsuko Hara
+
+- [1951 초여름 (Early Summer)]({{ site.baseurl }}/movies/1951-early-summer/)
 
 ## Shin Saburi
 
-- [Flavor of Green Tea Over Rice]({{ site.baseurl }}/movies/flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+- [1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)]({{ site.baseurl }}/movies/1952-flavor-of-green-tea-over-rice/)
+
+## Stig Olin
+
+- [1950 즐거움 (To Joy)]({{ site.baseurl }}/movies/1950-to-joy/)
 
 ## Takashi Shimura
 
-- [Rashomon]({{ site.baseurl }}/movies/rashomon/)
+- [1950 라쇼몽 (Rashomon)]({{ site.baseurl }}/movies/1950-rashomon/)
 
 ## Takeshi Sakamoto
 
-- [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
+- [1934 부초 이야기 (A Story of Floating Weeds)]({{ site.baseurl }}/movies/1934-a-story-of-floating-weeds/)
 
 ## Toshiro Mifune
 
-- [Rashomon]({{ site.baseurl }}/movies/rashomon/)
+- [1950 라쇼몽 (Rashomon)]({{ site.baseurl }}/movies/1950-rashomon/)
 
 ## Yoshiko Tsubouchi
 
-- [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
+- [1934 부초 이야기 (A Story of Floating Weeds)]({{ site.baseurl }}/movies/1934-a-story-of-floating-weeds/)

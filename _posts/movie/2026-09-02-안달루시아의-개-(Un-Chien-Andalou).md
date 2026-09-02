@@ -1,5 +1,4 @@
 ---
-schema: movie-vault/v1
 title: "1929 안달루시아의 개 (Un Chien Andalou)"
 titleKo: 안달루시아의 개
 titleOrg: Un Chien Andalou

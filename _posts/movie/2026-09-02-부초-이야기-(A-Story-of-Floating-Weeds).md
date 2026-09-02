@@ -1,7 +1,7 @@
 ---
-schema: movie-vault/v1
-title: A Story of Floating Weeds
+title: "1934 부초 이야기 (A Story of Floating Weeds)"
 titleKo: 부초 이야기
+titleOrg: A Story of Floating Weeds
 date: 2026-09-02
 year: 1934
 directors:

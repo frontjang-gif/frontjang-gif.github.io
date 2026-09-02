@@ -3,4 +3,4 @@ layout: page
 title: Yoshiko Tsubouchi
 ---
 
-- [A Story of Floating Weeds]({{ site.baseurl }}/movies/a-story-of-floating-weeds/)
+- [1934 부초 이야기 (A Story of Floating Weeds)]({{ site.baseurl }}/movies/1934-a-story-of-floating-weeds/)

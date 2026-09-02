@@ -126,11 +126,13 @@ Composer pages use the same `wiki`, `born`, and `original_name` front matter pla
 
 For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
 
-Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
+Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. Favorite recordings can use `favorite: true` and appear at `/albums/favorites/`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
 
 Generated composer work pages include `favorite: false`. Change it to `favorite: true` in the work page front matter to mark a favorite work; the value is preserved when pages are regenerated.
 
 Movies automatically generate navigator pages from `directors`, `cast`, `genres`, `rating`, and `year`. Rating pages preserve exact points, so `2` and `2.5` appear on separate pages at `/movies/ratings/2/` and `/movies/ratings/2-5/`. Movie pages are available under `/movies/directors/`, `/movies/cast/`, `/movies/genres/`, `/movies/ratings/`, and `/movies/years/`, with year pages grouped by decade such as `/movies/years/1950s/`.
+
+Use the movie title format `{year} {titleKo} ({titleOrg})`.
 
 The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/daily/` and `_posts/tech/`. Music is a Blog branch under `_posts/music/`, with albums physically grouped under `_posts/music/classical/` and `_posts/music/jazz/`; their `music_category` front matter drives the generated category pages.
 

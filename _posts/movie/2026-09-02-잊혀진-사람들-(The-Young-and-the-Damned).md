@@ -1,7 +1,7 @@
 ---
-schema: movie-vault/v1
-title: The Young and the Damned
+title: "1950 잊혀진 사람들 (The Young and the Damned)"
 titleKo: 잊혀진 사람들
+titleOrg: The Young and the Damned
 date: 2026-09-02
 year: 1950
 directors:

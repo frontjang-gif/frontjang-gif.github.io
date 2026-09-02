@@ -3,5 +3,5 @@ layout: page
 title: Crime
 ---
 
-- [Rashomon]({{ site.baseurl }}/movies/rashomon/)
-- [The Young and the Damned]({{ site.baseurl }}/movies/the-young-and-the-damned/)
+- [1950 라쇼몽 (Rashomon)]({{ site.baseurl }}/movies/1950-rashomon/)
+- [1950 잊혀진 사람들 (The Young and the Damned)]({{ site.baseurl }}/movies/1950-the-young-and-the-damned/)

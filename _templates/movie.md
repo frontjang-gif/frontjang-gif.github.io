@@ -1,8 +1,8 @@
 ---
-schema: movie-vault/v1
 layout: movie
-title: Movie title
+title: "1950 Korean title (Original title)"
 titleKo: Korean title
+titleOrg: Original title
 date: YYYY-MM-DD
 year: release year
 directors:

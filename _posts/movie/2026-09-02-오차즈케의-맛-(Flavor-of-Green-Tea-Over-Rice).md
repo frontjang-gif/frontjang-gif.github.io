@@ -1,5 +1,4 @@
 ---
-schema: movie-vault/v1
 title: "1952 오차즈케의 맛 (Flavor of Green Tea Over Rice)"
 titleKo: 오차즈케의 맛
 titleOrg: Flavor of Green Tea Over Rice

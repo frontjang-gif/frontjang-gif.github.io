@@ -71,8 +71,8 @@ tags: [tag1, tag2]
 
 ## Movie Writing Guidelines
 
-- Store movies under `_posts/movie/` and preserve the `schema: movie-vault/v1` front matter.
-- Keep movie metadata in front matter, including `title`, `titleKo`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `mediaFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
+- Store movies under `_posts/movie/`.
+- Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `mediaFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
 - Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.

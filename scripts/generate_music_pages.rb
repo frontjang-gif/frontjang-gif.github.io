@@ -98,6 +98,7 @@ def parse_album(path)
   artist = [artist] unless artist.is_a?(Array)
   year = metadata["year"]
   category = metadata["music_category"]
+  favorite = metadata["favorite"]
   composer = nil
   work = nil
   works = []
@@ -129,7 +130,7 @@ def parse_album(path)
     saved = existing_artist_page(name)
     { name: saved ? saved["title"] : display_name(name), original_name: name }
   end
-  { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, works: works, path: path }
+  { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, favorite: favorite, works: works, path: path }
 end
 
 def parse_movie(path)
@@ -244,6 +245,9 @@ category_content = categories.keys.sort.map do |category|
   end.join("\n")
 end.join("\n\n")
 write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
+
+favorite_content = "{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}"
+write_page(File.join(OUTPUT_ROOT, "albums", "favorites.md"), "Favorite Albums", content: favorite_content)
 
 categories.each do |category, category_albums|
   content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n"
