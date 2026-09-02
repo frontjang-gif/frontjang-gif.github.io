@@ -2,6 +2,7 @@
 schema: movie-vault/v1
 title: Un Chien Andalou
 titleKo: 안달루시아의 개
+date: 2026-09-02
 year: 1929
 directors:
   - Luis Bunuel
@@ -17,6 +18,8 @@ watched: false
 rating: ""
 mediaFolder: Director/Luis Bunuel
 ---
+
+## Synopsis
 
 날카로운 면도날이 여자의 눈을 향하고, 거침없이 눈을 잘라낸다. 손 위에 우글거리는 개미들과 죽은 당나귀를 실은 그랜드피아노를 끌어당기는 남자 등 기묘한 이미지의 파편들이 이어진다.
 

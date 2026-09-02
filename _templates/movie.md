@@ -3,6 +3,7 @@ schema: movie-vault/v1
 layout: movie
 title: Movie title
 titleKo: Korean title
+date: YYYY-MM-DD
 year: release year
 directors:
   - Director name
@@ -17,5 +18,7 @@ watched: false
 rating: null
 mediaFolder: Director\\Director name
 ---
+
+## Synopsis
 
 Write your movie note here.

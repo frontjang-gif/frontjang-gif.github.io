@@ -212,10 +212,7 @@ write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories"
 
 categories.each do |category, category_albums|
   content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n"
-  content += category_albums.sort_by { |album| album[:title] }.map do |album|
-    album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
-    page_link(album_path, album[:title])
-  end.join("\n")
+  content += "{% assign albums = site.posts | where: 'music_category', page.category | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}"
   category_path = File.join(OUTPUT_ROOT, "albums", slug(category) + ".md")
   write_page(category_path, category, content: content, metadata: { "category" => category })
 end

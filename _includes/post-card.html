@@ -8,10 +8,10 @@
   {% endunless %}
 
   <a href="{{ site.baseurl }}{{ post.url }}">
-    {% if preview_url %}<img class="post-preview" src="{{ preview_url }}" alt="">{% endif %}
     <h1>{{ post.title }}</h1>
     <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
   </a>
+  {% if preview_url %}<img class="post-preview" src="{{ preview_url }}" alt="">{% endif %}
   <div class="entry">{{ post.content | strip_html | truncatewords: 40 }}</div>
   <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 </article>

@@ -6,4 +6,7 @@ title: Jazz
 
 [All music categories]({{ site.baseurl }}/albums/categories/)
 
-- [Brad Mehldau - Introducing Brad Mehldau]({{ site.baseurl }}/albums/jazz/2021-05-24-introducing-brad-mehldau-mehldau/)
+{% assign albums = site.posts | where: 'music_category', page.category | sort: 'date' | reverse %}
+{% for post in albums %}
+{% include post-card.html %}
+{% endfor %}
