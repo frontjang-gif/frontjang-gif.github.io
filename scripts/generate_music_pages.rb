@@ -78,7 +78,7 @@ def parse_album(path)
   artist = metadata["artist"]
   artist = [artist] unless artist.is_a?(Array)
   year = metadata["year"]
-  category = metadata["category"]
+  category = metadata["music_category"]
   composer = nil
   work = nil
   works = []

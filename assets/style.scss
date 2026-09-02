@@ -414,6 +414,15 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+.post-preview {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  margin: 0 auto 18px;
+  object-fit: cover;
+  border: 1px solid $lightGray;
+}
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
@@ -484,10 +493,26 @@ nav {
   font-size: 14px;
 }
 
-.site-sidebar h2 {
+.site-sidebar summary {
+  cursor: pointer;
   margin: 0 0 8px;
   font-size: 20px;
-  text-align: left;
+  font-weight: bold;
+  list-style: none;
+}
+
+.site-sidebar summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-sidebar summary::before {
+  display: inline-block;
+  width: 1em;
+  content: "+";
+}
+
+.site-sidebar details[open] summary::before {
+  content: "-";
 }
 
 .sidebar-group + .sidebar-group {

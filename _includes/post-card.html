@@ -1,0 +1,17 @@
+<article class="post post-card">
+  {% assign preview_url = post.cover | default: post.poster %}
+  {% unless preview_url %}
+    {% assign image_parts = post.content | split: 'src="' %}
+    {% if image_parts.size > 1 %}
+      {% assign preview_url = image_parts[1] | split: '"' | first %}
+    {% endif %}
+  {% endunless %}
+
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    {% if preview_url %}<img class="post-preview" src="{{ preview_url }}" alt="">{% endif %}
+    <h1>{{ post.title }}</h1>
+    <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+  </a>
+  <div class="entry">{{ post.content | strip_html | truncatewords: 40 }}</div>
+  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+</article>

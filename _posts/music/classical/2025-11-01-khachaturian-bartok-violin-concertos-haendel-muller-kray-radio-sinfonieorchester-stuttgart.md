@@ -5,7 +5,7 @@ artist:
   - Haendel, Ida
   - Muller-Kray, Hans
   - Radio-Sinfonieorchester Stuttgart
-category: Classical
+music_category: Classical
 year: 2011
 recording: Hanssler Classic
 cover: https://blog.kakaocdn.net/dna/904Vk/dJMcaelFXeH/AAAAAAAAAAAAAAAAAAAAADAtXyPEMkTjs2SzJluL21XA_RLIIEukdhrBQS5BfvRX/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=%2FBUUruUaJTY%2B1Ap9oeoMfwRJoJ4%3D

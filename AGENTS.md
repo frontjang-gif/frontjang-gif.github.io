@@ -64,7 +64,7 @@ tags: [tag1, tag2]
 ### Tags
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
-- Add a music `category` such as `Classical` or `Jazz` for genre navigation.
+- Add a music `music_category` such as `Classical` or `Jazz` for genre navigation; this stays separate from Blog `categories`.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
 ## Movie Writing Guidelines
