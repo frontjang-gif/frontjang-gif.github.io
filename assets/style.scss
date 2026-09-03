@@ -591,7 +591,12 @@ nav {
   padding: 3px 0;
 }
 
+.site-sidebar .sidebar-subgroup > a {
+  margin-left: 1em;
+}
+
 .site-sidebar .sidebar-subgroup summary > a {
+  margin-left: 0;
   padding: 0;
 }
 
