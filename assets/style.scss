@@ -423,9 +423,98 @@ nav {
   border: 1px solid $lightGray;
 }
 
+.list-view-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.list-view-controls button {
+  padding: 5px 10px;
+  border: 1px solid $lightGray;
+  border-radius: 4px;
+  color: $darkGray;
+  background: $white;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+.list-view-controls button[aria-pressed="true"] {
+  color: $white;
+  background: $darkGray;
+}
+
+.posts[data-list-view="text"] > .post-card {
+  padding: 10px 0;
+}
+
+.posts[data-list-view="text"] > .post-card > a:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.posts[data-list-view="text"] .post-card h1 {
+  flex: 1;
+  margin: 0;
+  font-size: 19px;
+  text-align: left;
+}
+
+.posts[data-list-view="text"] .post-card .post_date {
+  flex: 0 0 auto;
+  margin: 0;
+  font-size: 13px;
+}
+
+.posts[data-list-view="text"] .post-preview,
+.posts[data-list-view="text"] .post-card .entry,
+.posts[data-list-view="text"] .post-card .read-more {
+  display: none;
+}
+
+.posts[data-list-view="tile"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.posts[data-list-view="tile"] > .post-card {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid $lightGray;
+  border-radius: 5px;
+}
+
+.posts[data-list-view="tile"] .post-card h1 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.posts[data-list-view="tile"] .post-preview {
+  height: 210px;
+  margin-bottom: 0;
+}
+
+.posts[data-list-view="tile"] .post-card .entry,
+.posts[data-list-view="tile"] .post-card .read-more {
+  display: none;
+}
+
+.posts[data-list-view="tile"] > .pagination {
+  grid-column: 1 / -1;
+}
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+}
+
+.posts[data-list-view="tile"] > .post-card:last-child {
+  padding-bottom: 14px;
+  border-bottom: 1px solid $lightGray;
 }
 
 .post {
@@ -668,6 +757,19 @@ body:after {
   font-size: 13px;
   line-height: 1.2;
   white-space: nowrap;
+}
+
+.album-cover,
+.movie-poster {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.album-cover img,
+.movie-poster img {
+  display: block;
+  margin: 0 auto;
 }
 
 .page h1{

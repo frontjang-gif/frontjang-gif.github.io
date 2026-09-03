@@ -324,7 +324,7 @@ category_content = categories.keys.sort.map do |category|
 end.join("\n\n")
 write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
 
-favorite_content = "## Favorite Albums\n\n{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}\n\n## Favorite Works\n\n"
+favorite_content = "## Favorite Albums\n\n<div class=\"posts favorite-albums\">\n{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}\n</div>\n\n## Favorite Works\n\n"
 favorite_works = works.select { |work| work[:metadata]["favorite"] == true }.sort_by { |work| [work[:composer], work[:title]] }
 favorite_content += favorite_works.map do |work|
   page_link("/composers/#{slug(work[:composer])}/#{slug(work[:title])}/", "#{work[:composer]}: #{work[:title]}")

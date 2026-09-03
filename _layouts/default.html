@@ -63,6 +63,46 @@
           event.stopPropagation();
         });
       });
+
+      (function () {
+        var views = ['text', 'preview', 'tile'];
+        var labels = { text: 'Text', preview: 'Half preview', tile: 'Tiles' };
+        var savedView = 'preview';
+        try {
+          var storedView = localStorage.getItem('list-view');
+          if (views.indexOf(storedView) !== -1) savedView = storedView;
+        } catch (error) {}
+
+        document.querySelectorAll('.posts').forEach(function (list) {
+          if (!list.querySelector('.post-card')) return;
+
+          var controls = document.createElement('div');
+          controls.className = 'list-view-controls';
+          controls.setAttribute('aria-label', 'List view');
+
+          function selectView(view) {
+            list.setAttribute('data-list-view', view);
+            controls.querySelectorAll('button').forEach(function (button) {
+              button.setAttribute('aria-pressed', String(button.dataset.view === view));
+            });
+          }
+
+          views.forEach(function (view) {
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.dataset.view = view;
+            button.textContent = labels[view];
+            button.addEventListener('click', function () {
+              selectView(view);
+              try { localStorage.setItem('list-view', view); } catch (error) {}
+            });
+            controls.appendChild(button);
+          });
+
+          list.parentNode.insertBefore(controls, list);
+          selectView(savedView);
+        });
+      }());
     </script>
   </body>
 </html>
