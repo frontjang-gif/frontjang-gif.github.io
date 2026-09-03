@@ -2,8 +2,8 @@
   "schema_version": 1,
   "site": "https://frontjang1.tistory.com",
   "total": 1395,
-  "imported": 14,
-  "pending": 1381,
+  "imported": 17,
+  "pending": 1378,
   "posts": [
     {
       "id": "1418",
@@ -3924,70 +3924,12 @@
     {
       "id": "1377",
       "url": "https://frontjang1.tistory.com/1377",
-      "status": "drafted",
-      "kind": "original",
-      "title": "Chopin: Piano Sonata No. 2, Berceuse, Mazurkas Nos. 3, 17, and 20 & Fantasie - Ivan Moravec",
-      "published": "2025-06-23T13:11:45+09:00",
-      "description": "Piano Sonata No. 2 In B Flat Minor, Op. 35 1. I. Grave: Doppio Movimento 2. II. Scherzo 3. III. Funeral March 4. IV. Presto 5. Berceuse In D Flat Major, Op. 57 6. Ballade No. 4 In F Minor, Op. 52 7. Mazurka No. 3 In E Major, Op. 6, No. 3 8. Mazurka No. 17 In B-Flat Minor, Op. 24, No. 4 9. Mazurka No. 20 In D-Flat Major, Op. 30, No. 3 10. Fantasie In F Minor, Op. 49",
-      "cover": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIV0EI%2FbtsOL40RBBW%2FAAAAAAAAAAAAAAAAAAAAAMBXs72tbOng6CGJB7uBS-YmfZ8rprTeMWEnVjRU_qa8%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DB4l0l6ialV3vfd%252F%252F5qODbzG0lG8%253D",
-      "artists": [],
-      "tracks": [
-        "1. I. Grave: Doppio Movimento",
-        "2. II. Scherzo",
-        "3. III. Funeral March",
-        "4. IV. Presto",
-        "5. Berceuse In D Flat Major, Op. 57",
-        "6. Ballade No. 4 In F Minor, Op. 52",
-        "7. Mazurka No. 3 In E Major, Op. 6, No. 3",
-        "8. Mazurka No. 17 In B-Flat Minor, Op. 24, No. 4",
-        "9. Mazurka No. 20 In D-Flat Major, Op. 30, No. 3",
-        "10. Fantasie In F Minor, Op. 49"
-      ],
-      "article_text": "Music/Classical\nPiano Sonata No. 2 In B Flat Minor, Op. 35\n1. I. Grave: Doppio Movimento\n2. II. Scherzo\n3. III. Funeral March\n4. IV. Presto\n5. Berceuse In D Flat Major, Op. 57\n6. Ballade No. 4 In F Minor, Op. 52\n7. Mazurka No. 3 In E Major, Op. 6, No. 3\n8. Mazurka No. 17 In B-Flat Minor, Op. 24, No. 4\n9. Mazurka No. 20 In D-Flat Major, Op. 30, No. 3\n10. Fantasie In F Minor, Op. 49",
-      "cover_candidates": [
-        "https://blog.kakaocdn.net/dna/IV0EI/btsOL40RBBW/AAAAAAAAAAAAAAAAAAAAAMBXs72tbOng6CGJB7uBS-YmfZ8rprTeMWEnVjRU_qa8/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=B4l0l6ialV3vfd%2F%2F5qODbzG0lG8%3D"
-      ],
-      "plugins": [
-        "tistory"
-      ],
-      "tistory_category": {
-        "id": 827025,
-        "label": "Music/Classical"
-      }
+      "status": "imported"
     },
     {
       "id": "1376",
       "url": "https://frontjang1.tistory.com/1376",
-      "status": "drafted",
-      "kind": "original",
-      "title": "Chopin: Scherzi, Etudes, Mazurkas – Ivan Moravec",
-      "published": "2025-06-23T13:03:23+09:00",
-      "description": "1. Scherzo In B Minor, Op. 20 2. Scherzo B Flat Minor, Op. 31 3. Scherzo In C Sharp Minor, Op. 39 4. Scherzo In E Major, Op. 54 5. Étude In C Sharp Minor, Op. 25 No. 7 6. Étude In A Flat Major, Op. 25 No. 1 7. Mazurka In E Minor, Op. 41 No. 1 8. Mazurka In F Minor, Op. 68 No. 4 9. Mazurka In C Major, Op. 7 No. 5 10. Mazurka In C Major, Op. 56 No. 2",
-      "cover": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F2ADsX%2FbtsOLDoU6bt%2FAAAAAAAAAAAAAAAAAAAAAK6uwje6UuSj2Ivf_2CARnPL1fhpny9ewSTHavt9DFQl%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DdFJeI63%252FCMDgCOYcJWPhXpExRJM%253D",
-      "artists": [],
-      "tracks": [
-        "1. Scherzo In B Minor, Op. 20",
-        "2. Scherzo B Flat Minor, Op. 31",
-        "3. Scherzo In C Sharp Minor, Op. 39",
-        "4. Scherzo In E Major, Op. 54",
-        "5. Étude In C Sharp Minor, Op. 25 No. 7",
-        "6. Étude In A Flat Major, Op. 25 No. 1",
-        "7. Mazurka In E Minor, Op. 41 No. 1",
-        "8. Mazurka In F Minor, Op. 68 No. 4",
-        "9. Mazurka In C Major, Op. 7 No. 5",
-        "10. Mazurka In C Major, Op. 56 No. 2"
-      ],
-      "article_text": "Music/Classical\n1. Scherzo In B Minor, Op. 20\n2. Scherzo B Flat Minor, Op. 31\n3. Scherzo In C Sharp Minor, Op. 39\n4. Scherzo In E Major, Op. 54\n5. Étude In C Sharp Minor, Op. 25 No. 7\n6. Étude In A Flat Major, Op. 25 No. 1\n7. Mazurka In E Minor, Op. 41 No. 1\n8. Mazurka In F Minor, Op. 68 No. 4\n9. Mazurka In C Major, Op. 7 No. 5\n10. Mazurka In C Major, Op. 56 No. 2",
-      "cover_candidates": [
-        "https://blog.kakaocdn.net/dna/2ADsX/btsOLDoU6bt/AAAAAAAAAAAAAAAAAAAAAK6uwje6UuSj2Ivf_2CARnPL1fhpny9ewSTHavt9DFQl/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=dFJeI63%2FCMDgCOYcJWPhXpExRJM%3D"
-      ],
-      "plugins": [
-        "tistory"
-      ],
-      "tistory_category": {
-        "id": 827025,
-        "label": "Music/Classical"
-      }
+      "status": "imported"
     },
     {
       "id": "1375",
@@ -4513,38 +4455,7 @@
     {
       "id": "1364",
       "url": "https://frontjang1.tistory.com/1364",
-      "status": "drafted",
-      "kind": "original",
-      "title": "Beethoven: Sonatas \"Pathetique\", \"Moonlight\", \"Les Adieux\" - Ivan Moravec",
-      "published": "2025-06-19T00:04:34+09:00",
-      "description": "Sonata No. 8 In C Minor ´Pathétique´ Op. 13 (1798-99) 1. 1. Grave. Allegro Di Molto E Con Brio 2. 2. Adagio Cantabile 3. 3. Rondo. Allegro Sonata No. 14, ´Quasi Una Fantasia´ In C Sharp Minor (´Moonlight´) Op. 27/2 (1801) 4. 1. Adagio Sostenuto 5. 2. Allegretto (Attacca) 6. 3. Presto Agitato 7. 32 Variations On An Original Theme In C Minor (WoO 80; 1806) Sonata No. 27 In E Minor Op. 90 (1814) 8...",
-      "cover": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F2YiGP%2FbtsOGs1Q2nF%2FAAAAAAAAAAAAAAAAAAAAAE8hjsA_1G_t2qgqNJWHXXRi3Jh0SllAFsdwGyigHz32%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dq5K8Y7OZlGYSsstzqkx5sQBF%252F3g%253D",
-      "artists": [],
-      "tracks": [
-        "1. 1. Grave. Allegro Di Molto E Con Brio",
-        "2. 2. Adagio Cantabile",
-        "3. 3. Rondo. Allegro",
-        "4. 1. Adagio Sostenuto",
-        "5. 2. Allegretto (Attacca)",
-        "6. 3. Presto Agitato",
-        "7. 32 Variations On An Original Theme In C Minor (WoO 80; 1806)",
-        "8. 1. Mit Lebhaftigkeit Und Durchaus Mit Empfindung Und Ausdruck",
-        "9. 2. Nicht Zu Geschwind Und Sehr Singbar Vorzutragen",
-        "10. 1. Das Lebewohl. Adagio - Allegro",
-        "11. 2. Abwesenheit. Andante Expressivo",
-        "12. 3. Das Wiedersehen. Vivacissimamente"
-      ],
-      "article_text": "Music/Classical\nSonata No. 8 In C Minor ´Pathétique´ Op. 13 (1798-99)\n1. 1. Grave. Allegro Di Molto E Con Brio\n2. 2. Adagio Cantabile\n3. 3. Rondo. Allegro\nSonata No. 14, ´Quasi Una Fantasia´ In C Sharp Minor (´Moonlight´) Op. 27/2 (1801)\n4. 1. Adagio Sostenuto\n5. 2. Allegretto (Attacca)\n6. 3. Presto Agitato\n7. 32 Variations On An Original Theme In C Minor (WoO 80; 1806)\nSonata No. 27 In E Minor Op. 90 (1814)\n8. 1. Mit Lebhaftigkeit Und Durchaus Mit Empfindung Und Ausdruck\n9. 2. Nicht Zu Geschwind Und Sehr Singbar Vorzutragen\nSonata No. 26 In E Flat Major ´Les Adieux´ Op. 81a (1809-10)\n10. 1. Das Lebewohl. Adagio - Allegro\n11. 2. Abwesenheit. Andante Expressivo\n12. 3. Das Wiedersehen. Vivacissimamente",
-      "cover_candidates": [
-        "https://blog.kakaocdn.net/dna/2YiGP/btsOGs1Q2nF/AAAAAAAAAAAAAAAAAAAAAE8hjsA_1G_t2qgqNJWHXXRi3Jh0SllAFsdwGyigHz32/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=q5K8Y7OZlGYSsstzqkx5sQBF%2F3g%3D"
-      ],
-      "plugins": [
-        "tistory"
-      ],
-      "tistory_category": {
-        "id": 827025,
-        "label": "Music/Classical"
-      }
+      "status": "imported"
     },
     {
       "id": "1363",

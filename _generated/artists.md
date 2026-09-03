@@ -3,7 +3,7 @@ layout: page
 title: Artists
 ---
 
-- [Moravec, Ivan (3)]({{ site.baseurl }}/artists/moravec-ivan/)
+- [Moravec, Ivan (6)]({{ site.baseurl }}/artists/moravec-ivan/)
 - [Argerich, Martha (2)]({{ site.baseurl }}/artists/argerich-martha/)
 - [Brad Mehldau (2)]({{ site.baseurl }}/artists/brad-mehldau/)
 - [Gould, Glenn (2)]({{ site.baseurl }}/artists/gould-glenn/)

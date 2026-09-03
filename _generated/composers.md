@@ -3,12 +3,12 @@ layout: page
 title: Composers
 ---
 
-- [Chopin, Frederic (46)]({{ site.baseurl }}/composers/chopin-frederic/)
+- [Chopin, Frederic (60)]({{ site.baseurl }}/composers/chopin-frederic/)
 - [Debussy, Claude (11)]({{ site.baseurl }}/composers/debussy-claude/)
+- [Beethoven, Ludwig van (8)]({{ site.baseurl }}/composers/beethoven-ludwig-van/)
 - [Bach, Johann Sebastian (7)]({{ site.baseurl }}/composers/bach-johann-sebastian/)
 - [Liszt, Franz (4)]({{ site.baseurl }}/composers/liszt-franz/)
 - [Mozart, Wolfgang Amadeus (4)]({{ site.baseurl }}/composers/mozart-wolfgang-amadeus/)
-- [Beethoven, Ludwig van (3)]({{ site.baseurl }}/composers/beethoven-ludwig-van/)
 - [Brahms, Johannes (2)]({{ site.baseurl }}/composers/brahms-johannes/)
 - [Ravel, Maurice (2)]({{ site.baseurl }}/composers/ravel-maurice/)
 - [Bartok, Bela (1)]({{ site.baseurl }}/composers/bartok-bela/)

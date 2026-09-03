@@ -49,10 +49,14 @@ tags: [tag1, tag2]
 - After adding a plugin, verify it against a real public page when possible, document it in `README.md`, and do not claim support for fields that the verification did not extract.
 - Evolve the importer when repeated imports expose a reusable parsing or normalization gap. Keep the plugin registry, tests, README, and these instructions aligned with the new capability.
 - Do not set a custom identifying `User-Agent` header for source-research requests.
+- Use `scripts/migrate_tistory.py` to inventory a Tistory archive. Its `_imports/tistory/` output is review-only and must never be treated as publishable `_posts/` content by default.
+- Promote a Tistory draft to `_posts/` only when the original URL, release identity, credited artists, track sequence, recording/imprint, and a cover of at least 1000px have been verified against an independent primary catalogue, artist, distributor, or streaming source. Leave uncertain credits, editions, categories, or work boundaries in `_imports/`.
+- On promotion, add both the original Tistory URL and corroborating source URLs to `## Sources`, rerun the migration with `--resume` so its draft is removed and manifest status becomes `imported`, then regenerate the Music pages and run the build and rendering tests.
 
 ### Cover Image
 
 - Attach a cover image that is at least 1000px wide.
+- Do not infer a cover's dimensions from a resized Tistory/Open Graph thumbnail. Verify the direct source image or use a known-size official/Apple Music variant before publishing it.
 - Use an image from a public website such as Amazon, AllMusic, Naxos, or Apple Music.
 - Prefer official or reliable sources over Discogs.
 - Reference the remote cover URL directly; a local copy is not required. Preserve its source link in the album post when possible.

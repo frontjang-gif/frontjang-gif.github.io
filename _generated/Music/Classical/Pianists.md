@@ -12,11 +12,17 @@ title: Pianists
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/beethoven-piano-concerto-no-4-franck-symphonic-variations-ravel-piano-concerto-moravec-belohlavek-prague-philharmonia/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/beethoven-piano-sonatas-nos-8-14-26-27-32-variations-ivan-moravec/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-piano-sonata-no-2-berceuse-ballade-no-4-mazurkas-fantaisie-ivan-moravec/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/chopin-preludes-piano-concerto-no-2-argerich-rostropovich-national-symphony-orchestra-washington/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-scherzi-etudes-mazurkas-ivan-moravec/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/chopin-the-legendary-1965-recording-martha-argerich/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
