@@ -73,7 +73,7 @@
           if (views.indexOf(storedView) !== -1) savedView = storedView;
         } catch (error) {}
 
-        var lists = Array.from(document.querySelectorAll('.posts')).filter(function (list) {
+        var lists = Array.from(document.querySelectorAll('.posts:not(.media-catalog)')).filter(function (list) {
           return list.querySelector('.post-card');
         });
         if (!lists.length) return;

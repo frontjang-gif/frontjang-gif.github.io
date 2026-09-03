@@ -1,6 +1,7 @@
 require "cgi"
 require "date"
 require "fileutils"
+require "json"
 require "yaml"
 
 SOURCE_ROOT = File.expand_path("..", __dir__)
@@ -29,6 +30,11 @@ end
 def person_surname(value)
   normalized = normalized_name(value)
   normalized.include?(",") ? normalized.split(",", 2).first.strip : normalized.split.last
+end
+
+def surname_only?(value)
+  normalized = normalized_name(value).strip
+  !normalized.empty? && !normalized.include?(",") && normalized.split.size == 1
 end
 
 def existing_artist_page(name)
@@ -64,8 +70,15 @@ def existing_composer_page(name)
 
     metadata = metadata.dup
     if same_surname && !exact_match
-      metadata["aliases"] = (aliases + [name]).uniq
-      $preserved_frontmatter[path]["aliases"] = metadata["aliases"]
+      if surname_only?(metadata["title"]) && !surname_only?(name)
+        previous_title = metadata["title"]
+        metadata["title"] = name
+        metadata["aliases"] = (aliases + [previous_title]).compact.uniq
+        metadata["original_name"] = name if metadata["original_name"].to_s.empty? || metadata["original_name"] == previous_title
+      else
+        metadata["aliases"] = (aliases + [name]).uniq
+      end
+      $preserved_frontmatter[path].merge!(metadata)
     end
     return metadata
   end
@@ -164,6 +177,11 @@ def album_url(album)
   "/albums/#{slug(filename)}/"
 end
 
+def movie_url(movie)
+  filename = File.basename(movie[:path], ".md").sub(/^\d{4}-\d{2}-\d{2}-/, "")
+  "/movies/#{filename}/"
+end
+
 def escape_yaml(value)
   value.to_s.gsub('"', '\\"')
 end
@@ -236,14 +254,14 @@ def parse_album(path)
     saved = existing_artist_page(name)
     { name: saved ? saved["title"] : display_name(name), original_name: name }
   end
-  { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, favorite: favorite, recording: recording, label: label, works: works, path: path }
+  { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, favorite: favorite, recording: recording, label: label, cover: metadata["cover"], works: works, path: path }
 end
 
 def parse_movie(path)
   source = File.read(path)
   frontmatter = source.match(/\A---\s*\n(.*?)\n---\s*\n/m)
   metadata = frontmatter ? (YAML.safe_load(frontmatter[1], permitted_classes: [Date, Time]) || {}) : {}
-  { title: metadata["title"] || File.basename(path, ".md"), year: metadata["year"], rating: metadata["rating"], directors: Array(metadata["directors"]), cast: Array(metadata["cast"]), genres: Array(metadata["genres"]), path: path }
+  { title: metadata["title"] || File.basename(path, ".md"), title_ko: metadata["titleKo"], title_original: metadata["titleOrg"], year: metadata["year"], rating: metadata["rating"], directors: Array(metadata["directors"]), cast: Array(metadata["cast"]), genres: Array(metadata["genres"]), language: metadata["language"], poster: metadata["poster"], path: path }
 end
 
 def existing_work_page(composer, title)
@@ -314,6 +332,20 @@ albums = Dir[File.join(SOURCE_ROOT, "_posts", "Music", "**", "*.md")].map do |pa
   parse_album(path)
 end
 movies = Dir[File.join(SOURCE_ROOT, "_posts", "Movie", "*.md")].map { |path| parse_movie(path) }
+
+full_composers_by_surname = albums.flat_map { |album| album[:works].map { |work| work[:composer] } }
+  .reject { |composer| surname_only?(composer) }
+  .group_by { |composer| person_surname(composer) }
+  .transform_values(&:uniq)
+albums.each do |album|
+  album[:works].each do |work|
+    next unless surname_only?(work[:composer])
+
+    fuller_names = full_composers_by_surname[person_surname(work[:composer])]
+    work[:composer] = fuller_names.first if fuller_names&.one?
+  end
+end
+
 works = albums.flat_map { |album| album[:works] }.uniq { |work| [work[:composer], work[:title]] }
 composers = works.group_by { |work| work[:composer] }
 artists = albums.flat_map do |album|
@@ -329,12 +361,50 @@ end
 FileUtils.rm_rf(OUTPUT_ROOT)
 FileUtils.mkdir_p(OUTPUT_ROOT)
 
+data_root = File.join(SOURCE_ROOT, "data")
+FileUtils.mkdir_p(data_root)
+
+album_catalog = albums.sort_by { |album| album[:title] }.map do |album|
+  {
+    title: album[:title],
+    url: album_url(album),
+    artists: album[:artist_names],
+    composers: album[:works].map { |work| work[:composer] }.uniq,
+    works: album[:works].map { |work| work[:title] }.uniq,
+    year: album[:year],
+    category: album[:category],
+    recording: album[:recording],
+    label: album[:label],
+    favorite: album[:favorite] == true,
+    cover: album[:cover]
+  }
+end
+File.write(File.join(data_root, "albums.json"), JSON.pretty_generate({ albums: album_catalog }) + "\n")
+
+movie_catalog = movies.sort_by { |movie| movie[:title] }.map do |movie|
+  {
+    title: movie[:title],
+    titleKo: movie[:title_ko],
+    titleOrg: movie[:title_original],
+    url: movie_url(movie),
+    year: movie[:year],
+    decade: "#{movie[:year].to_i / 10 * 10}s",
+    directors: movie[:directors],
+    cast: movie[:cast],
+    genres: movie[:genres],
+    language: movie[:language],
+    rating: movie[:rating],
+    poster: movie[:poster]
+  }
+end
+File.write(File.join(data_root, "movies.json"), JSON.pretty_generate({ movies: movie_catalog }) + "\n")
+
 music_tree = music_sidebar_tree(albums)
 sidebar_content = render_music_sidebar(music_tree)
 File.write(File.join(SOURCE_ROOT, "_includes", "generated-music-sidebar.html"), sidebar_content.join("\n") + "\n")
 write_music_folder_pages(music_tree)
 
-movie_path = ->(movie) { "/movies/#{slug(movie[:title])}/" }
+movie_path = ->(movie) { movie_url(movie) }
 movie_groups = {
   "directors" => movies.flat_map { |movie| movie[:directors].map { |value| [value, movie] } },
   "cast" => movies.flat_map { |movie| movie[:cast].map { |value| [value, movie] } },
@@ -352,11 +422,6 @@ movie_groups.each do |group, values|
   end.join("\n\n")
   write_page(File.join(OUTPUT_ROOT, "movies", "#{group}.md"), "Movie #{group.capitalize}", content: group_content)
 
-  values.each do |value, value_movies|
-    links = value_movies.sort_by { |movie| movie[:title] }.map { |movie| page_link(movie_path.call(movie), movie[:title]) }
-    page_title = group == "ratings" ? "#{value} - #{rating_label(value)}" : value
-    write_page(File.join(OUTPUT_ROOT, "movies", group, "#{slug(value)}.md"), page_title, content: links.join("\n"))
-  end
 end
 
 favorite_content = "## Favorite Albums\n\n<div class=\"posts favorite-albums\">\n{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}\n</div>\n\n## Favorite Works\n\n"

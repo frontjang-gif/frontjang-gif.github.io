@@ -1,4 +1,4 @@
-<article class="post post-card">
+<article class="post post-card" data-post-url="{{ post.url }}">
   {% assign hide_written_date = false %}
   {% if post.path contains '_posts/Music/' or post.path contains '_posts/Movie/' %}
     {% assign hide_written_date = true %}

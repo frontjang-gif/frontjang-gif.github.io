@@ -89,6 +89,20 @@ h4 {
   margin-bottom: 0;
 }
 
+.album-entry .album-composer,
+.album-entry .album-work {
+  text-align: left;
+}
+
+.album-entry .album-work {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.album-entry .track-work-break {
+  margin-top: 1em;
+}
+
 p {
   margin: 15px 0;
 }
@@ -154,6 +168,50 @@ table tr td :last-child {
   box-sizing: border-box;
   font-size: 18px;
   background-color: #fff3ff;
+}
+
+.media-catalog-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin: 0 0 24px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.media-catalog-controls label {
+  display: flex;
+  flex: 1 1 150px;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.media-catalog-controls input,
+.media-catalog-controls select,
+.media-catalog-controls button {
+  min-height: 40px;
+  padding: 7px 9px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+
+.media-catalog-controls button {
+  cursor: pointer;
+}
+
+.media-catalog-status {
+  flex: 0 0 100%;
+  margin: 0;
+  color: $gray;
+  font-size: 14px;
 }
 
 .share-box {

@@ -32,7 +32,7 @@ tags: [tag1, tag2]
 ## Content and Media
 
 - The home page automatically displays up to 40 words from `post.content`; do not add `<!--more-->` for normal posts.
-- Keep images in `images/` and use normal Markdown image syntax from a post: `![Description](../images/file.png)`.
+- Keep locally owned images in `images/` and use normal Markdown image syntax from a post: `![Description](../images/file.png)`. Remote images may be referenced directly without making a local copy.
 - The post layout adds a visible caption from the image alt text and applies the image border styling.
 - Use Markdown links such as `[Link text](https://example.com)` instead of bare URLs.
 - Category links appear above the post body and tag links appear below it.
@@ -45,7 +45,7 @@ tags: [tag1, tag2]
 - Attach a cover image that is at least 1000px wide.
 - Use an image from a public website such as Amazon, AllMusic, Naxos, or Apple Music.
 - Prefer official or reliable sources over Discogs.
-- Keep the image in `images/` and preserve its source link in the album post when possible.
+- Reference the remote cover URL directly; a local copy is not required. Preserve its source link in the album post when possible.
 
 ### Title
 
@@ -91,13 +91,17 @@ tags: [tag1, tag2]
 - Preserve alternate spellings in generated page front matter when needed instead of creating duplicate work pages.
 - Use `wiki` for artist and composer reference URLs and `imslp` for canonical work references. Verify the page itself before recording a URL; do not invent or infer reference URLs.
 - Composer pages may use `aliases` for alternate composer names; matching album headings resolve to the same composer page.
+- When an existing composer page uses only a surname and a reliable source supplies the composer's first name, promote `Last name, First name` to the canonical page title and retain the old surname-only form in `aliases`. Regenerate the composer and work pages under the improved canonical slug.
 
 ### Tracklist
 
 - Use heading hierarchy to distinguish topics, discs, works, chapters, and tracks: `## topic` > `### CD1` > `#### work` > `##### chapter` > track.
+- Render composer headings bold and left-aligned. Render work headings italic, normal-weight, and left-aligned; disc headings remain centered.
+- Do not put blank lines between a composer heading, its work heading, and the first track. Keep those lines contiguous in Markdown. Use a blank line only when it carries structure, such as separating the end of a movement list from the next standalone work.
 - For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
 - Write album tracks as `track number. movement number. title`, such as `1. 1. Allegro non troppo`. The album page preserves both numbers; generated work pages retain only the movement number.
+- A blank line after a movement-numbered track list marks the end of that work when the next track has no movement number. Treat the following track as a separate work under the current composer and render visible spacing before it; do not fold it into the preceding work.
 - A bold composer in a single track, such as `4. **Liszt** - Hungarian Rhapsody...`, overrides the surrounding composer heading for that track and creates the work under that composer.
 - Accept non-standard source numbering such as `1a.` and `1b.` when parsing tracks; normalize the generated movement list to sequential numbers.
