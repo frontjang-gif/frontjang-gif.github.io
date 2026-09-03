@@ -65,6 +65,26 @@
       });
 
       (function () {
+        function normalizedPath(value) {
+          try { value = decodeURIComponent(value); } catch (error) {}
+          return value.replace(/\/+$/, '') || '/';
+        }
+
+        var currentPath = normalizedPath(window.location.pathname);
+        document.querySelectorAll('.site-sidebar summary > a').forEach(function (link) {
+          var linkPath = normalizedPath(new URL(link.href, window.location.origin).pathname);
+          if (linkPath === '/' || (currentPath !== linkPath && !currentPath.startsWith(linkPath + '/'))) return;
+
+          if (currentPath === linkPath) link.setAttribute('aria-current', 'page');
+          var folder = link.closest('details');
+          while (folder) {
+            folder.open = true;
+            folder = folder.parentElement.closest('details');
+          }
+        });
+      })();
+
+      (function () {
         var views = ['text', 'preview', 'tile'];
         var labels = { text: 'Text', preview: 'Half preview', tile: 'Tiles' };
         var savedView = 'preview';
