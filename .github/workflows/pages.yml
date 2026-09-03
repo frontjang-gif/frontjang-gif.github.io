@@ -36,7 +36,7 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Test album rendering conventions
-        run: ruby test/album_rendering_test.rb
+        run: bundle exec ruby test/album_rendering_test.rb
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
