@@ -21,24 +21,24 @@
   {% endif %}
 {% endfor %}
 <aside class="site-sidebar" aria-label="Site navigation">
-  <details class="sidebar-group" open>
-    <summary>Root</summary>
-    <nav>
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/search">Search</a>
-      <a href="{{ site.baseurl }}/archive">Archive</a>
-      <a href="{{ site.baseurl }}/categories">Categories</a>
-      <a href="{{ site.baseurl }}/tags">Tags</a>
+  <nav>
+    <a href="{{ site.baseurl }}/">Home</a>
+    <a href="{{ site.baseurl }}/search">Search</a>
+    <a href="{{ site.baseurl }}/archive">Archive</a>
+    <a href="{{ site.baseurl }}/categories">Categories</a>
+    <a href="{{ site.baseurl }}/tags">Tags</a>
 
+    <details class="sidebar-group" open>
+      <summary>Root</summary>
       <details class="sidebar-subgroup" open>
-        <summary>Blog <span>{{ blog_count }}</span></summary>
+        <summary><a href="{{ site.baseurl }}/categories">Blog <span>{{ blog_count }}</span></a></summary>
         <a href="{{ site.baseurl }}/categories">All <span>{{ blog_count }}</span></a>
         <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_count }}</span></a>
         <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_count }}</span></a>
       </details>
 
       <details class="sidebar-subgroup" open>
-        <summary>Music <span>{{ music_count }}</span></summary>
+        <summary><a href="{{ site.baseurl }}/albums/">Music <span>{{ music_count }}</span></a></summary>
         {% include generated-music-sidebar.html %}
         <a href="{{ site.baseurl }}/favorites/">Favorites</a>
         <a href="{{ site.baseurl }}/recordings/">Recordings</a>
@@ -48,7 +48,7 @@
       </details>
 
       <details class="sidebar-subgroup" open>
-        <summary>Movie <span>{{ movie_count }}</span></summary>
+        <summary><a href="{{ site.baseurl }}/movies/">Movie <span>{{ movie_count }}</span></a></summary>
         <a href="{{ site.baseurl }}/movies/">All <span>{{ movie_count }}</span></a>
         <a href="{{ site.baseurl }}/movies/directors/">Directors</a>
         <a href="{{ site.baseurl }}/movies/cast/">Cast</a>
@@ -56,6 +56,6 @@
         <a href="{{ site.baseurl }}/movies/ratings/">Ratings</a>
         <a href="{{ site.baseurl }}/movies/years/">Years</a>
       </details>
-    </nav>
-  </details>
+    </details>
+  </nav>
 </aside>

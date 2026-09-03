@@ -92,14 +92,26 @@ def sidebar_album_count(node)
   node.fetch("_albums", []).size + node.values.grep(Hash).sum { |child| sidebar_album_count(child) }
 end
 
-def render_music_sidebar(node, depth = 0)
+def music_sidebar_folder_url(folders)
+  return "/albums/#{slug(folders.first)}/" if folders.size == 1
+  return "/labels/" if folders[1] == "Label" && folders.size == 2
+  return "/labels/#{slug(folders.last)}/" if folders[1] == "Label"
+  return "/artists/" if folders[1] == "Pianists" && folders.size == 2
+  return "/artists/#{slug(folders.last)}/" if folders[1] == "Pianists"
+
+  "/albums/"
+end
+
+def render_music_sidebar(node, ancestors = [])
   node.keys.reject { |key| key == "_albums" }.sort.flat_map do |folder|
     children = node[folder]
+    folders = ancestors + [folder]
     descendant_count = sidebar_album_count(children)
+    url = music_sidebar_folder_url(folders)
     content = []
-    content << "<details class=\"sidebar-subgroup sidebar-folder\"#{depth.zero? ? " open" : ""}>"
-    content << "  <summary>#{folder} <span>#{descendant_count}</span></summary>"
-    content += render_music_sidebar(children, depth + 1).map { |line| "  #{line}" }
+    content << "<details class=\"sidebar-subgroup sidebar-folder\"#{ancestors.empty? ? " open" : ""}>"
+    content << "  <summary><a href=\"{{ site.baseurl }}#{url}\">#{folder} <span>#{descendant_count}</span></a></summary>"
+    content += render_music_sidebar(children, folders).map { |line| "  #{line}" }
     content << "</details>"
     content
   end
