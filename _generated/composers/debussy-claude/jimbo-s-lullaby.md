@@ -10,4 +10,4 @@ title: Jimbo's lullaby
 
 ## Referenced by
 
-- [Debussy: Piano Music - Osborne]({{ site.baseurl }}/albums/classical/2025-11-03-debussy-piano-music-steven-osborne/)
+- [Debussy: Piano Music - Osborne]({{ site.baseurl }}/albums/debussy-piano-music-osborne/)

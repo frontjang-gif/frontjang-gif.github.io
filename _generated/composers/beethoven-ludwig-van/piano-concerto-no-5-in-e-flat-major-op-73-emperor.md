@@ -12,4 +12,4 @@ title: Piano Concerto No. 5 in E-flat major, Op. 73 "Emperor"
 
 ## Referenced by
 
-- [Bachauer: The Mercury Masters]({{ site.baseurl }}/albums/classical/2025-11-03-bachauer-the-mercury-masters/)
+- [Bachauer: The Mercury Masters]({{ site.baseurl }}/albums/bachauer-the-mercury-masters/)

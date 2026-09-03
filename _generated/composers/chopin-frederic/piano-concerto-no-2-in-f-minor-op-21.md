@@ -12,4 +12,5 @@ title: Piano Concerto No. 2 in F minor, Op. 21
 
 ## Referenced by
 
-- [Bachauer: The Mercury Masters]({{ site.baseurl }}/albums/classical/2025-11-03-bachauer-the-mercury-masters/)
+- [Bachauer: The Mercury Masters]({{ site.baseurl }}/albums/bachauer-the-mercury-masters/)
+- [Murray Perahia plays Chopin]({{ site.baseurl }}/albums/murray-perahia-plays-chopin/)

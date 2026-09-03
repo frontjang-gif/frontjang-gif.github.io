@@ -243,8 +243,17 @@ end
 def write_page(path, title, body)
   FileUtils.mkdir_p(File.dirname(path))
   metadata = (body[:metadata] || {}).merge(existing_frontmatter(path))
-  content = metadata.delete("_generated_content") || body[:content]
-  content = content.to_s.rstrip
+  generated_content = body[:content].to_s
+  preserved_content = metadata.delete("_generated_content")
+  if preserved_content && generated_content.include?("## Referenced by")
+    preserved_prefix = preserved_content.split(/^## Referenced by\s*$/, 2).first.to_s.rstrip
+    generated_references = generated_content.split(/^## Referenced by\s*$/, 2).last.to_s.strip
+    content = [preserved_prefix, "## Referenced by", generated_references]
+      .reject(&:empty?).join("\n\n")
+  else
+    content = preserved_content || generated_content
+  end
+  content = content.rstrip
   metadata.delete("permalink")
   metadata.merge!("layout" => "page", "title" => title)
   File.write(path, <<~MARKDOWN)

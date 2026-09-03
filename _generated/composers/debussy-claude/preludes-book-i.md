@@ -21,4 +21,4 @@ title: Preludes, Book I
 
 ## Referenced by
 
-- [Debussy: Preludes, Books I & II - Osborne]({{ site.baseurl }}/albums/classical/2025-11-03-debussy-preludes-books-i-ii-steven-osborne/)
+- [Debussy: Preludes, Books I & II - Osborne]({{ site.baseurl }}/albums/debussy-preludes-books-i-ii-osborne/)
