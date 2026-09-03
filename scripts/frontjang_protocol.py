@@ -13,7 +13,10 @@ from urllib.parse import unquote, urlparse
 
 SCHEME = "frontjang-gif"
 REGISTRY_PATH = rf"Software\Classes\{SCHEME}"
-DEFAULT_MUSIC_ROOT = Path(r"H:\frontjang-gif\Music")
+FOLDER_ROOTS = {
+    "music": Path(r"H:\frontjang-gif\Music"),
+    "movie": Path(r"H:\frontjang-gif\Movie"),
+}
 
 
 def require_windows() -> None:
@@ -34,25 +37,40 @@ def pythonw_executable() -> Path:
     return candidate if candidate.exists() else executable
 
 
-def register_protocol(music_root: Path) -> None:
-    winreg = registry_module()
+def protocol_command() -> str:
     script = Path(__file__).resolve()
-    root = music_root.expanduser().resolve()
-    command = (
+    return (
         subprocess.list2cmdline([str(pythonw_executable()), str(script), "open"])
         + ' "%1"'
     )
 
+
+def protocol_is_registered() -> bool:
+    winreg = registry_module()
+    command_path = REGISTRY_PATH + r"\shell\open\command"
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, REGISTRY_PATH) as key:
+            protocol_marker, _ = winreg.QueryValueEx(key, "URL Protocol")
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, command_path) as key:
+            command, _ = winreg.QueryValueEx(key, None)
+    except FileNotFoundError:
+        return False
+    return protocol_marker == "" and command == protocol_command()
+
+
+def register_protocol() -> None:
+    winreg = registry_module()
+    command = protocol_command()
+
     with winreg.CreateKey(winreg.HKEY_CURRENT_USER, REGISTRY_PATH) as key:
         winreg.SetValueEx(key, None, 0, winreg.REG_SZ, f"URL:{SCHEME} Protocol")
         winreg.SetValueEx(key, "URL Protocol", 0, winreg.REG_SZ, "")
-        winreg.SetValueEx(key, "MusicRoot", 0, winreg.REG_SZ, str(root))
 
     command_path = REGISTRY_PATH + r"\shell\open\command"
     with winreg.CreateKey(winreg.HKEY_CURRENT_USER, command_path) as key:
         winreg.SetValueEx(key, None, 0, winreg.REG_SZ, command)
 
-    print(f"Registered {SCHEME}:// for {root}")
+    print(f"Registered {SCHEME}://")
 
 
 def delete_registry_tree(winreg, parent, path: str) -> None:
@@ -75,59 +93,63 @@ def remove_protocol() -> None:
     print(f"Removed {SCHEME}:// registration")
 
 
-def registered_music_root() -> Path:
-    winreg = registry_module()
-    try:
-        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, REGISTRY_PATH) as key:
-            value, _ = winreg.QueryValueEx(key, "MusicRoot")
-    except FileNotFoundError as error:
-        raise SystemExit(f"{SCHEME}:// is not registered.") from error
-    return Path(value).resolve()
-
-
-def target_from_url(url: str, music_root: Path) -> Path:
+def target_from_url(url: str, folder_roots=None) -> Path:
+    roots = FOLDER_ROOTS if folder_roots is None else folder_roots
     parsed = urlparse(url)
-    if parsed.scheme.lower() != SCHEME or parsed.netloc.lower() != "open":
-        raise ValueError(f"Expected {SCHEME}://open/<relative folder>.")
+    folder_type = parsed.netloc.lower()
+    if parsed.scheme.lower() != SCHEME or folder_type not in roots:
+        raise ValueError(f"Expected {SCHEME}://music/... or {SCHEME}://movie/...")
     if parsed.query or parsed.fragment:
         raise ValueError("Queries and fragments are not supported.")
 
     relative_text = unquote(parsed.path).lstrip("/").replace("/", os.sep)
     relative = Path(relative_text)
-    if not relative_text or relative.is_absolute() or ".." in relative.parts:
+    if relative.is_absolute() or ".." in relative.parts:
         raise ValueError("The URL contains an unsafe folder path.")
 
-    root = music_root.resolve()
+    root = roots[folder_type].resolve()
     target = (root / relative).resolve()
     try:
         target.relative_to(root)
     except ValueError as error:
-        raise ValueError("The requested folder is outside the music library.") from error
+        raise ValueError(f"The requested folder is outside the {folder_type} library.") from error
 
     if not target.is_dir():
-        raise FileNotFoundError(f"Music folder does not exist: {target}")
+        raise FileNotFoundError(f"Folder does not exist: {target}")
     return target
 
 
 def open_folder(url: str) -> None:
     require_windows()
-    target = target_from_url(url, registered_music_root())
+    target = target_from_url(url)
     os.startfile(target)  # type: ignore[attr-defined]
+
+
+def show_message(message: str, *, error: bool = False) -> None:
+    require_windows()
+    import ctypes
+
+    icon = 0x10 if error else 0x40
+    ctypes.windll.user32.MessageBoxW(0, message, f"{SCHEME} protocol", icon)
+
+
+def ensure_protocol() -> None:
+    already_registered = protocol_is_registered()
+    if not already_registered:
+        register_protocol()
+
+    roots = "\n".join(f"{kind}: {path}" for kind, path in FOLDER_ROOTS.items())
+    status = "already registered" if already_registered else "registered successfully"
+    show_message(f"{SCHEME}:// is {status}.\n\n{roots}")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=f"Manage the {SCHEME}:// Windows URL protocol."
     )
-    subparsers = parser.add_subparsers(dest="command", required=True)
+    subparsers = parser.add_subparsers(dest="command")
 
-    register = subparsers.add_parser("register", help="Register the URL protocol.")
-    register.add_argument(
-        "--music-root",
-        type=Path,
-        default=DEFAULT_MUSIC_ROOT,
-        help=f"Local music library root (default: {DEFAULT_MUSIC_ROOT}).",
-    )
+    subparsers.add_parser("register", help="Register the URL protocol.")
 
     subparsers.add_parser("remove", help="Remove the URL protocol registration.")
     open_parser = subparsers.add_parser("open", help="Handle a protocol URL.")
@@ -138,13 +160,18 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     try:
-        if args.command == "register":
-            register_protocol(args.music_root)
+        if args.command is None:
+            ensure_protocol()
+        elif args.command == "register":
+            register_protocol()
         elif args.command == "remove":
             remove_protocol()
         else:
             open_folder(args.url)
     except (OSError, ValueError) as error:
+        if args.command in (None, "open") and sys.platform == "win32":
+            show_message(str(error), error=True)
+            return
         raise SystemExit(str(error)) from error
 
 
