@@ -1,0 +1,7 @@
+{% assign protocol_folder = include.folder | default: "" %}
+{% if protocol_folder != "" %}
+<span class="protocol-actions">
+  <a class="protocol-action" href="frontjang-gif://action?root={{ include.root }}&amp;command=open&amp;path={{ protocol_folder | url_encode }}">Open folder</a>
+  <a class="protocol-action" href="frontjang-gif://action?root={{ include.root }}&amp;command=play&amp;path={{ protocol_folder | url_encode }}">Play</a>
+</span>
+{% endif %}

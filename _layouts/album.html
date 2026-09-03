@@ -3,7 +3,10 @@ layout: default
 ---
 
 <article class="post detailed">
-  <h1>{{ page.title }}</h1>
+  <div class="post-title-row">
+    <h1>{{ page.title }}</h1>
+    {% include protocol-actions.html root="music" folder=page.musicFolder %}
+  </div>
 
   <div>
     {% if page.artist %}<p class="author_title">{% if page.artist.first %}{{ page.artist | join: ", " }}{% else %}{{ page.artist }}{% endif %}{% if page.date %}  ·  {{ page.date | date: "%B %e, %Y" }}{% endif %}</p>{% endif %}

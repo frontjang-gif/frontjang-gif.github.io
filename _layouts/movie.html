@@ -3,7 +3,10 @@ layout: default
 ---
 
 <article class="post detailed movie-entry">
-  <h1>{{ page.title }}</h1>
+  <div class="post-title-row">
+    <h1>{{ page.title }}</h1>
+    {% include protocol-actions.html root="movie" folder=page.movieFolder %}
+  </div>
   <p class="author_title">{{ page.year }} · {{ page.language }}</p>
 
   {% if page.poster %}

@@ -639,6 +639,32 @@ body:after {
   line-height: 1.2;
 }
 
+.post-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 14px;
+}
+
+.post-title-row h1 {
+  margin-bottom: 0;
+}
+
+.protocol-actions {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.protocol-action {
+  padding: 5px 9px;
+  border: 1px solid $lightGray;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .page h1{
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: center;

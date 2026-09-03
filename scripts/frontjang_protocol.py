@@ -152,15 +152,13 @@ def request_from_url(url: str, folder_roots=None) -> tuple[CommandType, Path]:
 
     if not target.exists():
         raise FileNotFoundError(f"Path does not exist: {target}")
-    if command_type is CommandType.PLAY and not target.is_file():
-        raise ValueError("The play command requires a specific media file.")
     return command_type, target
 
 
 def handle_url(url: str) -> None:
     require_windows()
-    _, target = request_from_url(url)
-    os.startfile(target)  # type: ignore[attr-defined]
+    command, target = request_from_url(url)
+    os.startfile(target, command.value)  # type: ignore[attr-defined]
 
 
 def show_message(message: str, *, error: bool = False) -> None:
