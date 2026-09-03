@@ -10,6 +10,7 @@ title: Chopin, Frederic
 
 [All composers]({{ site.baseurl }}/composers/)
 
+- [Andante spianato et grande polonaise brillante in E-flat major, Op. 22]({{ site.baseurl }}/composers/chopin-frederic/andante-spianato-et-grande-polonaise-brillante-in-e-flat-major-op-22/)
 - [Ballade No. 1 in G minor, Op. 23]({{ site.baseurl }}/composers/chopin-frederic/ballade-no-1-in-g-minor-op-23/)
 - [Ballade No. 1 in G minor, Op. 23. Largo - Meno mosso - Presto con fuoco]({{ site.baseurl }}/composers/chopin-frederic/ballade-no-1-in-g-minor-op-23-largo-meno-mosso-presto-con-fuoco/)
 - [Ballade No. 2 in F major, Op. 38. Andantino - Presto con fuoco - Tempo I]({{ site.baseurl }}/composers/chopin-frederic/ballade-no-2-in-f-major-op-38-andantino-presto-con-fuoco-tempo-i/)
@@ -25,9 +26,11 @@ title: Chopin, Frederic
 - [Fantaisie in F minor, Op. 49]({{ site.baseurl }}/composers/chopin-frederic/fantaisie-in-f-minor-op-49/)
 - [Fantaisie in F minor, Op. 49. Tempo di marcia. Grave]({{ site.baseurl }}/composers/chopin-frederic/fantaisie-in-f-minor-op-49-tempo-di-marcia-grave/)
 - [Fantaisie-Impromptu in C-sharp minor, Op. posth. 66. Allegro agitato]({{ site.baseurl }}/composers/chopin-frederic/fantaisie-impromptu-in-c-sharp-minor-op-posth-66-allegro-agitato/)
+- [Fantasy on Polish Airs in A major, Op. 13]({{ site.baseurl }}/composers/chopin-frederic/fantasy-on-polish-airs-in-a-major-op-13/)
 - [Impromptu in A-flat major, Op. 29. Allegro assai quasi presto]({{ site.baseurl }}/composers/chopin-frederic/impromptu-in-a-flat-major-op-29-allegro-assai-quasi-presto/)
 - [Impromptu in F-sharp major, Op. 36. Andantino]({{ site.baseurl }}/composers/chopin-frederic/impromptu-in-f-sharp-major-op-36-andantino/)
 - [Impromptu in G-flat major, Op. 51. Tempo giusto]({{ site.baseurl }}/composers/chopin-frederic/impromptu-in-g-flat-major-op-51-tempo-giusto/)
+- [Krakowiak in F major, Op. 14]({{ site.baseurl }}/composers/chopin-frederic/krakowiak-in-f-major-op-14/)
 - [Mazurka in A minor, Op. 17 No. 4]({{ site.baseurl }}/composers/chopin-frederic/mazurka-in-a-minor-op-17-no-4/)
 - [Mazurka in D major, Op. 33 No. 2]({{ site.baseurl }}/composers/chopin-frederic/mazurka-in-d-major-op-33-no-2/)
 - [Mazurka in F minor, Op. 7 No. 3]({{ site.baseurl }}/composers/chopin-frederic/mazurka-in-f-minor-op-7-no-3/)
@@ -44,5 +47,6 @@ title: Chopin, Frederic
 - [Prelude in A-flat major, Op. posth. Presto]({{ site.baseurl }}/composers/chopin-frederic/prelude-in-a-flat-major-op-posth-presto/)
 - [Prelude in C-sharp minor, Op. 45. Sostenuto]({{ site.baseurl }}/composers/chopin-frederic/prelude-in-c-sharp-minor-op-45-sostenuto/)
 - [Preludes, Op. 28]({{ site.baseurl }}/composers/chopin-frederic/preludes-op-28/)
+- [Variations on "La ci darem la mano" in B-flat major, Op. 2]({{ site.baseurl }}/composers/chopin-frederic/variations-on-la-ci-darem-la-mano-in-b-flat-major-op-2/)
 - [Waltz in A-flat major, Op. 42. Vivace]({{ site.baseurl }}/composers/chopin-frederic/waltz-in-a-flat-major-op-42-vivace/)
 - [Waltz in E-flat major, Op. 18. Vivo]({{ site.baseurl }}/composers/chopin-frederic/waltz-in-e-flat-major-op-18-vivo/)
