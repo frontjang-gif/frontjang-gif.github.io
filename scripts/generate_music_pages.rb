@@ -94,8 +94,8 @@ end
 
 def music_sidebar_folder_url(folders)
   return "/albums/#{slug(folders.first)}/" if folders.size == 1
-  return "/labels/" if folders[1] == "Label" && folders.size == 2
-  return "/labels/#{slug(folders.last)}/" if folders[1] == "Label"
+  return "/labels/" if folders[1] == "Labels" && folders.size == 2
+  return "/labels/#{slug(folders.last)}/" if folders[1] == "Labels"
   return "/artists/" if folders[1] == "Pianists" && folders.size == 2
   return "/artists/#{slug(folders.last)}/" if folders[1] == "Pianists"
 
@@ -161,7 +161,7 @@ def parse_album(path)
   category = relative_path.length > 1 ? relative_path.first : nil
   favorite = metadata["favorite"]
   recording = metadata["recording"]
-  label = relative_path[1] == "Label" ? relative_path[2] : nil
+  label = relative_path[1] == "Labels" ? relative_path[2] : nil
   composer = nil
   work = nil
   works = []

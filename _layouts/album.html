@@ -3,9 +3,13 @@ layout: default
 ---
 
 <article class="post detailed">
+  {% assign music_folder = page.musicFolder %}
+  {% if music_folder == nil or music_folder == "" %}
+    {% assign music_folder = page.path | derived_music_folder: page.title %}
+  {% endif %}
   <div class="post-title-row">
     <h1>{{ page.title }}</h1>
-    {% include protocol-actions.html root="music" folder=page.musicFolder %}
+    {% include protocol-actions.html root="music" folder=music_folder %}
   </div>
 
   <div>

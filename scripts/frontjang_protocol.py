@@ -150,7 +150,7 @@ def request_from_url(url: str, folder_roots=None) -> tuple[CommandType, Path]:
             f"The requested path is outside the {root_type.value} library."
         ) from error
 
-    if not target.exists():
+    if command_type is CommandType.PLAY and not target.exists():
         raise FileNotFoundError(f"Path does not exist: {target}")
     return command_type, target
 
@@ -158,6 +158,8 @@ def request_from_url(url: str, folder_roots=None) -> tuple[CommandType, Path]:
 def handle_url(url: str) -> None:
     require_windows()
     command, target = request_from_url(url)
+    if command is CommandType.OPEN and not target.exists():
+        target.mkdir(parents=True)
     os.startfile(target, command.value)  # type: ignore[attr-defined]
 
 
