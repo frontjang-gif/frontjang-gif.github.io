@@ -7,7 +7,9 @@ artist:
 music_category: Classical
 year: release year
 recording: Label
+label: Series or label
 cover: https://example.com/cover.jpg
+musicFolder: ""
 favorite: false
 ---
 
@@ -18,8 +20,8 @@ favorite: false
 
 ##### Work title, catalog number
 
-1. First movement
-2. Second movement
+1. 1. First movement
+2. 2. Second movement
 
 ## Sources
 

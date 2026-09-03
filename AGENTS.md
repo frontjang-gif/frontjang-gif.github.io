@@ -64,15 +64,18 @@ tags: [tag1, tag2]
 ### Tags
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
-- Add a music `music_category` such as `Classical` or `Jazz` for genre navigation; this stays separate from Blog `categories`.
+- Add a music `music_category` such as `Classical`, `Jazz`, or `7080s` for genre navigation; this stays separate from Blog `categories`.
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
+- Music albums may use `label` for a recording series or label such as `Mercury Living Presence`.
+- Music albums may use `recording` for the release/edition and `label` for a recording series or label; both have generated album navigators.
 - Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
 ## Movie Writing Guidelines
 
 - Store movies under `_posts/movie/`.
-- Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `mediaFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
+- Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `movieFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
+- Music albums may use `musicFolder` for their media folder path.
 - Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.
@@ -84,6 +87,7 @@ tags: [tag1, tag2]
 - Use Wikipedia or IMSLP for canonical spelling and catalog information; use Discogs only as a secondary source for recording metadata.
 - Preserve alternate spellings in generated page front matter when needed instead of creating duplicate work pages.
 - Use `wiki` for artist and composer reference URLs and `imslp` for canonical work references. Verify the page itself before recording a URL; do not invent or infer reference URLs.
+- Composer pages may use `aliases` for alternate composer names; matching album headings resolve to the same composer page.
 
 ### Tracklist
 
@@ -91,5 +95,5 @@ tags: [tag1, tag2]
 - For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
-- Number movements from `1` within each work; generated work pages preserve this movement numbering.
+- Write album tracks as `track number. movement number. title`, such as `1. 1. Allegro non troppo`. The album page preserves both numbers; generated work pages retain only the movement number.
 - Accept non-standard source numbering such as `1a.` and `1b.` when parsing tracks; normalize the generated movement list to sequential numbers.

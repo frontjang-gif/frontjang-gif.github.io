@@ -3,8 +3,10 @@ composer: Debussy, Claude
 imslp: ''
 favorite: false
 layout: page
-title: "…D’un cahier d’esquisses, L 100"
+title: Et la lune descend sur le temple qui fut
 ---
+
+1. Poissons d'or
 
 ## Referenced by
 

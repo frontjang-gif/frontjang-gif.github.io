@@ -7,6 +7,7 @@ music_category: Classical
 year: 2017
 recording: Hyperion
 cover: https://blog.kakaocdn.net/dna/oGTCL/dJMcah3MxKL/AAAAAAAAAAAAAAAAAAAAABLvbPBeWBKdZZwWSd74_fI1vavbu5104aXx0lTjysMw/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=9u1yz4W1gIvxlys6rSqQz5gJgYA%3D
+musicFolder: ""
 ---
 
 ## Album

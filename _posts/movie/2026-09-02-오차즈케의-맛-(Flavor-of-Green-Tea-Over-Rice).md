@@ -19,7 +19,7 @@ language: Japanese
 source: https://www.themoviedb.org/movie/55197?language=en-US
 poster: https://media.themoviedb.org/t/p/w500/mCXg9AfQlcwCR7E7vJCI96n4nLv.jpg
 rating: null
-mediaFolder: Director/Yasujiro Ozu
+movieFolder: Director/Yasujiro Ozu
 ---
 
 ## Synopsis

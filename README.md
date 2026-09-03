@@ -122,11 +122,15 @@ Artist pages are also generated in `_generated/artists/`. New pages include empt
 
 Composer pages use `wiki`, `born`, and `original_name`. Work pages use `imslp` for the canonical IMSLP reference. These fields are generated empty when needed and preserve manual values. Verify the referenced page before filling a URL.
 
-Composer pages use the same `wiki`, `born`, and `original_name` front matter placeholders and preserve manual edits during regeneration.
+Composer pages use the same `wiki`, `born`, `original_name`, and `aliases` front matter placeholders and preserve manual edits during regeneration. Add alternate composer spellings to `aliases`; album headings using them resolve to the same composer page.
 
 For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
 
-Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. Favorite recordings can use `favorite: true` and appear at `/favorites/`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
+Music albums and composer works can use `favorite: true` and appear in the corresponding `Favorite Albums` and `Favorite Works` sections at `/favorites/`. Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
+
+Music albums may also use `recording` and `label`. Their album lists are generated at `/recordings/` and `/labels/`.
+
+Album track entries may include both numbers, for example `1. 1. Allegro non troppo`. The first number is the track number and the second is the movement number.
 
 Generated composer work pages include `favorite: false`. Change it to `favorite: true` in the work page front matter to mark a favorite work; the value is preserved when pages are regenerated.
 

@@ -19,7 +19,7 @@ language: Spanish; Castilian
 source: https://www.themoviedb.org/movie/800-los-olvidados?language=en-US
 poster: https://media.themoviedb.org/t/p/w500/cDCvmYoyqFg4CuSMtGMvCpfOIEw.jpg
 rating: 3.5
-mediaFolder: Director/Luis Bunuel
+movieFolder: Director/Luis Bunuel
 ---
 
 ## Synopsis

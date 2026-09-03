@@ -4,12 +4,14 @@
 {% assign music_count = 0 %}
 {% assign classical_count = 0 %}
 {% assign jazz_count = 0 %}
+{% assign seventies_eighties_count = 0 %}
 {% assign movie_count = 0 %}
 {% for post in site.posts %}
   {% if post.path contains '_posts/music/' %}
     {% assign music_count = music_count | plus: 1 %}
     {% if post.path contains '_posts/music/classical/' %}{% assign classical_count = classical_count | plus: 1 %}{% endif %}
     {% if post.path contains '_posts/music/jazz/' %}{% assign jazz_count = jazz_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/music/7080s/' %}{% assign seventies_eighties_count = seventies_eighties_count | plus: 1 %}{% endif %}
   {% elsif post.path contains '_posts/movie/' %}
     {% assign movie_count = movie_count | plus: 1 %}
   {% else %}
@@ -42,8 +44,11 @@
         <a href="{{ site.baseurl }}/albums/">All albums</a>
         <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_count }}</span></a>
         <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_count }}</span></a>
+        <a href="{{ site.baseurl }}/albums/7080s/">7080s <span>{{ seventies_eighties_count }}</span></a>
       </details>
       <a href="{{ site.baseurl }}/favorites/">Favorites</a>
+      <a href="{{ site.baseurl }}/recordings/">Recordings</a>
+      <a href="{{ site.baseurl }}/labels/">Labels</a>
       <a href="{{ site.baseurl }}/artists/">Artists</a>
       <a href="{{ site.baseurl }}/composers/">Composers</a>
     </nav>

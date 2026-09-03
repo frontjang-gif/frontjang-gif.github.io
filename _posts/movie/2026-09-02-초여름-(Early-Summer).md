@@ -18,7 +18,7 @@ language: Japanese
 source: https://www.themoviedb.org/movie/50247?language=en-US
 poster: https://media.themoviedb.org/t/p/w500/qVJsIMOYT7pNEldMttuATep6mtB.jpg
 rating: 2.5
-mediaFolder: Director/Yasujiro Ozu
+movieFolder: Director/Yasujiro Ozu
 ---
 
 ## Synopsis

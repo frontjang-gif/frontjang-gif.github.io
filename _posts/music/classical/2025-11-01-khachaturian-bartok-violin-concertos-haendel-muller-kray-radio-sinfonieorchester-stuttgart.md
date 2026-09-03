@@ -9,13 +9,13 @@ music_category: Classical
 year: 2011
 recording: Hanssler Classic
 cover: https://blog.kakaocdn.net/dna/904Vk/dJMcaelFXeH/AAAAAAAAAAAAAAAAAAAAADAtXyPEMkTjs2SzJluL21XA_RLIIEukdhrBQS5BfvRX/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=%2FBUUruUaJTY%2B1Ap9oeoMfwRJoJ4%3D
+musicFolder: ""
 ---
 
 ## Album
 
 ### CD1
 #### Khachaturian, Aram
-
 ##### Violin Concerto in D minor
 
 1. Allegro con fermezza
@@ -23,7 +23,6 @@ cover: https://blog.kakaocdn.net/dna/904Vk/dJMcaelFXeH/AAAAAAAAAAAAAAAAAAAAADAtX
 3. Allegro vivace
 
 #### Bartok, Bela
-
 ##### Violin Concerto No. 2, Sz. 112
 
 1. Allegro non troppo

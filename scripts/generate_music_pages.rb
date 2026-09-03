@@ -55,11 +55,20 @@ end
 
 def existing_composer_page(name)
   $preserved_frontmatter.each do |path, metadata|
-    next unless path.match?(%r{/_generated/composers/}) && File.basename(path, ".md") != "composers"
+    next unless File.dirname(path) == File.join(OUTPUT_ROOT, "composers")
 
     aliases = Array(metadata["aliases"])
     old_slug = File.basename(path, ".md")
-    return metadata if ([metadata["title"], *aliases].include?(name) || old_slug == slug(name))
+    same_surname = person_surname(metadata["title"]) == person_surname(name)
+    exact_match = [metadata["title"], *aliases].include?(name) || old_slug == slug(name)
+    next unless exact_match || same_surname
+
+    metadata = metadata.dup
+    if same_surname && !exact_match
+      metadata["aliases"] = (aliases + [name]).uniq
+      $preserved_frontmatter[path]["aliases"] = metadata["aliases"]
+    end
+    return metadata
   end
   nil
 end
@@ -84,6 +93,10 @@ def rating_label(value)
   RATING_LABELS[value.to_s] || value.to_s
 end
 
+def count_label(name, count)
+  "#{name} (#{count})"
+end
+
 def escape_yaml(value)
   value.to_s.gsub('"', '\\"')
 end
@@ -99,6 +112,8 @@ def parse_album(path)
   year = metadata["year"]
   category = metadata["music_category"]
   favorite = metadata["favorite"]
+  recording = metadata["recording"]
+  label = metadata["label"]
   composer = nil
   work = nil
   works = []
@@ -114,12 +129,22 @@ def parse_album(path)
       saved = existing_work_page(composer, raw_title)
       work = { composer: composer, title: saved ? saved["title"] : raw_title, movements: [], metadata: saved || {} }
       works << work
-    elsif composer && (match = line.match(/^\s*(\d+[A-Za-z]?)\.\s+(.+)$/))
-      item = match[2].strip
-      if work
+    elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+\*\*([^*]+)\*\*\s+-\s+(.+)$/))
+      work_composer = match[1].strip
+      saved_composer = existing_composer_page(work_composer)
+      work_composer = saved_composer["title"] if saved_composer && saved_composer["title"]
+      work = { composer: work_composer, title: match[2].strip, movements: [], metadata: {} }
+      works << work
+    elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+\d+\.\s+(.+)$/))
+      work[:movements] << match[1].strip if work
+    elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+(.+)$/))
+      item = match[1].strip
+      if work && work[:movements].empty?
         work[:movements] << item
       else
-        works << { composer: composer, title: item, movements: [], metadata: {} }
+        saved = existing_work_page(composer, item)
+        works << { composer: composer, title: saved ? saved["title"] : item, movements: [], metadata: saved || {} }
+        work = works.last
       end
     elsif line.match?(/^###?\s/)
       work = nil
@@ -130,7 +155,7 @@ def parse_album(path)
     saved = existing_artist_page(name)
     { name: saved ? saved["title"] : display_name(name), original_name: name }
   end
-  { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, favorite: favorite, works: works, path: path }
+  { title: title, artist: artist, artist_names: artist_records.map { |record| record[:name] }, artist_records: artist_records, year: year, category: category, favorite: favorite, recording: recording, label: label, works: works, path: path }
 end
 
 def parse_movie(path)
@@ -205,6 +230,8 @@ artists = albums.flat_map do |album|
   album[:artist_names].map { |artist| [artist, album] }
 end.group_by(&:first).transform_values { |entries| entries.map(&:last).uniq }
 categories = albums.reject { |album| album[:category].to_s.empty? }.group_by { |album| album[:category] }
+recordings = albums.reject { |album| album[:recording].to_s.empty? }.group_by { |album| album[:recording] }
+labels = albums.reject { |album| album[:label].to_s.empty? }.group_by { |album| album[:label] }
 artist_original_names = albums.flat_map { |album| album[:artist_records] }.each_with_object({}) do |record, names|
   names[record[:name]] ||= record[:original_name]
 end
@@ -222,10 +249,10 @@ movie_groups = {
 }.transform_values { |entries| entries.group_by(&:first).transform_values { |items| items.map(&:last).uniq } }
 
 movie_groups.each do |group, values|
-  rating_values = group == "ratings" ? values.keys.sort_by(&:to_f).reverse : values.keys.sort
+  rating_values = group == "ratings" ? values.keys.sort_by(&:to_f).reverse : values.keys.sort_by { |value| [-values[value].size, value] }
   group_content = rating_values.map do |value|
     links = values[value].sort_by { |movie| movie[:title] }.map { |movie| page_link(movie_path.call(movie), movie[:title]) }
-    heading = group == "ratings" ? "#{value} - #{rating_label(value)}" : value
+    heading = group == "ratings" ? "#{value} - #{rating_label(value)} (#{values[value].size})" : count_label(value, values[value].size)
     "## #{heading}\n\n#{links.join("\n")}"
   end.join("\n\n")
   write_page(File.join(OUTPUT_ROOT, "movies", "#{group}.md"), "Movie #{group.capitalize}", content: group_content)
@@ -246,7 +273,11 @@ category_content = categories.keys.sort.map do |category|
 end.join("\n\n")
 write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
 
-favorite_content = "{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}"
+favorite_content = "## Favorite Albums\n\n{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}\n\n## Favorite Works\n\n"
+favorite_works = works.select { |work| work[:metadata]["favorite"] == true }.sort_by { |work| [work[:composer], work[:title]] }
+favorite_content += favorite_works.map do |work|
+  page_link("/composers/#{slug(work[:composer])}/#{slug(work[:title])}/", "#{work[:composer]}: #{work[:title]}")
+end.join("\n")
 write_page(File.join(OUTPUT_ROOT, "favorites.md"), "Favorite Albums", content: favorite_content)
 
 categories.each do |category, category_albums|
@@ -256,8 +287,24 @@ categories.each do |category, category_albums|
   write_page(category_path, category, content: content, metadata: { "category" => category })
 end
 
-composer_links = composers.keys.sort.map do |composer|
-    page_link("/composers/#{slug(composer)}/", composer)
+{ "recordings" => recordings, "labels" => labels }.each do |group, entries|
+  links = entries.keys.sort_by { |value| [-entries[value].size, value] }.map do |value|
+    page_link("/#{group}/#{slug(value)}/", count_label(value, entries[value].size))
+  end
+  write_page(File.join(OUTPUT_ROOT, "#{group}.md"), group.capitalize, content: links.join("\n"))
+
+  entries.each do |value, value_albums|
+    album_links = value_albums.sort_by { |album| album[:title] }.map do |album|
+      album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
+      page_link(album_path, album[:title])
+    end
+    write_page(File.join(OUTPUT_ROOT, group, "#{slug(value)}.md"), value, content: album_links.join("\n"))
+  end
+end
+
+composer_keys = composers.keys.sort_by { |composer| [-composers[composer].size, composer] }
+composer_links = composer_keys.map do |composer|
+  page_link("/composers/#{slug(composer)}/", count_label(composer, composers[composer].size))
 end
 write_page(File.join(OUTPUT_ROOT, "composers.md"), "Composers", content: composer_links.join("\n"))
 
@@ -267,7 +314,7 @@ composers.each do |composer, composer_works|
   end
   content = "[All composers](\u007b\u007b site.baseurl \u007d\u007d/composers/)\n\n" + links.join("\n")
   saved_composer = existing_composer_page(composer)
-  composer_metadata = { "wiki" => "", "born" => "", "original_name" => composer }
+  composer_metadata = { "wiki" => "", "born" => "", "original_name" => composer, "aliases" => [] }
   composer_metadata.merge!(saved_composer) if saved_composer
   write_page(File.join(OUTPUT_ROOT, "composers", "#{slug(composer)}.md"), composer, content: content, metadata: composer_metadata)
 
@@ -286,7 +333,8 @@ composers.each do |composer, composer_works|
   end
 end
 
-artist_links = artists.keys.sort.map { |artist| page_link("/artists/#{slug(artist)}/", artist) }
+artist_keys = artists.keys.sort_by { |artist| [-artists[artist].size, artist] }
+artist_links = artist_keys.map { |artist| page_link("/artists/#{slug(artist)}/", count_label(artist, artists[artist].size)) }
 write_page(File.join(OUTPUT_ROOT, "artists.md"), "Artists", content: artist_links.join("\n"))
 
 artists.each do |artist, artist_albums|
