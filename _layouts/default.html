@@ -103,47 +103,45 @@
           controls.appendChild(button);
         });
 
-        var homeList = lists.find(function (list) {
-          return list.classList.contains('home-posts');
+        var limitLabel = document.createElement('label');
+        limitLabel.className = 'list-item-limit';
+        limitLabel.textContent = 'Items ';
+        var limitSelect = document.createElement('select');
+        var limits = ['5', '10', '20', 'all'];
+        limits.forEach(function (value) {
+          var option = document.createElement('option');
+          option.value = value;
+          option.textContent = value === 'all' ? 'All' : value;
+          limitSelect.appendChild(option);
         });
-        if (homeList) {
-          var limitLabel = document.createElement('label');
-          limitLabel.className = 'home-item-limit';
-          limitLabel.textContent = 'Items ';
-          var limitSelect = document.createElement('select');
-          ['5', '10', '20', 'all'].forEach(function (value) {
-            var option = document.createElement('option');
-            option.value = value;
-            option.textContent = value === 'all' ? 'All' : value;
-            limitSelect.appendChild(option);
-          });
 
-          var savedLimit = '10';
-          try {
-            var storedLimit = localStorage.getItem('home-item-limit');
-            if (['5', '10', '20', 'all'].indexOf(storedLimit) !== -1) {
-              savedLimit = storedLimit;
-            }
-          } catch (error) {}
+        var savedLimit = '10';
+        try {
+          var storedLimit = localStorage.getItem('list-item-limit');
+          if (limits.indexOf(storedLimit) !== -1) savedLimit = storedLimit;
+        } catch (error) {}
 
-          function selectLimit(value) {
-            var limit = value === 'all' ? Infinity : Number(value);
-            homeList.querySelectorAll('.post-card').forEach(function (card, index) {
+        function selectLimit(value) {
+          var limit = value === 'all' ? Infinity : Number(value);
+          var index = 0;
+          lists.forEach(function (list) {
+            list.querySelectorAll('.post-card').forEach(function (card) {
               card.hidden = index >= limit;
+              index += 1;
             });
-          }
-
-          limitSelect.value = savedLimit;
-          limitSelect.addEventListener('change', function () {
-            selectLimit(limitSelect.value);
-            try {
-              localStorage.setItem('home-item-limit', limitSelect.value);
-            } catch (error) {}
           });
-          limitLabel.appendChild(limitSelect);
-          controls.insertBefore(limitLabel, controls.firstChild);
-          selectLimit(savedLimit);
         }
+
+        limitSelect.value = savedLimit;
+        limitSelect.addEventListener('change', function () {
+          selectLimit(limitSelect.value);
+          try {
+            localStorage.setItem('list-item-limit', limitSelect.value);
+          } catch (error) {}
+        });
+        limitLabel.appendChild(limitSelect);
+        controls.insertBefore(limitLabel, controls.firstChild);
+        selectLimit(savedLimit);
 
         lists[0].parentNode.insertBefore(controls, lists[0]);
         selectView(savedView);

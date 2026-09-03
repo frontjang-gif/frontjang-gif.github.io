@@ -354,10 +354,18 @@ categories.each do |category, category_albums|
 end
 
 { "recordings" => recordings, "labels" => labels }.each do |group, entries|
-  links = entries.keys.sort_by { |value| [-entries[value].size, value] }.map do |value|
-    page_link("/#{group}/#{slug(value)}/", count_label(value, entries[value].size))
+  sorted_values = entries.keys.sort_by { |value| [-entries[value].size, value] }
+  index_content = if group == "labels"
+    sorted_values.map do |value|
+      cards = album_card_list(entries[value].sort_by { |album| album[:title] })
+      "## #{value}\n\n#{cards}"
+    end.join("\n\n")
+  else
+    sorted_values.map do |value|
+      page_link("/#{group}/#{slug(value)}/", count_label(value, entries[value].size))
+    end.join("\n")
   end
-  write_page(File.join(OUTPUT_ROOT, "#{group}.md"), group.capitalize, content: links.join("\n"))
+  write_page(File.join(OUTPUT_ROOT, "#{group}.md"), group.capitalize, content: index_content)
 
   entries.each do |value, value_albums|
     cards = album_card_list(value_albums.sort_by { |album| album[:title] })

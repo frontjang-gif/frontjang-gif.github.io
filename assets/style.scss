@@ -431,13 +431,13 @@ nav {
   margin-bottom: 18px;
 }
 
-.home-item-limit {
+.list-item-limit {
   margin-right: auto;
   color: $gray;
   font-size: 13px;
 }
 
-.home-item-limit select {
+.list-item-limit select {
   margin-left: 4px;
   padding: 4px 6px;
   border: 1px solid $lightGray;
@@ -499,6 +499,8 @@ nav {
 }
 
 .posts[data-list-view="tile"] > .post-card {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 14px;
   border: 1px solid $lightGray;
@@ -506,11 +508,16 @@ nav {
 }
 
 .posts[data-list-view="tile"] .post-card h1 {
-  margin-top: 0;
+  margin: 10px 0 0;
   font-size: 20px;
 }
 
+.posts[data-list-view="tile"] .post-card > a:first-child {
+  order: 2;
+}
+
 .posts[data-list-view="tile"] .post-preview {
+  order: 1;
   height: 210px;
   margin-bottom: 0;
 }
@@ -532,6 +539,10 @@ nav {
 .posts[data-list-view="tile"] > .post-card:last-child {
   padding-bottom: 14px;
   border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post-card[hidden] {
+  display: none !important;
 }
 
 .post {
@@ -607,7 +618,7 @@ nav {
   cursor: pointer;
   margin: 0 0 8px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   list-style: none;
 }
 
@@ -628,12 +639,6 @@ nav {
 .sidebar-group + .sidebar-group {
   margin-top: 24px;
   padding-top: 16px;
-  border-top: 1px solid $lightGray;
-}
-
-.site-sidebar nav > .sidebar-group {
-  margin-top: 16px;
-  padding-top: 12px;
   border-top: 1px solid $lightGray;
 }
 
@@ -664,7 +669,7 @@ nav {
 
 .site-sidebar .sidebar-subgroup {
   display: block;
-  margin: 1px 0 2px 14px;
+  margin: 2px 0 3px 14px;
   padding-left: 10px;
   border-left: 1px solid $lightGray;
 }
@@ -674,7 +679,7 @@ nav {
   margin: 0;
   font-size: inherit;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 1.4;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -695,12 +700,19 @@ nav {
 }
 
 .site-sidebar .sidebar-subgroup a {
-  padding: 1px 0;
-  line-height: 1.25;
+  padding: 2px 0;
+  line-height: 1.4;
 }
 
 .site-sidebar .sidebar-subgroup > a {
   margin-left: 1em;
+}
+
+.site-sidebar .sidebar-subgroup > a::before {
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  content: "-";
 }
 
 .site-sidebar .sidebar-subgroup summary > a {

@@ -3,5 +3,16 @@ layout: page
 title: Labels
 ---
 
-- [Mercury Living Presence (1)]({{ site.baseurl }}/labels/mercury-living-presence/)
-- [Sony Classical Masters (1)]({{ site.baseurl }}/labels/sony-classical-masters/)
+## Mercury Living Presence
+
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/bachauer-the-mercury-masters/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>
+
+## Sony Classical Masters
+
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/murray-perahia-plays-chopin/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>
