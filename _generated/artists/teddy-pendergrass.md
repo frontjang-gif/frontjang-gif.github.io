@@ -10,4 +10,4 @@ title: Teddy Pendergrass
 
 ## Unknown
 
-- [The Essential Teddy Pendergrass - Teddy Pendergrass]({{ site.baseurl }}/albums/7080s/2024-06-03-the-essential-teddy-pendergrass/)
+- [The Essential Teddy Pendergrass - Teddy Pendergrass]({{ site.baseurl }}/albums/the-essential-teddy-pendergrass-teddy-pendergrass/)

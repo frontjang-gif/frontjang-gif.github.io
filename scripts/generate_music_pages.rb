@@ -97,6 +97,10 @@ def count_label(name, count)
   "#{name} (#{count})"
 end
 
+def album_url(album)
+  "/albums/#{slug(album[:title])}/"
+end
+
 def escape_yaml(value)
   value.to_s.gsub('"', '\\"')
 end
@@ -129,7 +133,7 @@ def parse_album(path)
       saved = existing_work_page(composer, raw_title)
       work = { composer: composer, title: saved ? saved["title"] : raw_title, movements: [], metadata: saved || {} }
       works << work
-    elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+\*\*([^*]+)\*\*\s+-\s+(.+)$/))
+    elsif (match = line.match(/^\s*\d+[A-Za-z]?\.\s+\*\*([^*]+)\*\*\s+-\s+(.+)$/))
       work_composer = match[1].strip
       saved_composer = existing_composer_page(work_composer)
       work_composer = saved_composer["title"] if saved_composer && saved_composer["title"]
@@ -267,8 +271,7 @@ end
 category_content = categories.keys.sort.map do |category|
   albums_in_category = categories[category].sort_by { |album| album[:title] }
   "## #{category}\n\n" + albums_in_category.map do |album|
-    album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
-    page_link(album_path, album[:title])
+    page_link(album_url(album), album[:title])
   end.join("\n")
 end.join("\n\n")
 write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
@@ -295,8 +298,7 @@ end
 
   entries.each do |value, value_albums|
     album_links = value_albums.sort_by { |album| album[:title] }.map do |album|
-      album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
-      page_link(album_path, album[:title])
+      page_link(album_url(album), album[:title])
     end
     write_page(File.join(OUTPUT_ROOT, group, "#{slug(value)}.md"), value, content: album_links.join("\n"))
   end
@@ -326,7 +328,7 @@ composers.each do |composer, composer_works|
     content = ""
     content += "#{movements.join("\n")}\n\n" unless movements.empty?
     content += "## Referenced by\n\n"
-    content += references.map { |album| page_link("#{album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")}", album[:title]) }.join("\n")
+    content += references.map { |album| page_link(album_url(album), album[:title]) }.join("\n")
     work_path = File.join(OUTPUT_ROOT, "composers", "#{slug(composer)}", "#{slug(work[:title])}.md")
     metadata = { "composer" => composer, "imslp" => "", "favorite" => false }.merge(work[:metadata] || {})
     write_page(work_path, work[:title], content: content, metadata: metadata)
@@ -343,8 +345,7 @@ artists.each do |artist, artist_albums|
   grouped.keys.sort.reverse.each do |year|
     content += "## #{year}\n\n"
     content += grouped[year].sort_by { |album| album[:title] }.map do |album|
-      album_path = album[:path].sub(SOURCE_ROOT, "").sub(%r{^/_posts/music/}, "/albums/").sub(/\.md$/, "/")
-      page_link(album_path, album[:title])
+      page_link(album_url(album), album[:title])
     end.join("\n") + "\n\n"
   end
   metadata = { "wiki" => "", "born" => "", "original_name" => artist_original_names[artist] || artist }

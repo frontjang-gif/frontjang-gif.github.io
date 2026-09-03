@@ -10,4 +10,4 @@ title: Anne Sofie Von Otter
 
 ## Unknown
 
-- [Anne Sofie Von Otter, Brad Mehldau - Love Songs]({{ site.baseurl }}/albums/jazz/2021-05-24-anne-sofie-von-otter-brad-mehldau-love-songs/)
+- [Anne Sofie Von Otter, Brad Mehldau - Love Songs]({{ site.baseurl }}/albums/anne-sofie-von-otter-brad-mehldau-love-songs/)

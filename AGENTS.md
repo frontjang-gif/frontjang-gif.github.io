@@ -96,4 +96,5 @@ tags: [tag1, tag2]
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
 - Write album tracks as `track number. movement number. title`, such as `1. 1. Allegro non troppo`. The album page preserves both numbers; generated work pages retain only the movement number.
+- A bold composer in a single track, such as `4. **Liszt** - Hungarian Rhapsody...`, overrides the surrounding composer heading for that track and creates the work under that composer.
 - Accept non-standard source numbering such as `1a.` and `1b.` when parsing tracks; normalize the generated movement list to sequential numbers.

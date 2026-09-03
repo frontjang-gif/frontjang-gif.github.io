@@ -11,5 +11,6 @@ title: Artists
 - [Haendel, Ida (1)]({{ site.baseurl }}/artists/haendel-ida/)
 - [London Symphony Orchestra (1)]({{ site.baseurl }}/artists/london-symphony-orchestra/)
 - [Muller-Kray, Hans (1)]({{ site.baseurl }}/artists/muller-kray-hans/)
+- [Perahia, Murray (1)]({{ site.baseurl }}/artists/perahia-murray/)
 - [Radio-Sinfonieorchester Stuttgart (1)]({{ site.baseurl }}/artists/radio-sinfonieorchester-stuttgart/)
 - [Teddy Pendergrass (1)]({{ site.baseurl }}/artists/teddy-pendergrass/)
