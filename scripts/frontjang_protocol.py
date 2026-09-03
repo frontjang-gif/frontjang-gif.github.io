@@ -4,18 +4,31 @@
 from __future__ import annotations
 
 import argparse
+from enum import Enum
 import os
 from pathlib import Path
 import subprocess
 import sys
-from urllib.parse import unquote, urlparse
+from urllib.parse import parse_qs, urlparse
 
 
 SCHEME = "frontjang-gif"
 REGISTRY_PATH = rf"Software\Classes\{SCHEME}"
+
+
+class RootType(str, Enum):
+    MUSIC = "music"
+    MOVIE = "movie"
+
+
+class CommandType(str, Enum):
+    OPEN = "open"
+    PLAY = "play"
+
+
 FOLDER_ROOTS = {
-    "music": Path(r"H:\frontjang-gif\Music"),
-    "movie": Path(r"H:\frontjang-gif\Movie"),
+    RootType.MUSIC: Path(r"H:\frontjang-gif\Music"),
+    RootType.MOVIE: Path(r"H:\frontjang-gif\Movie"),
 }
 
 
@@ -93,35 +106,60 @@ def remove_protocol() -> None:
     print(f"Removed {SCHEME}:// registration")
 
 
-def target_from_url(url: str, folder_roots=None) -> Path:
+def request_from_url(url: str, folder_roots=None) -> tuple[CommandType, Path]:
     roots = FOLDER_ROOTS if folder_roots is None else folder_roots
     parsed = urlparse(url)
-    folder_type = parsed.netloc.lower()
-    if parsed.scheme.lower() != SCHEME or folder_type not in roots:
-        raise ValueError(f"Expected {SCHEME}://music/... or {SCHEME}://movie/...")
-    if parsed.query or parsed.fragment:
-        raise ValueError("Queries and fragments are not supported.")
+    if (
+        parsed.scheme.lower() != SCHEME
+        or parsed.netloc.lower() != "action"
+        or parsed.path not in ("", "/")
+        or parsed.fragment
+    ):
+        raise ValueError(
+            f"Expected {SCHEME}://action?root=...&command=...&path=..."
+        )
 
-    relative_text = unquote(parsed.path).lstrip("/").replace("/", os.sep)
+    parameters = parse_qs(parsed.query, keep_blank_values=True, strict_parsing=True)
+    required = {"root", "command", "path"}
+    if set(parameters) != required or any(
+        len(values) != 1 for values in parameters.values()
+    ):
+        raise ValueError("The URL requires exactly one root, command, and path parameter.")
+
+    try:
+        root_type = RootType(parameters["root"][0].lower())
+        command_type = CommandType(parameters["command"][0].lower())
+    except ValueError as error:
+        raise ValueError("The URL contains an unsupported root or command.") from error
+    if root_type not in roots:
+        raise ValueError(f"The {root_type.value} root is not configured.")
+
+    relative_text = parameters["path"][0]
+    if "\\" in relative_text or "\0" in relative_text:
+        raise ValueError("The path must use forward slashes and contain no null bytes.")
     relative = Path(relative_text)
-    if relative.is_absolute() or ".." in relative.parts:
+    if relative.is_absolute() or relative.drive or ".." in relative.parts:
         raise ValueError("The URL contains an unsafe folder path.")
 
-    root = roots[folder_type].resolve()
+    root = roots[root_type].resolve()
     target = (root / relative).resolve()
     try:
         target.relative_to(root)
     except ValueError as error:
-        raise ValueError(f"The requested folder is outside the {folder_type} library.") from error
+        raise ValueError(
+            f"The requested path is outside the {root_type.value} library."
+        ) from error
 
-    if not target.is_dir():
-        raise FileNotFoundError(f"Folder does not exist: {target}")
-    return target
+    if not target.exists():
+        raise FileNotFoundError(f"Path does not exist: {target}")
+    if command_type is CommandType.PLAY and not target.is_file():
+        raise ValueError("The play command requires a specific media file.")
+    return command_type, target
 
 
-def open_folder(url: str) -> None:
+def handle_url(url: str) -> None:
     require_windows()
-    target = target_from_url(url)
+    _, target = request_from_url(url)
     os.startfile(target)  # type: ignore[attr-defined]
 
 
@@ -167,7 +205,7 @@ def main() -> None:
         elif args.command == "remove":
             remove_protocol()
         else:
-            open_folder(args.url)
+            handle_url(args.url)
     except (OSError, ValueError) as error:
         if args.command in (None, "open") and sys.platform == "win32":
             show_message(str(error), error=True)
