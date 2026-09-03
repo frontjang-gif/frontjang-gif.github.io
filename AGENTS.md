@@ -96,8 +96,9 @@ tags: [tag1, tag2]
 ### Tracklist
 
 - Use heading hierarchy to distinguish topics, discs, works, chapters, and tracks: `## topic` > `### CD1` > `#### work` > `##### chapter` > track.
-- Render composer headings bold and left-aligned. Render work headings italic, normal-weight, and left-aligned; disc headings remain centered.
+- Render disc and composer headings bold and left-aligned. Render work headings italic, normal-weight, and left-aligned. Do not add visual spacing between consecutive disc, composer, and work headings.
 - Do not put blank lines between a composer heading, its work heading, and the first track. Keep those lines contiguous in Markdown. Use a blank line only when it carries structure, such as separating the end of a movement list from the next standalone work.
+- A composer declaration remains active across CD boundaries. Do not repeat the composer heading on each CD when the composer has not changed; add a new composer heading only when the composer changes.
 - For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.

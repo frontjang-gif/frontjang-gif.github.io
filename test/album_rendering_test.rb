@@ -14,6 +14,8 @@ composer = document.at_css(".album-entry .album-composer")
 work = document.at_css(".album-entry .album-work")
 assert(composer&.name == "h4", "multi-disc composer headings should be identified semantically")
 assert(work&.name == "h5", "multi-disc work headings should be identified semantically")
+disc_two = document.at_xpath("//h3[normalize-space(.)='CD2']")
+assert(disc_two&.next_element&.text&.include?("Piano Sonata No. 2"), "a work should follow CD2 without a repeated composer heading")
 work_break = document.at_css(".album-entry .track-work-break")
 assert(work_break, "standalone work following a movement list needs a visible boundary")
 assert(work_break.text.strip.start_with?("25. Prelude in C-sharp minor, Op. 45"), "track 25 should begin the standalone work")
@@ -23,6 +25,9 @@ assert(!work_break.next_element&.key?("class"), "the boundary should occur only 
 standalone_work = File.join(ROOT, "_generated", "composers", "chopin-frederic", "prelude-in-c-sharp-minor-op-45-sostenuto.md")
 assert(File.file?(standalone_work), "track 25 should be indexed as a separate work")
 assert(File.read(standalone_work).include?("Murray Perahia plays Chopin"), "the separate work should reference its album")
+
+perahia_source = File.read(File.join(ROOT, "_posts", "Music", "Classical", "Labels", "Sony Classical Masters", "2025-05-22-murray-perahia-plays-chopin.md"))
+assert(perahia_source.scan(/^#### Chopin, Frederic$/).one?, "an unchanged composer should be declared only once across CDs")
 
 wild_album = File.join(ROOT, "_posts", "Music", "Classical", "Pianists", "Wild, Earl", "2022-11-03-chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt.md")
 wild_source = File.read(wild_album)
