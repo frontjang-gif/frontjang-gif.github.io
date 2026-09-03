@@ -485,7 +485,7 @@ nav {
 }
 
 .site-sidebar {
-  flex: 0 0 168px;
+  flex: 0 0 240px;
   position: sticky;
   top: 20px;
   max-height: calc(100vh - 40px);
@@ -541,10 +541,13 @@ nav {
 
 .site-sidebar nav a {
   display: block;
+  overflow: hidden;
   margin: 0;
   padding: 5px 0;
   color: $darkGray;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .site-sidebar .sidebar-subgroup {
@@ -555,9 +558,12 @@ nav {
 }
 
 .site-sidebar .sidebar-subgroup summary {
+  overflow: hidden;
   margin: 0;
   font-size: inherit;
   font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .site-sidebar .sidebar-subgroup summary::before {
@@ -1012,8 +1018,8 @@ Modules - reusable parts of our design
   }
 
   .site-sidebar nav a {
-    display: inline-block;
-    margin-right: 14px;
+    display: block;
+    margin-right: 0;
   }
 
   .main-layout #main {
