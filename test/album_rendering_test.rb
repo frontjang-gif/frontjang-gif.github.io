@@ -1,4 +1,5 @@
 require "nokogiri"
+require "json"
 
 ROOT = File.expand_path("..", __dir__)
 
@@ -20,7 +21,7 @@ work_break = document.at_css(".album-entry .track-work-break")
 assert(work_break, "standalone work following a movement list needs a visible boundary")
 assert(work_break.text.strip.start_with?("25. Prelude in C-sharp minor, Op. 45"), "track 25 should begin the standalone work")
 assert(work_break.previous_element&.text&.strip&.start_with?("24. 24. No. 24 in D minor"), "the boundary should follow movement 24 of Op. 28")
-assert(!work_break.next_element&.key?("class"), "the boundary should occur only before the first following standalone work")
+assert(!work_break.next_element&.classes&.include?("track-work-break"), "the boundary should occur only before the first following standalone work")
 
 standalone_work = File.join(ROOT, "_generated", "composers", "chopin-frederic", "prelude-in-c-sharp-minor-op-45-sostenuto.md")
 assert(File.file?(standalone_work), "track 25 should be indexed as a separate work")
@@ -40,5 +41,23 @@ liszt_source = File.read(liszt_page)
 assert(liszt_source.include?("title: Liszt, Franz"), "the fuller composer name should be canonical")
 assert(liszt_source.match?(/aliases:\s*\n- Liszt/), "the former surname-only name should remain an alias")
 assert(!File.exist?(File.join(ROOT, "_generated", "composers", "liszt.md")), "the obsolete surname-only composer page should not be regenerated")
+
+paik_album = File.join(ROOT, "_posts", "Music", "Classical", "Pianists", "Paik, Kun-Woo", "2022-11-02-chopin-complete-works-for-piano-orchestra-paik-wit.md")
+assert(File.file?(paik_album), "an album identified by its recording company should not be filed as a label series")
+album_catalog = JSON.parse(File.read(File.join(ROOT, "data", "albums.json"))).fetch("albums")
+paik_catalog_entry = album_catalog.find { |album| album["title"] == "Chopin: Complete Works for Piano & Orchestra - Paik & Wit (2003)" }
+assert(paik_catalog_entry&.fetch("recording") == "Decca", "the recording company should remain in recording metadata")
+assert(paik_catalog_entry&.fetch("label").nil?, "a recording company should not be exposed as a label series")
+assert(!File.exist?(File.join(ROOT, "_generated", "labels", "decca.md")), "a recording company should not generate a label-series page")
+
+paik_page = File.join(ROOT, "_site", "albums", "chopin-complete-works-for-piano-orchestra-paik-wit", "index.html")
+assert(File.file?(paik_page), "expected built Paik album page")
+paik_document = Nokogiri::HTML(File.read(paik_page))
+paik_entry = paik_document.at_css(".album-entry")
+assert(paik_entry.css("ol").empty?, "album tracks should render as plain text rather than ordered lists")
+paik_composer = paik_entry.at_xpath(".//h4[normalize-space(.)='Chopin, Frederic']")
+paik_first_track = paik_composer&.next_element
+assert(paik_first_track&.matches?("div.album-track"), "the first plain-text track should immediately follow its composer heading")
+assert(paik_first_track&.text&.strip == "1. Krakowiak in F major, Op. 14", "plain-text tracks should preserve their visible track numbers")
 
 puts "Album rendering conventions passed"

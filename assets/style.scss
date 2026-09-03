@@ -101,6 +101,16 @@ h4 {
   margin-top: 0;
 }
 
+.album-entry .album-disc,
+.album-entry .album-composer,
+.album-entry .album-work {
+  margin-bottom: 0;
+}
+
+.album-entry .album-track {
+  margin: 0;
+}
+
 .album-entry .album-work {
   font-style: italic;
   font-weight: normal;

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Decca
+title: Paik, Kun-Woo
 ---
 
 <div class="posts album-list">

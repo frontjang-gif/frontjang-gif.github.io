@@ -66,8 +66,8 @@ tags: [tag1, tag2]
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
 - Use the top-level folder under `_posts/Music/` for music category navigation, such as `Classical`, `Jazz`, or `7080s`.
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
-- Music albums may use `recording` for the release/edition.
-- Place albums under `Labels/{label name}/` when they should appear in a generated label navigator.
+- Music albums may use `recording` for the recording company or release/edition imprint.
+- Keep recording companies separate from label series. Place an album under `Labels/{series name}/` only when it belongs to a named series, such as `Mercury Living Presence`; a company such as Decca belongs in `recording` and does not by itself determine the album's folder.
 - Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
@@ -103,6 +103,7 @@ tags: [tag1, tag2]
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
 - Write album tracks as `track number. movement number. title`, such as `1. 1. Allegro non troppo`. The album page preserves both numbers; generated work pages retain only the movement number.
+- Render every album track as plain text rather than an HTML ordered list. Source Markdown may use numbered-list syntax for parsing, but list indentation and browser list spacing must not appear on the album page.
 - A blank line after a movement-numbered track list marks the end of that work when the next track has no movement number. Treat the following track as a separate work under the current composer and render visible spacing before it; do not fold it into the preceding work.
 - A bold composer in a single track, such as `4. **Liszt** - Hungarian Rhapsody...`, overrides the surrounding composer heading for that track and creates the work under that composer.
 - Accept non-standard source numbering such as `1a.` and `1b.` when parsing tracks; normalize the generated movement list to sequential numbers.

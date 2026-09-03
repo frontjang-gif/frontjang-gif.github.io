@@ -27,11 +27,6 @@ Jekyll::Hooks.register :posts, :post_render do |post|
       end
 
       list = element
-      unless list.xpath("./li/ol").any?
-        track_number += list.xpath("./li").size
-        next
-      end
-
       rows = Nokogiri::XML::NodeSet.new(document)
       movement_number = 0
       list.xpath("./li").each do |track|
@@ -39,7 +34,7 @@ Jekyll::Hooks.register :posts, :post_render do |post|
         unless nested
           track_number += 1
           row = document.create_element("div")
-          row["class"] = "track-work-break" if movement_number.positive?
+          row["class"] = movement_number.positive? ? "album-track track-work-break" : "album-track"
           row.add_child(document.create_text_node("#{track_number}. "))
           track.children.each { |child| row.add_child(child.dup) }
           rows << row
@@ -51,6 +46,7 @@ Jekyll::Hooks.register :posts, :post_render do |post|
           track_number += 1
           movement_number += 1
           row = document.create_element("div")
+          row["class"] = "album-track"
           row.add_child(document.create_text_node("#{track_number}. #{movement_number}. "))
           movement.children.each { |child| row.add_child(child.dup) }
           rows << row
