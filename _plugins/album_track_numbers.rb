@@ -4,29 +4,47 @@ Jekyll::Hooks.register :posts, :post_render do |post|
   next unless post.path.include?("/_posts/Music/")
 
   document = Nokogiri::HTML::Document.parse(post.output)
-  document.css(".album-entry ol").each do |list|
-    next unless list.xpath("./li/ol").any?
+  document.css(".album-entry").each do |entry|
+    track_number = 0
 
-    start = list["start"].to_i
-    start = 1 if start.zero?
-    rows = Nokogiri::XML::NodeSet.new(document)
-
-    list.xpath("./li").each_with_index do |track, track_index|
-      nested = track.xpath("./ol").first
-      next unless nested
-
-      movement_start = nested["start"].to_i
-      movement_start = 1 if movement_start.zero?
-      nested.xpath("./li").each_with_index do |movement, movement_index|
-        row = document.create_element("div")
-        row.add_child(document.create_text_node("#{start + track_index}. #{movement_start + movement_index}. "))
-        movement.children.each { |child| row.add_child(child.dup) }
-        rows << row
+    entry.xpath(".//h3 | .//ol[not(ancestor::ol)]").each do |element|
+      if element.name == "h3"
+        track_number = 0 if element.text.strip.match?(/^CD\d+$/)
+        next
       end
-    end
 
-    list.add_previous_sibling(rows)
-    list.remove
+      list = element
+      unless list.xpath("./li/ol").any?
+        track_number += list.xpath("./li").size
+        next
+      end
+
+      rows = Nokogiri::XML::NodeSet.new(document)
+      movement_number = 0
+      list.xpath("./li").each do |track|
+        nested = track.xpath("./ol").first
+        unless nested
+          track_number += 1
+          row = document.create_element("div")
+          row.add_child(document.create_text_node("#{track_number}. "))
+          track.children.each { |child| row.add_child(child.dup) }
+          rows << row
+          next
+        end
+
+        nested.xpath("./li").each do |movement|
+          track_number += 1
+          movement_number += 1
+          row = document.create_element("div")
+          row.add_child(document.create_text_node("#{track_number}. #{movement_number}. "))
+          movement.children.each { |child| row.add_child(child.dup) }
+          rows << row
+        end
+      end
+
+      list.add_previous_sibling(rows)
+      list.remove
+    end
   end
 
   post.output = document.to_html

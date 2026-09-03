@@ -102,13 +102,8 @@ def sidebar_album_count(node)
 end
 
 def music_sidebar_folder_url(folders)
-  return "/albums/#{slug(folders.first)}/" if folders.size == 1
-  return "/labels/" if folders[1] == "Labels" && folders.size == 2
-  return "/labels/#{slug(folders.last)}/" if folders[1] == "Labels"
-  return "/artists/" if folders[1] == "Pianists" && folders.size == 2
-  return "/artists/#{slug(folders.last)}/" if folders[1] == "Pianists"
-
-  "/albums/"
+  encoded_folders = folders.map { |folder| CGI.escape(folder).gsub("+", "%20") }
+  "/Music/#{encoded_folders.join("/")}/"
 end
 
 def render_music_sidebar(node, ancestors = [])
@@ -123,6 +118,23 @@ def render_music_sidebar(node, ancestors = [])
     content += render_music_sidebar(children, folders).map { |line| "  #{line}" }
     content << "</details>"
     content
+  end
+end
+
+def music_sidebar_albums(node)
+  node.fetch("_albums", []) + node.values.grep(Hash).flat_map { |child| music_sidebar_albums(child) }
+end
+
+def write_music_folder_pages(node, ancestors = [])
+  node.keys.reject { |key| key == "_albums" }.sort.each do |folder|
+    children = node[folder]
+    folders = ancestors + [folder]
+
+    output_path = File.join(OUTPUT_ROOT, "Music", *folders[0...-1], "#{folders.last}.md")
+    albums = music_sidebar_albums(children).sort_by { |album| album[:title] }
+    write_page(output_path, folder, content: album_card_list(albums))
+
+    write_music_folder_pages(children, folders)
   end
 end
 
@@ -174,9 +186,25 @@ def parse_album(path)
   composer = nil
   work = nil
   works = []
+  single_disc_hierarchy = false
 
   lines.each do |line|
-    if (match = line.match(/^#### ([^#].*)$/))
+    if line.match?(/^### CD\d+\s*$/)
+      single_disc_hierarchy = false
+      composer = nil
+      work = nil
+    elsif (match = line.match(/^### ([^#].*)$/))
+      single_disc_hierarchy = true
+      composer = match[1].strip
+      saved_composer = existing_composer_page(composer)
+      composer = saved_composer["title"] if saved_composer && saved_composer["title"]
+      work = nil
+    elsif (match = line.match(/^#### ([^#].*)$/)) && single_disc_hierarchy && composer
+      raw_title = match[1].strip
+      saved = existing_work_page(composer, raw_title)
+      work = { composer: composer, title: saved ? saved["title"] : raw_title, movements: [], metadata: saved || {} }
+      works << work
+    elsif (match = line.match(/^#### ([^#].*)$/))
       composer = match[1].strip
       saved_composer = existing_composer_page(composer)
       composer = saved_composer["title"] if saved_composer && saved_composer["title"]
@@ -196,13 +224,9 @@ def parse_album(path)
       work[:movements] << match[1].strip if work
     elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+(.+)$/))
       item = match[1].strip
-      if work && work[:movements].empty?
-        work[:movements] << item
-      else
-        saved = existing_work_page(composer, item)
-        works << { composer: composer, title: saved ? saved["title"] : item, movements: [], metadata: saved || {} }
-        work = works.last
-      end
+      saved = existing_work_page(composer, item)
+      works << { composer: composer, title: saved ? saved["title"] : item, movements: [], metadata: saved || {} }
+      work = works.last
     elsif line.match?(/^###?\s/)
       work = nil
     end
@@ -305,8 +329,10 @@ end
 FileUtils.rm_rf(OUTPUT_ROOT)
 FileUtils.mkdir_p(OUTPUT_ROOT)
 
-sidebar_content = render_music_sidebar(music_sidebar_tree(albums))
+music_tree = music_sidebar_tree(albums)
+sidebar_content = render_music_sidebar(music_tree)
 File.write(File.join(SOURCE_ROOT, "_includes", "generated-music-sidebar.html"), sidebar_content.join("\n") + "\n")
+write_music_folder_pages(music_tree)
 
 movie_path = ->(movie) { "/movies/#{slug(movie[:title])}/" }
 movie_groups = {
@@ -333,25 +359,12 @@ movie_groups.each do |group, values|
   end
 end
 
-category_content = categories.keys.sort.map do |category|
-  albums_in_category = categories[category].sort_by { |album| album[:title] }
-  "## #{category}\n\n#{album_card_list(albums_in_category)}"
-end.join("\n\n")
-write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
-
 favorite_content = "## Favorite Albums\n\n<div class=\"posts favorite-albums\">\n{% assign albums = site.posts | where: 'favorite', true | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}\n</div>\n\n## Favorite Works\n\n"
 favorite_works = works.select { |work| work[:metadata]["favorite"] == true }.sort_by { |work| [work[:composer], work[:title]] }
 favorite_content += favorite_works.map do |work|
   page_link("/composers/#{slug(work[:composer])}/#{slug(work[:title])}/", "#{work[:composer]}: #{work[:title]}")
 end.join("\n")
 write_page(File.join(OUTPUT_ROOT, "favorites.md"), "Favorite Albums", content: favorite_content)
-
-categories.each do |category, category_albums|
-  cards = album_card_list(category_albums.sort_by { |album| album[:title] })
-  content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n#{cards}"
-  category_path = File.join(OUTPUT_ROOT, "albums", slug(category) + ".md")
-  write_page(category_path, category, content: content, metadata: { "category" => category })
-end
 
 { "recordings" => recordings, "labels" => labels }.each do |group, entries|
   sorted_values = entries.keys.sort_by { |value| [-entries[value].size, value] }

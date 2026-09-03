@@ -19,24 +19,26 @@ favorite: false
 3. 3. Rondo. Vivace
 
 ##### Piano Concerto No. 2 in F minor, Op. 21
-1. 1. Maestoso
-2. 2. Larghetto
-3. 3. Allegro vivace
+4. 1. Maestoso
+5. 2. Larghetto
+6. 3. Allegro vivace
 
 ### CD2
-#### Piano Sonata No. 2 in B-flat minor, Op. 35
+#### Chopin, Frederic
+##### Piano Sonata No. 2 in B-flat minor, Op. 35
 1. 1. Grave - Doppio movimento
 2. 2. Scherzo - Piu lento - Tempo I
 3. 3. Marche funebre. Lento - attacca
 4. 4. Finale. Presto
 
-#### Piano Sonata No. 3 in B minor, Op. 58
-1. 1. Allegro maestoso
-2. 2. Scherzo. Molto vivace
-3. 3. Largo
-4. 4. Finale. Presto, ma non tanto
+##### Piano Sonata No. 3 in B minor, Op. 58
+5. 1. Allegro maestoso
+6. 2. Scherzo. Molto vivace
+7. 3. Largo
+8. 4. Finale. Presto, ma non tanto
 
 ### CD3
+#### Chopin, Frederic
 1. Ballade No. 1 in G minor, Op. 23. Largo - Meno mosso - Presto con fuoco
 2. Ballade No. 2 in F major, Op. 38. Andantino - Presto con fuoco - Tempo I
 3. Ballade No. 3 in A-flat major, Op. 47. Allegretto
@@ -51,7 +53,8 @@ favorite: false
 12. Etude in C-sharp minor, Op. 10 No. 4
 
 ### CD4
-#### Etudes, Op. 10
+#### Chopin, Frederic
+##### Etudes, Op. 10
 1. 1. No. 1 in C major. Allegro
 2. 2. No. 2 in A minor. Allegro
 3. 3. No. 3 in E major. Lento ma non troppo
@@ -65,7 +68,7 @@ favorite: false
 11. 11. No. 11 in E-flat major. Allegretto
 12. 12. No. 12 in C minor "Revolutionary". Allegro con fuoco
 
-#### Etudes, Op. 25
+##### Etudes, Op. 25
 13. 1. No. 1 in A-flat major. Allegro sostenuto
 14. 2. No. 2 in F minor. Presto
 15. 3. No. 3 in F major. Allegro
@@ -80,7 +83,8 @@ favorite: false
 24. 12. No. 12 in C minor. Allegro molto con fuoco
 
 ### CD5
-#### Preludes, Op. 28
+#### Chopin, Frederic
+##### Preludes, Op. 28
 1. 1. No. 1 in C major. Agitato
 2. 2. No. 2 in A minor. Lento
 3. 3. No. 3 in G major. Vivace
@@ -110,10 +114,14 @@ favorite: false
 26. Prelude in A-flat major, Op. posth. Presto
 
 ### CD6
-1. Impromptu in A-flat major, Op. 29. Allegro assai quasi presto
-2. Impromptu in F-sharp major, Op. 36. Andantino
-3. Impromptu in G-flat major, Op. 51. Tempo giusto
-4. Fantaisie-Impromptu in C-sharp minor, Op. posth. 66. Allegro agitato
-5. Barcarolle in F-sharp major, Op. 60. Allegretto
-6. Berceuse in D-flat major, Op. 57. Andante
-7. Fantaisie in F minor, Op. 49. Tempo di marcia. Grave
+#### Chopin, Frederic
+1. Prelude No. 6 in B minor, Op. 28. Lento assai
+2. Prelude No. 7 in A major, Op. 28. Andantino
+3. Prelude No. 15 in D-flat major, Op. 28. Sostenuto
+4. Impromptu in A-flat major, Op. 29. Allegro assai quasi presto
+5. Impromptu in F-sharp major, Op. 36. Andantino
+6. Impromptu in G-flat major, Op. 51. Tempo giusto
+7. Fantaisie-Impromptu in C-sharp minor, Op. posth. 66. Allegro agitato
+8. Barcarolle in F-sharp major, Op. 60. Allegretto
+9. Berceuse in D-flat major, Op. 57. Andante
+10. Fantaisie in F minor, Op. 49. Tempo di marcia. Grave

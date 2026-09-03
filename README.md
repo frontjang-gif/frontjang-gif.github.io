@@ -126,7 +126,7 @@ Composer pages use the same `wiki`, `born`, `original_name`, and `aliases` front
 
 For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
 
-Music albums and composer works can use `favorite: true` and appear in the corresponding `Favorite Albums` and `Favorite Works` sections at `/favorites/`. Music category navigation is derived from the top-level folders under `_posts/Music/`, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
+Music albums and composer works can use `favorite: true` and appear in the corresponding `Favorite Albums` and `Favorite Works` sections at `/favorites/`. Music folder navigation mirrors the capitalization and hierarchy below `_posts/Music/`, for example `/Music/Classical/Labels/` and `/Music/Jazz/`. These are separate from the Blog Categories and Tags pages.
 
 Music albums may use `recording`. Label navigation is derived from `Labels/{label name}/` folders, with album lists generated at `/labels/`.
 

@@ -10,35 +10,35 @@ musicFolder: ""
 ---
 
 ## Album
-### CD1 
-#### Debussy, Claude
+
+### Debussy, Claude
 
 1. Masques, L 105
 2. …D’un cahier d’esquisses, L 100
 3. L'isle joyeuse, L 106
 
-##### Images pour piano - Book I, L 105
-1. Reflets dans l'eau
-2. Hommage a Rameau
-3. Mouvement
+#### Images pour piano - Book I, L 105
+4. 1. Reflets dans l'eau
+5. 2. Hommage a Rameau
+6. 3. Mouvement
 
-##### Images pour piano - Book II, L 110
-1. Cloches a travers les feuilles
-2. Et la lune descend sur le temple qui fut
-3. Poissons d'or
+#### Images pour piano - Book II, L 110
+7. 1. Cloches a travers les feuilles
+8. 2. Et la lune descend sur le temple qui fut
+9. 3. Poissons d'or
 
-##### Estampes, L 100
-1. Pagodes
-2. La soiree dans Grenade
-3. Jardins sous la pluie
+#### Estampes, L 100
+10. 1. Pagodes
+11. 2. La soiree dans Grenade
+12. 3. Jardins sous la pluie
 
-##### Children's Corner, L 113
-1. Doctor Gradus ad Parnassum
-2. Jimbo's lullaby
-3. Serenade for the doll
-4. The snow is dancing
-5. The little shepherd
-6. Golliwogg's cake-walk
+#### Children's Corner, L 113
+13. 1. Doctor Gradus ad Parnassum
+14. 2. Jimbo's lullaby
+15. 3. Serenade for the doll
+16. 4. The snow is dancing
+17. 5. The little shepherd
+18. 6. Golliwogg's cake-walk
 
 ## Sources
 

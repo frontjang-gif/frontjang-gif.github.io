@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /albums/
+permalink: /Music/
 title: Album Archive
 ---
 
