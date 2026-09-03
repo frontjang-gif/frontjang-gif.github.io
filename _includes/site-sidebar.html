@@ -22,48 +22,40 @@
 {% endfor %}
 <aside class="site-sidebar" aria-label="Site navigation">
   <details class="sidebar-group" open>
-    <summary>Blog <span class="sidebar-count">{{ blog_count }}</span></summary>
-    <nav>
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/archive">Archive</a>
-      <details class="sidebar-subgroup" open>
-        <summary>Categories</summary>
-        <a href="{{ site.baseurl }}/categories">All categories</a>
-        <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_count }}</span></a>
-        <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_count }}</span></a>
-      </details>
-      <a href="{{ site.baseurl }}/tags">Tags</a>
-    </nav>
-  </details>
-
-  <details class="sidebar-group" open>
-    <summary>Music <span class="sidebar-count">{{ music_count }}</span></summary>
+    <summary>Root</summary>
     <nav>
       <details class="sidebar-subgroup" open>
-        <summary>Albums <span>{{ music_count }}</span></summary>
-        <a href="{{ site.baseurl }}/albums/">All albums</a>
-        <a href="{{ site.baseurl }}/albums/classical/">Classical <span>{{ classical_count }}</span></a>
-        <a href="{{ site.baseurl }}/albums/jazz/">Jazz <span>{{ jazz_count }}</span></a>
-        <a href="{{ site.baseurl }}/albums/7080s/">7080s <span>{{ seventies_eighties_count }}</span></a>
+        <summary>Blog <span>{{ blog_count }}</span></summary>
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/archive">Archive</a>
+        <details class="sidebar-subgroup">
+          <summary>Categories</summary>
+          <a href="{{ site.baseurl }}/categories">All categories</a>
+          <a href="{{ site.baseurl }}/daily/">Daily <span>{{ daily_count }}</span></a>
+          <a href="{{ site.baseurl }}/tech/">Tech <span>{{ tech_count }}</span></a>
+        </details>
+        <a href="{{ site.baseurl }}/tags">Tags</a>
       </details>
-      <a href="{{ site.baseurl }}/favorites/">Favorites</a>
-      <a href="{{ site.baseurl }}/recordings/">Recordings</a>
-      <a href="{{ site.baseurl }}/labels/">Labels</a>
-      <a href="{{ site.baseurl }}/artists/">Artists</a>
-      <a href="{{ site.baseurl }}/composers/">Composers</a>
+
+      <details class="sidebar-subgroup" open>
+        <summary>Music <span>{{ music_count }}</span></summary>
+        {% include generated-music-sidebar.html %}
+        <a href="{{ site.baseurl }}/favorites/">Favorites</a>
+        <a href="{{ site.baseurl }}/recordings/">Recordings</a>
+        <a href="{{ site.baseurl }}/labels/">Labels</a>
+        <a href="{{ site.baseurl }}/artists/">Artists</a>
+        <a href="{{ site.baseurl }}/composers/">Composers</a>
+      </details>
+
+      <details class="sidebar-subgroup" open>
+        <summary>Movie <span>{{ movie_count }}</span></summary>
+        <a href="{{ site.baseurl }}/movies/">Movies <span>{{ movie_count }}</span></a>
+        <a href="{{ site.baseurl }}/movies/directors/">Directors</a>
+        <a href="{{ site.baseurl }}/movies/cast/">Cast</a>
+        <a href="{{ site.baseurl }}/movies/genres/">Genres</a>
+        <a href="{{ site.baseurl }}/movies/ratings/">Ratings</a>
+        <a href="{{ site.baseurl }}/movies/years/">Years</a>
+      </details>
     </nav>
   </details>
-
-  <details class="sidebar-group" open>
-    <summary>Movie <span class="sidebar-count">{{ movie_count }}</span></summary>
-    <nav>
-      <a href="{{ site.baseurl }}/movies/">Movies <span>{{ movie_count }}</span></a>
-      <a href="{{ site.baseurl }}/movies/directors/">Directors</a>
-      <a href="{{ site.baseurl }}/movies/cast/">Cast</a>
-      <a href="{{ site.baseurl }}/movies/genres/">Genres</a>
-      <a href="{{ site.baseurl }}/movies/ratings/">Ratings</a>
-      <a href="{{ site.baseurl }}/movies/years/">Years</a>
-    </nav>
-  </details>
-
 </aside>

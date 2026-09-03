@@ -76,6 +76,39 @@ def page_link(path, label)
   "- [#{label}](\u007b\u007b site.baseurl \u007d\u007d#{path})"
 end
 
+def music_sidebar_tree(albums)
+  tree = {}
+  albums.each do |album|
+    relative = album[:path].delete_prefix(File.join(SOURCE_ROOT, "_posts", "Music") + File::SEPARATOR)
+    folders = relative.split(File::SEPARATOR)[0...-1]
+    node = tree
+    folders.each { |folder| node = (node[folder] ||= {}) }
+    (node["_albums"] ||= []) << album
+  end
+  tree
+end
+
+def sidebar_album_count(node)
+  node.fetch("_albums", []).size + node.values.grep(Hash).sum { |child| sidebar_album_count(child) }
+end
+
+def render_music_sidebar(node, depth = 0)
+  node.keys.reject { |key| key == "_albums" }.sort.flat_map do |folder|
+    children = node[folder]
+    albums = children.fetch("_albums", [])
+    descendant_count = sidebar_album_count(children)
+    content = []
+    content << "<details class=\"sidebar-subgroup sidebar-folder\"#{depth.zero? ? " open" : ""}>"
+    content << "  <summary>#{folder} <span>#{descendant_count}</span></summary>"
+    content += render_music_sidebar(children, depth + 1).map { |line| "  #{line}" }
+    content += albums.sort_by { |album| album[:title] }.map do |album|
+      "  <a href=\"{{ site.baseurl }}#{album_url(album)}\">#{album[:title]}</a>"
+    end
+    content << "</details>"
+    content
+  end
+end
+
 RATING_LABELS = {
   "5" => "★★★★★ 인생작 (손가락 안에 꼽는)",
   "4.5" => "★★★★☆ 아쉽게도 미끄러진 인생작",
@@ -245,6 +278,11 @@ end
 
 FileUtils.rm_rf(OUTPUT_ROOT)
 FileUtils.mkdir_p(OUTPUT_ROOT)
+
+sidebar_content = ["<details class=\"sidebar-subgroup\" open>", "  <summary>Albums <span>#{albums.size}</span></summary>", "  <a href=\"{{ site.baseurl }}/albums/\">All albums</a>"]
+sidebar_content += render_music_sidebar(music_sidebar_tree(albums)).map { |line| "  #{line}" }
+sidebar_content << "</details>"
+File.write(File.join(SOURCE_ROOT, "_includes", "generated-music-sidebar.html"), sidebar_content.join("\n") + "\n")
 
 movie_path = ->(movie) { "/movies/#{slug(movie[:title])}/" }
 movie_groups = {
