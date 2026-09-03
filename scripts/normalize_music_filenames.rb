@@ -11,6 +11,10 @@ def slug(value)
     .gsub(/^-|-$/, "")
 end
 
+def album_title_slug(title)
+  slug(title.sub(/\s+\(\d{4}\)\z/, ""))
+end
+
 Dir[File.join(SOURCE_ROOT, "_posts", "Music", "**", "*.md")].each do |path|
   content = File.read(path)
   match = content.match(/\A---\s*\n(.*?)\n---\s*\n/m)
@@ -21,7 +25,7 @@ Dir[File.join(SOURCE_ROOT, "_posts", "Music", "**", "*.md")].each do |path|
   date = File.basename(path)[/\A\d{4}-\d{2}-\d{2}/]
   next if title.empty? || date.nil?
 
-  target = File.join(File.dirname(path), "#{date}-#{slug(title)}.md")
+  target = File.join(File.dirname(path), "#{date}-#{album_title_slug(title)}.md")
   next if path == target
   raise "Target already exists: #{target}" if File.exist?(target)
 

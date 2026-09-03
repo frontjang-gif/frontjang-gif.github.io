@@ -17,6 +17,70 @@
       "cover": "https://blog.kakaocdn.net/dna/XQDOJ/btq5AQEKQNw/AAAAAAAAAAAAAAAAAAAAANoczCXkdxGZlNCor3_0lRoH-NSqNssxQB9vpKsLUwz1/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=vcHJE2H%2BboJ3lLUsi37T26oa388%3D"
     },
     {
+      "title": "Bach: 3 Sonatas for Viola da Gamba and Harpsichord - Gould, Rose",
+      "url": "/albums/bach-3-sonatas-for-viola-da-gamba-and-harpsichord-gould-rose/",
+      "artists": [
+        "Gould, Glenn",
+        "Rose, Leonard"
+      ],
+      "composers": [
+        "Bach, Johann Sebastian"
+      ],
+      "works": [
+        "Sonata for Viola da Gamba and Harpsichord No. 1 in G major, BWV 1027",
+        "Sonata for Viola da Gamba and Harpsichord No. 2 in D major, BWV 1028",
+        "Sonata for Viola da Gamba and Harpsichord No. 3 in G minor, BWV 1029"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Columbia Masterworks",
+      "label": null,
+      "favorite": false,
+      "cover": "https://blog.kakaocdn.net/dna/botYDx/btsO7hxisan/AAAAAAAAAAAAAAAAAAAAAAW5l-fjBQOZgaNWczqnpGd1KH76jTXpmkTclnxhVsqV/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=dhY25on/2GndIC4EZemO7ydZhE0="
+    },
+    {
+      "title": "Bach: Goldberg Variations - Fazil Say",
+      "url": "/albums/bach-goldberg-variations-fazil-say/",
+      "artists": [
+        "Say, Fazil"
+      ],
+      "composers": [
+        "Bach, Johann Sebastian"
+      ],
+      "works": [
+        "Goldberg Variations, BWV 988"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Warner Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2022-09/5054197233968.jpg.webp"
+    },
+    {
+      "title": "Bach: Keyboard Concertos Nos. 3, 5 & 7 - Gould, Golschmann, Columbia Symphony Orchestra",
+      "url": "/albums/bach-keyboard-concertos-nos-3-5-7-gould-golschmann-columbia-symphony-orchestra/",
+      "artists": [
+        "Gould, Glenn",
+        "Golschmann, Vladimir",
+        "Columbia Symphony Orchestra"
+      ],
+      "composers": [
+        "Bach, Johann Sebastian"
+      ],
+      "works": [
+        "Keyboard Concerto No. 3 in D major, BWV 1054",
+        "Keyboard Concerto No. 5 in F minor, BWV 1056",
+        "Keyboard Concerto No. 7 in G minor, BWV 1058"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Columbia Masterworks",
+      "label": null,
+      "favorite": false,
+      "cover": "https://blog.kakaocdn.net/dna/zAGFI/btsOYfGtTlg/AAAAAAAAAAAAAAAAAAAAAAvvv0eIIpW7AA6CCnQUwmQ0RvF9GJDAK9GsgSb8p3Lj/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=nPHB0LxGiSkddnc8gBliuSYY19M="
+    },
+    {
       "title": "Bachauer: The Mercury Masters",
       "url": "/albums/bachauer-the-mercury-masters/",
       "artists": [
@@ -60,6 +124,31 @@
       "cover": "https://blog.kakaocdn.net/dna/dQJN4Z/dJMcad79rp1/AAAAAAAAAAAAAAAAAAAAAANhAC8zZ6JWjm7fcONZU7KjGt0NJIZBTiQ8cEIA5Yb1/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=MFaYN41CFTLnVa9%2FClKl9UkRTws%3D"
     },
     {
+      "title": "Beethoven: Piano Concerto No. 4; Franck: Symphonic Variations; Ravel: Piano Concerto - Moravec, Belohlavek, Prague Philharmonia",
+      "url": "/albums/beethoven-piano-concerto-no-4-franck-symphonic-variations-ravel-piano-concerto-moravec-belohlavek-prague-philharmonia/",
+      "artists": [
+        "Moravec, Ivan",
+        "Bělohlávek, Jiří",
+        "Prague Philharmonia"
+      ],
+      "composers": [
+        "Beethoven, Ludwig van",
+        "Franck, Cesar",
+        "Ravel, Maurice"
+      ],
+      "works": [
+        "Piano Concerto No. 4 in G major, Op. 58",
+        "Symphonic Variations, FWV 46",
+        "Piano Concerto in G major, M. 83"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Supraphon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/97/95/9e/97959ebb-b9ca-08f9-2c9f-c240a22810bd/cover.jpg/1200x1200bb.jpg"
+    },
+    {
       "title": "Brad Mehldau - Introducing Brad Mehldau",
       "url": "/albums/brad-mehldau-introducing-brad-mehldau/",
       "artists": [
@@ -75,8 +164,8 @@
       "cover": "https://blog.kakaocdn.net/dna/dIwTuA/btq5C9xhAdC/AAAAAAAAAAAAAAAAAAAAAD7l3NKko1TGJx-TXtWzY-NKdZ-YTNn6g_Mk4n7gznMb/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=LX%2FFyq6CUngm%2B63oMhmZfZdw4Hk%3D"
     },
     {
-      "title": "Chopin: Complete Works for Piano & Orchestra - Paik & Wit (2003)",
-      "url": "/albums/chopin-complete-works-for-piano-orchestra-paik-wit/",
+      "title": "Chopin: Complete Works for Piano & Orchestra - Paik, Wit, Warsaw Philharmonic Orchestra",
+      "url": "/albums/chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra/",
       "artists": [
         "Paik, Kun-Woo",
         "Wit, Antoni",
@@ -101,7 +190,7 @@
       "cover": "https://blog.kakaocdn.net/dna/vMWp6/btrQdy7ij6l/AAAAAAAAAAAAAAAAAAAAAKcvdftxO8IIyVu-S5ULpF5Z97Klmi4XUr0wUy95zlfd/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=p0qWggjfOqzHsz7Ci20KTUFnlnU%3D"
     },
     {
-      "title": "Chopin: Piano Concerto No. 1; Faure: Ballade; Liszt: Piano Concerto No. 1 - Wild, Sargent & Gerhardt",
+      "title": "Chopin: Piano Concerto No. 1; Faure: Ballade; Liszt: Piano Concerto No. 1 - Wild, Sargent, Gerhardt",
       "url": "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/",
       "artists": [
         "Wild, Earl",
@@ -126,8 +215,55 @@
       "cover": "https://blog.kakaocdn.net/dna/cgwfd2/btrQgGwIAcK/AAAAAAAAAAAAAAAAAAAAAGdgPrtXPZp_F6uudQ_j7luxooM1WYW9uW3oCJ0JQJlp/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=JAAFXJPdxw153e85J23eX2jOZ0U%3D"
     },
     {
-      "title": "Debussy: Piano Music - Osborne",
-      "url": "/albums/debussy-piano-music-osborne/",
+      "title": "Chopin: Preludes, Piano Concerto No. 2 - Argerich, Rostropovich, National Symphony Orchestra Washington",
+      "url": "/albums/chopin-preludes-piano-concerto-no-2-argerich-rostropovich-national-symphony-orchestra-washington/",
+      "artists": [
+        "Argerich, Martha",
+        "Rostropovich, Mstislav",
+        "National Symphony Orchestra Washington"
+      ],
+      "composers": [
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Preludes, Op. 28",
+        "Piano Concerto No. 2 in F minor, Op. 21"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Deutsche Grammophon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://images.universal-music.de/img/assets/102/102155/4/2048/1975-24-preludes-klavierkonzert-nr-2-f-moll-op-21-0028945903725.jpg"
+    },
+    {
+      "title": "Chopin: The Legendary 1965 Recording - Martha Argerich",
+      "url": "/albums/chopin-the-legendary-1965-recording-martha-argerich/",
+      "artists": [
+        "Argerich, Martha"
+      ],
+      "composers": [
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Piano Sonata No. 3 in B minor, Op. 58",
+        "Mazurka No. 1 in A minor, Op. 59 No. 1",
+        "Mazurka No. 2 in A-flat major, Op. 59 No. 2",
+        "Mazurka No. 3 in F-sharp minor, Op. 59 No. 3",
+        "Nocturne No. 4 in F major, Op. 15 No. 1",
+        "Scherzo No. 3 in C-sharp minor, Op. 39",
+        "Polonaise No. 6 in A-flat major, Op. 53"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "EMI Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2021-05/190296697487_preview.jpg.webp?itok=hvWZknII"
+    },
+    {
+      "title": "Debussy: Piano Music - Steven Osborne",
+      "url": "/albums/debussy-piano-music-steven-osborne/",
       "artists": [
         "Osborne, Steven"
       ],
@@ -151,8 +287,8 @@
       "cover": "https://blog.kakaocdn.net/dna/oGTCL/dJMcah3MxKL/AAAAAAAAAAAAAAAAAAAAABLvbPBeWBKdZZwWSd74_fI1vavbu5104aXx0lTjysMw/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=9u1yz4W1gIvxlys6rSqQz5gJgYA%3D"
     },
     {
-      "title": "Debussy: Preludes, Books I & II - Osborne",
-      "url": "/albums/debussy-preludes-books-i-ii-osborne/",
+      "title": "Debussy: Preludes, Books I & II - Steven Osborne",
+      "url": "/albums/debussy-preludes-books-i-ii-steven-osborne/",
       "artists": [
         "Osborne, Steven"
       ],
@@ -171,12 +307,58 @@
       "cover": "https://blog.kakaocdn.net/dna/mKRjc/dJMcah3MxAy/AAAAAAAAAAAAAAAAAAAAAPml1j5-Oi5MZMsGb0bm_DRkhZhsfb_xz5QYolWVi81t/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=OhUTt%2Bxq4jNir%2Fe1rkVKsIQJZng%3D"
     },
     {
-      "title": "Khachaturian: Violin Concerto in D minor; Bartok: Violin Concerto No. 2 - Haendel, Muller-Kray & Radio-Sinfonieorchester Stuttgart",
-      "url": "/albums/khachaturian-violin-concerto-in-d-minor-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart/",
+      "title": "Elgar: Cello Concerto in E minor; Walton: Cello Concerto - Muller-Schott, Previn, Oslo Philharmonic Orchestra",
+      "url": "/albums/elgar-cello-concerto-in-e-minor-walton-cello-concerto-muller-schott-previn-oslo-philharmonic-orchestra/",
+      "artists": [
+        "Müller-Schott, Daniel",
+        "Previn, André",
+        "Oslo Philharmonic Orchestra"
+      ],
+      "composers": [
+        "Elgar, Edward",
+        "Walton, William"
+      ],
+      "works": [
+        "Cello Concerto in E minor, Op. 85",
+        "Cello Concerto"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Orfeo",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/49/42/71/494271aa-f8b0-6291-4926-572d2f2bf40b/4011790621128.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Grieg: Piano Concerto in A minor; Chopin: Piano Concerto No. 2 in F minor - Thibaudet, Gergiev, Rotterdam Philharmonic Orchestra",
+      "url": "/albums/grieg-piano-concerto-in-a-minor-chopin-piano-concerto-no-2-in-f-minor-thibaudet-gergiev-rotterdam-philharmonic-orchestra/",
+      "artists": [
+        "Thibaudet, Jean-Yves",
+        "Gergiev, Valery",
+        "Rotterdam Philharmonic Orchestra"
+      ],
+      "composers": [
+        "Grieg, Edvard",
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Piano Concerto in A minor, Op. 16",
+        "Piano Concerto No. 2 in F minor, Op. 21"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Decca",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d9/49/63/d9496373-2ea7-6285-50d3-0673aee706f0/00028946709320.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Khachaturian: Violin Concerto; Bartok: Violin Concerto No. 2 - Haendel, Muller-Kray, Radio-Sinfonieorchester Stuttgart des SWR",
+      "url": "/albums/khachaturian-violin-concerto-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart-des-swr/",
       "artists": [
         "Haendel, Ida",
-        "Muller-Kray, Hans",
-        "Radio-Sinfonieorchester Stuttgart"
+        "Müller-Kray, Hans",
+        "Radio-Sinfonieorchester Stuttgart des SWR"
       ],
       "composers": [
         "Khachaturian, Aram",
@@ -191,7 +373,76 @@
       "recording": "Hanssler Classic",
       "label": null,
       "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/904Vk/dJMcaelFXeH/AAAAAAAAAAAAAAAAAAAAADAtXyPEMkTjs2SzJluL21XA_RLIIEukdhrBQS5BfvRX/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=%2FBUUruUaJTY%2B1Ap9oeoMfwRJoJ4%3D"
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/39/25/mzi.dnqtxieu.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Liszt: Piano Concerto No. 1, Piano Concerto No. 2, 3 Etudes de Concert - Arrau, Davis, London Symphony Orchestra",
+      "url": "/albums/liszt-piano-concerto-no-1-piano-concerto-no-2-3-etudes-de-concert-arrau-davis-london-symphony-orchestra/",
+      "artists": [
+        "Arrau, Claudio",
+        "Davis, Colin",
+        "London Symphony Orchestra"
+      ],
+      "composers": [
+        "Liszt, Franz"
+      ],
+      "works": [
+        "Piano Concerto No. 1 in E-flat major, S. 124",
+        "Piano Concerto No. 2 in A major, S. 125",
+        "3 Etudes de Concert, S. 144"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Decca",
+      "label": null,
+      "favorite": false,
+      "cover": "https://www.eloquenceclassics.com/wp-content/uploads/sites/1141/2016/05/4565632-1024x1024.jpg"
+    },
+    {
+      "title": "Mozart: Piano Concertos Nos. 14, 23, 25 - Moravec, Vlach, Czech Chamber Orchestra, Czech Philharmonic Orchestra",
+      "url": "/albums/mozart-piano-concertos-nos-14-23-25-moravec-vlach-czech-chamber-orchestra-czech-philharmonic-orchestra/",
+      "artists": [
+        "Moravec, Ivan",
+        "Vlach, Josef",
+        "Czech Chamber Orchestra",
+        "Czech Philharmonic Orchestra"
+      ],
+      "composers": [
+        "Mozart, Wolfgang Amadeus"
+      ],
+      "works": [
+        "Piano Concerto No. 14 in E-flat major, K. 449",
+        "Piano Concerto No. 23 in A major, K. 488",
+        "Piano Concerto No. 25 in C major, K. 503"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Supraphon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/75/2e/97/752e979d-0c11-92ff-96bf-d30da72e0a3b/cover.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mozart: Piano Concertos Nos. 20, 23 - Moravec, Marriner, Academy of St Martin in the Fields",
+      "url": "/albums/mozart-piano-concertos-nos-20-23-moravec-marriner-academy-of-st-martin-in-the-fields/",
+      "artists": [
+        "Moravec, Ivan",
+        "Marriner, Neville",
+        "Academy of St Martin in the Fields"
+      ],
+      "composers": [
+        "Mozart, Wolfgang Amadeus"
+      ],
+      "works": [
+        "Piano Concerto No. 20 in D minor, K. 466",
+        "Piano Concerto No. 23 in A major, K. 488"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Hanssler Classic",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/cd/d5/be/mzi.jrvdfwjc.jpg/1200x1200bb.jpg"
     },
     {
       "title": "Murray Perahia plays Chopin",

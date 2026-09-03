@@ -32,6 +32,15 @@ jobs:
       - name: Generate music Markdown pages
         run: ruby scripts/normalize_music_filenames.rb && ruby scripts/generate_music_pages.rb
 
+      - name: Check music album title lengths
+        run: ruby scripts/check_music_title_lengths.rb
+
+      - name: Test music title length checker
+        run: ruby test/music_title_length_test.rb
+
+      - name: Test Tistory migration helper
+        run: python3 test/migrate_tistory_test.py
+
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 

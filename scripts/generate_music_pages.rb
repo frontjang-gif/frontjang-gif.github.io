@@ -237,7 +237,7 @@ def parse_album(path)
       work_composer = saved_composer["title"] if saved_composer && saved_composer["title"]
       work = { composer: work_composer, title: match[2].strip, movements: [], metadata: {} }
       works << work
-    elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+\d+\.\s+(.+)$/))
+    elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+\d+[A-Za-z]?\.\s+(.+)$/))
       work[:movements] << match[1].strip if work
     elsif composer && (match = line.match(/^\s*\d+[A-Za-z]?\.\s+(.+)$/))
       item = match[1].strip
@@ -298,8 +298,12 @@ def write_page(path, title, body)
   if preserved_content && generated_content.include?("## Referenced by")
     preserved_prefix = preserved_content.split(/^## Referenced by\s*$/, 2).first.to_s.rstrip
     generated_references = generated_content.split(/^## Referenced by\s*$/, 2).last.to_s.strip
-    content = [preserved_prefix, "## Referenced by", generated_references]
-      .reject(&:empty?).join("\n\n")
+    content = if preserved_prefix.empty?
+      generated_content
+    else
+      [preserved_prefix, "## Referenced by", generated_references]
+        .reject(&:empty?).join("\n\n")
+    end
   else
     content = preserved_content || generated_content
   end

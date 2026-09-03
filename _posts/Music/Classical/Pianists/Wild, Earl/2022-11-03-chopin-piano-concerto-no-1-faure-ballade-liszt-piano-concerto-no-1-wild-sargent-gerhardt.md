@@ -1,5 +1,5 @@
 ---
-title: "Chopin: Piano Concerto No. 1; Faure: Ballade; Liszt: Piano Concerto No. 1 - Wild, Sargent & Gerhardt"
+title: "Chopin: Piano Concerto No. 1; Faure: Ballade; Liszt: Piano Concerto No. 1 - Wild, Sargent, Gerhardt"
 date: 2022-11-03
 artist:
   - Wild, Earl
@@ -22,7 +22,7 @@ musicFolder: ""
 
 ### Liszt, Franz
 #### Piano Concerto No. 1 in E-flat major, S. 124
-h5. 1. Allegro maestoso
+5. 1. Allegro maestoso
 6. 2. Quasi adagio
 7. 3. Allegretto vivace. Allegro animato
 8. 4. Allegro marziale animato. Presto

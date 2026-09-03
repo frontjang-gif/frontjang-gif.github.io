@@ -11,13 +11,13 @@ title: Osborne, Steven
 ## 2017
 
 <div class="posts album-list">
-{% assign post = site.posts | where: "url", "/albums/debussy-piano-music-osborne/" | first %}
+{% assign post = site.posts | where: "url", "/albums/debussy-piano-music-steven-osborne/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 </div>
 
 ## 2006
 
 <div class="posts album-list">
-{% assign post = site.posts | where: "url", "/albums/debussy-preludes-books-i-ii-osborne/" | first %}
+{% assign post = site.posts | where: "url", "/albums/debussy-preludes-books-i-ii-steven-osborne/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 </div>

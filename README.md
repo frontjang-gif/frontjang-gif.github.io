@@ -132,6 +132,53 @@ Music albums may use `recording`. Label navigation is derived from `Labels/{labe
 
 Music files may be moved into nested folders. Before each build, their filenames are automatically normalized to `{record date}-{title slug}.md` within their current folder. Renaming an album `title` therefore updates its filename while preserving the folder.
 
+## Researching and Importing Music and Movies
+
+Use `scripts/music_source_research.py` to gather an auditable research packet before creating an album post. Give it the original post first, then any authoritative catalogue pages (recording company, Apple Music, Amazon, AllMusic, or Discogs). It extracts candidate title, publication date, cover, credited artists, and track text without publishing an unreviewed post.
+
+```sh
+python3 scripts/music_source_research.py \
+  'https://frontjang1.tistory.com/984' \
+  'https://www.universalmusic.it/musica-classica/album/grieg-piano-concerto-chopin-piano-concerto-no-2_20012688877/' \
+  --wikipedia 'Edvard Grieg' \
+  --wikipedia 'Frédéric Chopin' \
+  --output research/grieg-chopin-thibaudet.json \
+  --markdown research/grieg-chopin-thibaudet.md
+```
+
+The packet is source material, not final metadata: verify each Wikipedia or IMSLP page before assigning `wiki` or `imslp`, treat Discogs as secondary recording metadata, and choose a cover that is at least 1000px wide. Once reviewed, create the post in `_posts/Music/`, then run `ruby scripts/normalize_music_filenames.rb`, `ruby scripts/generate_music_pages.rb`, and `bundle exec jekyll build`.
+
+The same collector supports Movie posts through the generic entry point. It extracts Movie JSON-LD fields for directors, cast, genres, and running time; the built-in TMDb plugin supplements pages that use site-specific HTML with release date, director, genre, running time, and a high-resolution cover candidate. IMDb, TMDb, Letterboxd, and Rotten Tomatoes links are classified as movie databases.
+
+```sh
+python3 scripts/media_source_research.py --media-type movie \
+  'https://example.com/original-movie-post' \
+  'https://www.imdb.com/title/tt0000000/' \
+  --output research/example-film.json
+```
+
+The importer has a plugin architecture. Its built-in plugins cover Tistory, Universal Music, Deutsche Grammophon, Eloquence Classics, Warner Classics, TMDb, Wikipedia, IMSLP, Discogs, AllMusic, Amazon, Apple Music, and Naxos, while the generic extractor handles Open Graph and JSON-LD metadata. The Discogs and AllMusic plugins deliberately mark their data as secondary; they cannot override an original post or recording-company source. To add a site, create a Python file in a separate directory and pass it with `--plugin-dir plugins/music-sources`. Each file exports `plugin` or `plugins`; a plugin provides a `name`, `matches(url)`, and `enrich(context)` method. `context.source` is the JSON record being assembled, so a plugin can add a catalogue number, direct cover candidates, recording company, or site-specific tracklist without modifying the importer itself.
+
+Music album titles are limited to 140 characters in CI. Run `ruby scripts/check_music_title_lengths.rb` to report violations, or add `--apply` to omit safe catalogue/opus identifiers from title metadata and rename the affected album files. Full canonical work names remain in the track headings.
+
+To migrate a Tistory blog, first make an inventory without changing posts: `python3 scripts/migrate_tistory.py --site https://frontjang1.tistory.com --output _research/tistory-manifest.json`. Add `--research --write-drafts _imports/tistory` to fetch only posts not already cited from `_posts/` and create review-only Markdown drafts. Use `--resume _research/tistory-manifest.json` after an interrupted run to reuse completed research. The drafts deliberately stay outside `_posts/`: Music and Movie metadata still need authoritative-source verification and folder assignment before publication.
+
+```python
+# plugins/music-sources/example_label.py
+from urllib.parse import urlparse
+
+class ExampleLabel:
+    name = "example_label"
+
+    def matches(self, url):
+        return urlparse(url).netloc.endswith("example-label.com")
+
+    def enrich(self, context):
+        context.source["recording_company"] = "Example Label"
+
+plugin = ExampleLabel()
+```
+
 Album track entries may include both numbers, for example `1. 1. Allegro non troppo`. The first number is the track number and the second is the movement number.
 
 Generated composer work pages include `favorite: false`. Change it to `favorite: true` in the work page front matter to mark a favorite work; the value is preserved when pages are regenerated.

@@ -1,0 +1,22 @@
+---
+title: "Prokofiev: Piano Concertos Nos. 2 & 4, Overture on Hebrew Themes - Bronfman, Mehta"
+date: 2020-08-12
+migration_status: review_required
+original_url: https://frontjang1.tistory.com/165
+tistory_category: {"id": 827025, "label": "Music/Classical"}
+---
+
+<!-- Review category, canonical metadata, and media before moving this draft into _posts/. -->
+
+Music/Classical
+Piano Concerto No. 2 in G Minor, Op. 16 (1923 Version):
+1. I. Andantino - Allegretto.
+2. II. Scherzo. Vivace.
+3. III. Intermezzo. Allegro moderato.
+4. IV. Finale. Allegro tempestoso.
+Piano Concerto No. 4 for the Left Hand in B-Flat Major, Op. 53:
+5. I. Vivace.
+6. II. Andante.
+7. III. Moderato.
+8. IV. Vivace.
+9. Overture on Hebrew Themes, Op. 34

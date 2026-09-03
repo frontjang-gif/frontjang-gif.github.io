@@ -40,6 +40,16 @@ tags: [tag1, tag2]
 
 ## Album Writing Guidelines
 
+### Source Research, Importing, and Plugin Evolution
+
+- Before importing a Music or Movie post, collect the original post and corroborating primary sources with `scripts/music_source_research.py` or `scripts/media_source_research.py`.
+- Prefer an official recording company, distributor, artist, studio, or publisher page for credits, tracklists, release data, and covers. Treat Discogs and AllMusic as secondary sources and never let them override primary data without review.
+- When the generic Open Graph/JSON-LD extractor cannot reliably collect a source site's required metadata, automatically create a dedicated module under `scripts/music_source_plugins/`. Do not wait for separate approval.
+- A source plugin must have a focused `matches(url)` rule, add only evidence available on that site, have a unit test in `test/music_source_research_test.py`, and be registered in `scripts/music_source_plugins/__init__.py`.
+- After adding a plugin, verify it against a real public page when possible, document it in `README.md`, and do not claim support for fields that the verification did not extract.
+- Evolve the importer when repeated imports expose a reusable parsing or normalization gap. Keep the plugin registry, tests, README, and these instructions aligned with the new capability.
+- Do not set a custom identifying `User-Agent` header for source-research requests.
+
 ### Cover Image
 
 - Attach a cover image that is at least 1000px wide.
@@ -51,9 +61,11 @@ tags: [tag1, tag2]
 
 - Use the format `Composer: Work - Performer or Orchestra (release year)`. Omit the year when it is unavailable.
 - Include only enough information to distinguish the album.
+- When catalogue or opus numbers make an album title unnecessarily long, omit them from the title and filename; retain the complete canonical work name and number in the album track headings and generated work pages.
 - Use the Wikipedia spelling for composer names, such as `Rachmaninov` rather than `Rachmaninoff`.
 - Use `Last name, First name` for composers, except for established single-name or conventional exceptions.
 - Use performers' last names. If multiple performers share a last name, use the shared last name only.
+- List every credited artist needed to identify an album. For a sole human artist, use the full name; for multiple human artists, use surnames. Separate artist credits with commas, never `&`.
 - Add a first-name initial before a less-famous composer with a duplicated last name, such as `B.Tchaikovsky` or `CPE.Bach`.
 - Use the orchestra's historical name from the recording period; put its latest name in the tags instead.
 - Expand shortened orchestra names and do not use abbreviations.

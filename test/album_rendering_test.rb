@@ -42,15 +42,15 @@ assert(liszt_source.include?("title: Liszt, Franz"), "the fuller composer name s
 assert(liszt_source.match?(/aliases:\s*\n- Liszt/), "the former surname-only name should remain an alias")
 assert(!File.exist?(File.join(ROOT, "_generated", "composers", "liszt.md")), "the obsolete surname-only composer page should not be regenerated")
 
-paik_album = File.join(ROOT, "_posts", "Music", "Classical", "Pianists", "Paik, Kun-Woo", "2022-11-02-chopin-complete-works-for-piano-orchestra-paik-wit.md")
+paik_album = File.join(ROOT, "_posts", "Music", "Classical", "Pianists", "Paik, Kun-Woo", "2022-11-02-chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra.md")
 assert(File.file?(paik_album), "an album identified by its recording company should not be filed as a label series")
 album_catalog = JSON.parse(File.read(File.join(ROOT, "data", "albums.json"))).fetch("albums")
-paik_catalog_entry = album_catalog.find { |album| album["title"] == "Chopin: Complete Works for Piano & Orchestra - Paik & Wit (2003)" }
+paik_catalog_entry = album_catalog.find { |album| album["title"] == "Chopin: Complete Works for Piano & Orchestra - Paik, Wit, Warsaw Philharmonic Orchestra" }
 assert(paik_catalog_entry&.fetch("recording") == "Decca", "the recording company should remain in recording metadata")
 assert(paik_catalog_entry&.fetch("label").nil?, "a recording company should not be exposed as a label series")
 assert(!File.exist?(File.join(ROOT, "_generated", "labels", "decca.md")), "a recording company should not generate a label-series page")
 
-paik_page = File.join(ROOT, "_site", "albums", "chopin-complete-works-for-piano-orchestra-paik-wit", "index.html")
+paik_page = File.join(ROOT, "_site", "albums", "chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra", "index.html")
 assert(File.file?(paik_page), "expected built Paik album page")
 paik_document = Nokogiri::HTML(File.read(paik_page))
 paik_entry = paik_document.at_css(".album-entry")
@@ -59,5 +59,14 @@ paik_composer = paik_entry.at_xpath(".//h4[normalize-space(.)='Chopin, Frederic'
 paik_first_track = paik_composer&.next_element
 assert(paik_first_track&.matches?("div.album-track"), "the first plain-text track should immediately follow its composer heading")
 assert(paik_first_track&.text&.strip == "1. Krakowiak in F major, Op. 14", "plain-text tracks should preserve their visible track numbers")
+
+walton_work = File.join(ROOT, "_generated", "composers", "walton-william", "cello-concerto.md")
+assert(File.file?(walton_work), "the imported Walton concerto should generate a work page")
+walton_source = File.read(walton_work)
+assert(walton_source.include?("6. Rapsodicamente"), "lettered movement numbers should be normalized sequentially on work pages")
+
+goldberg_work = File.join(ROOT, "_generated", "composers", "bach-johann-sebastian", "goldberg-variations-bwv-988.md")
+assert(File.file?(goldberg_work), "the imported Goldberg Variations should generate a work page")
+assert(File.read(goldberg_work).include?("30. Variation 29 a 1 ovvero 2 Clav."), "a previously empty generated work page should accept new movements")
 
 puts "Album rendering conventions passed"

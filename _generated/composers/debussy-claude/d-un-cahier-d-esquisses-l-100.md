@@ -8,4 +8,4 @@ title: "…D’un cahier d’esquisses, L 100"
 
 ## Referenced by
 
-- [Debussy: Piano Music - Osborne]({{ site.baseurl }}/albums/debussy-piano-music-osborne/)
+- [Debussy: Piano Music - Steven Osborne]({{ site.baseurl }}/albums/debussy-piano-music-steven-osborne/)
