@@ -209,7 +209,6 @@ def parse_album(path)
   lines.each do |line|
     if line.match?(/^### CD\d+\s*$/)
       single_disc_hierarchy = false
-      composer = nil
       work = nil
     elsif (match = line.match(/^### ([^#].*)$/))
       single_disc_hierarchy = true

@@ -24,7 +24,6 @@ favorite: false
 6. 3. Allegro vivace
 
 ### CD2
-#### Chopin, Frederic
 ##### Piano Sonata No. 2 in B-flat minor, Op. 35
 1. 1. Grave - Doppio movimento
 2. 2. Scherzo - Piu lento - Tempo I
@@ -38,7 +37,6 @@ favorite: false
 8. 4. Finale. Presto, ma non tanto
 
 ### CD3
-#### Chopin, Frederic
 1. Ballade No. 1 in G minor, Op. 23. Largo - Meno mosso - Presto con fuoco
 2. Ballade No. 2 in F major, Op. 38. Andantino - Presto con fuoco - Tempo I
 3. Ballade No. 3 in A-flat major, Op. 47. Allegretto
@@ -53,7 +51,6 @@ favorite: false
 12. Etude in C-sharp minor, Op. 10 No. 4
 
 ### CD4
-#### Chopin, Frederic
 ##### Etudes, Op. 10
 1. 1. No. 1 in C major. Allegro
 2. 2. No. 2 in A minor. Allegro
@@ -83,7 +80,6 @@ favorite: false
 24. 12. No. 12 in C minor. Allegro molto con fuoco
 
 ### CD5
-#### Chopin, Frederic
 ##### Preludes, Op. 28
 1. 1. No. 1 in C major. Agitato
 2. 2. No. 2 in A minor. Lento
@@ -114,7 +110,6 @@ favorite: false
 26. Prelude in A-flat major, Op. posth. Presto
 
 ### CD6
-#### Chopin, Frederic
 1. Prelude No. 6 in B minor, Op. 28. Lento assai
 2. Prelude No. 7 in A major, Op. 28. Andantino
 3. Prelude No. 15 in D-flat major, Op. 28. Sostenuto

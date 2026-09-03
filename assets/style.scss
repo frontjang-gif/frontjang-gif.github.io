@@ -89,9 +89,16 @@ h4 {
   margin-bottom: 0;
 }
 
+.album-entry .album-disc,
 .album-entry .album-composer,
 .album-entry .album-work {
   text-align: left;
+}
+
+.album-entry .album-disc + .album-composer,
+.album-entry .album-disc + .album-work,
+.album-entry .album-composer + .album-work {
+  margin-top: 0;
 }
 
 .album-entry .album-work {
