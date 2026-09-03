@@ -275,9 +275,8 @@ end
 FileUtils.rm_rf(OUTPUT_ROOT)
 FileUtils.mkdir_p(OUTPUT_ROOT)
 
-sidebar_content = ["<details class=\"sidebar-subgroup\" open>", "  <summary>Albums <span>#{albums.size}</span></summary>", "  <a href=\"{{ site.baseurl }}/albums/\">All albums</a>"]
-sidebar_content += render_music_sidebar(music_sidebar_tree(albums)).map { |line| "  #{line}" }
-sidebar_content << "</details>"
+sidebar_content = ["<a href=\"{{ site.baseurl }}/albums/\">All <span>#{albums.size}</span></a>"]
+sidebar_content += render_music_sidebar(music_sidebar_tree(albums))
 File.write(File.join(SOURCE_ROOT, "_includes", "generated-music-sidebar.html"), sidebar_content.join("\n") + "\n")
 
 movie_path = ->(movie) { "/movies/#{slug(movie[:title])}/" }
