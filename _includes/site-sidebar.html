@@ -7,17 +7,17 @@
 {% assign seventies_eighties_count = 0 %}
 {% assign movie_count = 0 %}
 {% for post in site.posts %}
-  {% if post.path contains '_posts/music/' %}
+  {% if post.path contains '_posts/Music/' %}
     {% assign music_count = music_count | plus: 1 %}
-    {% if post.path contains '_posts/music/classical/' %}{% assign classical_count = classical_count | plus: 1 %}{% endif %}
-    {% if post.path contains '_posts/music/jazz/' %}{% assign jazz_count = jazz_count | plus: 1 %}{% endif %}
-    {% if post.path contains '_posts/music/7080s/' %}{% assign seventies_eighties_count = seventies_eighties_count | plus: 1 %}{% endif %}
-  {% elsif post.path contains '_posts/movie/' %}
+    {% if post.path contains '_posts/Music/Classical/' %}{% assign classical_count = classical_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/Music/Jazz/' %}{% assign jazz_count = jazz_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/Music/7080s/' %}{% assign seventies_eighties_count = seventies_eighties_count | plus: 1 %}{% endif %}
+  {% elsif post.path contains '_posts/Movie/' %}
     {% assign movie_count = movie_count | plus: 1 %}
   {% else %}
     {% assign blog_count = blog_count | plus: 1 %}
-    {% if post.path contains '_posts/daily/' %}{% assign daily_count = daily_count | plus: 1 %}{% endif %}
-    {% if post.path contains '_posts/tech/' %}{% assign tech_count = tech_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/Daily/' %}{% assign daily_count = daily_count | plus: 1 %}{% endif %}
+    {% if post.path contains '_posts/Tech/' %}{% assign tech_count = tech_count | plus: 1 %}{% endif %}
   {% endif %}
 {% endfor %}
 <aside class="site-sidebar" aria-label="Site navigation">

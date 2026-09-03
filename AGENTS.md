@@ -64,18 +64,19 @@ tags: [tag1, tag2]
 ### Tags
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
-- Add a music `music_category` such as `Classical`, `Jazz`, or `7080s` for genre navigation; this stays separate from Blog `categories`.
+- Use the top-level folder under `_posts/Music/` for music category navigation, such as `Classical`, `Jazz`, or `7080s`.
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
-- Music albums may use `label` for a recording series or label such as `Mercury Living Presence`.
-- Music albums may use `recording` for the release/edition and `label` for a recording series or label; both have generated album navigators.
+- Music albums may use `recording` for the release/edition.
+- Place albums under `Label/{label name}/` when they should appear in a generated label navigator.
 - Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
 ## Movie Writing Guidelines
 
-- Store movies under `_posts/movie/`.
+- Store movies under `_posts/Movie/`.
 - Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `movieFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
 - Music albums may use `musicFolder` for their media folder path.
+- Music album filenames are normalized to `{record date}-{title slug}.md` within their current folder; nested folders are supported.
 - Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.

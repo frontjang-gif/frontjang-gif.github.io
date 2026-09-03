@@ -5,7 +5,7 @@ title: Album Archive
 ---
 
 <div class="posts album-archive">
-  {% assign albums = site.posts | where_exp: "post", "post.path contains '_posts/music/'" | sort: "date" | reverse %}
+  {% assign albums = site.posts | where_exp: "post", "post.path contains '_posts/Music/'" | sort: "date" | reverse %}
   {% for album in albums %}
     {% assign post = album %}
     {% include post-card.html %}

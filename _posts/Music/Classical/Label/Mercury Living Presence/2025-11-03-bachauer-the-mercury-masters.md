@@ -5,11 +5,9 @@ artist:
   - Bachauer, Gina
   - Gielgud, John
   - London Symphony Orchestra
-music_category: Classical
 recording: Eloquence
-label: Mercury Living Presence
 cover: https://blog.kakaocdn.net/dna/dQJN4Z/dJMcad79rp1/AAAAAAAAAAAAAAAAAAAAAANhAC8zZ6JWjm7fcONZU7KjGt0NJIZBTiQ8cEIA5Yb1/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=MFaYN41CFTLnVa9%2FClKl9UkRTws%3D
-musicFolder: Classical/Labels/Mercury Living Presence/Gina Bachauer - The Mercury Masters
+musicFolder: ""
 ---
 
 ## Album

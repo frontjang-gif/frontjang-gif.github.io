@@ -3,7 +3,6 @@ title: "The Essential Teddy Pendergrass - Teddy Pendergrass"
 date: 2024-06-03 00:48:35 +0900
 artist:
   - Teddy Pendergrass
-music_category: 7080s
 cover: https://blog.kakaocdn.net/dna/xpYfT/btsHMBQOJDO/AAAAAAAAAAAAAAAAAAAAAMTtTlgJjJw5fV56czlc-2FTL520loUewe1vVV2vEwDj/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=OM%2FcXT%2FIT69HSIW3%2BYVHXIxcTvo%3D
 musicFolder: ""
 ---

@@ -70,13 +70,13 @@ collections:
 
 defaults:
   - scope:
-      path: "_posts/music"
+      path: "_posts/Music"
       type: "posts"
     values:
       layout: album
       permalink: /albums/:title/
   - scope:
-      path: "_posts/movie"
+      path: "_posts/Movie"
       type: "posts"
     values:
       layout: movie

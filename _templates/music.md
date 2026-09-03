@@ -4,10 +4,8 @@ title: "Composer: Work - Performer"
 date: YYYY-MM-DD
 artist:
   - Last name, First name
-music_category: Classical
 year: release year
 recording: Label
-label: Series or label
 cover: https://example.com/cover.jpg
 musicFolder: ""
 favorite: false

@@ -126,9 +126,11 @@ Composer pages use the same `wiki`, `born`, `original_name`, and `aliases` front
 
 For Classical albums, artist names normally use `Last name, First name`, but established exceptions such as `Lang Lang` can be entered in their commonly used form. For other genres, use the musician's commonly used name order. The generator preserves the entered form.
 
-Music albums and composer works can use `favorite: true` and appear in the corresponding `Favorite Albums` and `Favorite Works` sections at `/favorites/`. Music albums use `music_category` for their own genre navigation, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
+Music albums and composer works can use `favorite: true` and appear in the corresponding `Favorite Albums` and `Favorite Works` sections at `/favorites/`. Music category navigation is derived from the top-level folders under `_posts/Music/`, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
 
-Music albums may also use `recording` and `label`. Their album lists are generated at `/recordings/` and `/labels/`.
+Music albums may use `recording`. Label navigation is derived from `Label/{label name}/` folders, with album lists generated at `/labels/`.
+
+Music files may be moved into nested folders. Before each build, their filenames are automatically normalized to `{record date}-{title slug}.md` within their current folder. Renaming an album `title` therefore updates its filename while preserving the folder.
 
 Album track entries may include both numbers, for example `1. 1. Allegro non troppo`. The first number is the track number and the second is the movement number.
 
@@ -138,7 +140,7 @@ Movies automatically generate navigator pages from `directors`, `cast`, `genres`
 
 Use the movie title format `{year} {titleKo} ({titleOrg})`.
 
-The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/daily/` and `_posts/tech/`. Music is a Blog branch under `_posts/music/`, with albums physically grouped under `_posts/music/classical/` and `_posts/music/jazz/`; their `music_category` front matter drives the generated category pages.
+The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/Daily/` and `_posts/Tech/`. Music is a Blog branch under `_posts/Music/`, with albums physically grouped under `_posts/Music/Classical/` and `_posts/Music/Jazz/`; their top-level folder drives the generated category pages.
 
 ## Post Templates
 

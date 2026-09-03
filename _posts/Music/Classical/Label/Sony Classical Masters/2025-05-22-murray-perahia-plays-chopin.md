@@ -4,9 +4,8 @@ date: 2025-05-22 15:48:24 +0900
 artist:
   - Perahia, Murray
 recording: Sony Classical
-label: Sony Classical Masters
 cover: https://blog.kakaocdn.net/dna/bfqB99/btsN8uFtfyZ/AAAAAAAAAAAAAAAAAAAAAClMwhrdU_Tr5vUSzQh94dorguuZmUpUY1ahCnFuU9-M/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=1G%2BHZCDz423wWXfN9QC%2FkcxyfyE%3D
-musicFolder: "Labels/Sony Classical Masters/Murray Perahia plays Chopin"
+musicFolder: 
 favorite: false
 ---
 

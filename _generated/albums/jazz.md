@@ -6,7 +6,5 @@ title: Jazz
 
 [All music categories]({{ site.baseurl }}/albums/categories/)
 
-{% assign albums = site.posts | where: 'music_category', page.category | sort: 'date' | reverse %}
-{% for post in albums %}
-{% include post-card.html %}
-{% endfor %}
+- [Anne Sofie Von Otter, Brad Mehldau - Love Songs]({{ site.baseurl }}/albums/anne-sofie-von-otter-brad-mehldau-love-songs/)
+- [Brad Mehldau - Introducing Brad Mehldau]({{ site.baseurl }}/albums/brad-mehldau-introducing-brad-mehldau/)

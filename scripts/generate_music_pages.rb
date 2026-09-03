@@ -98,7 +98,8 @@ def count_label(name, count)
 end
 
 def album_url(album)
-  "/albums/#{slug(album[:title])}/"
+  filename = File.basename(album[:path], ".md").sub(/^\d{4}-\d{2}-\d{2}-/, "")
+  "/albums/#{slug(filename)}/"
 end
 
 def escape_yaml(value)
@@ -114,10 +115,12 @@ def parse_album(path)
   artist = metadata["artist"]
   artist = [artist] unless artist.is_a?(Array)
   year = metadata["year"]
-  category = metadata["music_category"]
+  music_root = File.join(SOURCE_ROOT, "_posts", "Music") + File::SEPARATOR
+  relative_path = path.delete_prefix(music_root).split(File::SEPARATOR)
+  category = relative_path.length > 1 ? relative_path.first : nil
   favorite = metadata["favorite"]
   recording = metadata["recording"]
-  label = metadata["label"]
+  label = relative_path[1] == "Label" ? relative_path[2] : nil
   composer = nil
   work = nil
   works = []
@@ -224,10 +227,10 @@ Dir[File.join(OUTPUT_ROOT, "**", "*.md")].each do |path|
   end
 end
 
-albums = Dir[File.join(SOURCE_ROOT, "_posts", "music", "**", "*.md")].map do |path|
+albums = Dir[File.join(SOURCE_ROOT, "_posts", "Music", "**", "*.md")].map do |path|
   parse_album(path)
 end
-movies = Dir[File.join(SOURCE_ROOT, "_posts", "movie", "*.md")].map { |path| parse_movie(path) }
+movies = Dir[File.join(SOURCE_ROOT, "_posts", "Movie", "*.md")].map { |path| parse_movie(path) }
 works = albums.flat_map { |album| album[:works] }.uniq { |work| [work[:composer], work[:title]] }
 composers = works.group_by { |work| work[:composer] }
 artists = albums.flat_map do |album|
@@ -284,8 +287,10 @@ end.join("\n")
 write_page(File.join(OUTPUT_ROOT, "favorites.md"), "Favorite Albums", content: favorite_content)
 
 categories.each do |category, category_albums|
-  content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n"
-  content += "{% assign albums = site.posts | where: 'music_category', page.category | sort: 'date' | reverse %}\n{% for post in albums %}\n{% include post-card.html %}\n{% endfor %}"
+  links = category_albums.sort_by { |album| album[:title] }.map do |album|
+    page_link(album_url(album), album[:title])
+  end
+  content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n" + links.join("\n")
   category_path = File.join(OUTPUT_ROOT, "albums", slug(category) + ".md")
   write_page(category_path, category, content: content, metadata: { "category" => category })
 end
