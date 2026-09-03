@@ -1,7 +1,15 @@
 {% assign protocol_folder = include.folder | default: "" %}
 {% if protocol_folder != "" %}
 <span class="protocol-actions">
-  <a class="protocol-action" href="frontjang-gif://action?root={{ include.root }}&amp;command=open&amp;path={{ protocol_folder | url_encode }}">Open folder</a>
-  <a class="protocol-action" href="frontjang-gif://action?root={{ include.root }}&amp;command=play&amp;path={{ protocol_folder | url_encode }}">Play</a>
+  <a class="protocol-action" href="frontjang-gif://action?root={{ include.root }}&amp;command=open&amp;path={{ protocol_folder | url_encode }}" aria-label="Open folder" title="Open folder">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M3 6.5h6l2 2h10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+    </svg>
+  </a>
+  <a class="protocol-action" href="frontjang-gif://action?root={{ include.root }}&amp;command=play&amp;path={{ protocol_folder | url_encode }}" aria-label="Play" title="Play">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M8 5v14l11-7z"></path>
+    </svg>
+  </a>
 </span>
 {% endif %}

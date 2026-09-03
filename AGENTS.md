@@ -67,7 +67,7 @@ tags: [tag1, tag2]
 - Use the top-level folder under `_posts/Music/` for music category navigation, such as `Classical`, `Jazz`, or `7080s`.
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
 - Music albums may use `recording` for the release/edition.
-- Place albums under `Label/{label name}/` when they should appear in a generated label navigator.
+- Place albums under `Labels/{label name}/` when they should appear in a generated label navigator.
 - Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
 
@@ -77,6 +77,8 @@ tags: [tag1, tag2]
 - Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `movieFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
 - Music albums may use `musicFolder` for their media folder path.
 - Music album filenames are normalized to `{record date}-{title slug}.md` within their current folder; nested folders are supported.
+- The sidebar is generated from the physical post structure as `Root > Blog | Music | Movie`. `scripts/generate_music_pages.rb` regenerates the nested Music folder tree in `_includes/generated-music-sidebar.html`; run it after moving Music folders or albums.
+- Keep top-level post folders capitalized: `_posts/Daily/`, `_posts/Tech/`, `_posts/Music/`, and `_posts/Movie/`. Music category and label navigation are derived from the nested folder structure.
 - Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.

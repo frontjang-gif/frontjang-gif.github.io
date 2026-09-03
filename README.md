@@ -108,7 +108,7 @@ The categorized content can be shown over this URL: <https://yourgithubusername.
 
 ## Deploying with GitHub Actions
 
-This repository uses `.github/workflows/pages.yml` to build and deploy the site with GitHub Pages. The workflow generates the automatic music and artist navigator Markdown pages with `ruby scripts/generate_music_pages.rb`, then runs `bundle exec jekyll build`.
+This repository uses `.github/workflows/pages.yml` to build and deploy the site with GitHub Pages. The workflow normalizes Music filenames with `ruby scripts/normalize_music_filenames.rb`, regenerates navigator Markdown and the nested Music sidebar with `ruby scripts/generate_music_pages.rb`, then runs `bundle exec jekyll build`.
 
 In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**. After that, pushes to `master` and manual workflow runs publish the generated `_site` directory.
 
@@ -128,7 +128,7 @@ For Classical albums, artist names normally use `Last name, First name`, but est
 
 Music albums and composer works can use `favorite: true` and appear in the corresponding `Favorite Albums` and `Favorite Works` sections at `/favorites/`. Music category navigation is derived from the top-level folders under `_posts/Music/`, for example `Classical` or `Jazz`. The generated music category pages are available at `/albums/classical/` and `/albums/jazz/`; the complete category list is at `/albums/categories/`. These are separate from the Blog Categories and Tags pages.
 
-Music albums may use `recording`. Label navigation is derived from `Label/{label name}/` folders, with album lists generated at `/labels/`.
+Music albums may use `recording`. Label navigation is derived from `Labels/{label name}/` folders, with album lists generated at `/labels/`.
 
 Music files may be moved into nested folders. Before each build, their filenames are automatically normalized to `{record date}-{title slug}.md` within their current folder. Renaming an album `title` therefore updates its filename while preserving the folder.
 
@@ -140,7 +140,7 @@ Movies automatically generate navigator pages from `directors`, `cast`, `genres`
 
 Use the movie title format `{year} {titleKo} ({titleOrg})`.
 
-The site navigation treats `_posts/` as the Blog branch. Blog posts are physically grouped under `_posts/Daily/` and `_posts/Tech/`. Music is a Blog branch under `_posts/Music/`, with albums physically grouped under `_posts/Music/Classical/` and `_posts/Music/Jazz/`; their top-level folder drives the generated category pages.
+The site navigation is organized as `Root > Blog | Music | Movie`. Blog posts are physically grouped under `_posts/Daily/` and `_posts/Tech/`. Music albums are stored under `_posts/Music/`, with folders such as `_posts/Music/Classical/Labels/Mercury Living Presence/` rendered as a nested, collapsible sidebar tree. The top-level Music folder drives category pages, and `Labels/{label name}/` drives label pages.
 
 ## Post Templates
 

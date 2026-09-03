@@ -46,7 +46,6 @@ def existing_artist_page(name)
       previous_title = metadata["title"]
       metadata["title"] = name if matches_full_name || matches_surname
       metadata["aliases"] = ([previous_title, *aliases, File.basename(path, ".md")]).compact.uniq
-      metadata["_generated_content"] = page[:content]
       return metadata
     end
   end
@@ -74,6 +73,16 @@ def existing_composer_page(name)
 end
 def page_link(path, label)
   "- [#{label}](\u007b\u007b site.baseurl \u007d\u007d#{path})"
+end
+
+def album_card_list(albums)
+  content = ["<div class=\"posts album-list\">"]
+  albums.each do |album|
+    content << "{% assign post = site.posts | where: \"url\", \"#{album_url(album)}\" | first %}"
+    content << "{% if post %}{% include post-card.html %}{% endif %}"
+  end
+  content << "</div>"
+  content.join("\n")
 end
 
 def music_sidebar_tree(albums)
@@ -296,8 +305,7 @@ end
 FileUtils.rm_rf(OUTPUT_ROOT)
 FileUtils.mkdir_p(OUTPUT_ROOT)
 
-sidebar_content = ["<a href=\"{{ site.baseurl }}/albums/\">All <span>#{albums.size}</span></a>"]
-sidebar_content += render_music_sidebar(music_sidebar_tree(albums))
+sidebar_content = render_music_sidebar(music_sidebar_tree(albums))
 File.write(File.join(SOURCE_ROOT, "_includes", "generated-music-sidebar.html"), sidebar_content.join("\n") + "\n")
 
 movie_path = ->(movie) { "/movies/#{slug(movie[:title])}/" }
@@ -327,9 +335,7 @@ end
 
 category_content = categories.keys.sort.map do |category|
   albums_in_category = categories[category].sort_by { |album| album[:title] }
-  "## #{category}\n\n" + albums_in_category.map do |album|
-    page_link(album_url(album), album[:title])
-  end.join("\n")
+  "## #{category}\n\n#{album_card_list(albums_in_category)}"
 end.join("\n\n")
 write_page(File.join(OUTPUT_ROOT, "albums", "categories.md"), "Music Categories", content: category_content)
 
@@ -341,10 +347,8 @@ end.join("\n")
 write_page(File.join(OUTPUT_ROOT, "favorites.md"), "Favorite Albums", content: favorite_content)
 
 categories.each do |category, category_albums|
-  links = category_albums.sort_by { |album| album[:title] }.map do |album|
-    page_link(album_url(album), album[:title])
-  end
-  content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n" + links.join("\n")
+  cards = album_card_list(category_albums.sort_by { |album| album[:title] })
+  content = "[All music categories](\u007b\u007b site.baseurl \u007d\u007d/albums/categories/)\n\n#{cards}"
   category_path = File.join(OUTPUT_ROOT, "albums", slug(category) + ".md")
   write_page(category_path, category, content: content, metadata: { "category" => category })
 end
@@ -356,10 +360,8 @@ end
   write_page(File.join(OUTPUT_ROOT, "#{group}.md"), group.capitalize, content: links.join("\n"))
 
   entries.each do |value, value_albums|
-    album_links = value_albums.sort_by { |album| album[:title] }.map do |album|
-      page_link(album_url(album), album[:title])
-    end
-    write_page(File.join(OUTPUT_ROOT, group, "#{slug(value)}.md"), value, content: album_links.join("\n"))
+    cards = album_card_list(value_albums.sort_by { |album| album[:title] })
+    write_page(File.join(OUTPUT_ROOT, group, "#{slug(value)}.md"), value, content: cards)
   end
 end
 
@@ -403,9 +405,7 @@ artists.each do |artist, artist_albums|
   content = "[All artists](\u007b\u007b site.baseurl \u007d\u007d/artists/)\n\n"
   grouped.keys.sort.reverse.each do |year|
     content += "## #{year}\n\n"
-    content += grouped[year].sort_by { |album| album[:title] }.map do |album|
-      page_link(album_url(album), album[:title])
-    end.join("\n") + "\n\n"
+    content += album_card_list(grouped[year].sort_by { |album| album[:title] }) + "\n\n"
   end
   metadata = { "wiki" => "", "born" => "", "original_name" => artist_original_names[artist] || artist }
   write_page(File.join(OUTPUT_ROOT, "artists", "#{slug(artist)}.md"), artist, content: content, metadata: metadata)

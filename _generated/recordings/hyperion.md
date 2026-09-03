@@ -3,5 +3,9 @@ layout: page
 title: Hyperion
 ---
 
-- [Debussy: Piano Music - Osborne]({{ site.baseurl }}/albums/debussy-piano-music-osborne/)
-- [Debussy: Preludes, Books I & II - Osborne]({{ site.baseurl }}/albums/debussy-preludes-books-i-ii-osborne/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/debussy-piano-music-osborne/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/debussy-preludes-books-i-ii-osborne/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>

@@ -10,4 +10,7 @@ title: Haendel, Ida
 
 ## 2011
 
-- [Khachaturian: Violin Concerto in D minor; Bartok: Violin Concerto No. 2 - Haendel, Muller-Kray & Radio-Sinfonieorchester Stuttgart]({{ site.baseurl }}/albums/khachaturian-violin-concerto-in-d-minor-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/khachaturian-violin-concerto-in-d-minor-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>

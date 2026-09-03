@@ -5,17 +5,31 @@ title: Music Categories
 
 ## 7080s
 
-- [The Essential Teddy Pendergrass - Teddy Pendergrass]({{ site.baseurl }}/albums/the-essential-teddy-pendergrass-teddy-pendergrass/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/the-essential-teddy-pendergrass-teddy-pendergrass/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>
 
 ## Classical
 
-- [Bachauer: The Mercury Masters]({{ site.baseurl }}/albums/bachauer-the-mercury-masters/)
-- [Debussy: Piano Music - Osborne]({{ site.baseurl }}/albums/debussy-piano-music-osborne/)
-- [Debussy: Preludes, Books I & II - Osborne]({{ site.baseurl }}/albums/debussy-preludes-books-i-ii-osborne/)
-- [Khachaturian: Violin Concerto in D minor; Bartok: Violin Concerto No. 2 - Haendel, Muller-Kray & Radio-Sinfonieorchester Stuttgart]({{ site.baseurl }}/albums/khachaturian-violin-concerto-in-d-minor-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart/)
-- [Murray Perahia plays Chopin]({{ site.baseurl }}/albums/murray-perahia-plays-chopin/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/bachauer-the-mercury-masters/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/debussy-piano-music-osborne/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/debussy-preludes-books-i-ii-osborne/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/khachaturian-violin-concerto-in-d-minor-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/murray-perahia-plays-chopin/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>
 
 ## Jazz
 
-- [Anne Sofie Von Otter, Brad Mehldau - Love Songs]({{ site.baseurl }}/albums/anne-sofie-von-otter-brad-mehldau-love-songs/)
-- [Brad Mehldau - Introducing Brad Mehldau]({{ site.baseurl }}/albums/brad-mehldau-introducing-brad-mehldau/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/anne-sofie-von-otter-brad-mehldau-love-songs/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/brad-mehldau-introducing-brad-mehldau/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>

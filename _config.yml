@@ -113,7 +113,7 @@ plugins:
 
 include: ['_pages']
 
-paginate: 6
+paginate: 40
 paginate_path: /page:num/
 
 # Exclude these files from your production _site
@@ -126,4 +126,3 @@ exclude:
   - vendor
   - .bundle
   - .jekyll-cache
-

@@ -1,4 +1,11 @@
 <article class="post post-card">
+  {% assign hide_written_date = false %}
+  {% if post.path contains '_posts/Music/' or post.path contains '_posts/Movie/' %}
+    {% assign hide_written_date = true %}
+  {% endif %}
+  {% if include.show_date %}
+    {% assign hide_written_date = false %}
+  {% endif %}
   {% assign preview_url = post.cover | default: post.poster %}
   {% unless preview_url %}
     {% assign image_parts = post.content | split: 'src="' %}
@@ -9,7 +16,9 @@
 
   <a href="{{ site.baseurl }}{{ post.url }}">
     <h1>{{ post.title }}</h1>
-    <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+    {% unless hide_written_date %}
+      <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+    {% endunless %}
     {% if post.favorite %}<span class="post-favorite">Favorite</span>{% endif %}
   </a>
   {% if preview_url %}<img class="post-preview" src="{{ preview_url }}" alt="" loading="lazy" decoding="async">{% endif %}

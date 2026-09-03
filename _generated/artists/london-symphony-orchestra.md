@@ -10,4 +10,7 @@ title: London Symphony Orchestra
 
 ## Unknown
 
-- [Bachauer: The Mercury Masters]({{ site.baseurl }}/albums/bachauer-the-mercury-masters/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/bachauer-the-mercury-masters/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>

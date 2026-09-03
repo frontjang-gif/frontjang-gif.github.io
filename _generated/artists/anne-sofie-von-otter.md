@@ -10,4 +10,7 @@ title: Anne Sofie Von Otter
 
 ## Unknown
 
-- [Anne Sofie Von Otter, Brad Mehldau - Love Songs]({{ site.baseurl }}/albums/anne-sofie-von-otter-brad-mehldau-love-songs/)
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/anne-sofie-von-otter-brad-mehldau-love-songs/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>

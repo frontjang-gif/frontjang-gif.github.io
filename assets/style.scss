@@ -425,9 +425,26 @@ nav {
 
 .list-view-controls {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 6px;
   margin-bottom: 18px;
+}
+
+.home-item-limit {
+  margin-right: auto;
+  color: $gray;
+  font-size: 13px;
+}
+
+.home-item-limit select {
+  margin-left: 4px;
+  padding: 4px 6px;
+  border: 1px solid $lightGray;
+  border-radius: 4px;
+  color: $darkGray;
+  background: $white;
+  font: inherit;
 }
 
 .list-view-controls button {
@@ -647,7 +664,7 @@ nav {
 
 .site-sidebar .sidebar-subgroup {
   display: block;
-  margin: 2px 0 4px 14px;
+  margin: 1px 0 2px 14px;
   padding-left: 10px;
   border-left: 1px solid $lightGray;
 }
@@ -657,6 +674,7 @@ nav {
   margin: 0;
   font-size: inherit;
   font-weight: normal;
+  line-height: 1.25;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -677,7 +695,8 @@ nav {
 }
 
 .site-sidebar .sidebar-subgroup a {
-  padding: 3px 0;
+  padding: 1px 0;
+  line-height: 1.25;
 }
 
 .site-sidebar .sidebar-subgroup > a {
@@ -751,12 +770,26 @@ body:after {
 }
 
 .protocol-action {
-  padding: 5px 9px;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
   border: 1px solid $lightGray;
   border-radius: 4px;
-  font-size: 13px;
-  line-height: 1.2;
-  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: $darkGray;
+  box-sizing: border-box;
+}
+
+.protocol-action:hover {
+  background: $lightGray;
+}
+
+.protocol-action svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .album-cover,

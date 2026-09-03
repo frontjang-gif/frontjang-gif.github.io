@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="posts home-posts">
   {% for post in paginator.posts %}
-    {% include post-card.html %}
+    {% include post-card.html show_date=true %}
   {% endfor %}
 
   <!-- pagination -->
