@@ -95,15 +95,11 @@ end
 def render_music_sidebar(node, depth = 0)
   node.keys.reject { |key| key == "_albums" }.sort.flat_map do |folder|
     children = node[folder]
-    albums = children.fetch("_albums", [])
     descendant_count = sidebar_album_count(children)
     content = []
     content << "<details class=\"sidebar-subgroup sidebar-folder\"#{depth.zero? ? " open" : ""}>"
     content << "  <summary>#{folder} <span>#{descendant_count}</span></summary>"
     content += render_music_sidebar(children, depth + 1).map { |line| "  #{line}" }
-    content += albums.sort_by { |album| album[:title] }.map do |album|
-      "  <a href=\"{{ site.baseurl }}#{album_url(album)}\">#{album[:title]}</a>"
-    end
     content << "</details>"
     content
   end
