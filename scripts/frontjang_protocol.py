@@ -31,6 +31,11 @@ FOLDER_ROOTS = {
     RootType.MOVIE: Path(r"H:\frontjang-gif\Movie"),
 }
 
+PLAYER_EXECUTABLES = {
+    RootType.MUSIC: Path(r"C:\Program Files\foobar2000\foobar2000.exe"),
+    RootType.MOVIE: Path(r"C:\Program Files (x86)\DAUM\PotPlayer\PotPlayerMini.exe"),
+}
+
 
 def require_windows() -> None:
     if sys.platform != "win32":
@@ -106,7 +111,9 @@ def remove_protocol() -> None:
     print(f"Removed {SCHEME}:// registration")
 
 
-def request_from_url(url: str, folder_roots=None) -> tuple[CommandType, Path]:
+def request_from_url(
+    url: str, folder_roots=None
+) -> tuple[RootType, CommandType, Path]:
     roots = FOLDER_ROOTS if folder_roots is None else folder_roots
     parsed = urlparse(url)
     if (
@@ -152,15 +159,22 @@ def request_from_url(url: str, folder_roots=None) -> tuple[CommandType, Path]:
 
     if command_type is CommandType.PLAY and not target.exists():
         raise FileNotFoundError(f"Path does not exist: {target}")
-    return command_type, target
+    return root_type, command_type, target
 
 
 def handle_url(url: str) -> None:
     require_windows()
-    command, target = request_from_url(url)
-    if command is CommandType.OPEN and not target.exists():
-        target.mkdir(parents=True)
-    os.startfile(target, command.value)  # type: ignore[attr-defined]
+    root_type, command, target = request_from_url(url)
+    if command is CommandType.OPEN:
+        if not target.exists():
+            target.mkdir(parents=True)
+        os.startfile(target, "open")  # type: ignore[attr-defined]
+        return
+
+    player = PLAYER_EXECUTABLES[root_type]
+    if not player.is_file():
+        raise FileNotFoundError(f"Player does not exist: {player}")
+    subprocess.Popen([str(player), str(target)])
 
 
 def show_message(message: str, *, error: bool = False) -> None:
@@ -176,7 +190,9 @@ def ensure_protocol() -> None:
     if not already_registered:
         register_protocol()
 
-    roots = "\n".join(f"{kind}: {path}" for kind, path in FOLDER_ROOTS.items())
+    roots = "\n".join(
+        f"{kind.value}: {path}" for kind, path in FOLDER_ROOTS.items()
+    )
     status = "already registered" if already_registered else "registered successfully"
     show_message(f"{SCHEME}:// is {status}.\n\n{roots}")
 
