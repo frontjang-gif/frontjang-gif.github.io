@@ -3,7 +3,7 @@ wiki: ''
 born: ''
 original_name: Gürzenich Orchestra Cologne
 layout: page
-title: Gurzenich Orchestra Cologne
+title: Gürzenich Orchestra Cologne
 ---
 
 [All artists]({{ site.baseurl }}/artists/)

@@ -10,4 +10,6 @@ title: Sony Classical
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/mahler-symphony-no-7-bernstein-new-york-philharmonic/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/murray-perahia-plays-chopin/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 </div>

@@ -8,6 +8,7 @@ artist:
 cover: https://blog.kakaocdn.net/dna/cgwfd2/btrQgGwIAcK/AAAAAAAAAAAAAAAAAAAAAGdgPrtXPZp_F6uudQ_j7luxooM1WYW9uW3oCJ0JQJlp/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=JAAFXJPdxw153e85J23eX2jOZ0U%3D
 folder: ""
 frontmatterVersion: 2
+confirmed: false
 ---
 
 ## Album

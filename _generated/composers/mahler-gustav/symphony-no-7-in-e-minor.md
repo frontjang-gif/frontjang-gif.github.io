@@ -21,4 +21,4 @@ title: Symphony No. 7 in E Minor
 - [Mahler: Symphony No. 7 - Gergiev, London Symphony Orchestra]({{ site.baseurl }}/albums/mahler-symphony-no-7-gergiev-london-symphony-orchestra/)
 - [Mahler: Symphony No. 7, Kindertotenlieder - Norman, Ozawa, Boston Symphony Orchestra (1990)]({{ site.baseurl }}/albums/mahler-symphony-no-7-kindertotenlieder-norman-ozawa-boston-symphony-orchestra/)
 - [Mahler: The Symphonies - Solti, Chicago Symphony Orchestra]({{ site.baseurl }}/albums/mahler-the-symphonies-solti-chicago-symphony-orchestra/)
-- [Mahler: Symphony No. 7 - Stenz, Gurzenich Orchestra Cologne (2013)]({{ site.baseurl }}/albums/mahler-symphony-no-7-stenz-gurzenich-orchestra-cologne/)
+- [Mahler: Symphony No. 7 - Stenz, Gurzenich Orchestra Cologne]({{ site.baseurl }}/albums/mahler-symphony-no-7-stenz-gurzenich-orchestra-cologne/)

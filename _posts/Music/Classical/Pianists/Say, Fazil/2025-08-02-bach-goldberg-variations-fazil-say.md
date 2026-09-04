@@ -8,6 +8,7 @@ cover: https://www.warnerclassics.com/sites/default/files/styles/release_and_pla
 folder: ""
 frontmatterVersion: 2
 favorite: false
+confirmed: false
 ---
 
 ## Album

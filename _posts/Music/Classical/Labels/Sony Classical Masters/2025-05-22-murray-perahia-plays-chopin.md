@@ -1,6 +1,6 @@
 ---
 title: "Murray Perahia plays Chopin"
-date: 2025-05-22 15:48:24 +0900
+date: 2025-05-22
 artist:
   - Perahia, Murray
 recording: Sony Classical
@@ -8,6 +8,7 @@ cover: https://blog.kakaocdn.net/dna/bfqB99/btsN8uFtfyZ/AAAAAAAAAAAAAAAAAAAAAClM
 folder: 
 frontmatterVersion: 2
 favorite: false
+confirmed: false
 ---
 
 ## Album

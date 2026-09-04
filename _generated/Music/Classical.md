@@ -20,6 +20,8 @@ title: Classical
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/b-tchaikovsky-piano-concerto-clarinet-concerto-signs-of-the-zodiac-solovieva-mynbaev-russian-academy-of-music-chamber-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/bach-goldberg-variations-fazil-say/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/86-bach-violin-concertos-faust-forck-loeffler/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/84-bach-violin-concertos-hahn-kahane/" | first %}
@@ -60,6 +62,10 @@ title: Classical
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/95-chausson-symphony-in-b-flat-la-tempete-viviane-soir-de-fete-tortelier-bbc-philha/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/160-david-oistrakh-concertos-and-encores/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/109-debussy-ravel-prokofiev-pahud-kovacevich-karneus-mork/" | first %}
@@ -75,6 +81,8 @@ title: Classical
 {% assign post = site.posts | where: "url", "/albums/52-dvorak-schumann-cello-concertos-du-pre-barenboim/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/159-dvorak-violin-concerto-symphony-8-oistrakh-ancerl/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/elgar-cello-concerto-in-e-minor-walton-cello-concerto-muller-schott-previn-oslo-philharmonic-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/55-elgar-cello-concerto-enigma-variations-du-pre-barenboim/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
@@ -169,6 +177,8 @@ title: Classical
 {% assign post = site.posts | where: "url", "/albums/117-mendelssohn-violin-concerto-in-e-minor-mutter-previn/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/mozart-violin-concerto-no-5-vieuxtemps-violin-concerto-no-4-hahn-jarvi-deutsche-kammerphilharmonie-bremen/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/murray-perahia-plays-chopin/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/121-music-for-two-pianos-by-debussy-ravel-vladimir-ashkenazy-vovka-ashkenazy/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}

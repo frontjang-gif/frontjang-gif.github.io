@@ -10,6 +10,7 @@ cover: https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/49/42/71/494271aa-f8
 folder: ""
 frontmatterVersion: 2
 favorite: false
+confirmed: false
 ---
 
 ## Album

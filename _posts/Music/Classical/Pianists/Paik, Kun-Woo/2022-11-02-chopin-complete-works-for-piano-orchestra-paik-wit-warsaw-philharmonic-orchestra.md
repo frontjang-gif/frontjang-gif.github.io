@@ -10,6 +10,7 @@ cover: https://blog.kakaocdn.net/dna/vMWp6/btrQdy7ij6l/AAAAAAAAAAAAAAAAAAAAAKcvd
 folder: ""
 frontmatterVersion: 2
 favorite: false
+confirmed: false
 ---
 
 ## Album

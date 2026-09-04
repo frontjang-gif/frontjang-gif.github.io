@@ -75,22 +75,6 @@
     },
     {
       "title": "Anne Sofie Von Otter, Brad Mehldau - Love Songs",
-      "url": "/albums/588-anne-sofie-von-otter-brad-mehldau-love-songs/",
-      "artists": [
-        "Anne Sofie Von Otter",
-        "Brad Mehldau"
-      ],
-      "composers": [],
-      "works": [],
-      "year": null,
-      "category": "Jazz",
-      "recording": null,
-      "label": null,
-      "favorite": false,
-      "cover": ""
-    },
-    {
-      "title": "Anne Sofie Von Otter, Brad Mehldau - Love Songs",
       "url": "/albums/anne-sofie-von-otter-brad-mehldau-love-songs/",
       "artists": [
         "Anne Sofie Von Otter",
@@ -531,6 +515,25 @@
       "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/20/95/5f/mzi.qoywydyz.jpg/1200x1200bb.jpg"
     },
     {
+      "title": "Bach: Goldberg Variations - Fazil Say",
+      "url": "/albums/bach-goldberg-variations-fazil-say/",
+      "artists": [
+        "Say, Fazil"
+      ],
+      "composers": [
+        "Bach, Johann Sebastian"
+      ],
+      "works": [
+        "Goldberg Variations, BWV 988"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Warner Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2022-09/5054197233968.jpg.webp"
+    },
+    {
       "title": "Bach: Violin Concertos - Faust, Forck, Loeffler",
       "url": "/albums/86-bach-violin-concertos-faust-forck-loeffler/",
       "artists": [
@@ -888,21 +891,6 @@
       "works": [],
       "year": null,
       "category": "7080s",
-      "recording": null,
-      "label": null,
-      "favorite": false,
-      "cover": ""
-    },
-    {
-      "title": "Brad Mehldau - Introducing Brad Mehldau",
-      "url": "/albums/589-brad-mehldau-introducing-brad-mehldau/",
-      "artists": [
-        "Brad Mehldau"
-      ],
-      "composers": [],
-      "works": [],
-      "year": null,
-      "category": "Jazz",
       "recording": null,
       "label": null,
       "favorite": false,
@@ -1319,6 +1307,57 @@
       "label": null,
       "favorite": false,
       "cover": ""
+    },
+    {
+      "title": "Chopin: Complete Works for Piano & Orchestra - Paik, Wit, Warsaw Philharmonic Orchestra",
+      "url": "/albums/chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra/",
+      "artists": [
+        "Paik, Kun-Woo",
+        "Wit, Antoni",
+        "Warsaw Philharmonic Orchestra"
+      ],
+      "composers": [
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Krakowiak in F major, Op. 14",
+        "Fantasy on Polish Airs in A major, Op. 13",
+        "Piano Concerto No. 1 in E minor, Op. 11",
+        "Andante spianato et grande polonaise brillante in E-flat major, Op. 22",
+        "Variations on \"La ci darem la mano\" in B-flat major, Op. 2",
+        "Piano Concerto No. 2 in F minor, Op. 21"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Decca",
+      "label": null,
+      "favorite": false,
+      "cover": "https://blog.kakaocdn.net/dna/vMWp6/btrQdy7ij6l/AAAAAAAAAAAAAAAAAAAAAKcvdftxO8IIyVu-S5ULpF5Z97Klmi4XUr0wUy95zlfd/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=p0qWggjfOqzHsz7Ci20KTUFnlnU%3D"
+    },
+    {
+      "title": "Chopin: Piano Concerto No. 1; Faure: Ballade; Liszt: Piano Concerto No. 1 - Wild, Sargent, Gerhardt",
+      "url": "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/",
+      "artists": [
+        "Wild, Earl",
+        "Sargent, Malcolm",
+        "Gerhardt, Charles"
+      ],
+      "composers": [
+        "Chopin, Frederic",
+        "Faure, Gabriel",
+        "Liszt, Franz"
+      ],
+      "works": [
+        "Piano Concerto No. 1 in E minor, Op. 11",
+        "Ballade for piano and orchestra in F-sharp major, Op. 19",
+        "Piano Concerto No. 1 in E-flat major, S. 124"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": "https://blog.kakaocdn.net/dna/cgwfd2/btrQgGwIAcK/AAAAAAAAAAAAAAAAAAAAAGdgPrtXPZp_F6uudQ_j7luxooM1WYW9uW3oCJ0JQJlp/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=JAAFXJPdxw153e85J23eX2jOZ0U%3D"
     },
     {
       "title": "Dan Hartman - I Can Dream About You",
@@ -1760,6 +1799,29 @@
       "label": null,
       "favorite": false,
       "cover": ""
+    },
+    {
+      "title": "Elgar: Cello Concerto in E minor; Walton: Cello Concerto - Muller-Schott, Previn, Oslo Philharmonic Orchestra",
+      "url": "/albums/elgar-cello-concerto-in-e-minor-walton-cello-concerto-muller-schott-previn-oslo-philharmonic-orchestra/",
+      "artists": [
+        "Müller-Schott, Daniel",
+        "Previn, André",
+        "Oslo Philharmonic Orchestra"
+      ],
+      "composers": [
+        "Elgar, Edward",
+        "Walton, William"
+      ],
+      "works": [
+        "Cello Concerto in E minor, Op. 85",
+        "Cello Concerto"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Orfeo",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/49/42/71/494271aa-f8b0-6291-4926-572d2f2bf40b/4011790621128.jpg/1200x1200bb.jpg"
     },
     {
       "title": "Elgar: Cello Concerto, Enigma Variations - du Pre, Barenboim",
@@ -3204,11 +3266,11 @@
       "cover": ""
     },
     {
-      "title": "Mahler: Symphony No. 7 - Stenz, Gurzenich Orchestra Cologne (2013)",
+      "title": "Mahler: Symphony No. 7 - Stenz, Gurzenich Orchestra Cologne",
       "url": "/albums/mahler-symphony-no-7-stenz-gurzenich-orchestra-cologne/",
       "artists": [
         "Stenz, Markus",
-        "Gurzenich Orchestra Cologne"
+        "Gürzenich Orchestra Cologne"
       ],
       "composers": [
         "Mahler, Gustav"
@@ -3490,6 +3552,55 @@
       "label": null,
       "favorite": false,
       "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4e/6f/bf/4e6fbf92-c4dc-b59b-6cb5-d4ce031ab069/00028947939597.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Murray Perahia plays Chopin",
+      "url": "/albums/murray-perahia-plays-chopin/",
+      "artists": [
+        "Perahia, Murray"
+      ],
+      "composers": [
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Piano Concerto No. 1 in E minor, Op. 11",
+        "Piano Concerto No. 2 in F minor, Op. 21",
+        "Piano Sonata No. 2 in B-flat minor, Op. 35",
+        "Piano Sonata No. 3 in B minor, Op. 58",
+        "Ballade No. 1 in G minor, Op. 23. Largo - Meno mosso - Presto con fuoco",
+        "Ballade No. 2 in F major, Op. 38. Andantino - Presto con fuoco - Tempo I",
+        "Ballade No. 3 in A-flat major, Op. 47. Allegretto",
+        "Ballade No. 4 in F minor, Op. 52. Andante con moto",
+        "Waltz in E-flat major, Op. 18. Vivo",
+        "Waltz in A-flat major, Op. 42. Vivace",
+        "Nocturne in F major, Op. 15 No. 1. Andante cantabile - Con fuoco - Tempo I",
+        "Mazurka in F minor, Op. 7 No. 3",
+        "Mazurka in A minor, Op. 17 No. 4",
+        "Mazurka in D major, Op. 33 No. 2",
+        "Etude in E major, Op. 10 No. 3",
+        "Etude in C-sharp minor, Op. 10 No. 4",
+        "Etudes, Op. 10",
+        "Etudes, Op. 25",
+        "Preludes, Op. 28",
+        "Prelude in C-sharp minor, Op. 45. Sostenuto",
+        "Prelude in A-flat major, Op. posth. Presto",
+        "Prelude No. 6 in B minor, Op. 28. Lento assai",
+        "Prelude No. 7 in A major, Op. 28. Andantino",
+        "Prelude No. 15 in D-flat major, Op. 28. Sostenuto",
+        "Impromptu in A-flat major, Op. 29. Allegro assai quasi presto",
+        "Impromptu in F-sharp major, Op. 36. Andantino",
+        "Impromptu in G-flat major, Op. 51. Tempo giusto",
+        "Fantaisie-Impromptu in C-sharp minor, Op. posth. 66. Allegro agitato",
+        "Barcarolle in F-sharp major, Op. 60. Allegretto",
+        "Berceuse in D-flat major, Op. 57. Andante",
+        "Fantaisie in F minor, Op. 49. Tempo di marcia. Grave"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Sony Classical",
+      "label": "Sony Classical Masters",
+      "favorite": false,
+      "cover": "https://blog.kakaocdn.net/dna/bfqB99/btsN8uFtfyZ/AAAAAAAAAAAAAAAAAAAAAClMwhrdU_Tr5vUSzQh94dorguuZmUpUY1ahCnFuU9-M/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=1G%2BHZCDz423wWXfN9QC%2FkcxyfyE%3D"
     },
     {
       "title": "Music for Two Pianos by Debussy & Ravel - Vladimir Ashkenazy, Vovka Ashkenazy",
