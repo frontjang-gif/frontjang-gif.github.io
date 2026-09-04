@@ -3,15 +3,9 @@ composer: Chopin, Frederic
 imslp: ''
 favorite: false
 layout: page
-title: Piano Sonata No. 2 in B-flat minor, Op. 35
+title: Mazurka No. 3 in E major, Op. 6 No. 3
 ---
-
-1. Grave - Doppio movimento
-2. Scherzo - Piu lento - Tempo I
-3. Marche funebre. Lento - attacca
-4. Finale. Presto
 
 ## Referenced by
 
-- [Murray Perahia plays Chopin]({{ site.baseurl }}/albums/murray-perahia-plays-chopin/)
 - [Chopin: Piano Sonata No. 2, Berceuse, Ballade No. 4, Mazurkas, Fantaisie - Ivan Moravec]({{ site.baseurl }}/albums/chopin-piano-sonata-no-2-berceuse-ballade-no-4-mazurkas-fantaisie-ivan-moravec/)

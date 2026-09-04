@@ -12,7 +12,13 @@ title: Pianists
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-piano-sonata-no-2-berceuse-ballade-no-4-mazurkas-fantaisie-ivan-moravec/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-the-legendary-1965-recording-martha-argerich/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/elgar-cello-concerto-in-e-minor-walton-cello-concerto-muller-schott-previn-oslo-philharmonic-orchestra/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/grieg-piano-concerto-in-a-minor-chopin-piano-concerto-no-2-in-f-minor-thibaudet-gergiev-rotterdam-philharmonic-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/khachaturian-piano-concerto-concert-rhapsody-yablonskaya-yablonsky-moscow-symphony-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}

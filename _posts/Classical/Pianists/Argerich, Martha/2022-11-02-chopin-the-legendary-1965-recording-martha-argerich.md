@@ -1,13 +1,15 @@
 ---
-title: "Chopin: The Legendary 1965 Recording - Martha Argerich"
-date: 2022-11-02
 artist:
-  - Argerich, Martha
-recording: EMI Classics
+- Argerich, Martha
+confirmed: true
 cover: https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2021-05/190296697487_preview.jpg.webp?itok=hvWZknII
-folder: ""
-frontmatterVersion: 2
+coverWidth: 1512
+date: 2022-11-02
 favorite: false
+folder: ''
+frontmatterVersion: 2
+recording: EMI Classics
+title: 'Chopin: The Legendary 1965 Recording - Martha Argerich'
 ---
 
 ## Album

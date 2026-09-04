@@ -1360,6 +1360,56 @@
       "cover": "https://blog.kakaocdn.net/dna/cgwfd2/btrQgGwIAcK/AAAAAAAAAAAAAAAAAAAAAGdgPrtXPZp_F6uudQ_j7luxooM1WYW9uW3oCJ0JQJlp/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=JAAFXJPdxw153e85J23eX2jOZ0U%3D"
     },
     {
+      "title": "Chopin: Piano Sonata No. 2, Berceuse, Ballade No. 4, Mazurkas, Fantaisie - Ivan Moravec",
+      "url": "/albums/chopin-piano-sonata-no-2-berceuse-ballade-no-4-mazurkas-fantaisie-ivan-moravec/",
+      "artists": [
+        "Moravec, Ivan"
+      ],
+      "composers": [
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Piano Sonata No. 2 in B-flat minor, Op. 35",
+        "Berceuse in D-flat major, Op. 57",
+        "Ballade No. 4 in F minor, Op. 52",
+        "Mazurka No. 3 in E major, Op. 6 No. 3",
+        "Mazurka No. 17 in B-flat minor, Op. 24 No. 4",
+        "Mazurka No. 20 in D-flat major, Op. 30 No. 3",
+        "Fantaisie in F minor, Op. 49"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "VOX",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/23/38/48/mzi.nujkjulm.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Chopin: The Legendary 1965 Recording - Martha Argerich",
+      "url": "/albums/chopin-the-legendary-1965-recording-martha-argerich/",
+      "artists": [
+        "Argerich, Martha"
+      ],
+      "composers": [
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Piano Sonata No. 3 in B minor, Op. 58",
+        "Mazurka No. 1 in A minor, Op. 59 No. 1",
+        "Mazurka No. 2 in A-flat major, Op. 59 No. 2",
+        "Mazurka No. 3 in F-sharp minor, Op. 59 No. 3",
+        "Nocturne No. 4 in F major, Op. 15 No. 1",
+        "Scherzo No. 3 in C-sharp minor, Op. 39",
+        "Polonaise No. 6 in A-flat major, Op. 53"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "EMI Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2021-05/190296697487_preview.jpg.webp?itok=hvWZknII"
+    },
+    {
       "title": "Dan Hartman - I Can Dream About You",
       "url": "/albums/756-dan-hartman-i-can-dream-about-you/",
       "artists": [],
@@ -2284,6 +2334,29 @@
       "label": null,
       "favorite": false,
       "cover": ""
+    },
+    {
+      "title": "Grieg: Piano Concerto in A minor; Chopin: Piano Concerto No. 2 in F minor - Thibaudet, Gergiev, Rotterdam Philharmonic Orchestra",
+      "url": "/albums/grieg-piano-concerto-in-a-minor-chopin-piano-concerto-no-2-in-f-minor-thibaudet-gergiev-rotterdam-philharmonic-orchestra/",
+      "artists": [
+        "Thibaudet, Jean-Yves",
+        "Gergiev, Valery",
+        "Rotterdam Philharmonic Orchestra"
+      ],
+      "composers": [
+        "Grieg, Edvard",
+        "Chopin, Frederic"
+      ],
+      "works": [
+        "Piano Concerto in A minor, Op. 16",
+        "Piano Concerto No. 2 in F minor, Op. 21"
+      ],
+      "year": null,
+      "category": "Classical",
+      "recording": "Decca",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d9/49/63/d9496373-2ea7-6285-50d3-0673aee706f0/00028946709320.rgb.jpg/1200x1200bb.jpg"
     },
     {
       "title": "Guilmant: Symphony No. 2; Widor: Symphony No. 3; Franck: Choral No. 2 - Tracey, Tortelier",

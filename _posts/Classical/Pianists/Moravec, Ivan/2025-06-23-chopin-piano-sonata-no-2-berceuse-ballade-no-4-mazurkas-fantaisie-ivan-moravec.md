@@ -1,13 +1,15 @@
 ---
-title: "Chopin: Piano Sonata No. 2, Berceuse, Ballade No. 4, Mazurkas, Fantaisie - Ivan Moravec"
-date: 2025-06-23
 artist:
-  - Moravec, Ivan
-recording: VOX
+- Moravec, Ivan
+confirmed: true
 cover: https://is1-ssl.mzstatic.com/image/thumb/Music/23/38/48/mzi.nujkjulm.jpg/1200x1200bb.jpg
-folder: ""
-frontmatterVersion: 2
+date: 2025-06-23
 favorite: false
+folder: ''
+frontmatterVersion: 2
+recording: VOX
+title: 'Chopin: Piano Sonata No. 2, Berceuse, Ballade No. 4, Mazurkas, Fantaisie -
+  Ivan Moravec'
 ---
 
 ## Album

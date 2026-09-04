@@ -1,15 +1,17 @@
 ---
-title: "Grieg: Piano Concerto in A minor; Chopin: Piano Concerto No. 2 in F minor - Thibaudet, Gergiev, Rotterdam Philharmonic Orchestra"
-date: 2022-11-03
 artist:
-  - Thibaudet, Jean-Yves
-  - Gergiev, Valery
-  - Rotterdam Philharmonic Orchestra
-recording: Decca
+- Thibaudet, Jean-Yves
+- Gergiev, Valery
+- Rotterdam Philharmonic Orchestra
+confirmed: true
 cover: https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d9/49/63/d9496373-2ea7-6285-50d3-0673aee706f0/00028946709320.rgb.jpg/1200x1200bb.jpg
-folder: ""
-frontmatterVersion: 2
+date: 2022-11-03
 favorite: false
+folder: ''
+frontmatterVersion: 2
+recording: Decca
+title: 'Grieg: Piano Concerto in A minor; Chopin: Piano Concerto No. 2 in F minor
+  - Thibaudet, Gergiev, Rotterdam Philharmonic Orchestra'
 ---
 
 ## Album
@@ -19,7 +21,6 @@ favorite: false
 1. 1. Allegro molto moderato
 2. 2. Adagio
 3. 3. Allegro moderato molto e marcato - Quasi presto - Andante maestoso
-
 ### Chopin, Frederic
 #### Piano Concerto No. 2 in F minor, Op. 21
 4. 1. Maestoso

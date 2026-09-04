@@ -3,7 +3,7 @@ layout: page
 title: Composers
 ---
 
-- [Chopin, Frederic (35)]({{ site.baseurl }}/composers/chopin-frederic/)
+- [Chopin, Frederic (47)]({{ site.baseurl }}/composers/chopin-frederic/)
 - [Ravel, Maurice (17)]({{ site.baseurl }}/composers/ravel-maurice/)
 - [Mahler, Gustav (10)]({{ site.baseurl }}/composers/mahler-gustav/)
 - [Liszt, Franz (7)]({{ site.baseurl }}/composers/liszt-franz/)
@@ -14,6 +14,7 @@ title: Composers
 - [Barber, Samuel (1)]({{ site.baseurl }}/composers/barber-samuel/)
 - [Brahms, Johannes (1)]({{ site.baseurl }}/composers/brahms-johannes/)
 - [Faure, Gabriel (1)]({{ site.baseurl }}/composers/faure-gabriel/)
+- [Grieg, Edvard (1)]({{ site.baseurl }}/composers/grieg-edvard/)
 - [Higdon, Jennifer (1)]({{ site.baseurl }}/composers/higdon-jennifer/)
 - [Lalo, Edouard (1)]({{ site.baseurl }}/composers/lalo-edouard/)
 - [Meyer, Edgar (1)]({{ site.baseurl }}/composers/meyer-edgar/)

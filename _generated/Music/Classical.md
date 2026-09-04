@@ -66,6 +66,10 @@ title: Classical
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-piano-sonata-no-2-berceuse-ballade-no-4-mazurkas-fantaisie-ivan-moravec/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/chopin-the-legendary-1965-recording-martha-argerich/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/160-david-oistrakh-concertos-and-encores/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/109-debussy-ravel-prokofiev-pahud-kovacevich-karneus-mork/" | first %}
@@ -103,6 +107,8 @@ title: Classical
 {% assign post = site.posts | where: "url", "/albums/32-glazunov-piano-concertos-nos-1-2-kolly-griffiths/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/98-gounod-symphonies-1-2-tortelier-iceland-symphony-orchestra/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/grieg-piano-concerto-in-a-minor-chopin-piano-concerto-no-2-in-f-minor-thibaudet-gergiev-rotterdam-philharmonic-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/99-guilmant-symphony-no-2-widor-symphony-no-3-franck-choral-no-2-tracey-tortelier/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
