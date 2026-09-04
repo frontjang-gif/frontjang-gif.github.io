@@ -1,7 +1,7 @@
 require "nokogiri"
 
 Jekyll::Hooks.register :posts, :post_render do |post|
-  next unless post.path.include?("/_posts/Music/")
+  next unless post.path.match?(%r{/_posts/(?:Music|Classical)/})
 
   document = Nokogiri::HTML::Document.parse(post.output)
   document.css(".album-entry").each do |entry|

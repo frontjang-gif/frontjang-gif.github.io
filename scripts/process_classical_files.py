@@ -20,6 +20,21 @@ import yaml
 PLACEHOLDER_COVER_MARKERS = ("[image-url]", "example.com", "placeholder")
 SECONDARY_COVER_HOSTS = ("discogs.com", "allmusic.com")
 CURRENT_FRONTMATTER_VERSION = 2
+# Album tracks preserve three levels where available: global track number,
+# work-local track number, and the source movement label (for example, I. or No.).
+ALBUM_TRACK_PATTERN = re.compile(r"^\d+[A-Za-z]?\.\s+\d+[A-Za-z]?\.\s+.+$")
+ORIGINAL_NUMBERED_TRACK_PATTERN = re.compile(r"^(\d+[A-Za-z]?)\.\s+(\d+[A-Za-z]?)\.\s+(No\.\s+\d+[A-Za-z]?\.|[IVXLC]+\.)\s+.+$")
+
+
+def parse_album_track(line):
+    """Return global, work-local, and original labels for a three-level track."""
+    match = ORIGINAL_NUMBERED_TRACK_PATTERN.match(line.strip())
+    return match.groups() if match else None
+
+
+def has_composer_descriptor_separator(title):
+    """Recognize the colon separator used between a composer list and descriptor."""
+    return ":" in str(title or "")
 
 
 def upgrade_frontmatter(metadata):
@@ -206,6 +221,14 @@ class ClassicalFileProcessor:
         if not isinstance(self.metadata['confirmed'], bool):
             return False, "confirmed must be true or false"
 
+        cd_count = self.metadata.get('cdCount')
+        if cd_count is not None:
+            if not isinstance(cd_count, int) or isinstance(cd_count, bool) or cd_count < 1:
+                return False, "cdCount must be a positive integer"
+            discs = re.findall(r'^### CD\d+(?:\s+-\s+.+)?\s*$', self.body_section, flags=re.MULTILINE)
+            if len(discs) != cd_count:
+                return False, f"cdCount ({cd_count}) does not match the {len(discs)} CD headings"
+
         artists = self.metadata.get('artist')
         artists = artists if isinstance(artists, list) else [artists]
         incomplete = [str(artist) for artist in artists if not is_full_artist_credit(artist)]
@@ -217,6 +240,10 @@ class ClassicalFileProcessor:
             return False, error
 
         urls = source_urls(self.body_section)
+        cover_host = urlparse(str(self.metadata.get('cover') or '')).netloc.lower()
+        if cover_host and "mzstatic.com" not in cover_host and "universal-music" not in cover_host:
+            if not re.search(r'\[Cover image source\]\(https://[^)]+\)', self.body_section):
+                return False, "Non-Apple or non-official covers require a Cover image source link in Sources"
         if not any("tistory.com/" in url for url in urls):
             return False, "Sources must include the original Tistory post"
         corroborating = [url for url in urls if "tistory.com/" not in url]
@@ -224,6 +251,13 @@ class ClassicalFileProcessor:
             return False, "Sources must include an independent corroborating source"
         if all(any(host in urlparse(url).netloc.lower() for host in SECONDARY_COVER_HOSTS) for url in corroborating):
             return False, "Sources cannot rely only on secondary catalogues"
+
+        lines = self.body_section.splitlines()
+        for index, line in enumerate(lines):
+            if not re.match(r'^####\s+[^#]+,\s*[^#]+$', line.strip()):
+                continue
+            if index and lines[index - 1].strip() and not lines[index - 1].strip().startswith("### CD"):
+                return False, f"Composer heading on line {index + 1} needs a blank line before it"
 
         return True, "Promotion requirements satisfied"
 

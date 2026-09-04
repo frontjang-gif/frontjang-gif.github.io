@@ -1,19 +1,20 @@
 ---
 title: "Chopin, Schumann, Liszt - Claudio Arrau"
-date: 2025-10-22 00:00:00 +0900
+date: 2025-10-22
 artist:
-  - Chopin
-  - Schumann
-  - Liszt
-cover: ""
+  - Arrau, Claudio
+recording: Warner Classics
+cover: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6d/b4/e6/6db4e6a7-b70d-3405-7772-e624af87f2a0/5054197966408.jpg/1200x1200bb.jpg
 folder: ""
 frontmatterVersion: 2
+favorite: false
+confirmed: true
 ---
 
 ## Album
 
-Frédéric Chopin
-12 Études, Op. 10
+#### Chopin, Frederic
+##### 12 Etudes, Op. 10
 1. No. 1 in C Major
 2. No. 2 in A Minor "Chromatique"
 3. No. 3 in E Major "Tristesse"
@@ -26,8 +27,9 @@ Frédéric Chopin
 10. No. 10 in A-Flat Major
 11. No. 11 in E-Flat Major
 12. No. 12 in C Minor
-Robert Schumann
-Carnaval, Op. 9
+
+#### Schumann, Robert
+##### Carnaval, Op. 9
 13. No. 1, Préambule
 14. No. 2, Pierrot
 15. No. 3, Arlequin
@@ -49,30 +51,40 @@ Carnaval, Op. 9
 31. No. 19, Promenade
 32. No. 20, Pause
 33. No. 21, Marche des Davidsbündler contre les Philistins
-Franz Liszt
+
+#### Liszt, Franz
 34. 6 Polish Songs, S. 480: No. 5, Meine Freuden (After Chopin's Polish Song, Op. 74 No. 12)
-Frédéric Chopin
-Piano Sonata No. 3 in B Minor, Op. 58
+
+#### Chopin, Frederic
+##### Piano Sonata No. 3 in B minor, Op. 58
 35. I. Allegro moderato
 36. II. Scherzo. Molto vivace
 37. III. Largo
 38. IV. Finale. Presto non tanto
-39. Scherzo No. 4 in E Major, Op. 54
-Franz Liszt
-40. Valses oubliées, S. 215: No. 1 in F-Sharp Major
-41. Années de pèlerinage, Première année "Suisse", S. 160: No. 4, Au bord d'une source
-Frédéric Chopin
-3 Nouvelles Études
+
+39. Scherzo No. 4 in E major, Op. 54
+
+#### Liszt, Franz
+40. Valses oubliees, S. 215: No. 1 in F-sharp major
+41. Annees de pelerinage, Premiere annee Suisse, S. 160: No. 4, Au bord d'une source
+
+#### Chopin, Frederic
+##### 3 Nouvelles Etudes
 42. No. 1 in F Minor
 43. No. 2 in A-Flat Major
 44. No. 3 in A-Flat Major
-Robert Schumann
-Piano Concerto in A Minor, Op. 54
+
+#### Schumann, Robert
+##### Piano Concerto in A minor, Op. 54
 45. I. Allegro affetuoso - Andante espressivo
 46. II. Intermezzo. Andantino grazioso
 47. III. Allegro vivace
-Frédéric Chopin
+
+#### Chopin, Frederic
 48. Fantasy in F Minor, Op. 49
 49. Ballade No. 3 in A-Flat Major, Op. 47
 
 ## Sources
+
+- [Original Tistory post](https://frontjang1.tistory.com/1409)
+- [Apple Music album](https://music.apple.com/us/album/chopin-schumann-liszt/1726449570)

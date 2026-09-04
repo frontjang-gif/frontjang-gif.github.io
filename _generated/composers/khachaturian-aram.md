@@ -15,3 +15,4 @@ title: Khachaturian, Aram
 - [Concerto-Rhapsody for Cello and Orchestra in D Minor]({{ site.baseurl }}/composers/khachaturian-aram/concerto-rhapsody-for-cello-and-orchestra-in-d-minor/)
 - [Concerto-Rhapsody for Piano and Orchestra in E Minor]({{ site.baseurl }}/composers/khachaturian-aram/concerto-rhapsody-for-piano-and-orchestra-in-e-minor/)
 - [Piano Concerto in D-Flat Major, Op. 38]({{ site.baseurl }}/composers/khachaturian-aram/piano-concerto-in-d-flat-major-op-38/)
+- [Violin Concerto in D minor]({{ site.baseurl }}/composers/khachaturian-aram/violin-concerto-in-d-minor/)

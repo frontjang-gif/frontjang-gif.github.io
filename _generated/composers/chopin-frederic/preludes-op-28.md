@@ -34,3 +34,4 @@ title: Preludes, Op. 28
 ## Referenced by
 
 - [Murray Perahia plays Chopin]({{ site.baseurl }}/albums/murray-perahia-plays-chopin/)
+- [Chopin: Preludes, Piano Concerto No. 2 - Argerich, Rostropovich, National Symphony Orchestra Washington]({{ site.baseurl }}/albums/chopin-preludes-piano-concerto-no-2-argerich-rostropovich-national-symphony-orchestra-washington/)

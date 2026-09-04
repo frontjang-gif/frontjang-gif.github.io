@@ -42,6 +42,12 @@ tags: [tag1, tag2]
 
 ### Source Research, Importing, and Plugin Evolution
 
+### Review Workflow
+
+- Before giving a user a clickable review path for an imported album, first complete its metadata, source research, cover verification, artist credits, CD structure, work boundaries, and track numbering; run the relevant processor and rendering checks.
+- A review path always refers to the processed draft. Do not present an untouched or partially processed import as the next review item.
+- After the user explicitly says an album is good, set `confirmed: true`. Do not push unless the user explicitly requests a push.
+
 - Before importing a Music or Movie post, collect the original post and corroborating primary sources with `scripts/music_source_research.py` or `scripts/media_source_research.py`.
 - Prefer an official recording company, distributor, artist, studio, or publisher page for credits, tracklists, release data, and covers. Treat Discogs and AllMusic as secondary sources and never let them override primary data without review.
 - When the generic Open Graph/JSON-LD extractor cannot reliably collect a source site's required metadata, automatically create a dedicated module under `scripts/music_source_plugins/`. Do not wait for separate approval.
@@ -60,22 +66,24 @@ tags: [tag1, tag2]
 - Use an image from a public website such as Amazon, AllMusic, Naxos, or Apple Music.
 - Prefer official or reliable sources over Discogs.
 - Reference the remote cover URL directly; a local copy is not required. Preserve its source link in the album post when possible.
+- For a non-Apple or non-official cover host, add a clearly labelled `[Cover image source](...)` link to `## Sources`. The cover CDN URL and the source page may use different domains; verify their relationship manually.
 
 ### Title
 
-- Use the format `Composer: Work - Performer or Orchestra (release year)`. Omit the year when it is unavailable.
+- Use the format `Composer: Work - Performer or Orchestra`. Do not include a release year in an album title, even when it is known; keep release-date evidence in sources or metadata instead.
 - Include only enough information to distinguish the album.
 - When catalogue or opus numbers make an album title unnecessarily long, omit them from the title and filename; retain the complete canonical work name and number in the album track headings and generated work pages.
 - Use the Wikipedia spelling for composer names, such as `Rachmaninov` rather than `Rachmaninoff`.
 - Use `Last name, First name` for composers, except for established single-name or conventional exceptions.
 - Use performers' last names. If multiple performers share a last name, use the shared last name only.
-- List every credited artist needed to identify an album. For a sole human artist, use the full name; for multiple human artists, use surnames. Separate artist credits with commas, never `&`.
+- List every credited artist needed to identify an album. For a sole human artist, use the full name in both the album title and `artist` metadata; for multiple human artists, use surnames in the title and full names in `artist` metadata. Separate artist credits with commas, never `&`.
 - Add a first-name initial before a less-famous composer with a duplicated last name, such as `B.Tchaikovsky` or `CPE.Bach`.
 - Use the orchestra's historical name from the recording period; put its latest name in the tags instead.
 - Expand shortened orchestra names and do not use abbreviations.
 - Write work numbers as `No.` or `Nos.` with a period and a space.
-- Remove accents, diacritics, and unsupported special characters from titles and filenames. Allowed punctuation is `;`, `&`, `,`, `.`, and `-`.
+- Remove accents, diacritics, and unsupported special characters from titles and filenames. Allowed punctuation is `:`, `;`, `&`, `,`, `.`, and `-`.
 - Use `;` between distinct composer/work parts, `&` when multiple composers share one work name (or to combine the final item in a work list), and `,` between works by the same composer.
+- When a title begins with a composer list and then names a recital, collection, or other descriptor, use `:` between the composer list and that descriptor; use `-` between the descriptor and performer credit.
 
 ### Tags
 
@@ -84,6 +92,7 @@ tags: [tag1, tag2]
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
 - Set `confirmed: true` only after the user explicitly confirms an album entry. New or imported entries must use `confirmed: false`; research and automated validation never imply user confirmation.
 - Music albums may use `recording` for the recording company or release/edition imprint.
+- Multi-disc albums may use `cdCount` as a positive integer. When present, it must equal the number of `### CD1`, `### CD2`, and subsequent disc headings.
 - Keep recording companies separate from label series. Place an album under `Labels/{series name}/` only when it belongs to a named series, such as `Mercury Living Presence`; a company such as Decca belongs in `recording` and does not by itself determine the album's folder.
 - Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
 - Keep Jekyll `categories` and `tags` for Blog posts; Music and Movie use their own navigation and category fields.
@@ -115,12 +124,15 @@ tags: [tag1, tag2]
 - Use heading hierarchy to distinguish topics, discs, works, chapters, and tracks: `## topic` > `### CD1` > `#### work` > `##### chapter` > track.
 - Render disc and composer headings bold and left-aligned. Render work headings italic, normal-weight, and left-aligned. Do not add visual spacing between consecutive disc, composer, and work headings.
 - Do not put blank lines between a composer heading, its work heading, and the first track. Keep those lines contiguous in Markdown. Use a blank line only when it carries structure, such as separating the end of a movement list from the next standalone work.
+- Put one blank line before every new composer heading (`#### Last, First`) when it follows a track or another work. Do not put a blank line after that composer heading before its first work or track.
 - A composer declaration remains active across CD boundaries. Do not repeat the composer heading on each CD when the composer has not changed; add a new composer heading only when the composer changes.
 - For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
 - Leave one blank line between the final track on a CD and the following CD heading. Do not add blank lines between a CD heading and its active composer or first work.
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
-- Write album tracks as `track number. movement number. title`, such as `1. 1. Allegro non troppo`. The album page preserves both numbers; generated work pages retain only the movement number.
+- Write album tracks as `global track number. work track number. original movement label and title`, such as `1. 1. I. Allegro non troppo` or `7. 2. No. 2. Andante`. The first number is continuous within the CD, the second restarts for each work, and the original label preserves the score's own `I.`, `II.`, or `No.` style. When the work track number duplicates an original sequential `No.` label, omit the redundant work track number: `7. No. 2. Andante`. The album page preserves applicable numeric levels; generated work pages retain the work track number and original label.
+- When an anthology selects non-consecutive items from a numbered opus, keep both numbers: the anthology's work track number and the original opus number. For example, `10. 1. No. 10. La Cathedrale Engloutie` preserves global track 10, selection track 1, and the original Prelude No. 10.
+- Separate consecutive work headings with one blank line after the preceding work's final track; do not insert a blank line between tracks within the same work.
 - Render every album track as plain text rather than an HTML ordered list. Source Markdown may use numbered-list syntax for parsing, but list indentation and browser list spacing must not appear on the album page.
 - A blank line after a movement-numbered track list marks the end of that work when the next track has no movement number. Treat the following track as a separate work under the current composer and render visible spacing before it; do not fold it into the preceding work.
 - A bold composer in a single track, such as `4. **Liszt** - Hungarian Rhapsody...`, overrides the surrounding composer heading for that track and creates the work under that composer.

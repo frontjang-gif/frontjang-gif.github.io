@@ -12,6 +12,8 @@ title: Violinists
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/higdon-tchaikovsky-violin-concertos-hahn-petrenko-royal-liverpool-philharmonic-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
+{% assign post = site.posts | where: "url", "/albums/khachaturian-violin-concerto-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart-des-swr/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/lalo-symphonie-espagnole-saint-saens-violin-concerto-no-3-ravel-tzigane-vengerov-pappano-philharmonia-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 {% assign post = site.posts | where: "url", "/albums/mozart-violin-concerto-no-5-vieuxtemps-violin-concerto-no-4-hahn-jarvi-deutsche-kammerphilharmonie-bremen/" | first %}

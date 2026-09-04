@@ -1,14 +1,20 @@
 ---
-title: "Aldo Ciccolini Plays Chopin"
-date: 2025-10-22 00:00:00 +0900
-cover: ""
+title: "Chopin: Piano Works - Aldo Ciccolini"
+date: 2025-10-22
+artist:
+  - Ciccolini, Aldo
+recording: Universal Music
+cover: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/17/7e/7a/177e7a78-8084-fcf5-8e67-47dc74fef648/5021732273970.jpg/1200x1200bb.jpg
 folder: ""
 frontmatterVersion: 2
+favorite: false
+confirmed: true
 ---
 
 ## Album
 
-1. Polonaise in G Minor
+#### Chopin, Frederic
+1. Polonaise in G minor
 2. 12 Études, Op. 10: No. 3 in E Major "Tristesse"
 3. Berceuse in D-Flat Major, Op. 57
 4. Nocturne No. 2 in E-Flat Major, Op. 9 No. 2
@@ -32,11 +38,16 @@ frontmatterVersion: 2
 22. Waltz No. 19 in A Minor
 23. Waltz No. 18 in E-Flat Major
 24. 24 Preludes, Op. 28: No. 17 in A-Flat Major
-Cello Sonata in G Minor, Op. 65
+
+##### Cello Sonata in G minor, Op. 65
 25. I. Allegro moderato
 26. II. Scherzo
 27. III. Largo
 28. IV. Finale. Allegro
+
 29. Fantaisie in F Minor, Op. 49
 
 ## Sources
+
+- [Original Tistory post](https://frontjang1.tistory.com/1408)
+- [Apple Music album](https://music.apple.com/us/album/aldo-ciccolini-plays-chopin/1742056961)

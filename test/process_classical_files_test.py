@@ -11,7 +11,7 @@ assert SPEC.loader
 SPEC.loader.exec_module(processor)
 
 
-def post(artist, cover, cover_width=None, sources="- [Original](https://frontjang1.tistory.com/1)\n- [Official](https://label.example/release)", confirmed=False):
+def post(artist, cover, cover_width=None, sources="- [Original](https://frontjang1.tistory.com/1)\n- [Official](https://label.example/release)\n- [Cover image source](https://label.example/release)", confirmed=False):
     width_line = f"coverWidth: {cover_width}\n" if cover_width else ""
     confirmed_line = f"confirmed: {str(confirmed).lower()}\n"
     return f'''---
@@ -20,6 +20,7 @@ date: 2020-01-01
 artist:
 {artist}
 cover: {cover}
+coverSource: https://label.example/release
 {width_line}{confirmed_line}frontmatterVersion: 2
 ---
 
@@ -35,6 +36,15 @@ cover: {cover}
 
 
 class ClassicalPromotionTest(unittest.TestCase):
+    def test_parses_three_level_original_opus_number(self):
+        self.assertEqual(
+            ("10", "1", "No. 10."),
+            processor.parse_album_track("10. 1. No. 10. La Cathedrale Engloutie"),
+        )
+
+    def test_recognizes_composer_descriptor_title_separator(self):
+        self.assertTrue(processor.has_composer_descriptor_separator("Bach, Mozart: Salzburg Recital - Gould"))
+
     def validate(self, content):
         with tempfile.TemporaryDirectory() as directory:
             path = pathlib.Path(directory) / "album.md"
@@ -67,6 +77,36 @@ class ClassicalPromotionTest(unittest.TestCase):
             post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200, confirmed=True)
         )
         self.assertTrue(valid, message)
+
+    def test_accepts_matching_cd_count(self):
+        content = post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200).replace(
+            "frontmatterVersion: 2\n", "cdCount: 2\nfrontmatterVersion: 2\n"
+        ).replace("### Composer, Example\n1. Work", "### CD1\n1. Work\n\n### CD2\n1. Work")
+        valid, message = self.validate(content)
+        self.assertTrue(valid, message)
+
+    def test_accepts_cd_count_with_disc_descriptions(self):
+        content = post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200).replace(
+            "frontmatterVersion: 2\n", "cdCount: 2\nfrontmatterVersion: 2\n"
+        ).replace("### Composer, Example\n1. Work", "### CD1 - Studio recording\n1. Work\n\n### CD2 - Live recording\n1. Work")
+        valid, message = self.validate(content)
+        self.assertTrue(valid, message)
+
+    def test_rejects_mismatched_cd_count(self):
+        content = post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200).replace(
+            "frontmatterVersion: 2\n", "cdCount: 3\nfrontmatterVersion: 2\n"
+        ).replace("### Composer, Example\n1. Work", "### CD1\n1. Work\n\n### CD2\n1. Work")
+        valid, message = self.validate(content)
+        self.assertFalse(valid)
+        self.assertIn("does not match", message)
+
+    def test_requires_gap_before_new_composer(self):
+        content = post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200).replace(
+            "### Composer, Example\n1. Work", "#### Composer, First\n1. Work\n#### Composer, Second\n2. Work"
+        )
+        valid, message = self.validate(content)
+        self.assertFalse(valid)
+        self.assertIn("needs a blank line", message)
 
     def test_upgrades_legacy_media_folder(self):
         content = post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200)

@@ -209,7 +209,7 @@ def parse_album(path)
   category = root == CLASSICAL_POST_ROOT ? "Classical" : (relative_path.length > 1 ? relative_path.first : nil)
   favorite = metadata["favorite"]
   recording = metadata["recording"]
-  label = relative_path[1] == "Labels" ? relative_path[2] : nil
+  label = metadata["label"] || (relative_path[1] == "Labels" ? relative_path[2] : nil)
   composer = nil
   work = nil
   works = []

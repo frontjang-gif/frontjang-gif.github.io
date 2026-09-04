@@ -1,52 +1,61 @@
 ---
 title: "Glenn Gould Plays Bach"
-date: 2025-06-30 00:00:00 +0900
-cover: ""
+date: 2025-06-30
+artist:
+  - Gould, Glenn
+recording: Sony Classical
+cover: https://is1-ssl.mzstatic.com/image/thumb/Music/31/28/5a/mzi.mdwatyyd.jpg/1200x1200bb.jpg
 folder: ""
+label: Sony Classical Masters
+cdCount: 6
 frontmatterVersion: 2
+favorite: false
+confirmed: true
 ---
 
 ## Album
 
-Classical_Labels/Sony Classical Masters
-CD1
-Goldberg Variations BWV 988
-1. Aria
-2. Variation 1 a 1 Clav.
-3. Variation 2 a 1 Clav.
-4. Variation 3 a 1 Clav. Canone all' Unisuono
-5. Variation 4 a 1 Clav.
-6. Variation 5 a 1 ovvero 2 Clav.
-7. Variation 6 a 1 Clav. Canone alla Seconda
-8. Variation 7 a 1 ovvero 2 Clav.
-9. Variation 8 a 2 Clav.
-10. Variation 9 a 1 Clav. Canone alla Terza
-11. Variation 10 a 1 Clav. Fughetta
-12. Variation 11 a 2 Clav.
-13. Variation 12, Canone alla Quarta
-14. Variation 13 a 2 Clav.
-15. Variation 14 a 2 Clav.
-16. Variation 15 a 1 Clav, Canone alla Quinta (Andante)
-17. Variation 16, Ouverture a 1 Clav.
-18. Variation 17 a 2 Clav.
-19. Variation 18, Canone alla Sesta a 1 Clav.
-20. Variation 19 a 1 Clav.
-21. Variation 20 a 2 Clav.
-22. Variation 21, Canone alla Settima
-23. Variation 22, Alla breve a 1 Clav.
-24. Variation 23 a 2 Clav.
-25. Variation 24, Canone all' Ottava a 1 Clav.
-26. Variation 25 a 2 Clav.
-27. Variation 26 a 2 Clav.
-28. Variation 27, Canone alla Nona
-29. Variation 28 a 2 Clav.
-30. Variation 29 a 1 ovvero 2 Clav.
-31. Variation 30 a 1 Clav. Quodlibet
-32. Aria da capo
+### CD1
+#### Bach, Johann Sebastian
+##### Goldberg Variations BWV 988
+1. 1. Aria
+2. 2. Variation 1 a 1 Clav.
+3. 3. Variation 2 a 1 Clav.
+4. 4. Variation 3 a 1 Clav. Canone all' Unisuono
+5. 5. Variation 4 a 1 Clav.
+6. 6. Variation 5 a 1 ovvero 2 Clav.
+7. 7. Variation 6 a 1 Clav. Canone alla Seconda
+8. 8. Variation 7 a 1 ovvero 2 Clav.
+9. 9. Variation 8 a 2 Clav.
+10. 10. Variation 9 a 1 Clav. Canone alla Terza
+11. 11. Variation 10 a 1 Clav. Fughetta
+12. 12. Variation 11 a 2 Clav.
+13. 13. Variation 12, Canone alla Quarta
+14. 14. Variation 13 a 2 Clav.
+15. 15. Variation 14 a 2 Clav.
+16. 16. Variation 15 a 1 Clav, Canone alla Quinta (Andante)
+17. 17. Variation 16, Ouverture a 1 Clav.
+18. 18. Variation 17 a 2 Clav.
+19. 19. Variation 18, Canone alla Sesta a 1 Clav.
+20. 20. Variation 19 a 1 Clav.
+21. 21. Variation 20 a 2 Clav.
+22. 22. Variation 21, Canone alla Settima
+23. 23. Variation 22, Alla breve a 1 Clav.
+24. 24. Variation 23 a 2 Clav.
+25. 25. Variation 24, Canone all' Ottava a 1 Clav.
+26. 26. Variation 25 a 2 Clav.
+27. 27. Variation 26 a 2 Clav.
+28. 28. Variation 27, Canone alla Nona
+29. 29. Variation 28 a 2 Clav.
+30. 30. Variation 29 a 1 ovvero 2 Clav.
+31. 31. Variation 30 a 1 Clav. Quodlibet
+32. 32. Aria da capo
+
 33. Fugue in F-sharp minor, BWV 883
 34. Fugue in E Major, BWV 878
-CD2
-Two-Part Inventions & Three-Part Sinfonias BWV 772-801
+
+### CD2
+##### Two-Part Inventions & Three-Part Sinfonias BWV 772-801
 1. Invention No. 1 in C Major, BWV 772
 2. Sinfonia No. 1 in C Major, BWV 787
 3. Invention No. 2 in C Minor, BWV 773
@@ -77,7 +86,8 @@ Two-Part Inventions & Three-Part Sinfonias BWV 772-801
 28. Sinfonia No. 8 in F Major, BWV 794
 29. Invention No. 9 in F Minor, BWV 780
 30. Sinfonia No. 9 in F Minor, BWV 795
-CD3
+
+### CD3
 1. Toccata in D Major, BWV 912
 2. Toccata in F-Sharp Minor, BWV 910
 3. Toccata in D Minor, BWV 913
@@ -85,22 +95,25 @@ CD3
 5. Toccata in G Minor, BWV 915
 6. Toccata in G Major, BWV 916
 7. Toccata in E Minor, BWV 914
-CD4
-Partita No. 1 In B-Flat Major BWV 825
+
+### CD4
+##### Partita No. 1 in B-flat major, BWV 825
 1. I. Praeludium
 2. II. Allemande
 3. III. Corrente
 4. IV. Sarabande
 5. V. Menuet I & II
 6. VI. Gigue
-Partita No. 2 In C Minor BWV 826
+
+##### Partita No. 2 in C minor, BWV 826
 7. I. Sinfonia
 8. II. Allemande
 9. III. Courante
 10. IV. Sarabande
 11. V. Rondeaux
 12. VI. Capriccio
-Partita No. 3 In A Minor BWV 827
+
+##### Partita No. 3 in A minor, BWV 827
 13. I. Fantaisie
 14. II. Allemande
 15. III. Courante
@@ -108,7 +121,8 @@ Partita No. 3 In A Minor BWV 827
 17. V. Burlesca
 18. VI. Scherzo
 19. VII. Gigue
-Partita No. 4 In D Major BWV 828
+
+##### Partita No. 4 in D major, BWV 828
 20. I. Overture
 21. II. Allemande
 22. III. Courante
@@ -116,7 +130,8 @@ Partita No. 4 In D Major BWV 828
 24. V. Sarabande
 25. VI. Menuet
 26. VII. Gigue
-Partita No. 5 In G Major BWV 829
+
+##### Partita No. 5 in G major, BWV 829
 27. I. Praeambulum
 28. II. Allemande
 29. III. Courante
@@ -124,8 +139,9 @@ Partita No. 5 In G Major BWV 829
 31. V. Tempo di Minuetto
 32. VI. Passepied
 33. VII. Gigue
-CD5
-Partita No. 6 In E Minor BWV 830
+
+### CD5
+##### Partita No. 6 in E minor, BWV 830
 1. I. Toccata
 2. II. Allemande
 3. III. Courante
@@ -133,54 +149,65 @@ Partita No. 6 In E Minor BWV 830
 5. V. Sarabande
 6. VI. Tempo di Gavotta
 7. VII. Gigue
-Six Little Preludes BWV 933-938
-8. Praeludium in C Major, BWV 933
-9. Praeludium in C Minor, BWV 934
-10. Praeludium in D Minor, BWV 935
-11. Praeludium in D Major, BWV 936
-12. Praeludium in E Major, BWV 937
-13. Praeludium in E Minor, BWV 938
-Prelude And Fughetta In D Minor BWV 899
-14. Praeludium
-15. Fughetta
-Prelude And Fughetta In G Major BWV 902
-16. Prelude in G Major, BWV 902
-17. Prelude in G Major, BWV 902a
-18. Fughetta in G Major, BWV 902
-Nine Little Preludes BWV 924-928, 930
-19. Praeambulum in C Major, BWV 924
-20. Praeambulum in F Major, BWV 927
-21. Prealudium in D Minor, BWV 926
-22. Praeludium in D Major, BWV 925
-23. Praeludium in F Major, BWV 928
-24. Praeambulum in G Minor, BWV 930
-25. Fugue in C Major, BWV 952
-26. Fughetta in C minor, BWV 961
-27. Fugue in C Major, BWV 953
-Prelude And Fugue In A Minor BWV 895
-28. Praeludium
-29. Fuga
-Prelude And Fughetta In E Minor BWV 900
-30. Praeludium
-31. Fughetta
-CD6
-The Art Of Fugue BWV 1080
-1. Contrapunctus I
-2. Contrapunctus II
-3. Contrapunctus III
-4. Contrapunctus IV
-5. Contrapunctus V
-6. Contrapunctus VI (a 4, im Stile francese)
-7. Contrapunctus VII (a 4, per Augmentationem et Diminutionem)
-8. Contrapunctus VIII (a 3)
-9. Contrapunctus IX (a 4, alla Duodecima)
-10. Contrapunctus I
-11. Contrapunctus II
-12. Contrapunctus IV
-13. Contrapunctus IX (a 4, alla Duodecima)
-14. Contrapunctus XI (a 4)
-15. Contrapunctus XIII (a 3)
-16. Contrapunctus XIV (Fuga a 3 Soggetti) unfinished from The Art of the Fugue, BWV 1080
+
+##### Six Little Preludes, BWV 933-938
+8. 1. Praeludium in C major, BWV 933
+9. 2. Praeludium in C minor, BWV 934
+10. 3. Praeludium in D minor, BWV 935
+11. 4. Praeludium in D major, BWV 936
+12. 5. Praeludium in E major, BWV 937
+13. 6. Praeludium in E minor, BWV 938
+
+##### Prelude and Fughetta in D minor, BWV 899
+14. 1. Praeludium
+15. 2. Fughetta
+
+##### Prelude and Fughetta in G major, BWV 902
+16. 1. Prelude in G major, BWV 902
+17. 2. Prelude in G major, BWV 902a
+18. 3. Fughetta in G major, BWV 902
+
+##### Nine Little Preludes, BWV 924-928, 930
+19. 1. Praeambulum in C major, BWV 924
+20. 2. Praeambulum in F major, BWV 927
+21. 3. Prealudium in D minor, BWV 926
+22. 4. Praeludium in D major, BWV 925
+23. 5. Praeludium in F major, BWV 928
+24. 6. Praeambulum in G minor, BWV 930
+25. 7. Fugue in C major, BWV 952
+26. 8. Fughetta in C minor, BWV 961
+27. 9. Fugue in C major, BWV 953
+
+##### Prelude and Fugue in A minor, BWV 895
+28. 1. Praeludium
+29. 2. Fuga
+
+##### Prelude and Fughetta in E minor, BWV 900
+30. 1. Praeludium
+31. 2. Fughetta
+
+### CD6
+##### The Art of Fugue, BWV 1080
+1. 1. Contrapunctus I
+2. 2. Contrapunctus II
+3. 3. Contrapunctus III
+4. 4. Contrapunctus IV
+5. 5. Contrapunctus V
+6. 6. Contrapunctus VI (a 4, im Stile francese)
+7. 7. Contrapunctus VII (a 4, per Augmentationem et Diminutionem)
+8. 8. Contrapunctus VIII (a 3)
+9. 9. Contrapunctus IX (a 4, alla Duodecima)
+10. 10. Contrapunctus I
+11. 11. Contrapunctus II
+12. 12. Contrapunctus IV
+13. 13. Contrapunctus IX (a 4, alla Duodecima)
+14. 14. Contrapunctus XI (a 4)
+15. 15. Contrapunctus XIII (a 3)
+16. 16. Contrapunctus XIV (Fuga a 3 Soggetti) unfinished from The Art of the Fugue, BWV 1080
+
 17. Prelude and Fugue in B-flat Major on the name BACH, BWV 898
 
 ## Sources
+
+- [Original Tistory post](https://frontjang1.tistory.com/1398)
+- [Apple Music album](https://music.apple.com/us/album/glenn-gould-plays-bach-1952-1955/489613866)

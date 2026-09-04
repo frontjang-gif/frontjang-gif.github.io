@@ -1,18 +1,20 @@
 ---
-title: "Debussy: Preludes, Books I & II - Steven Osborne"
-date: 2025-11-03 00:00:00 +0900
+title: "Debussy: Preludes, Books I, II - Steven Osborne"
+date: 2025-11-03
 artist:
-  - Debussy: Preludes
-  - Books I & II
-cover: ""
+  - Osborne, Steven
+recording: Hyperion Records
+cover: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/53/fc/c653fc1a-417f-8188-7822-ba0a1e2200eb/23UMGIM97046.rgb.jpg/1200x1200bb.jpg
 folder: ""
 frontmatterVersion: 2
+favorite: false
+confirmed: true
 ---
 
 ## Album
 
-Claude Debussy
-Préludes, Book I
+#### Debussy, Claude
+##### Preludes, Book I
 1. 1. Danseuses de Delphes
 2. 2. Voiles
 3. 3. Le vent dans la plaine
@@ -25,7 +27,8 @@ Préludes, Book I
 10. 10. La cathédrale engloutie
 11. 11. La danse de Puck
 12. 12. Minstrels
-Préludes, Book II
+
+##### Preludes, Book II
 13. 1. Brouillards
 14. 2. Feuilles mortes
 15. 3. La Puerta del Vino
@@ -38,9 +41,9 @@ Préludes, Book II
 22. 10. Canope
 23. 11. Les tierces alternées
 24. 12. Feux d’artifice
-tags: Debussy, Osborne
-recording: Hyperion (2006)
-source: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA67530
-source: https://www.stevenosborne.com/recordings-list/debussy-preludes
 
 ## Sources
+
+- [Original Tistory post](https://frontjang1.tistory.com/1416)
+- [Hyperion Records release](https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA67530)
+- [Steven Osborne recording list](https://www.stevenosborne.com/recordings-list/debussy-preludes)

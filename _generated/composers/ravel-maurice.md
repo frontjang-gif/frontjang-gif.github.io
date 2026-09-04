@@ -21,6 +21,7 @@ title: Ravel, Maurice
 - [Menuet sur le nom de Haydn]({{ site.baseurl }}/composers/ravel-maurice/menuet-sur-le-nom-de-haydn/)
 - [Miroirs, M. 43]({{ site.baseurl }}/composers/ravel-maurice/miroirs-m-43/)
 - [Pavane pour une infante defunte]({{ site.baseurl }}/composers/ravel-maurice/pavane-pour-une-infante-defunte/)
+- [Piano Concerto in G major, M. 83]({{ site.baseurl }}/composers/ravel-maurice/piano-concerto-in-g-major-m-83/)
 - [Prelude in A Minor]({{ site.baseurl }}/composers/ravel-maurice/prelude-in-a-minor/)
 - [Sites auriculaires]({{ site.baseurl }}/composers/ravel-maurice/sites-auriculaires/)
 - [Sonatine, M. 40]({{ site.baseurl }}/composers/ravel-maurice/sonatine-m-40/)
