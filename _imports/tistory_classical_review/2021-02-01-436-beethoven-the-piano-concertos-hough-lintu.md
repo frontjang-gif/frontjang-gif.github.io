@@ -1,0 +1,37 @@
+---
+title: "Beethoven: The Piano Concertos - Hough, Lintu"
+date: 2021-02-01 00:00:00 +0900
+artist:
+  - Beethoven: The Piano Concertos
+cover: ""
+folder: ""
+frontmatterVersion: 2
+---
+
+## Album
+
+CD1
+Piano Concerto No. 1 in C major Op. 15
+1. 1. Allegro con brio
+2. 2. Largo
+3. 3. Rondo: Allegro
+Piano Concerto No. 2 in B flat major Op. 19
+4. 1. Allegro con brio
+5. 2. Adagio
+6. 3. Rondo: Allegro molto
+CD2
+Piano Concerto No. 3 in C minor Op. 37
+1. 1. Allegro con brio
+2. 2. Largo
+3. 3. Rondo: Allegro
+Piano Concerto No. 4 in G major Op. 58
+4. 1. Allegro moderato
+5. 2. Andante con moto
+6. 3. Rondo: Vivace
+CD3
+Piano Concerto No. 5 in E flat major 'Emperor' Op. 73
+1. 1. Allegro
+2. 2. Adagio un poco moto
+3. 3. Rondo: Allegro ma non troppo
+
+## Sources

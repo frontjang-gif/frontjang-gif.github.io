@@ -5,7 +5,8 @@ artist:
   - Anne Sofie Von Otter
   - Brad Mehldau
 cover: https://blog.kakaocdn.net/dna/XQDOJ/btq5AQEKQNw/AAAAAAAAAAAAAAAAAAAAANoczCXkdxGZlNCor3_0lRoH-NSqNssxQB9vpKsLUwz1/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=vcHJE2H%2BboJ3lLUsi37T26oa388%3D
-musicFolder: ""
+folder: ""
+frontmatterVersion: 2
 ---
 
 ## Album

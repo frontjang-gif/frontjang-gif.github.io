@@ -118,10 +118,57 @@ class PageParser(HTMLParser):
 
 
 def fetch(url: str) -> str:
-    request = Request(url, headers={"Accept": "text/html,application/xhtml+xml"})
+    import os
+
+    # Try Playwright first for problematic sites like Discogs
+    use_playwright = os.environ.get("USE_PLAYWRIGHT", "").lower() in ("1", "true", "yes")
+    is_discogs = "discogs.com" in url
+
+    if use_playwright or is_discogs:
+        result = _try_playwright_fetch(url)
+        if result:
+            return result
+
+    # Fall back to urllib
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+    }
+
+    # Add Discogs API token if available (for Discogs API requests)
+    discogs_token = os.environ.get("DISCOGS_TOKEN")
+    if discogs_token and "discogs.com" in url:
+        headers["Authorization"] = f"Discogs token={discogs_token}"
+
+    request = Request(url, headers=headers)
     with urlopen(request, timeout=20) as response:
         charset = response.headers.get_content_charset() or "utf-8"
         return response.read().decode(charset, errors="replace")
+
+
+def _try_playwright_fetch(url: str) -> str | None:
+    """Try fetching with Playwright if available, return None if not installed or fails."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return None
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+            context = browser.new_context()
+            page = context.new_page()
+            page.goto(url, wait_until="networkidle", timeout=30000)
+            content = page.content()
+            browser.close()
+            return content
+    except Exception as e:
+        # Silently fail and fall back to urllib
+        return None
 
 
 def json_objects(raw_json: list[str]) -> list[dict[str, Any]]:

@@ -15,7 +15,8 @@ language: Japanese
 source: https://www.themoviedb.org/movie/00000
 poster: https://example.com/poster.jpg
 rating: null
-movieFolder: Director/Director name
+folder: Director/Director name
+frontmatterVersion: 2
 ---
 
 ## Synopsis

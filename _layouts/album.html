@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post detailed">
-  {% assign music_folder = page.musicFolder %}
+  {% assign music_folder = page.folder | default: page.musicFolder %}
   {% if music_folder == nil or music_folder == "" %}
     {% assign music_folder = page.path | derived_music_folder: page.title %}
   {% endif %}

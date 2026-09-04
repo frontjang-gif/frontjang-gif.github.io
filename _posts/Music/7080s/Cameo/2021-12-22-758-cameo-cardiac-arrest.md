@@ -1,0 +1,22 @@
+---
+title: "Cameo - Cardiac Arrest"
+date: 2021-12-22 00:00:00 +0900
+artist:
+  - Cameo
+cover: ""
+folder: ""
+frontmatterVersion: 2
+---
+
+## Album
+
+1. Still Feels Good
+2. Post Mortem
+3. Smile
+4. Funk Funk
+5. Find My Way
+6. Rigor Mortis
+7. Good Times
+8. Stay By My Side
+
+## Sources

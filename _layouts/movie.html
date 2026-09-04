@@ -5,7 +5,8 @@ layout: default
 <article class="post detailed movie-entry">
   <div class="post-title-row">
     <h1>{{ page.title }}</h1>
-    {% include protocol-actions.html root="movie" folder=page.movieFolder %}
+    {% assign movie_folder = page.folder | default: page.movieFolder %}
+    {% include protocol-actions.html root="movie" folder=movie_folder %}
   </div>
   <p class="author_title">{{ page.year }} · {{ page.language }}</p>
 

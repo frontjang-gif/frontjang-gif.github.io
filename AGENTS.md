@@ -50,12 +50,12 @@ tags: [tag1, tag2]
 - Evolve the importer when repeated imports expose a reusable parsing or normalization gap. Keep the plugin registry, tests, README, and these instructions aligned with the new capability.
 - Do not set a custom identifying `User-Agent` header for source-research requests.
 - Use `scripts/migrate_tistory.py` to inventory a Tistory archive. Its `_imports/tistory/` output is review-only and must never be treated as publishable `_posts/` content by default.
-- Promote a Tistory draft to `_posts/` only when the original URL, release identity, credited artists, track sequence, recording/imprint, and a cover of at least 1000px have been verified against an independent primary catalogue, artist, distributor, or streaming source. Leave uncertain credits, editions, categories, or work boundaries in `_imports/`.
+- Promote a Tistory draft to `_posts/` only when the original URL, release identity, credited artists, track sequence, recording/imprint, and a cover from an independent primary catalogue, artist, distributor, or streaming source have been verified. Prefer covers at least 1000px wide; accept a verified cover of at least 500px when a larger source is unavailable. Leave uncertain credits, editions, categories, or work boundaries in `_imports/`.
 - On promotion, add both the original Tistory URL and corroborating source URLs to `## Sources`, rerun the migration with `--resume` so its draft is removed and manifest status becomes `imported`, then regenerate the Music pages and run the build and rendering tests.
 
 ### Cover Image
 
-- Attach a cover image that is at least 1000px wide.
+- Prefer a cover image at least 1000px wide. A verified 500px-or-larger source is acceptable when no larger source is publicly available.
 - Do not infer a cover's dimensions from a resized Tistory/Open Graph thumbnail. Verify the direct source image or use a known-size official/Apple Music variant before publishing it.
 - Use an image from a public website such as Amazon, AllMusic, Naxos, or Apple Music.
 - Prefer official or reliable sources over Discogs.
@@ -75,13 +75,14 @@ tags: [tag1, tag2]
 - Expand shortened orchestra names and do not use abbreviations.
 - Write work numbers as `No.` or `Nos.` with a period and a space.
 - Remove accents, diacritics, and unsupported special characters from titles and filenames. Allowed punctuation is `;`, `&`, `,`, `.`, and `-`.
-- Use `;` between composers, `&` to combine composers or the final item in a work list, and `,` between works by the same composer.
+- Use `;` between distinct composer/work parts, `&` when multiple composers share one work name (or to combine the final item in a work list), and `,` between works by the same composer.
 
 ### Tags
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
 - Use the top-level folder under `_posts/Music/` for music category navigation, such as `Classical`, `Jazz`, or `7080s`.
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
+- Set `confirmed: true` only after the user explicitly confirms an album entry. New or imported entries must use `confirmed: false`; research and automated validation never imply user confirmation.
 - Music albums may use `recording` for the recording company or release/edition imprint.
 - Keep recording companies separate from label series. Place an album under `Labels/{series name}/` only when it belongs to a named series, such as `Mercury Living Presence`; a company such as Decca belongs in `recording` and does not by itself determine the album's folder.
 - Composer work pages may use `favorite: true` to mark a favorite work; omit it or use `false` otherwise.
@@ -90,8 +91,8 @@ tags: [tag1, tag2]
 ## Movie Writing Guidelines
 
 - Store movies under `_posts/Movie/`.
-- Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `movieFolder`. Use a numeric rating such as `2.5` or `null` when unrated.
-- Music albums may use `musicFolder` for their media folder path.
+- Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `folder`. Use a numeric rating such as `2.5` or `null` when unrated.
+- Music albums and movies use `folder` for their media folder path. Use `frontmatterVersion: 2` for the current schema. Version 1 used `musicFolder` or `movieFolder`; readers must map those legacy fields to `folder`.
 - Music album filenames are normalized to `{record date}-{title slug}.md` within their current folder; nested folders are supported.
 - The sidebar is generated from the physical post structure as `Root > Blog | Music | Movie`. `scripts/generate_music_pages.rb` regenerates the nested Music folder tree in `_includes/generated-music-sidebar.html`; run it after moving Music folders or albums.
 - Keep top-level post folders capitalized: `_posts/Daily/`, `_posts/Tech/`, `_posts/Music/`, and `_posts/Movie/`. Music category and label navigation are derived from the nested folder structure.

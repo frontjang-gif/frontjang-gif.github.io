@@ -1,0 +1,66 @@
+---
+layout: page
+title: 7080s Artists
+---
+
+# 7080s Soul/Funk Artists
+
+- [Alec Costandinos & The Syncophonic Orchestra]({{ site.baseurl }}/7080s-artists/alec-costandinos-and-the-syncophonic-orchestra/) — 3 albums
+- [Amii Stewart]({{ site.baseurl }}/7080s-artists/amii-stewart/) — 1 album
+- [Aretha Franklin]({{ site.baseurl }}/7080s-artists/aretha-franklin/) — 1 album
+- [Ashford & Simpson]({{ site.baseurl }}/7080s-artists/ashford-and-simpson/) — 17 albums
+- [Atlantic Starr]({{ site.baseurl }}/7080s-artists/atlantic-starr/) — 1 album
+- [Bar-Kays]({{ site.baseurl }}/7080s-artists/bar-kays/) — 2 albums
+- [Barry White]({{ site.baseurl }}/7080s-artists/barry-white/) — 5 albums
+- [Bloodstone]({{ site.baseurl }}/7080s-artists/bloodstone/) — 1 album
+- [Brighter Side Of Darkness]({{ site.baseurl }}/7080s-artists/brighter-side-of-darkness/) — 1 album
+- [Cameo]({{ site.baseurl }}/7080s-artists/cameo/) — 3 albums
+- [Candi Staton]({{ site.baseurl }}/7080s-artists/candi-staton/) — 1 album
+- [Carly Simon]({{ site.baseurl }}/7080s-artists/carly-simon/) — 2 albums
+- [Chaka Khan]({{ site.baseurl }}/7080s-artists/chaka-khan/) — 7 albums
+- [Cheryl Lynn]({{ site.baseurl }}/7080s-artists/cheryl-lynn/) — 5 albums
+- [Dan Hartman]({{ site.baseurl }}/7080s-artists/dan-hartman/) — 3 albums
+- [Dionne Warwick]({{ site.baseurl }}/7080s-artists/dionne-warwick/) — 2 albums
+- [Duran Duran]({{ site.baseurl }}/7080s-artists/duran-duran/) — 1 album
+- [Dusty Springfield - Dusty]({{ site.baseurl }}/7080s-artists/dusty-springfield---dusty/) — 1 album
+- [Esther Phillips]({{ site.baseurl }}/7080s-artists/esther-phillips/) — 1 album
+- [First Choice]({{ site.baseurl }}/7080s-artists/first-choice/) — 7 albums
+- [Gladys Knight & the Pips]({{ site.baseurl }}/7080s-artists/gladys-knight-and-the-pips/) — 1 album
+- [Gwen McCrae]({{ site.baseurl }}/7080s-artists/gwen-mccrae/) — 2 albums
+- [High Fashion]({{ site.baseurl }}/7080s-artists/high-fashion/) — 1 album
+- [Instant Funk]({{ site.baseurl }}/7080s-artists/instant-funk/) — 5 albums
+- [Kano]({{ site.baseurl }}/7080s-artists/kano/) — 2 albums
+- [Kasso]({{ site.baseurl }}/7080s-artists/kasso/) — 2 albums
+- [Leroy Hutson]({{ site.baseurl }}/7080s-artists/leroy-hutson/) — 6 albums
+- [Loleatta Holloway]({{ site.baseurl }}/7080s-artists/loleatta-holloway/) — 5 albums
+- [Loleatta Holloway - Dreamin']({{ site.baseurl }}/7080s-artists/loleatta-holloway---dreamin/) — 1 album
+- [Love & Kisses]({{ site.baseurl }}/7080s-artists/love-and-kisses/) — 1 album
+- [Luther Vandross]({{ site.baseurl }}/7080s-artists/luther-vandross/) — 1 album
+- [Macho]({{ site.baseurl }}/7080s-artists/macho/) — 2 albums
+- [Marvin Gaye]({{ site.baseurl }}/7080s-artists/marvin-gaye/) — 6 albums
+- [Marvin Gaye & Tammi Terrell]({{ site.baseurl }}/7080s-artists/marvin-gaye-and-tammi-terrell/) — 2 albums
+- [Parliament]({{ site.baseurl }}/7080s-artists/parliament/) — 3 albums
+- [Patrice Rushen]({{ site.baseurl }}/7080s-artists/patrice-rushen/) — 3 albums
+- [Peaches & Herb]({{ site.baseurl }}/7080s-artists/peaches-and-herb/) — 5 albums
+- [People's Choice]({{ site.baseurl }}/7080s-artists/peoples-choice/) — 1 album
+- [Peter Jacques Band]({{ site.baseurl }}/7080s-artists/peter-jacques-band/) — 4 albums
+- [Randy Crawford]({{ site.baseurl }}/7080s-artists/randy-crawford/) — 1 album
+- [Revanche]({{ site.baseurl }}/7080s-artists/revanche/) — 1 album
+- [Rice & Beans Orchestra]({{ site.baseurl }}/7080s-artists/rice-and-beans-orchestra/) — 2 albums
+- [Stephanie Mills]({{ site.baseurl }}/7080s-artists/stephanie-mills/) — 1 album
+- [Sylvester]({{ site.baseurl }}/7080s-artists/sylvester/) — 4 albums
+- [Sylvester & the Hot Band]({{ site.baseurl }}/7080s-artists/sylvester-and-the-hot-band/) — 1 album
+- [Sylvia]({{ site.baseurl }}/7080s-artists/sylvia/) — 1 album
+- [Teddy Pendergrass]({{ site.baseurl }}/7080s-artists/teddy-pendergrass/) — 2 albums
+- [Teena Marie]({{ site.baseurl }}/7080s-artists/teena-marie/) — 1 album
+- [The Chi-Lites]({{ site.baseurl }}/7080s-artists/the-chi-lites/) — 1 album
+- [The Delfonics]({{ site.baseurl }}/7080s-artists/the-delfonics/) — 1 album
+- [The Isley Brothers]({{ site.baseurl }}/7080s-artists/the-isley-brothers/) — 1 album
+- [The Jones Girls]({{ site.baseurl }}/7080s-artists/the-jones-girls/) — 1 album
+- [The Love Unlimited Orchestra]({{ site.baseurl }}/7080s-artists/the-love-unlimited-orchestra/) — 12 albums
+- [The Magic Disco Machine]({{ site.baseurl }}/7080s-artists/the-magic-disco-machine/) — 1 album
+- [The Manhattans]({{ site.baseurl }}/7080s-artists/the-manhattans/) — 1 album
+- [The O'Jays]({{ site.baseurl }}/7080s-artists/the-ojays/) — 4 albums
+- [The Stylistics - The Greatest Hits Of The Stylistics]({{ site.baseurl }}/7080s-artists/the-stylistics---the-greatest-hits-of-the-stylistics/) — 1 album
+- [The Supremes]({{ site.baseurl }}/7080s-artists/the-supremes/) — 1 album
+- [Thelma Houston]({{ site.baseurl }}/7080s-artists/thelma-houston/) — 1 album

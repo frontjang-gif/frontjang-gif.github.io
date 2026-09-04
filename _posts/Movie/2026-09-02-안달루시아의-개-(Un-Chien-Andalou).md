@@ -16,7 +16,8 @@ language: French
 source: https://www.themoviedb.org/movie/626-un-chien-andalou?language=en-US
 poster: https://media.themoviedb.org/t/p/w500/obvE7ElAvCUhKtWFwDSvNbPw9PV.jpg
 rating: 2.5
-movieFolder: Director/Luis Bunuel
+folder: Director/Luis Bunuel
+frontmatterVersion: 2
 ---
 
 ## Synopsis

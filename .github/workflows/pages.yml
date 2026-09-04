@@ -41,6 +41,9 @@ jobs:
       - name: Test Tistory migration helper
         run: python3 test/migrate_tistory_test.py
 
+      - name: Test Classical promotion gate
+        run: python3 test/process_classical_files_test.py
+
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 

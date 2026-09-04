@@ -7,7 +7,8 @@ artist:
 year: release year
 recording: Label
 cover: https://example.com/cover.jpg
-musicFolder: ""
+folder: ""
+frontmatterVersion: 2
 favorite: false
 ---
 
