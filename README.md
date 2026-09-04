@@ -112,6 +112,12 @@ This repository uses `.github/workflows/pages.yml` to build and deploy the site 
 
 In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**. After that, pushes to `master` and manual workflow runs publish the generated `_site` directory.
 
+To push the current branch and wait for the matching Pages workflow, use `scripts/push_and_check_pages.sh`. It requires an authenticated [GitHub CLI](https://cli.github.com/).
+
+```sh
+scripts/push_and_check_pages.sh
+```
+
 ## Managing Work Pages
 
 Composer and work pages are generated automatically in `/composers/` from the `####` composer and `#####` work headings in album Markdown. No separate registry or album front matter is required. Generated pages are kept in `_generated/` as a Jekyll collection so their front matter can be reviewed and edited manually. The front matter `title` is the displayed name; the body contains only movements and references, without a duplicate title heading. URLs come from the `_generated/` folder path, not a page-level `permalink`, so renaming or moving a generated file updates its URL automatically. Existing `title`, `aliases`, `source`, and other front matter are preserved when pages are regenerated. If no matching page exists, a new one is created.
