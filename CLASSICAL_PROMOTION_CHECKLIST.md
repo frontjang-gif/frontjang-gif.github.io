@@ -1,6 +1,6 @@
 # Classical Music File Promotion Checklist
 
-Before moving a Classical music file from `_imports/tistory_classical_review/` to `_posts/Music/Classical/`, verify all items below.
+Before moving a Classical music file from `_imports/tistory_classical_review/` to `_posts/Classical/`, verify all items below.
 
 ## Front Matter (YAML)
 
@@ -143,7 +143,7 @@ Before moving a Classical music file from `_imports/tistory_classical_review/` t
 
 - [ ] **File location**: Proper directory structure
   ```
-  _posts/Music/Classical/
+  _posts/Classical/
   ├── Pianists/[Artist Name]/[file].md
   ├── Violinist/[Artist Name]/[file].md
   ├── Labels/[Label Name]/[file].md

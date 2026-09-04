@@ -115,6 +115,15 @@ class ClassicalPromotionTest(unittest.TestCase):
             self.assertTrue(success)
             self.assertEqual(content, path.read_text(encoding="utf-8"))
 
+    def test_preserves_gap_between_compact_discs(self):
+        content = post("  - Nojima, Minoru", "https://label.example/cover.jpg", 1200).replace(
+            "### Composer, Example\n1. Work",
+            "### CD1\n#### Composer, Example\n##### Work\n1. 1. Allegro\n\n### CD2\n##### Work\n1. 2. Adagio",
+        )
+        instance = processor.ClassicalFileProcessor(self.write_temp(content))
+        instance.fix_formatting()
+        self.assertIn("1. 1. Allegro\n\n### CD2", instance.body_section)
+
 
 if __name__ == "__main__":
     unittest.main()

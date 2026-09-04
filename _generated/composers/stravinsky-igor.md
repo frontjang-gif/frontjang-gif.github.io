@@ -9,4 +9,4 @@ title: Stravinsky, Igor
 
 [All composers]({{ site.baseurl }}/composers/)
 
-- [Three Movements from "Petrushka"]({{ site.baseurl }}/composers/stravinsky-igor/three-movements-from-petrushka/)
+- [Violin Concerto in D Major]({{ site.baseurl }}/composers/stravinsky-igor/violin-concerto-in-d-major/)

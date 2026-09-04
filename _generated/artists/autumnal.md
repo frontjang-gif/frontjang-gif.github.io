@@ -1,0 +1,16 @@
+---
+wiki: ''
+born: ''
+original_name: Autumnal
+layout: page
+title: Autumnal
+---
+
+[All artists]({{ site.baseurl }}/artists/)
+
+## Unknown
+
+<div class="posts album-list">
+{% assign post = site.posts | where: "url", "/albums/119-prokofiev-piano-concertos-nos-1-5-classical-symphony-autumnal-overture-on-hebrew/" | first %}
+{% if post %}{% include post-card.html %}{% endif %}
+</div>

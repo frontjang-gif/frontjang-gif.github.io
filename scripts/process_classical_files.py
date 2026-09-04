@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Validate Classical music files before promotion from _imports to _posts/Music/Classical/.
+Validate Classical music files before promotion from _imports to _posts/Classical/.
 
 Applies formatting rules and prepares files for review:
 - Removes blank lines between hierarchy levels (composer, work, tracks)
@@ -157,8 +157,8 @@ class ClassicalFileProcessor:
                         j += 1
                     if j < len(lines):
                         next_line = lines[j].strip()
-                        # Keep blank before work heading only if preceded by track
-                        if re.match(r'^####\s', next_line) and re.match(r'^\d+\.', last_line):
+                        # Keep structural gaps after a track, including between CDs.
+                        if (re.match(r'^####\s', next_line) or re.match(r'^### CD\d+\s*$', next_line)) and re.match(r'^\d+\.', last_line):
                             fixed_lines.append(line)
                         # Skip blank before any other heading
                         elif re.match(r'^###\s', next_line) or re.match(r'^####\s', next_line):
@@ -276,7 +276,7 @@ def process_file(input_path, output_path=None, write=False):
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 process_classical_files.py <file_or_directory> [--output-dir <dir>] [--write]")
-        print("  Validates Classical files for promotion to _posts/Music/Classical/.")
+        print("  Validates Classical files for promotion to _posts/Classical/.")
         sys.exit(1)
 
     source = Path(sys.argv[1])

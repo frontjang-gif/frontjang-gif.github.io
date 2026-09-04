@@ -80,7 +80,7 @@ tags: [tag1, tag2]
 ### Tags
 
 - Do not add composer or performer tags; the Composers and Artists navigators provide those links. Use tags only for other useful classifications.
-- Use the top-level folder under `_posts/Music/` for music category navigation, such as `Classical`, `Jazz`, or `7080s`.
+- Use the top-level folder under `_posts/Music/` for music category navigation, such as `Jazz` or `7080s`. Store Classical albums under `_posts/Classical/`.
 - Music albums may use `favorite: true` to mark a favorite recording; omit it or use `false` otherwise.
 - Set `confirmed: true` only after the user explicitly confirms an album entry. New or imported entries must use `confirmed: false`; research and automated validation never imply user confirmation.
 - Music albums may use `recording` for the recording company or release/edition imprint.
@@ -95,7 +95,7 @@ tags: [tag1, tag2]
 - Music albums and movies use `folder` for their media folder path. Use `frontmatterVersion: 2` for the current schema. Version 1 used `musicFolder` or `movieFolder`; readers must map those legacy fields to `folder`.
 - Music album filenames are normalized to `{record date}-{title slug}.md` within their current folder; nested folders are supported.
 - The sidebar is generated from the physical post structure as `Root > Blog | Music | Movie`. `scripts/generate_music_pages.rb` regenerates the nested Music folder tree in `_includes/generated-music-sidebar.html`; run it after moving Music folders or albums.
-- Keep top-level post folders capitalized: `_posts/Daily/`, `_posts/Tech/`, `_posts/Music/`, and `_posts/Movie/`. Music category and label navigation are derived from the nested folder structure.
+- Keep top-level post folders capitalized: `_posts/Daily/`, `_posts/Tech/`, `_posts/Music/`, `_posts/Classical/`, and `_posts/Movie/`. Music category and label navigation are derived from the nested folder structure.
 - Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.
@@ -117,6 +117,7 @@ tags: [tag1, tag2]
 - Do not put blank lines between a composer heading, its work heading, and the first track. Keep those lines contiguous in Markdown. Use a blank line only when it carries structure, such as separating the end of a movement list from the next standalone work.
 - A composer declaration remains active across CD boundaries. Do not repeat the composer heading on each CD when the composer has not changed; add a new composer heading only when the composer changes.
 - For multi-disc albums, label discs as `CD1`, `CD2`, and so on, never `CD01` or `Disc1`. Do not add a disc label to a single-disc album.
+- Leave one blank line between the final track on a CD and the following CD heading. Do not add blank lines between a CD heading and its active composer or first work.
 - Mention each work's information once, including when it spans multiple CDs; do not repeat it in every track title.
 - Use ordinary Markdown emphasis such as `**bold**` and `*italic*` where emphasis is needed, while using headings for the album hierarchy.
 - Write album tracks as `track number. movement number. title`, such as `1. 1. Allegro non troppo`. The album page preserves both numbers; generated work pages retain only the movement number.

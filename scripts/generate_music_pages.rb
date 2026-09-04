@@ -6,6 +6,9 @@ require "yaml"
 
 SOURCE_ROOT = File.expand_path("..", __dir__)
 OUTPUT_ROOT = File.join(SOURCE_ROOT, "_generated")
+MUSIC_POST_ROOT = File.join(SOURCE_ROOT, "_posts", "Music")
+CLASSICAL_POST_ROOT = File.join(SOURCE_ROOT, "_posts", "Classical")
+ALBUM_POST_ROOTS = [MUSIC_POST_ROOT, CLASSICAL_POST_ROOT].freeze
 
 
 def slug(value)
@@ -101,8 +104,10 @@ end
 def music_sidebar_tree(albums)
   tree = {}
   albums.each do |album|
-    relative = album[:path].delete_prefix(File.join(SOURCE_ROOT, "_posts", "Music") + File::SEPARATOR)
+    root = album_post_root(album[:path])
+    relative = album[:path].delete_prefix(root + File::SEPARATOR)
     folders = relative.split(File::SEPARATOR)[0...-1]
+    folders.unshift("Classical") if root == CLASSICAL_POST_ROOT
     node = tree
     folders.each { |folder| node = (node[folder] ||= {}) }
     (node["_albums"] ||= []) << album
@@ -177,6 +182,10 @@ def album_url(album)
   "/albums/#{slug(filename)}/"
 end
 
+def album_post_root(path)
+  ALBUM_POST_ROOTS.find { |root| path.start_with?(root + File::SEPARATOR) }
+end
+
 def movie_url(movie)
   filename = File.basename(movie[:path], ".md").sub(/^\d{4}-\d{2}-\d{2}-/, "")
   "/movies/#{filename}/"
@@ -195,9 +204,9 @@ def parse_album(path)
   artist = metadata["artist"]
   artist = [artist] unless artist.is_a?(Array)
   year = metadata["year"]
-  music_root = File.join(SOURCE_ROOT, "_posts", "Music") + File::SEPARATOR
-  relative_path = path.delete_prefix(music_root).split(File::SEPARATOR)
-  category = relative_path.length > 1 ? relative_path.first : nil
+  root = album_post_root(path)
+  relative_path = path.delete_prefix(root + File::SEPARATOR).split(File::SEPARATOR)
+  category = root == CLASSICAL_POST_ROOT ? "Classical" : (relative_path.length > 1 ? relative_path.first : nil)
   favorite = metadata["favorite"]
   recording = metadata["recording"]
   label = relative_path[1] == "Labels" ? relative_path[2] : nil
@@ -331,7 +340,7 @@ Dir[File.join(OUTPUT_ROOT, "**", "*.md")].each do |path|
   end
 end
 
-albums = Dir[File.join(SOURCE_ROOT, "_posts", "Music", "**", "*.md")].map do |path|
+albums = ALBUM_POST_ROOTS.flat_map { |root| Dir[File.join(root, "**", "*.md")] }.map do |path|
   parse_album(path)
 end
 movies = Dir[File.join(SOURCE_ROOT, "_posts", "Movie", "*.md")].map { |path| parse_movie(path) }
@@ -490,7 +499,7 @@ artist_links = artist_keys.map { |artist| page_link("/artists/#{slug(artist)}/",
 write_page(File.join(OUTPUT_ROOT, "artists.md"), "Artists", content: artist_links.join("\n"))
 
 artists.each do |artist, artist_albums|
-  grouped = artist_albums.group_by { |album| album[:year] || "Unknown" }
+  grouped = artist_albums.group_by { |album| album[:year]&.to_s || "Unknown" }
   content = "[All artists](\u007b\u007b site.baseurl \u007d\u007d/artists/)\n\n"
   grouped.keys.sort.reverse.each do |year|
     content += "## #{year}\n\n"

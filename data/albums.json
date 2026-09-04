@@ -1,6 +1,95 @@
 {
   "albums": [
     {
+      "title": "Alec Costandinos & The Syncophonic Orchestra - The Hunchback Of Notre Dame",
+      "url": "/albums/308-alec-costandinos-the-syncophonic-orchestra-the-hunchback-of-notre-dame/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Amii Stewart - The Hits & The Remixes",
+      "url": "/albums/746-amii-stewart-the-hits-the-remixes/",
+      "artists": [
+        "Amii Stewart"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Amy Winehouse - Back To Black",
+      "url": "/albums/614-amy-winehouse-back-to-black/",
+      "artists": [
+        "Amy Winehouse"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Amy Winehouse - Frank",
+      "url": "/albums/613-amy-winehouse-frank/",
+      "artists": [
+        "Amy Winehouse"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Amy Winehouse - Lioness: Hidden Treasures",
+      "url": "/albums/615-amy-winehouse-lioness-hidden-treasures/",
+      "artists": [
+        "Amy Winehouse"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Anne Sofie Von Otter, Brad Mehldau - Love Songs",
+      "url": "/albums/588-anne-sofie-von-otter-brad-mehldau-love-songs/",
+      "artists": [
+        "Anne Sofie Von Otter",
+        "Brad Mehldau"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Jazz",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
       "title": "Anne Sofie Von Otter, Brad Mehldau - Love Songs",
       "url": "/albums/anne-sofie-von-otter-brad-mehldau-love-songs/",
       "artists": [
@@ -17,159 +106,807 @@
       "cover": "https://blog.kakaocdn.net/dna/XQDOJ/btq5AQEKQNw/AAAAAAAAAAAAAAAAAAAAANoczCXkdxGZlNCor3_0lRoH-NSqNssxQB9vpKsLUwz1/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=vcHJE2H%2BboJ3lLUsi37T26oa388%3D"
     },
     {
-      "title": "Bach: 3 Sonatas for Viola da Gamba and Harpsichord - Gould, Rose",
-      "url": "/albums/bach-3-sonatas-for-viola-da-gamba-and-harpsichord-gould-rose/",
+      "title": "Anne-Sophie Mutter - Across The Stars",
+      "url": "/albums/115-anne-sophie-mutter-across-the-stars/",
       "artists": [
-        "Gould, Glenn",
-        "Rose, Leonard"
+        "Anne-Sophie Mutter"
       ],
-      "composers": [
-        "Bach, Johann Sebastian"
-      ],
-      "works": [
-        "Sonata for Viola da Gamba and Harpsichord No. 1 in G major, BWV 1027",
-        "Sonata for Viola da Gamba and Harpsichord No. 2 in D major, BWV 1028",
-        "Sonata for Viola da Gamba and Harpsichord No. 3 in G minor, BWV 1029"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Columbia Masterworks",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/botYDx/btsO7hxisan/AAAAAAAAAAAAAAAAAAAAAAW5l-fjBQOZgaNWczqnpGd1KH76jTXpmkTclnxhVsqV/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=dhY25on/2GndIC4EZemO7ydZhE0="
+      "cover": ""
     },
     {
-      "title": "Bach: Goldberg Variations - Fazil Say",
-      "url": "/albums/bach-goldberg-variations-fazil-say/",
+      "title": "Anne-Sophie Mutter - The Early Years",
+      "url": "/albums/114-anne-sophie-mutter-the-early-years/",
       "artists": [
-        "Say, Fazil"
+        "Anne-Sophie Mutter"
       ],
-      "composers": [
-        "Bach, Johann Sebastian"
-      ],
-      "works": [
-        "Goldberg Variations, BWV 988"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Warner Classics",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2022-09/5054197233968.jpg.webp"
+      "cover": ""
     },
     {
-      "title": "Bach: Keyboard Concertos Nos. 3, 5 & 7 - Gould, Golschmann, Columbia Symphony Orchestra",
-      "url": "/albums/bach-keyboard-concertos-nos-3-5-7-gould-golschmann-columbia-symphony-orchestra/",
+      "title": "Arensky: Piano Concerto in F Minor, 12 Etudes - Alston, Freeman",
+      "url": "/albums/45-arensky-piano-concerto-in-f-minor-12-etudes-alston-freeman/",
       "artists": [
-        "Gould, Glenn",
-        "Golschmann, Vladimir",
-        "Columbia Symphony Orchestra"
+        "Arensky Piano Concerto in F Minor",
+        "12 Etudes"
       ],
-      "composers": [
-        "Bach, Johann Sebastian"
-      ],
-      "works": [
-        "Keyboard Concerto No. 3 in D major, BWV 1054",
-        "Keyboard Concerto No. 5 in F minor, BWV 1056",
-        "Keyboard Concerto No. 7 in G minor, BWV 1058"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Columbia Masterworks",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/zAGFI/btsOYfGtTlg/AAAAAAAAAAAAAAAAAAAAAAvvv0eIIpW7AA6CCnQUwmQ0RvF9GJDAK9GsgSb8p3Lj/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=nPHB0LxGiSkddnc8gBliuSYY19M="
+      "cover": ""
     },
     {
-      "title": "Bachauer: The Mercury Masters",
-      "url": "/albums/bachauer-the-mercury-masters/",
+      "title": "Arensky: Piano Concerto in F minor - Scherbakov, Yablonsky",
+      "url": "/albums/44-arensky-piano-concerto-in-f-minor-scherbakov-yablonsky/",
       "artists": [
-        "Bachauer, Gina",
-        "Gielgud, John",
-        "London Symphony Orchestra"
+        "Arensky Piano Concerto in F Minor"
       ],
-      "composers": [
-        "Brahms, Johannes",
-        "Beethoven, Ludwig van",
-        "Stravinsky, Igor",
-        "Chopin, Frederic",
-        "Liszt, Franz",
-        "Ravel, Maurice",
-        "Debussy, Claude"
-      ],
-      "works": [
-        "Piano Concerto No. 2 in B-flat major, Op. 83",
-        "Piano Concerto No. 5 in E-flat major, Op. 73 \"Emperor\"",
-        "Three Movements from \"Petrushka\"",
-        "Polonaise in A-flat major, Op. 53",
-        "Hungarian Rhapsody No. 12 in C-sharp minor, S. 244/12",
-        "Variations on a Theme by Paganini, Op. 35 - Book II",
-        "Piano Concerto No. 1 in E minor, Op. 11",
-        "Ballade No. 1 in G minor, Op. 23",
-        "Nocturne in C-sharp minor, Op. 27 No. 1",
-        "Etudes, Op. 25 (selection)",
-        "Piano Concerto No. 4 in G major, Op. 58",
-        "Piano Sonata No. 9 in E major, Op. 14 No. 1",
-        "Gaspard de la nuit",
-        "Pour le piano, L. 95",
-        "Preludes",
-        "Piano Concerto No. 2 in F minor, Op. 21",
-        "Fantaisie in F minor, Op. 49"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Eloquence",
-      "label": "Mercury Living Presence",
-      "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/dQJN4Z/dJMcad79rp1/AAAAAAAAAAAAAAAAAAAAAANhAC8zZ6JWjm7fcONZU7KjGt0NJIZBTiQ8cEIA5Yb1/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=MFaYN41CFTLnVa9%2FClKl9UkRTws%3D"
-    },
-    {
-      "title": "Beethoven: Piano Concerto No. 4; Franck: Symphonic Variations; Ravel: Piano Concerto - Moravec, Belohlavek, Prague Philharmonia",
-      "url": "/albums/beethoven-piano-concerto-no-4-franck-symphonic-variations-ravel-piano-concerto-moravec-belohlavek-prague-philharmonia/",
-      "artists": [
-        "Moravec, Ivan",
-        "Bělohlávek, Jiří",
-        "Prague Philharmonia"
-      ],
-      "composers": [
-        "Beethoven, Ludwig van",
-        "Franck, Cesar",
-        "Ravel, Maurice"
-      ],
-      "works": [
-        "Piano Concerto No. 4 in G major, Op. 58",
-        "Symphonic Variations, FWV 46",
-        "Piano Concerto in G major, M. 83"
-      ],
-      "year": null,
-      "category": "Classical",
-      "recording": "Supraphon",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/97/95/9e/97959ebb-b9ca-08f9-2c9f-c240a22810bd/cover.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Beethoven: Piano Sonatas Nos. 8, 14, 26, 27, 32 Variations - Ivan Moravec",
-      "url": "/albums/beethoven-piano-sonatas-nos-8-14-26-27-32-variations-ivan-moravec/",
+      "title": "Aretha Franklin - The Very Best of - The 60's + The 70's",
+      "url": "/albums/1255-aretha-franklin-the-very-best-of-the-60-s-the-70-s/",
       "artists": [
-        "Moravec, Ivan"
+        "Aretha Franklin"
       ],
-      "composers": [
-        "Beethoven, Ludwig van"
-      ],
-      "works": [
-        "Piano Sonata No. 8 in C minor, Op. 13",
-        "Piano Sonata No. 14 in C-sharp minor, Op. 27 No. 2",
-        "32 Variations in C minor, WoO 80",
-        "Piano Sonata No. 27 in E minor, Op. 90",
-        "Piano Sonata No. 26 in E-flat major, Op. 81a"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
-      "category": "Classical",
-      "recording": "Supraphon",
+      "category": "7080s",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7f/08/38/7f0838ca-8505-3778-a095-2d89f1ea49d2/cover.jpg/1200x1200bb.jpg"
+      "cover": ""
+    },
+    {
+      "title": "Armenta & Majik - I Wanna Be With You",
+      "url": "/albums/73-armenta-majik-i-wanna-be-with-you/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Arturo Benedetti Michelangeli - The Complete EMI Recordings",
+      "url": "/albums/137-arturo-benedetti-michelangeli-the-complete-emi-recordings/",
+      "artists": [
+        "Arturo Benedetti Michelangeli"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Arturo Benedetti Michelangeli - The Vatican Recordings",
+      "url": "/albums/126-arturo-benedetti-michelangeli-the-vatican-recordings/",
+      "artists": [
+        "Arturo Benedetti Michelangeli"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Arturo Benedetti Michelangeli ‎- Hommage",
+      "url": "/albums/128-arturo-benedetti-michelangeli-hommage/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - A Musical Affair",
+      "url": "/albums/837-ashford-simpson-a-musical-affair/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Come As You Are",
+      "url": "/albums/832-ashford-simpson-come-as-you-are/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Gimme Something Real",
+      "url": "/albums/830-ashford-simpson-gimme-something-real/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - High-Rise",
+      "url": "/albums/840-ashford-simpson-high-rise/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - I Wanna Be Selfish",
+      "url": "/albums/831-ashford-simpson-i-wanna-be-selfish/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Is It Still Good To Ya",
+      "url": "/albums/835-ashford-simpson-is-it-still-good-to-ya/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Love Or Physical",
+      "url": "/albums/843-ashford-simpson-love-or-physical/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Love Will Fix It: Warner Bros Records Anthology 1973-1981",
+      "url": "/albums/846-ashford-simpson-love-will-fix-it-warner-bros-records-anthology-1973-1981/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Performance",
+      "url": "/albums/838-ashford-simpson-performance/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Real Love",
+      "url": "/albums/842-ashford-simpson-real-love/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Send It",
+      "url": "/albums/833-ashford-simpson-send-it/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - So So Satisfied",
+      "url": "/albums/834-ashford-simpson-so-so-satisfied/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Solid",
+      "url": "/albums/841-ashford-simpson-solid/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Stay Free",
+      "url": "/albums/836-ashford-simpson-stay-free/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - Street Opera",
+      "url": "/albums/839-ashford-simpson-street-opera/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - The Best Of Ashford & Simpson",
+      "url": "/albums/844-ashford-simpson-the-best-of-ashford-simpson/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ashford & Simpson - The Real Thing",
+      "url": "/albums/845-ashford-simpson-the-real-thing/",
+      "artists": [
+        "Ashford & Simpson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Atlantic Starr - Atlantic Starr",
+      "url": "/albums/847-atlantic-starr-atlantic-starr/",
+      "artists": [
+        "Atlantic Starr"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "B.Tchaikovsky: Piano Concerto, Clarinet Concerto, Signs of the Zodiac - Solovieva, Mynbaev, Russian Academy of Music Chamber Orchestra",
+      "url": "/albums/b-tchaikovsky-piano-concerto-clarinet-concerto-signs-of-the-zodiac-solovieva-mynbaev-russian-academy-of-music-chamber-orchestra/",
+      "artists": [
+        "Solovieva, Olga",
+        "Mynbaev, Timur",
+        "Russian Academy of Music Chamber Orchestra"
+      ],
+      "composers": [
+        "Tchaikovsky, Boris"
+      ],
+      "works": [
+        "Piano Concerto",
+        "Clarinet Concerto",
+        "Signs of the Zodiac"
+      ],
+      "year": 2006,
+      "category": "Classical",
+      "recording": "Delos",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/20/95/5f/mzi.qoywydyz.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Bach: Violin Concertos - Faust, Forck, Loeffler",
+      "url": "/albums/86-bach-violin-concertos-faust-forck-loeffler/",
+      "artists": [
+        "Bach Violin Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bach: Violin Concertos - Hahn, Kahane",
+      "url": "/albums/84-bach-violin-concertos-hahn-kahane/",
+      "artists": [
+        "Bach Violin Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Balakirev: Piano Concertos, Grande Fantasie on Russian Folk - Seifetdinova, Yablonsky",
+      "url": "/albums/47-balakirev-piano-concertos-grande-fantasie-on-russian-folk-seifetdinova-yablonsky/",
+      "artists": [
+        "Balakirev Piano Concertos",
+        "Grande Fantasie on Russian Folk"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bar-Kays - As One",
+      "url": "/albums/10-bar-kays-as-one/",
+      "artists": [
+        "Bar-Kays"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bar-Kays - Too Hot To Stop",
+      "url": "/albums/12-bar-kays-too-hot-to-stop/",
+      "artists": [
+        "Bar-Kays"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Barber & Meyer: Violin Concertos - Hahn, Wolff, Saint Paul Chamber Orchestra",
+      "url": "/albums/barber-meyer-violin-concertos-hahn-wolff-saint-paul-chamber-orchestra/",
+      "artists": [
+        "Hahn, Hilary",
+        "Wolff, Hugh",
+        "Saint Paul Chamber Orchestra"
+      ],
+      "composers": [
+        "Barber, Samuel",
+        "Meyer, Edgar"
+      ],
+      "works": [
+        "Violin Concerto, Op. 14",
+        "Violin Concerto"
+      ],
+      "year": 2000,
+      "category": "Classical",
+      "recording": "Sony Classical",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/50/9d/3a/mzi.scbnddov.jpg/600x600bb.jpg"
+    },
+    {
+      "title": "Barry White - Barry White Sings For Someone You Love",
+      "url": "/albums/852-barry-white-barry-white-sings-for-someone-you-love/",
+      "artists": [
+        "Barry White"
+      ],
+      "composers": [],
+      "works": [],
+      "year": 1977,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": "https://i.discogs.com/CiB_ZYCemH9LmsIqeTomtP1SQUSZ3Xh6P-wiSl7Yz8U/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNzMx/Ni0xNDM3ODUzMjg4/LTY3MjcuanBlZw.jpeg"
+    },
+    {
+      "title": "Barry White - Can't Get Enough",
+      "url": "/albums/850-barry-white-can-t-get-enough/",
+      "artists": [
+        "Barry White"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Barry White - I've Got So Much To Give",
+      "url": "/albums/849-barry-white-i-ve-got-so-much-to-give/",
+      "artists": [
+        "Barry White"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Barry White - Let The Music Play",
+      "url": "/albums/851-barry-white-let-the-music-play/",
+      "artists": [
+        "Barry White"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Barry White - Stone Gon'",
+      "url": "/albums/848-barry-white-stone-gon/",
+      "artists": [
+        "Barry White"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bartok: Violin Concerto No. 2, Solo Violin Sonata - Menuhin, Furtwangler",
+      "url": "/albums/87-bartok-violin-concerto-no-2-solo-violin-sonata-menuhin-furtwangler/",
+      "artists": [
+        "Bartok Violin Concerto No. 2",
+        "Solo Violin Sonata"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bartok: Violin Concertos Nos. 1 & 2 - Faust, Harding",
+      "url": "/albums/85-bartok-violin-concertos-nos-1-2-faust-harding/",
+      "artists": [
+        "Bartok Violin Concertos Nos. 1 & 2"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Concerto No. 5 'Emperor'; Franck: Symphonic Variations - Michelangeli",
+      "url": "/albums/135-beethoven-piano-concerto-no-5-emperor-franck-symphonic-variations-michelangeli/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Concerto Nos. 3 & 5; Ravel: Piano Concerto in G; Schumann: Piano Concerto in A Minor - Michelangeli, Celibidache",
+      "url": "/albums/136-beethoven-piano-concerto-nos-3-5-ravel-piano-concerto-in-g-schumann-piano-concer/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Concertos Nos. 1 & 3 - Gilels, Boult",
+      "url": "/albums/144-beethoven-piano-concertos-nos-1-3-gilels-boult/",
+      "artists": [
+        "Beethoven Piano Concertos Nos. 1 & 3"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Concertos Nos. 1-4 - Gilels, Szell",
+      "url": "/albums/146-beethoven-piano-concertos-nos-1-4-gilels-szell/",
+      "artists": [
+        "Beethoven Piano Concertos Nos. 1-4"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Concertos Nos. 4 & 5 - Gilels, Ludwig",
+      "url": "/albums/145-beethoven-piano-concertos-nos-4-5-gilels-ludwig/",
+      "artists": [
+        "Beethoven Piano Concertos Nos. 4 & 5"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Concertos Nos.1 & 3 - Michelangeli, Giulini",
+      "url": "/albums/140-beethoven-piano-concertos-nos-1-3-michelangeli-giulini/",
+      "artists": [
+        "Beethoven Piano Concertos Nos. 1 & 3"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Piano Trio No. 7; Schubert: Piano Trio No. 1; Brahms: Violin Sonatas - Oistrakh, Oborin",
+      "url": "/albums/155-beethoven-piano-trio-no-7-schubert-piano-trio-no-1-brahms-violin-sonatas-oistrak/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: The Five Cello Sonatas, Judas Maccabaeus & Die Zauberflöte Variations - du Pre, Barenboim",
+      "url": "/albums/50-beethoven-the-five-cello-sonatas-judas-maccabaeus-die-zauberfl-te-variations-du/",
+      "artists": [
+        "Beethoven The Five Cello Sonatas",
+        "Judas Maccabaeus & Die Zauberflöte Variations"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Beethoven: Violin Concerto in D Major Op. 61; Sibelius: Violin Concerto in D Minor Op. 47 - Oistrakh, Ehrling",
+      "url": "/albums/156-beethoven-violin-concerto-in-d-major-op-61-sibelius-violin-concerto-in-d-minor-o/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bliss - So Many of Us",
+      "url": "/albums/667-bliss-so-many-of-us/",
+      "artists": [
+        "Bliss"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bloodstone - The Ultimate Collection",
+      "url": "/albums/1262-bloodstone-the-ultimate-collection/",
+      "artists": [
+        "Bloodstone"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Brad Mehldau - Introducing Brad Mehldau",
+      "url": "/albums/589-brad-mehldau-introducing-brad-mehldau/",
+      "artists": [
+        "Brad Mehldau"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Jazz",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
     },
     {
       "title": "Brad Mehldau - Introducing Brad Mehldau",
@@ -187,387 +924,3673 @@
       "cover": "https://blog.kakaocdn.net/dna/dIwTuA/btq5C9xhAdC/AAAAAAAAAAAAAAAAAAAAAD7l3NKko1TGJx-TXtWzY-NKdZ-YTNn6g_Mk4n7gznMb/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=LX%2FFyq6CUngm%2B63oMhmZfZdw4Hk%3D"
     },
     {
-      "title": "Chopin: Complete Works for Piano & Orchestra - Paik, Wit, Warsaw Philharmonic Orchestra",
-      "url": "/albums/chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra/",
+      "title": "Brahms & Stravinsky: Violin Concertos - Hahn, Marriner, Academy of St Martin in the Fields",
+      "url": "/albums/brahms-stravinsky-violin-concertos-hahn-marriner-academy-of-st-martin-in-the-fields/",
       "artists": [
-        "Paik, Kun-Woo",
-        "Wit, Antoni",
-        "Warsaw Philharmonic Orchestra"
+        "Hahn, Hilary",
+        "Marriner, Neville",
+        "Academy of St Martin in the Fields"
       ],
       "composers": [
-        "Chopin, Frederic"
+        "Brahms, Johannes",
+        "Stravinsky, Igor"
       ],
       "works": [
-        "Krakowiak in F major, Op. 14",
-        "Fantasy on Polish Airs in A major, Op. 13",
-        "Piano Concerto No. 1 in E minor, Op. 11",
-        "Andante spianato et grande polonaise brillante in E-flat major, Op. 22",
-        "Variations on \"La ci darem la mano\" in B-flat major, Op. 2",
-        "Piano Concerto No. 2 in F minor, Op. 21"
+        "Violin Concerto in D Major, Op. 77",
+        "Violin Concerto in D Major"
       ],
-      "year": null,
+      "year": 2001,
       "category": "Classical",
-      "recording": "Decca",
+      "recording": "Sony Classical",
       "label": null,
       "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/vMWp6/btrQdy7ij6l/AAAAAAAAAAAAAAAAAAAAAKcvdftxO8IIyVu-S5ULpF5Z97Klmi4XUr0wUy95zlfd/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=p0qWggjfOqzHsz7Ci20KTUFnlnU%3D"
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/1e/06/06/1e06061a-cc32-971d-25a6-6e5bc9fab9f8/5099708964924.jpg/1200x1200bb.jpg"
     },
     {
-      "title": "Chopin: Piano Concerto No. 1; Faure: Ballade; Liszt: Piano Concerto No. 1 - Wild, Sargent, Gerhardt",
-      "url": "/albums/chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt/",
+      "title": "Brahms: Violin Sonata No. 2, Op. 100; Prokofiev: Violin Sonata No. 1, Op. 80 - Oistrakh, Richter",
+      "url": "/albums/157-brahms-violin-sonata-no-2-op-100-prokofiev-violin-sonata-no-1-op-80-oistrakh-ric/",
       "artists": [
-        "Wild, Earl",
-        "Sargent, Malcolm",
-        "Gerhardt, Charles"
+        "Brahms Violin Sonata No. 2",
+        "Op. 100; Prokofiev Violin Sonata No. 1",
+        "Op. 80"
       ],
-      "composers": [
-        "Chopin, Frederic",
-        "Faure, Gabriel",
-        "Liszt, Franz"
-      ],
-      "works": [
-        "Piano Concerto No. 1 in E minor, Op. 11",
-        "Ballade for piano and orchestra in F-sharp major, Op. 19",
-        "Piano Concerto No. 1 in E-flat major, S. 124"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
       "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/cgwfd2/btrQgGwIAcK/AAAAAAAAAAAAAAAAAAAAAGdgPrtXPZp_F6uudQ_j7luxooM1WYW9uW3oCJ0JQJlp/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=JAAFXJPdxw153e85J23eX2jOZ0U%3D"
+      "cover": ""
     },
     {
-      "title": "Chopin: Piano Sonata No. 2, Berceuse, Ballade No. 4, Mazurkas, Fantaisie - Ivan Moravec",
-      "url": "/albums/chopin-piano-sonata-no-2-berceuse-ballade-no-4-mazurkas-fantaisie-ivan-moravec/",
-      "artists": [
-        "Moravec, Ivan"
-      ],
-      "composers": [
-        "Chopin, Frederic"
-      ],
-      "works": [
-        "Piano Sonata No. 2 in B-flat minor, Op. 35",
-        "Berceuse in D-flat major, Op. 57",
-        "Ballade No. 4 in F minor, Op. 52",
-        "Mazurka No. 3 in E major, Op. 6 No. 3",
-        "Mazurka No. 17 in B-flat minor, Op. 24 No. 4",
-        "Mazurka No. 20 in D-flat major, Op. 30 No. 3",
-        "Fantaisie in F minor, Op. 49"
-      ],
+      "title": "Breakbot ‎- Another You",
+      "url": "/albums/9-breakbot-another-you/",
+      "artists": [],
+      "composers": [],
+      "works": [],
       "year": null,
-      "category": "Classical",
-      "recording": "VOX",
+      "category": "Electronic",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/23/38/48/mzi.nujkjulm.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Chopin: Preludes, Piano Concerto No. 2 - Argerich, Rostropovich, National Symphony Orchestra Washington",
-      "url": "/albums/chopin-preludes-piano-concerto-no-2-argerich-rostropovich-national-symphony-orchestra-washington/",
+      "title": "Brighter Side Of Darkness - Love Jones",
+      "url": "/albums/736-brighter-side-of-darkness-love-jones/",
       "artists": [
-        "Argerich, Martha",
-        "Rostropovich, Mstislav",
-        "National Symphony Orchestra Washington"
+        "Brighter Side Of Darkness"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Bruch: Scottish Fantasia; Hindemith: Violin Concerto - Oistrakh, Horenstein",
+      "url": "/albums/152-bruch-scottish-fantasia-hindemith-violin-concerto-oistrakh-horenstein/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Buddha-Bar - Twenty Years By Ravin X Bob Sinclar",
+      "url": "/albums/660-buddha-bar-twenty-years-by-ravin-x-bob-sinclar/",
+      "artists": [
+        "Buddha-Bar"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "CPE.Bach: Flute Concertos - Pahud, Pinnock",
+      "url": "/albums/110-cpe-bach-flute-concertos-pahud-pinnock/",
+      "artists": [
+        "CPE.Bach Flute Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cameo - Cardiac Arrest",
+      "url": "/albums/758-cameo-cardiac-arrest/",
+      "artists": [
+        "Cameo"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cameo - Ugly Ego",
+      "url": "/albums/878-cameo-ugly-ego/",
+      "artists": [
+        "Cameo"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cameo - We All Know Who We Are",
+      "url": "/albums/879-cameo-we-all-know-who-we-are/",
+      "artists": [
+        "Cameo"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Candi Staton - The Best of Candi Staton Featuring Young Hearts Run Free",
+      "url": "/albums/1259-candi-staton-the-best-of-candi-staton-featuring-young-hearts-run-free/",
+      "artists": [
+        "Candi Staton"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Carly Simon - Carly Simon",
+      "url": "/albums/751-carly-simon-carly-simon/",
+      "artists": [
+        "Carly Simon"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Carly Simon - The Very Best of Carly Simon: Nobody Does It Better",
+      "url": "/albums/1254-carly-simon-the-very-best-of-carly-simon-nobody-does-it-better/",
+      "artists": [
+        "Carly Simon"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - C.K.",
+      "url": "/albums/603-chaka-khan-c-k/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - Chaka",
+      "url": "/albums/597-chaka-khan-chaka/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - Chaka Khan",
+      "url": "/albums/600-chaka-khan-chaka-khan/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - Destiny",
+      "url": "/albums/602-chaka-khan-destiny/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - I Feel for You",
+      "url": "/albums/601-chaka-khan-i-feel-for-you/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - Naughty",
+      "url": "/albums/598-chaka-khan-naughty/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chaka Khan - What Cha' Gonna Do for Me",
+      "url": "/albums/599-chaka-khan-what-cha-gonna-do-for-me/",
+      "artists": [
+        "Chaka Khan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Chausson: Symphony in B Flat, La Tempete, Viviane, Soir de Fete - Tortelier, BBC Philharmonic",
+      "url": "/albums/95-chausson-symphony-in-b-flat-la-tempete-viviane-soir-de-fete-tortelier-bbc-philha/",
+      "artists": [
+        "Chausson Symphony in B Flat",
+        "La Tempete",
+        "Viviane",
+        "Soir de Fete"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cheryl Lynn - Cheryl Lynn",
+      "url": "/albums/747-cheryl-lynn-cheryl-lynn/",
+      "artists": [
+        "Cheryl Lynn"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cheryl Lynn - In Love",
+      "url": "/albums/748-cheryl-lynn-in-love/",
+      "artists": [
+        "Cheryl Lynn"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cheryl Lynn - In The Night",
+      "url": "/albums/749-cheryl-lynn-in-the-night/",
+      "artists": [
+        "Cheryl Lynn"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cheryl Lynn - Instant Love",
+      "url": "/albums/750-cheryl-lynn-instant-love/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Cheryl Lynn - The Best Of Cheryl Lynn: Got To Be Real",
+      "url": "/albums/1263-cheryl-lynn-the-best-of-cheryl-lynn-got-to-be-real/",
+      "artists": [
+        "Cheryl Lynn"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dan Hartman - I Can Dream About You",
+      "url": "/albums/756-dan-hartman-i-can-dream-about-you/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dan Hartman - Instant Replay",
+      "url": "/albums/755-dan-hartman-instant-replay/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dan Hartman - Keep The Fire Burnin'",
+      "url": "/albums/754-dan-hartman-keep-the-fire-burnin/",
+      "artists": [
+        "Dan Hartman"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "David Oistrakh - Concertos and Encores",
+      "url": "/albums/160-david-oistrakh-concertos-and-encores/",
+      "artists": [
+        "David Oistrakh"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dazzle - Dazzle",
+      "url": "/albums/62-dazzle-dazzle/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dead Can Dance - Dead Can Dance",
+      "url": "/albums/732-dead-can-dance-dead-can-dance/",
+      "artists": [
+        "Dead Can Dance"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dead Can Dance - Spleen And Ideal",
+      "url": "/albums/733-dead-can-dance-spleen-and-ideal/",
+      "artists": [
+        "Dead Can Dance"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dead Can Dance - Within the Realm of a Dying Sun",
+      "url": "/albums/735-dead-can-dance-within-the-realm-of-a-dying-sun/",
+      "artists": [
+        "Dead Can Dance"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Debussy, Ravel, Prokofiev - Pahud, Kovacevich, Karneus, Mork",
+      "url": "/albums/109-debussy-ravel-prokofiev-pahud-kovacevich-karneus-mork/",
+      "artists": [
+        "Debussy",
+        "Ravel",
+        "Prokofiev"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Debussy: Complete Works for Orchestra - Tortelier, Ulster Orchestra",
+      "url": "/albums/96-debussy-complete-works-for-orchestra-tortelier-ulster-orchestra/",
+      "artists": [
+        "Debussy Complete Works for Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Debussy: Images; Brahms: Piano Concerto; Prokofiev: Piano Sonata - Gilels, Rossi",
+      "url": "/albums/142-debussy-images-brahms-piano-concerto-prokofiev-piano-sonata-gilels-rossi/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Deep Forest - Comparsa",
+      "url": "/albums/686-deep-forest-comparsa/",
+      "artists": [
+        "Deep Forest"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Deep Forest - Deep Forest",
+      "url": "/albums/679-deep-forest-deep-forest/",
+      "artists": [
+        "Deep Forest"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Deep Forest - Music Detected",
+      "url": "/albums/692-deep-forest-music-detected/",
+      "artists": [
+        "Deep Forest"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Deep Forest - Pacifique",
+      "url": "/albums/687-deep-forest-pacifique/",
+      "artists": [
+        "Deep Forest"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dionne Warwick - Legends",
+      "url": "/albums/821-dionne-warwick-legends/",
+      "artists": [
+        "Dionne Warwick"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dionne Warwick - The Definitive Collection",
+      "url": "/albums/820-dionne-warwick-the-definitive-collection/",
+      "artists": [
+        "Dionne Warwick"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Duran Duran - Notorious",
+      "url": "/albums/759-duran-duran-notorious/",
+      "artists": [
+        "Duran Duran"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dusty Springfield - Dusty - The Very Best Of Dusty Springfield",
+      "url": "/albums/1257-dusty-springfield-dusty-the-very-best-of-dusty-springfield/",
+      "artists": [
+        "Dusty Springfield - Dusty"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dutilleux: Complete Orchestral Works - Tortelier, BBC Philharmonic",
+      "url": "/albums/97-dutilleux-complete-orchestral-works-tortelier-bbc-philharmonic/",
+      "artists": [
+        "Dutilleux Complete Orchestral Works"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dvorak & Saint-Saens: Cello Concertos - du Pre, Celibidache, Barenboim",
+      "url": "/albums/51-dvorak-saint-saens-cello-concertos-du-pre-celibidache-barenboim/",
+      "artists": [
+        "Dvorak & Saint-Saens Cello Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dvorak & Schumann: Cello Concertos - du Pre, Barenboim",
+      "url": "/albums/52-dvorak-schumann-cello-concertos-du-pre-barenboim/",
+      "artists": [
+        "Dvorak & Schumann Cello Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Dvorak: Violin Concerto, Symphony 8 - Oistrakh, Ancerl",
+      "url": "/albums/159-dvorak-violin-concerto-symphony-8-oistrakh-ancerl/",
+      "artists": [
+        "Dvorak Violin Concerto",
+        "Symphony 8"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eastside Connection - Brand Spanking New!",
+      "url": "/albums/64-eastside-connection-brand-spanking-new/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eduard Artemyev - A Book Of Impressions",
+      "url": "/albums/1018-eduard-artemyev-a-book-of-impressions/",
+      "artists": [
+        "Eduard Artemyev"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eduard Artemyev - Metamorphoses",
+      "url": "/albums/957-eduard-artemyev-metamorphoses/",
+      "artists": [
+        "Eduard Artemyev"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eduard Artemyev - Moods",
+      "url": "/albums/958-eduard-artemyev-moods/",
+      "artists": [
+        "Eduard Artemyev"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eduard Artemyev - Ode To The Bearer Of Good News",
+      "url": "/albums/956-eduard-artemyev-ode-to-the-bearer-of-good-news/",
+      "artists": [
+        "Eduard Artemyev"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eduard Artemyev - Solaris, The Mirror, Stalker",
+      "url": "/albums/659-eduard-artemyev-solaris-the-mirror-stalker/",
+      "artists": [
+        "Eduard Artemyev"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Eduard Artemyev – Warmth Of Earth",
+      "url": "/albums/959-eduard-artemyev-warmth-of-earth/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Elgar: Cello Concerto, Enigma Variations - du Pre, Barenboim",
+      "url": "/albums/55-elgar-cello-concerto-enigma-variations-du-pre-barenboim/",
+      "artists": [
+        "Elgar Cello Concerto",
+        "Enigma Variations"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Elgar: Cello Concerto, Sea Pictures - du Pre, Baker, Barbirolli",
+      "url": "/albums/53-elgar-cello-concerto-sea-pictures-du-pre-baker-barbirolli/",
+      "artists": [
+        "Elgar Cello Concerto",
+        "Sea Pictures"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Elgar: Violin Concerto; Vaughan Williams: The Lark Ascending - Hahn, Davis, London Symphony Orchestra",
+      "url": "/albums/elgar-violin-concerto-the-lark-ascending-hahn-davis-london-symphony-orchestra/",
+      "artists": [
+        "Hahn, Hilary",
+        "Davis, Colin",
+        "London Symphony Orchestra"
       ],
       "composers": [
-        "Chopin, Frederic"
+        "Elgar, Edward",
+        "Vaughan Williams, Ralph"
       ],
       "works": [
-        "Preludes, Op. 28",
-        "Piano Concerto No. 2 in F minor, Op. 21"
+        "Violin Concerto in B Minor, Op. 61",
+        "The Lark Ascending"
       ],
-      "year": null,
+      "year": 2004,
       "category": "Classical",
       "recording": "Deutsche Grammophon",
       "label": null,
       "favorite": false,
-      "cover": "https://images.universal-music.de/img/assets/102/102155/4/2048/1975-24-preludes-klavierkonzert-nr-2-f-moll-op-21-0028945903725.jpg"
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/dd/fb/82/ddfb82a1-aa7f-4e12-00ec-f6870bb81732/00028948361960.rgb.jpg/1200x1200bb.jpg"
     },
     {
-      "title": "Chopin: Scherzi, Etudes, Mazurkas - Ivan Moravec",
-      "url": "/albums/chopin-scherzi-etudes-mazurkas-ivan-moravec/",
+      "title": "Emerson, Lake & Palmer - Brain Salad Surgery",
+      "url": "/albums/612-emerson-lake-palmer-brain-salad-surgery/",
       "artists": [
-        "Moravec, Ivan"
+        "Emerson",
+        "Lake & Palmer"
       ],
-      "composers": [
-        "Chopin, Frederic"
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Emerson, Lake & Palmer - Emerson, Lake & Palmer",
+      "url": "/albums/608-emerson-lake-palmer-emerson-lake-palmer/",
+      "artists": [
+        "Emerson",
+        "Lake & Palmer"
       ],
-      "works": [
-        "Scherzo No. 1 in B minor, Op. 20",
-        "Scherzo No. 2 in B-flat minor, Op. 31",
-        "Scherzo No. 3 in C-sharp minor, Op. 39",
-        "Scherzo No. 4 in E major, Op. 54",
-        "Etude in C-sharp minor, Op. 25 No. 7",
-        "Etude in A-flat major, Op. 25 No. 1",
-        "Mazurka in E minor, Op. 41 No. 1",
-        "Mazurka in F minor, Op. 68 No. 4",
-        "Mazurka in C major, Op. 7 No. 5",
-        "Mazurka in C major, Op. 56 No. 2"
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Emerson, Lake & Palmer - Pictures At an Exhibition",
+      "url": "/albums/610-emerson-lake-palmer-pictures-at-an-exhibition/",
+      "artists": [
+        "Emerson",
+        "Lake & Palmer"
       ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Emerson, Lake & Palmer - Tarkus",
+      "url": "/albums/609-emerson-lake-palmer-tarkus/",
+      "artists": [
+        "Emerson",
+        "Lake & Palmer"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Emerson, Lake & Palmer - Trilogy",
+      "url": "/albums/611-emerson-lake-palmer-trilogy/",
+      "artists": [
+        "Emerson",
+        "Lake & Palmer"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Emerson, Lake & Palmer - Works Volume 1",
+      "url": "/albums/616-emerson-lake-palmer-works-volume-1/",
+      "artists": [
+        "Emerson",
+        "Lake & Palmer"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Emmanuel Pahud - Solo",
+      "url": "/albums/112-emmanuel-pahud-solo/",
+      "artists": [
+        "Emmanuel Pahud"
+      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Supraphon",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1c/1c/8f/1c1c8ff3-257c-1e22-f31d-1e900aaba992/cover.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Chopin: The Legendary 1965 Recording - Martha Argerich",
-      "url": "/albums/chopin-the-legendary-1965-recording-martha-argerich/",
+      "title": "Essence Of The Forest by Deep Forest",
+      "url": "/albums/693-essence-of-the-forest-by-deep-forest/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Esther Phillips - Capricorn Princess (Expanded Edition)",
+      "url": "/albums/501-esther-phillips-capricorn-princess-expanded-edition/",
       "artists": [
-        "Argerich, Martha"
+        "Esther Phillips"
       ],
-      "composers": [
-        "Chopin, Frederic"
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "FKJ - French Kiwi Juice",
+      "url": "/albums/8-fkj-french-kiwi-juice/",
+      "artists": [
+        "FKJ"
       ],
-      "works": [
-        "Piano Sonata No. 3 in B minor, Op. 58",
-        "Mazurka No. 1 in A minor, Op. 59 No. 1",
-        "Mazurka No. 2 in A-flat major, Op. 59 No. 2",
-        "Mazurka No. 3 in F-sharp minor, Op. 59 No. 3",
-        "Nocturne No. 4 in F major, Op. 15 No. 1",
-        "Scherzo No. 3 in C-sharp minor, Op. 39",
-        "Polonaise No. 6 in A-flat major, Op. 53"
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "FKJ - Ylang Ylang EP",
+      "url": "/albums/5-fkj-ylang-ylang-ep/",
+      "artists": [
+        "FKJ"
       ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - Armed and Extremely Dangerous",
+      "url": "/albums/872-first-choice-armed-and-extremely-dangerous/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - Breakaway",
+      "url": "/albums/877-first-choice-breakaway/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - Delusions",
+      "url": "/albums/875-first-choice-delusions/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - Hold Your Horses",
+      "url": "/albums/876-first-choice-hold-your-horses/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - It's Not Over - The Greatest Hits Of",
+      "url": "/albums/871-first-choice-it-s-not-over-the-greatest-hits-of/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - So Let Us Entertain You",
+      "url": "/albums/874-first-choice-so-let-us-entertain-you/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "First Choice - The Player",
+      "url": "/albums/873-first-choice-the-player/",
+      "artists": [
+        "First Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Franck & Faure & Prokofiev: Flute Sonatas - Bezaly, Ashkenazy",
+      "url": "/albums/120-franck-faure-prokofiev-flute-sonatas-bezaly-ashkenazy/",
+      "artists": [
+        "Franck & Faure & Prokofiev Flute Sonatas"
+      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "EMI Classics",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://www.warnerclassics.com/sites/default/files/styles/release_and_playlist_cover_756_x_756_2x_webp/public/2021-05/190296697487_preview.jpg.webp?itok=hvWZknII"
+      "cover": ""
     },
     {
-      "title": "Debussy: Piano Music - Steven Osborne",
-      "url": "/albums/debussy-piano-music-steven-osborne/",
+      "title": "Franck: Symphony in D Minor, Symphonic Variations, Les Eolides - Lortie, Tortelier, BBC Philharmonic",
+      "url": "/albums/94-franck-symphony-in-d-minor-symphonic-variations-les-eolides-lortie-tortelier-bbc/",
       "artists": [
-        "Osborne, Steven"
+        "Franck Symphony in D Minor",
+        "Symphonic Variations",
+        "Les Eolides"
       ],
-      "composers": [
-        "Debussy, Claude"
-      ],
-      "works": [
-        "Masques, L 105",
-        "…D’un cahier d’esquisses, L 100",
-        "L'isle joyeuse, L 106",
-        "Images pour piano - Book I, L 105",
-        "Images pour piano - Book II, L 110",
-        "Estampes, L 100",
-        "Children's Corner, L 113"
-      ],
-      "year": 2017,
-      "category": "Classical",
-      "recording": "Hyperion",
-      "label": null,
-      "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/oGTCL/dJMcah3MxKL/AAAAAAAAAAAAAAAAAAAAABLvbPBeWBKdZZwWSd74_fI1vavbu5104aXx0lTjysMw/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=9u1yz4W1gIvxlys6rSqQz5gJgYA%3D"
-    },
-    {
-      "title": "Debussy: Preludes, Books I & II - Steven Osborne",
-      "url": "/albums/debussy-preludes-books-i-ii-steven-osborne/",
-      "artists": [
-        "Osborne, Steven"
-      ],
-      "composers": [
-        "Debussy, Claude"
-      ],
-      "works": [
-        "Preludes, Book I",
-        "Preludes, Book II"
-      ],
-      "year": 2006,
-      "category": "Classical",
-      "recording": "Hyperion",
-      "label": null,
-      "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/mKRjc/dJMcah3MxAy/AAAAAAAAAAAAAAAAAAAAAPml1j5-Oi5MZMsGb0bm_DRkhZhsfb_xz5QYolWVi81t/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=OhUTt%2Bxq4jNir%2Fe1rkVKsIQJZng%3D"
-    },
-    {
-      "title": "Elgar: Cello Concerto in E minor; Walton: Cello Concerto - Muller-Schott, Previn, Oslo Philharmonic Orchestra",
-      "url": "/albums/elgar-cello-concerto-in-e-minor-walton-cello-concerto-muller-schott-previn-oslo-philharmonic-orchestra/",
-      "artists": [
-        "Müller-Schott, Daniel",
-        "Previn, André",
-        "Oslo Philharmonic Orchestra"
-      ],
-      "composers": [
-        "Elgar, Edward",
-        "Walton, William"
-      ],
-      "works": [
-        "Cello Concerto in E minor, Op. 85",
-        "Cello Concerto"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Orfeo",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/49/42/71/494271aa-f8b0-6291-4926-572d2f2bf40b/4011790621128.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Grieg: Piano Concerto in A minor; Chopin: Piano Concerto No. 2 in F minor - Thibaudet, Gergiev, Rotterdam Philharmonic Orchestra",
-      "url": "/albums/grieg-piano-concerto-in-a-minor-chopin-piano-concerto-no-2-in-f-minor-thibaudet-gergiev-rotterdam-philharmonic-orchestra/",
-      "artists": [
-        "Thibaudet, Jean-Yves",
-        "Gergiev, Valery",
-        "Rotterdam Philharmonic Orchestra"
-      ],
-      "composers": [
-        "Grieg, Edvard",
-        "Chopin, Frederic"
-      ],
-      "works": [
-        "Piano Concerto in A minor, Op. 16",
-        "Piano Concerto No. 2 in F minor, Op. 21"
-      ],
+      "title": "Gershwin: Rhapsody In Blue; Copland: Appalachian Spring - Maazel, Mehta",
+      "url": "/albums/103-gershwin-rhapsody-in-blue-copland-appalachian-spring-maazel-mehta/",
+      "artists": [],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Decca",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d9/49/63/d9496373-2ea7-6285-50d3-0673aee706f0/00028946709320.rgb.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Khachaturian: Violin Concerto; Bartok: Violin Concerto No. 2 - Haendel, Muller-Kray, Radio-Sinfonieorchester Stuttgart des SWR",
-      "url": "/albums/khachaturian-violin-concerto-bartok-violin-concerto-no-2-haendel-muller-kray-radio-sinfonieorchester-stuttgart-des-swr/",
+      "title": "Gladys Knight & the Pips - Midnight Train To Georgia: The Best Of",
+      "url": "/albums/1252-gladys-knight-the-pips-midnight-train-to-georgia-the-best-of/",
       "artists": [
-        "Haendel, Ida",
-        "Müller-Kray, Hans",
-        "Radio-Sinfonieorchester Stuttgart des SWR"
+        "Gladys Knight & the Pips"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Glazunov, Khachaturian, Kabalevsky: Violin Concertos - Oistrakh, Kondrashin",
+      "url": "/albums/153-glazunov-khachaturian-kabalevsky-violin-concertos-oistrakh-kondrashin/",
+      "artists": [
+        "Glazunov",
+        "Khachaturian",
+        "Kabalevsky Violin Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Glazunov: Piano Concertos Nos. 1 & 2 - Kolly, Griffiths",
+      "url": "/albums/32-glazunov-piano-concertos-nos-1-2-kolly-griffiths/",
+      "artists": [
+        "Glazunov Piano Concertos Nos. 1 & 2"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Glitterbox Mixtape 001 (hosted by Melvo Baptiste)",
+      "url": "/albums/468-glitterbox-mixtape-001-hosted-by-melvo-baptiste/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Glitterbox Mixtape 002 (hosted by Melvo Baptiste)",
+      "url": "/albums/469-glitterbox-mixtape-002-hosted-by-melvo-baptiste/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Gounod: Symphonies 1 & 2 - Tortelier, Iceland Symphony Orchestra",
+      "url": "/albums/98-gounod-symphonies-1-2-tortelier-iceland-symphony-orchestra/",
+      "artists": [
+        "Gounod Symphonies 1 & 2"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Guilmant: Symphony No. 2; Widor: Symphony No. 3; Franck: Choral No. 2 - Tracey, Tortelier",
+      "url": "/albums/99-guilmant-symphony-no-2-widor-symphony-no-3-franck-choral-no-2-tracey-tortelier/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Gwen McCrae - On My Way",
+      "url": "/albums/11-gwen-mccrae-on-my-way/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Gwen McCrae - Soul From Miami USA",
+      "url": "/albums/63-gwen-mccrae-soul-from-miami-usa/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Haydn: Cello Concertos - Starker, Schwarz",
+      "url": "/albums/76-haydn-cello-concertos-starker-schwarz/",
+      "artists": [
+        "Haydn Cello Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Higdon & Tchaikovsky: Violin Concertos - Hahn, Petrenko, Royal Liverpool Philharmonic Orchestra",
+      "url": "/albums/higdon-tchaikovsky-violin-concertos-hahn-petrenko-royal-liverpool-philharmonic-orchestra/",
+      "artists": [
+        "Hahn, Hilary",
+        "Petrenko, Vasily",
+        "Royal Liverpool Philharmonic Orchestra"
       ],
       "composers": [
-        "Khachaturian, Aram",
-        "Bartok, Bela"
+        "Higdon, Jennifer",
+        "Tchaikovsky, Boris"
       ],
       "works": [
-        "Violin Concerto in D minor",
-        "Violin Concerto No. 2, Sz. 112"
+        "Violin Concerto",
+        "Violin Concerto in D Major, Op. 35"
       ],
-      "year": 2011,
+      "year": 2010,
       "category": "Classical",
-      "recording": "Hanssler Classic",
+      "recording": "Deutsche Grammophon",
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/39/25/mzi.dnqtxieu.jpg/1200x1200bb.jpg"
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/db/c7/5c/dbc75cae-52a9-8834-9641-5bdeb5eb540c/00028947792901.rgb.jpg/1200x1200bb.jpg"
     },
     {
-      "title": "Liszt: Piano Concerto No. 1, Piano Concerto No. 2, 3 Etudes de Concert - Arrau, Davis, London Symphony Orchestra",
-      "url": "/albums/liszt-piano-concerto-no-1-piano-concerto-no-2-3-etudes-de-concert-arrau-davis-london-symphony-orchestra/",
+      "title": "High Fashion - Feelin' Lucky & Make Up Your Mind",
+      "url": "/albums/313-high-fashion-feelin-lucky-make-up-your-mind/",
       "artists": [
-        "Arrau, Claudio",
-        "Davis, Colin",
-        "London Symphony Orchestra"
+        "High Fashion"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Hindemith: Violin Concerto, Symphonic Metamorphoses on Themes of Weber - Oistrakh, Hindemith, Abbado",
+      "url": "/albums/158-hindemith-violin-concerto-symphonic-metamorphoses-on-themes-of-weber-oistrakh-hi/",
+      "artists": [
+        "Hindemith Violin Concerto",
+        "Symphonic Metamorphoses on Themes of Weber"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Instant Funk - Get Down With The Philly Jump",
+      "url": "/albums/372-instant-funk-get-down-with-the-philly-jump/",
+      "artists": [
+        "Instant Funk"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Instant Funk - Instant Funk",
+      "url": "/albums/376-instant-funk-instant-funk/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Instant Funk - Kinky",
+      "url": "/albums/375-instant-funk-kinky/",
+      "artists": [
+        "Instant Funk"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Instant Funk - Looks So Fine",
+      "url": "/albums/374-instant-funk-looks-so-fine/",
+      "artists": [
+        "Instant Funk"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Instant Funk - The Funk Is On",
+      "url": "/albums/373-instant-funk-the-funk-is-on/",
+      "artists": [
+        "Instant Funk"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Jacqueline Du Pre Complete EMI Recordings (Boxset)",
+      "url": "/albums/58-jacqueline-du-pre-complete-emi-recordings-boxset/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Jacqueline du Pre: The Early BBC Recordings 1961-1965",
+      "url": "/albums/56-jacqueline-du-pre-the-early-bbc-recordings-1961-1965/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Joey Negro's 2019 Essentials",
+      "url": "/albums/14-joey-negro-s-2019-essentials/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Kabalevsky: Cello Concerto No.2; Khachaturian; Rachmaninoff - Lidstrom, Ashkenazy",
+      "url": "/albums/122-kabalevsky-cello-concerto-no-2-khachaturian-rachmaninoff-lidstrom-ashkenazy/",
+      "artists": [
+        "Kabalevsky Cello Concerto No.2; Khachaturian; Rachmaninoff"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Kano - Greatest Hits",
+      "url": "/albums/309-kano-greatest-hits/",
+      "artists": [
+        "Kano"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Kano - Kano",
+      "url": "/albums/310-kano-kano/",
+      "artists": [
+        "Kano"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Kasso - Kasso",
+      "url": "/albums/311-kasso-kasso/",
+      "artists": [
+        "Kasso"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Kasso - Kasso 2",
+      "url": "/albums/312-kasso-kasso-2/",
+      "artists": [
+        "Kasso"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Khachaturian & Ibert: Flute Concertos - Pahud, Zinman",
+      "url": "/albums/108-khachaturian-ibert-flute-concertos-pahud-zinman/",
+      "artists": [
+        "Khachaturian & Ibert Flute Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Khachaturian: Cello Concerto, Concerto-Rhapsody - Thedeen, Raiskin, Staatsorchester Rheinische Philharmonie",
+      "url": "/albums/khachaturian-cello-concerto-concerto-rhapsody-thedeen-raiskin-staatsorchester-rheinische-philharmonie/",
+      "artists": [
+        "Thedeen, Torleif",
+        "Raiskin, Daniel",
+        "Staatsorchester Rheinische Philharmonie"
+      ],
+      "composers": [
+        "Khachaturian, Aram"
+      ],
+      "works": [
+        "Cello Concerto in E Minor",
+        "Concerto-Rhapsody for Cello and Orchestra in D Minor"
+      ],
+      "year": 2019,
+      "category": "Classical",
+      "recording": "CPO",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/11/50/18/1150187a-2620-5796-d38b-387d7acf7fa5/761203500727.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Khachaturian: Cello Concerto, Concerto-Rhapsody - Yablonsky, Fedotov",
+      "url": "/albums/48-khachaturian-cello-concerto-concerto-rhapsody-yablonsky-fedotov/",
+      "artists": [
+        "Khachaturian Cello Concerto",
+        "Concerto-Rhapsody"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Khachaturian: Piano Concerto, Concert Rhapsody - Yablonskaya, Yablonsky, Moscow Symphony Orchestra",
+      "url": "/albums/khachaturian-piano-concerto-concert-rhapsody-yablonskaya-yablonsky-moscow-symphony-orchestra/",
+      "artists": [
+        "Yablonskaya, Oxana",
+        "Yablonsky, Dmitry",
+        "Moscow Symphony Orchestra"
+      ],
+      "composers": [
+        "Khachaturian, Aram"
+      ],
+      "works": [
+        "Piano Concerto in D-Flat Major, Op. 38",
+        "Concert Rhapsody for Piano and Orchestra in D-Flat Major",
+        "Concert Rhapsody"
+      ],
+      "year": 1997,
+      "category": "Classical",
+      "recording": "Naxos",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m11/d15/h18/s05.sbyrbzii.jpg/600x600bb.jpg"
+    },
+    {
+      "title": "Khachaturian: Piano Concerto, Concerto-Rhapsody - Simonian, Raiskin, Staatsorchester Rheinische Philharmonie",
+      "url": "/albums/khachaturian-piano-concerto-concerto-rhapsody-simonian-raiskin-staatsorchester-rheinische-philharmonie/",
+      "artists": [
+        "Simonian, Stepan",
+        "Raiskin, Daniel",
+        "Staatsorchester Rheinische Philharmonie"
+      ],
+      "composers": [
+        "Khachaturian, Aram"
+      ],
+      "works": [
+        "Piano Concerto in D-Flat Major, Op. 38",
+        "Concerto-Rhapsody for Piano and Orchestra in E Minor"
+      ],
+      "year": 2018,
+      "category": "Classical",
+      "recording": "CPO",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6f/e3/0e/6fe30ed1-baed-87d7-2c70-2a8da48eb1dc/761203791828.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Khachaturian: Piano Concerto, Violin Concerto - Oborin, Oistrakh, Mravinsky, Kubelik",
+      "url": "/albums/154-khachaturian-piano-concerto-violin-concerto-oborin-oistrakh-mravinsky-kubelik/",
+      "artists": [
+        "Khachaturian Piano Concerto",
+        "Violin Concerto"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Khachaturian: Piano Concerto, Violin Concerto, Symphony 2 - Ricci, de Larrocha",
+      "url": "/albums/33-khachaturian-piano-concerto-violin-concerto-symphony-2-ricci-de-larrocha/",
+      "artists": [
+        "Khachaturian Piano Concerto",
+        "Violin Concerto",
+        "Symphony 2"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "L'art de Maurice Gendron",
+      "url": "/albums/93-l-art-de-maurice-gendron/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Lalo: Symphonie espagnole; Saint-Saens: Violin Concerto No. 3; Ravel: Tzigane - Vengerov, Pappano, Philharmonia Orchestra",
+      "url": "/albums/lalo-symphonie-espagnole-saint-saens-violin-concerto-no-3-ravel-tzigane-vengerov-pappano-philharmonia-orchestra/",
+      "artists": [
+        "Vengerov, Maxim",
+        "Pappano, Antonio",
+        "Philharmonia Orchestra"
+      ],
+      "composers": [
+        "Lalo, Edouard",
+        "Saint-Saens, Camille",
+        "Ravel, Maurice"
+      ],
+      "works": [
+        "Symphonie espagnole, Op. 21",
+        "Violin Concerto No. 3 in B Minor, Op. 61",
+        "Tzigane, M. 76"
+      ],
+      "year": 2003,
+      "category": "Classical",
+      "recording": "Warner Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/96/8a/48/968a482b-b792-43a1-3a6f-ce10c9244e6a/724355759351.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Leonid Kogan - Khachaturian Volume One",
+      "url": "/albums/4-leonid-kogan-khachaturian-volume-one/",
+      "artists": [
+        "Leonid Kogan"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Leroy Hutson - Closer To The Source",
+      "url": "/albums/481-leroy-hutson-closer-to-the-source/",
+      "artists": [
+        "Leroy Hutson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Leroy Hutson - Hutson",
+      "url": "/albums/479-leroy-hutson-hutson/",
+      "artists": [
+        "Leroy Hutson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Leroy Hutson - Hutson II",
+      "url": "/albums/480-leroy-hutson-hutson-ii/",
+      "artists": [
+        "Leroy Hutson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Leroy Hutson - Love Oh Love",
+      "url": "/albums/477-leroy-hutson-love-oh-love/",
+      "artists": [
+        "Leroy Hutson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Leroy Hutson - The Man!",
+      "url": "/albums/478-leroy-hutson-the-man/",
+      "artists": [
+        "Leroy Hutson"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Leroy Hutson Anthology 1972-1984",
+      "url": "/albums/482-leroy-hutson-anthology-1972-1984/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Lindstrøm & Prins Thomas – III",
+      "url": "/albums/666-lindstr-m-prins-thomas-iii/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Lindstrøm - It's Alright Between Us As It Is",
+      "url": "/albums/663-lindstr-m-it-s-alright-between-us-as-it-is/",
+      "artists": [
+        "Lindstr m"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Lindstrøm - Live At Henie Onstad Kunstsenter",
+      "url": "/albums/665-lindstr-m-live-at-henie-onstad-kunstsenter/",
+      "artists": [
+        "Lindstr m"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Lindstrøm - On A Clear Day I Can See You Forever",
+      "url": "/albums/664-lindstr-m-on-a-clear-day-i-can-see-you-forever/",
+      "artists": [
+        "Lindstr m"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Liszt, Grieg, Debussy, Ravel - Michelangeli",
+      "url": "/albums/139-liszt-grieg-debussy-ravel-michelangeli/",
+      "artists": [
+        "Liszt",
+        "Grieg",
+        "Debussy",
+        "Ravel"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Liszt: Mephisto Waltz No. 1, Piano Sonata - Minoru Nojima",
+      "url": "/albums/liszt-mephisto-waltz-no-1-piano-sonata-minoru-nojima/",
+      "artists": [
+        "Nojima, Minoru"
       ],
       "composers": [
         "Liszt, Franz"
       ],
       "works": [
-        "Piano Concerto No. 1 in E-flat major, S. 124",
-        "Piano Concerto No. 2 in A major, S. 125",
-        "3 Etudes de Concert, S. 144"
+        "Mephisto Waltz No. 1, S. 514",
+        "Der Tanz in der Dorfschenke",
+        "Grandes Etudes de Paganini, S. 141",
+        "No. 3. La campanella",
+        "Transcendental Etudes, S. 139",
+        "Piano Sonata in B Minor, S. 178"
       ],
+      "year": 1987,
+      "category": "Classical",
+      "recording": "Reference Recordings",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/7f/86/22/7f8622e8-582e-ca1c-2cc4-d99eb7f463b7/030911102524.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Loleatta Holloway - Cry To Me",
+      "url": "/albums/68-loleatta-holloway-cry-to-me/",
+      "artists": [],
+      "composers": [],
+      "works": [],
       "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Loleatta Holloway - Dreamin' - The Loleatta Holloway Anthology 1976-1982",
+      "url": "/albums/70-loleatta-holloway-dreamin-the-loleatta-holloway-anthology-1976-1982/",
+      "artists": [
+        "Loleatta Holloway - Dreamin"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Loleatta Holloway - Greatest Hits",
+      "url": "/albums/71-loleatta-holloway-greatest-hits/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Loleatta Holloway - Loleatta",
+      "url": "/albums/67-loleatta-holloway-loleatta/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Loleatta Holloway - Love Sensation",
+      "url": "/albums/69-loleatta-holloway-love-sensation/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Loleatta Holloway - Love Sensation '06",
+      "url": "/albums/72-loleatta-holloway-love-sensation-06/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Love & Kisses, Alec Costandinos & The Syncophonic Orchestra - Greatest Hits",
+      "url": "/albums/306-love-kisses-alec-costandinos-the-syncophonic-orchestra-greatest-hits/",
+      "artists": [
+        "Love & Kisses",
+        "Alec Costandinos & The Syncophonic Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Love De-Luxe - Again And Again",
+      "url": "/albums/305-love-de-luxe-again-and-again/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Luther Vandross - The Best Of Luther Vandross: The Best Of Love",
+      "url": "/albums/1267-luther-vandross-the-best-of-luther-vandross-the-best-of-love/",
+      "artists": [
+        "Luther Vandross"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Macho - I'm A Man / Roll (Special Expanded Edition)",
+      "url": "/albums/304-macho-i-m-a-man-roll-special-expanded-edition/",
+      "artists": [
+        "Macho"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: Das klagende Lied; Janacek: The Fiddler's Child - Rozhdestvensky, BBC Symphony Orchestra",
+      "url": "/albums/124-mahler-das-klagende-lied-janacek-the-fiddler-s-child-rozhdestvensky-bbc-symphony/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: Symphony No. 3, Kindertotenlieder - Ferrier, Boult, Klemperer",
+      "url": "/albums/46-mahler-symphony-no-3-kindertotenlieder-ferrier-boult-klemperer/",
+      "artists": [
+        "Mahler Symphony No. 3",
+        "Kindertotenlieder"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: Symphony No. 5 - Rozhdestvensky, Tchaikovsky Symphony Orchestra",
+      "url": "/albums/35-mahler-symphony-no-5-rozhdestvensky-tchaikovsky-symphony-orchestra/",
+      "artists": [
+        "Mahler Symphony No. 5"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Abbado, Berliner Philharmoniker",
+      "url": "/albums/mahler-symphony-no-7-abbado-berliner-philharmoniker/",
+      "artists": [
+        "Abbado, Claudio",
+        "Berliner Philharmoniker"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor"
+      ],
+      "year": 2002,
+      "category": "Classical",
+      "recording": "Deutsche Grammophon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/4b/85/2f4b8511-1d00-65c5-a831-fa2769f0401d/00028947162322.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Ashkenazy, Czech Philharmonic Orchestra",
+      "url": "/albums/31-mahler-symphony-no-7-ashkenazy-czech-philharmonic-orchestra/",
+      "artists": [
+        "Mahler Symphony No. 7"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Ashkenazy, Sydney Symphony Orchestra",
+      "url": "/albums/mahler-symphony-no-7-ashkenazy-sydney-symphony-orchestra/",
+      "artists": [
+        "Ashkenazy, Vladimir",
+        "Sydney Symphony Orchestra"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor"
+      ],
+      "year": 2011,
+      "category": "Classical",
+      "recording": "Sydney Symphony Orchestra",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/f9/25/c9/f925c98c-a6eb-b893-7987-3b182f6e1e86/9326425805497.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Bernstein, New York Philharmonic",
+      "url": "/albums/mahler-symphony-no-7-bernstein-new-york-philharmonic/",
+      "artists": [
+        "Bernstein, Leonard",
+        "New York Philharmonic"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor"
+      ],
+      "year": 1966,
+      "category": "Classical",
+      "recording": "Sony Classical",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Features/b0/37/9c/dj.pzgflsty.jpg/600x600bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Dudamel, Simon Bolivar Symphony Orchestra of Venezuela",
+      "url": "/albums/mahler-symphony-no-7-dudamel-simon-bolivar-symphony-orchestra-of-venezuela/",
+      "artists": [
+        "Dudamel, Gustavo",
+        "Simon Bolivar Symphony Orchestra of Venezuela"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor"
+      ],
+      "year": 2014,
+      "category": "Classical",
+      "recording": "Deutsche Grammophon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0a/bc/c1/0abcc136-5d58-e752-1f8b-c753e2887748/00028947917106.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Gergiev, London Symphony Orchestra",
+      "url": "/albums/mahler-symphony-no-7-gergiev-london-symphony-orchestra/",
+      "artists": [
+        "Gergiev, Valery",
+        "London Symphony Orchestra"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor"
+      ],
+      "year": 2008,
+      "category": "Classical",
+      "recording": "LSO Live",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7d/ac/6b/7dac6b76-eed9-57f3-8ae1-8c32cf68f2e2/0822231116561_cover.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Scherchen, Vienna State Opera Orchestra",
+      "url": "/albums/106-mahler-symphony-no-7-scherchen-vienna-state-opera-orchestra/",
+      "artists": [
+        "Mahler Symphony No. 7"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: Symphony No. 7 - Stenz, Gurzenich Orchestra Cologne (2013)",
+      "url": "/albums/mahler-symphony-no-7-stenz-gurzenich-orchestra-cologne/",
+      "artists": [
+        "Stenz, Markus",
+        "Gurzenich Orchestra Cologne"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor"
+      ],
+      "year": 2013,
+      "category": "Classical",
+      "recording": "Oehms Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/7d/15/21/7d1521c1-18a8-a126-adab-1ac3d38e6880/4260034866522.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 7, Kindertotenlieder - Norman, Ozawa, Boston Symphony Orchestra (1990)",
+      "url": "/albums/mahler-symphony-no-7-kindertotenlieder-norman-ozawa-boston-symphony-orchestra/",
+      "artists": [
+        "Norman, Jessye",
+        "Ozawa, Seiji",
+        "Boston Symphony Orchestra"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 7 in E Minor",
+        "Kindertotenlieder"
+      ],
+      "year": 1990,
+      "category": "Classical",
+      "recording": "Philips Classics",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/36/16/d6/3616d67e-227b-9ca4-2502-23b2a217f02e/06UMGIM31886.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Mahler: Symphony No. 8 - Stenz, Gurzenich Orchester Koln",
+      "url": "/albums/90-mahler-symphony-no-8-stenz-gurzenich-orchester-koln/",
+      "artists": [
+        "Mahler Symphony No. 8"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mahler: The Symphonies - Solti, Chicago Symphony Orchestra",
+      "url": "/albums/mahler-the-symphonies-solti-chicago-symphony-orchestra/",
+      "artists": [
+        "Solti, Georg",
+        "Chicago Symphony Orchestra"
+      ],
+      "composers": [
+        "Mahler, Gustav"
+      ],
+      "works": [
+        "Symphony No. 1 in D Major",
+        "Symphony No. 2 in C Minor, \"Resurrection\"",
+        "Symphony No. 3 in D Minor",
+        "Symphony No. 4 in G Major",
+        "Symphony No. 5 in C-Sharp Minor",
+        "Symphony No. 6 in A Minor",
+        "Symphony No. 7 in E Minor",
+        "Symphony No. 9 in D Major",
+        "Symphony No. 8 in E-Flat Major"
+      ],
+      "year": 1991,
       "category": "Classical",
       "recording": "Decca",
       "label": null,
       "favorite": false,
-      "cover": "https://www.eloquenceclassics.com/wp-content/uploads/sites/1141/2016/05/4565632-1024x1024.jpg"
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/05/97/a1/0597a194-4120-b52c-f309-5fee47046810/06UMGIM47809.rgb.jpg/1200x1200bb.jpg"
     },
     {
-      "title": "Mozart: Piano Concertos Nos. 14, 23, 25 - Moravec, Vlach, Czech Chamber Orchestra, Czech Philharmonic Orchestra",
-      "url": "/albums/mozart-piano-concertos-nos-14-23-25-moravec-vlach-czech-chamber-orchestra-czech-philharmonic-orchestra/",
+      "title": "Marvin Gaye & Tammi Terrell - Easy",
+      "url": "/albums/944-marvin-gaye-tammi-terrell-easy/",
       "artists": [
-        "Moravec, Ivan",
-        "Vlach, Josef",
-        "Czech Chamber Orchestra",
-        "Czech Philharmonic Orchestra"
+        "Marvin Gaye & Tammi Terrell"
       ],
-      "composers": [
-        "Mozart, Wolfgang Amadeus"
-      ],
-      "works": [
-        "Piano Concerto No. 14 in E-flat major, K. 449",
-        "Piano Concerto No. 23 in A major, K. 488",
-        "Piano Concerto No. 25 in C major, K. 503"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
-      "category": "Classical",
-      "recording": "Supraphon",
+      "category": "7080s",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/75/2e/97/752e979d-0c11-92ff-96bf-d30da72e0a3b/cover.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Mozart: Piano Concertos Nos. 20, 23 - Moravec, Marriner, Academy of St Martin in the Fields",
-      "url": "/albums/mozart-piano-concertos-nos-20-23-moravec-marriner-academy-of-st-martin-in-the-fields/",
+      "title": "Marvin Gaye & Tammi Terrell - Greatest Hits",
+      "url": "/albums/945-marvin-gaye-tammi-terrell-greatest-hits/",
       "artists": [
-        "Moravec, Ivan",
-        "Marriner, Neville",
-        "Academy of St Martin in the Fields"
+        "Marvin Gaye & Tammi Terrell"
       ],
-      "composers": [
-        "Mozart, Wolfgang Amadeus"
-      ],
-      "works": [
-        "Piano Concerto No. 20 in D minor, K. 466",
-        "Piano Concerto No. 23 in A major, K. 488"
-      ],
+      "composers": [],
+      "works": [],
       "year": null,
-      "category": "Classical",
-      "recording": "Hanssler Classic",
+      "category": "7080s",
+      "recording": null,
       "label": null,
       "favorite": false,
-      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/cd/d5/be/mzi.jrvdfwjc.jpg/1200x1200bb.jpg"
+      "cover": ""
     },
     {
-      "title": "Murray Perahia plays Chopin",
-      "url": "/albums/murray-perahia-plays-chopin/",
+      "title": "Marvin Gaye - Here, My Dear",
+      "url": "/albums/942-marvin-gaye-here-my-dear/",
       "artists": [
-        "Perahia, Murray"
+        "Marvin Gaye"
       ],
-      "composers": [
-        "Chopin, Frederic"
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Marvin Gaye - I Want You",
+      "url": "/albums/941-marvin-gaye-i-want-you/",
+      "artists": [
+        "Marvin Gaye"
       ],
-      "works": [
-        "Piano Concerto No. 1 in E minor, Op. 11",
-        "Piano Concerto No. 2 in F minor, Op. 21",
-        "Piano Sonata No. 2 in B-flat minor, Op. 35",
-        "Piano Sonata No. 3 in B minor, Op. 58",
-        "Ballade No. 1 in G minor, Op. 23. Largo - Meno mosso - Presto con fuoco",
-        "Ballade No. 2 in F major, Op. 38. Andantino - Presto con fuoco - Tempo I",
-        "Ballade No. 3 in A-flat major, Op. 47. Allegretto",
-        "Ballade No. 4 in F minor, Op. 52. Andante con moto",
-        "Waltz in E-flat major, Op. 18. Vivo",
-        "Waltz in A-flat major, Op. 42. Vivace",
-        "Nocturne in F major, Op. 15 No. 1. Andante cantabile - Con fuoco - Tempo I",
-        "Mazurka in F minor, Op. 7 No. 3",
-        "Mazurka in A minor, Op. 17 No. 4",
-        "Mazurka in D major, Op. 33 No. 2",
-        "Etude in E major, Op. 10 No. 3",
-        "Etude in C-sharp minor, Op. 10 No. 4",
-        "Etudes, Op. 10",
-        "Etudes, Op. 25",
-        "Preludes, Op. 28",
-        "Prelude in C-sharp minor, Op. 45. Sostenuto",
-        "Prelude in A-flat major, Op. posth. Presto",
-        "Prelude No. 6 in B minor, Op. 28. Lento assai",
-        "Prelude No. 7 in A major, Op. 28. Andantino",
-        "Prelude No. 15 in D-flat major, Op. 28. Sostenuto",
-        "Impromptu in A-flat major, Op. 29. Allegro assai quasi presto",
-        "Impromptu in F-sharp major, Op. 36. Andantino",
-        "Impromptu in G-flat major, Op. 51. Tempo giusto",
-        "Fantaisie-Impromptu in C-sharp minor, Op. posth. 66. Allegro agitato",
-        "Barcarolle in F-sharp major, Op. 60. Allegretto",
-        "Berceuse in D-flat major, Op. 57. Andante",
-        "Fantaisie in F minor, Op. 49. Tempo di marcia. Grave"
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Marvin Gaye - Let's Get It On",
+      "url": "/albums/940-marvin-gaye-let-s-get-it-on/",
+      "artists": [
+        "Marvin Gaye"
       ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Marvin Gaye - Midnight Love",
+      "url": "/albums/943-marvin-gaye-midnight-love/",
+      "artists": [
+        "Marvin Gaye"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Marvin Gaye - The Ultimate Collection",
+      "url": "/albums/946-marvin-gaye-the-ultimate-collection/",
+      "artists": [
+        "Marvin Gaye"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Marvin Gaye - What's Going On",
+      "url": "/albums/939-marvin-gaye-what-s-going-on/",
+      "artists": [
+        "Marvin Gaye"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Maurice Gendron - The Early Years",
+      "url": "/albums/92-maurice-gendron-the-early-years/",
+      "artists": [
+        "Maurice Gendron"
+      ],
+      "composers": [],
+      "works": [],
       "year": null,
       "category": "Classical",
-      "recording": "Sony Classical",
-      "label": "Sony Classical Masters",
+      "recording": null,
+      "label": null,
       "favorite": false,
-      "cover": "https://blog.kakaocdn.net/dna/bfqB99/btsN8uFtfyZ/AAAAAAAAAAAAAAAAAAAAAClMwhrdU_Tr5vUSzQh94dorguuZmUpUY1ahCnFuU9-M/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=1G%2BHZCDz423wWXfN9QC%2FkcxyfyE%3D"
+      "cover": ""
+    },
+    {
+      "title": "Melvo Baptiste - Glitterbox - Hotter Than Fire",
+      "url": "/albums/21-melvo-baptiste-glitterbox-hotter-than-fire/",
+      "artists": [
+        "Melvo Baptiste - Glitterbox"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mendelssohn & Brahms: Violin Concerto - Mutter, Karajan",
+      "url": "/albums/118-mendelssohn-brahms-violin-concerto-mutter-karajan/",
+      "artists": [
+        "Mendelssohn & Brahms Violin Concerto"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mendelssohn: Violin Concerto in E Minor - Mutter, Previn",
+      "url": "/albums/117-mendelssohn-violin-concerto-in-e-minor-mutter-previn/",
+      "artists": [
+        "Mendelssohn Violin Concerto in E Minor"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Mozart: Violin Concerto No. 5; Vieuxtemps: Violin Concerto No. 4 - Hahn, Jarvi, Deutsche Kammerphilharmonie Bremen",
+      "url": "/albums/mozart-violin-concerto-no-5-vieuxtemps-violin-concerto-no-4-hahn-jarvi-deutsche-kammerphilharmonie-bremen/",
+      "artists": [
+        "Hahn, Hilary",
+        "Jarvi, Paavo",
+        "Deutsche Kammerphilharmonie Bremen"
+      ],
+      "composers": [
+        "Mozart, Wolfgang Amadeus",
+        "Vieuxtemps, Henri"
+      ],
+      "works": [
+        "Violin Concerto No. 5 in A Major, K. 219",
+        "Violin Concerto No. 4 in D Minor, Op. 31"
+      ],
+      "year": 2014,
+      "category": "Classical",
+      "recording": "Deutsche Grammophon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4e/6f/bf/4e6fbf92-c4dc-b59b-6cb5-d4ce031ab069/00028947939597.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Music for Two Pianos by Debussy & Ravel - Vladimir Ashkenazy, Vovka Ashkenazy",
+      "url": "/albums/121-music-for-two-pianos-by-debussy-ravel-vladimir-ashkenazy-vovka-ashkenazy/",
+      "artists": [
+        "Music for Two Pianos by Debussy & Ravel"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Nielsen: Clarinet & Flute Concertos - Meyer, Pahud",
+      "url": "/albums/111-nielsen-clarinet-flute-concertos-meyer-pahud/",
+      "artists": [
+        "Nielsen Clarinet & Flute Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ofer Koren - Ramble On",
+      "url": "/albums/595-ofer-koren-ramble-on/",
+      "artists": [
+        "Ofer Koren"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Albums",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Paganini: Violin Concerto No. 1; Spohr: Violin Concerto No. 8 - Hahn, Oue, Swedish Radio Symphony Orchestra",
+      "url": "/albums/paganini-violin-concerto-no-1-spohr-violin-concerto-no-8-hahn-oue-swedish-radio-symphony-orchestra/",
+      "artists": [
+        "Hahn, Hilary",
+        "Oue, Eiji",
+        "Swedish Radio Symphony Orchestra"
+      ],
+      "composers": [
+        "Paganini, Niccolo",
+        "Spohr, Louis"
+      ],
+      "works": [
+        "Violin Concerto No. 1 in D Major, Op. 6",
+        "Violin Concerto No. 8 in A Minor, Op. 47"
+      ],
+      "year": 2006,
+      "category": "Classical",
+      "recording": "Deutsche Grammophon",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/df/89/ed/df89ed5e-5f57-6e72-f0c2-c1cca71a48f6/00028947762324.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Parliament - Chocolate City",
+      "url": "/albums/499-parliament-chocolate-city/",
+      "artists": [
+        "Parliament"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Parliament - Osmium... plus",
+      "url": "/albums/497-parliament-osmium-plus/",
+      "artists": [
+        "Parliament"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Parliament - Up For The Down Stroke",
+      "url": "/albums/498-parliament-up-for-the-down-stroke/",
+      "artists": [
+        "Parliament"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Patrice Rushen - Before The Dawn",
+      "url": "/albums/912-patrice-rushen-before-the-dawn/",
+      "artists": [
+        "Patrice Rushen"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Patrice Rushen - Patrice",
+      "url": "/albums/910-patrice-rushen-patrice/",
+      "artists": [
+        "Patrice Rushen"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Patrice Rushen - Prelusion",
+      "url": "/albums/911-patrice-rushen-prelusion/",
+      "artists": [
+        "Patrice Rushen"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peaches & Herb - 2 Hot!",
+      "url": "/albums/738-peaches-herb-2-hot/",
+      "artists": [
+        "Peaches & Herb"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peaches & Herb - Golden Duets",
+      "url": "/albums/737-peaches-herb-golden-duets/",
+      "artists": [
+        "Peaches & Herb"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peaches & Herb - Let's Fall In Love",
+      "url": "/albums/856-peaches-herb-let-s-fall-in-love/",
+      "artists": [
+        "Peaches & Herb"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peaches & Herb - Peaches & Herb",
+      "url": "/albums/857-peaches-herb-peaches-herb/",
+      "artists": [
+        "Peaches & Herb"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peaches & Herb - Remember",
+      "url": "/albums/739-peaches-herb-remember/",
+      "artists": [
+        "Peaches & Herb"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "People's Choice - People's Choice",
+      "url": "/albums/753-people-s-choice-people-s-choice/",
+      "artists": [
+        "People's Choice"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peter Jacques Band - Fire Night Dance (Original Album and Rare Tracks)",
+      "url": "/albums/486-peter-jacques-band-fire-night-dance-original-album-and-rare-tracks/",
+      "artists": [
+        "Peter Jacques Band"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Peter Jacques Band - Walking on Music (Greatest Hits Special Price)",
+      "url": "/albums/488-peter-jacques-band-walking-on-music-greatest-hits-special-price/",
+      "artists": [
+        "Peter Jacques Band"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Alexander Nevsky, Pushkiniana - Gelahova, Yablonsky",
+      "url": "/albums/49-prokofiev-alexander-nevsky-pushkiniana-gelahova-yablonsky/",
+      "artists": [
+        "Prokofiev Alexander Nevsky",
+        "Pushkiniana"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Piano Concertos Nos. 1, 3 & 5 - Bronfman, Mehta",
+      "url": "/albums/166-prokofiev-piano-concertos-nos-1-3-5-bronfman-mehta/",
+      "artists": [
+        "Prokofiev Piano Concertos Nos. 1",
+        "3 & 5"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Piano Concertos Nos. 1-5, Classical Symphony, Autumnal, Overture on Hebrew Themes - Ashkenazy, Previn",
+      "url": "/albums/119-prokofiev-piano-concertos-nos-1-5-classical-symphony-autumnal-overture-on-hebrew/",
+      "artists": [
+        "Prokofiev Piano Concertos Nos. 1-5",
+        "Classical Symphony",
+        "Autumnal",
+        "Overture on Hebrew Themes"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Piano Concertos Nos. 2 & 3 - Demidenko, Lazarev",
+      "url": "/albums/168-prokofiev-piano-concertos-nos-2-3-demidenko-lazarev/",
+      "artists": [
+        "Prokofiev Piano Concertos Nos. 2 & 3"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Piano Concertos Nos. 2 & 3 - Kissin, Ashkenazy",
+      "url": "/albums/163-prokofiev-piano-concertos-nos-2-3-kissin-ashkenazy/",
+      "artists": [
+        "Prokofiev Piano Concertos Nos. 2 & 3"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Piano Concertos Nos. 2 & 4, Overture on Hebrew Themes - Bronfman, Mehta",
+      "url": "/albums/165-prokofiev-piano-concertos-nos-2-4-overture-on-hebrew-themes-bronfman-mehta/",
+      "artists": [
+        "Prokofiev Piano Concertos Nos. 2 & 4",
+        "Overture on Hebrew Themes"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Piano Concertos Nos. 2 & 5 - Paik, Wit",
+      "url": "/albums/164-prokofiev-piano-concertos-nos-2-5-paik-wit/",
+      "artists": [
+        "Prokofiev Piano Concertos Nos. 2 & 5"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Romeo & Juliet - Maazel, The Cleveland Orchestra",
+      "url": "/albums/105-prokofiev-romeo-juliet-maazel-the-cleveland-orchestra/",
+      "artists": [
+        "Prokofiev Romeo & Juliet"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: Scythian Suite, Lieutenant Kijé; Khachaturian: Gayaneh - Scherchen, Vienna State Opera Orchestra",
+      "url": "/albums/107-prokofiev-scythian-suite-lieutenant-kij-khachaturian-gayaneh-scherchen-vienna-st/",
+      "artists": [
+        "Prokofiev Scythian Suite",
+        "Lieutenant Kije; Khachaturian Gayaneh"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Prokofiev: The 5 Piano Concertos - Toradze, Gergiev",
+      "url": "/albums/167-prokofiev-the-5-piano-concertos-toradze-gergiev/",
+      "artists": [
+        "Prokofiev The 5 Piano Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Purple Disco Machine - Glitterbox - Discotheque",
+      "url": "/albums/13-purple-disco-machine-glitterbox-discotheque/",
+      "artists": [
+        "Purple Disco Machine - Glitterbox"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Rachmaninoff & Prokofiev: Cello Sonatas - Capucon, Montero",
+      "url": "/albums/59-rachmaninoff-prokofiev-cello-sonatas-capucon-montero/",
+      "artists": [
+        "Rachmaninoff & Prokofiev Cello Sonatas"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Randy Crawford - The Very Best Of Randy Crawford",
+      "url": "/albums/1261-randy-crawford-the-very-best-of-randy-crawford/",
+      "artists": [
+        "Randy Crawford"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ravel & Schumann & Beethoven & Grieg: Piano Concerto - Michelangeli, Celibidache",
+      "url": "/albums/131-ravel-schumann-beethoven-grieg-piano-concerto-michelangeli-celibidache/",
+      "artists": [
+        "Ravel & Schumann & Beethoven & Grieg Piano Concerto"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Ravel: Miroirs, Gaspard de la Nuit - Minoru Nojima",
+      "url": "/albums/ravel-miroirs-gaspard-de-la-nuit-minoru-nojima/",
+      "artists": [
+        "Nojima, Minoru"
+      ],
+      "composers": [
+        "Ravel, Maurice"
+      ],
+      "works": [
+        "Miroirs, M. 43",
+        "Gaspard de la Nuit, M. 55"
+      ],
+      "year": 1990,
+      "category": "Classical",
+      "recording": "Reference Recordings",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/39/4b/c3/394bc3ff-6d7b-fc20-994a-75def2dc58bf/030911103521.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Ravel: Piano Works, Vol. 1 - Fevrier, Tacchino",
+      "url": "/albums/ravel-piano-works-vol-1-fevrier-tacchino/",
+      "artists": [
+        "Fevrier, Jacques",
+        "Tacchino, Gabriel"
+      ],
+      "composers": [
+        "Ravel, Maurice"
+      ],
+      "works": [
+        "Menuet antique, M. 7",
+        "Menuet antique",
+        "Sites auriculaires",
+        "Pavane pour une infante defunte",
+        "Jeux d'eau",
+        "Sonatine, M. 40",
+        "Miroirs, M. 43",
+        "Ma mere l'oye, M. 60"
+      ],
+      "year": 2000,
+      "category": "Classical",
+      "recording": "Decca",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/cf/16/c5cf162e-0ddf-8884-c93f-ebe5dfbbd758/00028946580325.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Ravel: Piano Works, Vol. 2 - Fevrier, Tacchino, Ambrosini",
+      "url": "/albums/ravel-piano-works-vol-2-fevrier-tacchino-ambrosini/",
+      "artists": [
+        "Fevrier, Jacques",
+        "Tacchino, Gabriel",
+        "Ambrosini, Jean-Claude"
+      ],
+      "composers": [
+        "Ravel, Maurice"
+      ],
+      "works": [
+        "Gaspard de la Nuit, M. 55",
+        "Menuet sur le nom de Haydn",
+        "Valses nobles et sentimentales",
+        "Prelude in A Minor",
+        "A la maniere de Borodine",
+        "A la maniere de Chabrier",
+        "Le tombeau de Couperin, M. 68",
+        "Frontispice for 2 Pianos, 5 Hands"
+      ],
+      "year": 2000,
+      "category": "Classical",
+      "recording": "Decca",
+      "label": null,
+      "favorite": false,
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a8/64/39/a8643982-5238-00f2-9f70-43c739ae7c39/00028946580028.rgb.jpg/1200x1200bb.jpg"
+    },
+    {
+      "title": "Revanche, Macho, Peter Jacques Band - Album Collection",
+      "url": "/albums/303-revanche-macho-peter-jacques-band-album-collection/",
+      "artists": [
+        "Revanche",
+        "Macho",
+        "Peter Jacques Band"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Rice & Beans Orchestra - Cross Over",
+      "url": "/albums/65-rice-beans-orchestra-cross-over/",
+      "artists": [
+        "Rice & Beans Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Rice & Beans Orchestra - Rice & Beans Orchestra",
+      "url": "/albums/66-rice-beans-orchestra-rice-beans-orchestra/",
+      "artists": [
+        "Rice & Beans Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Rimsky-Korsakov: Scheherazade, Le Coq d'or; Prokofiev: Symphony No. 5 - Maazel, The Cleveland Orchestra",
+      "url": "/albums/102-rimsky-korsakov-scheherazade-le-coq-d-or-prokofiev-symphony-no-5-maazel-the-clev/",
+      "artists": [
+        "Rimsky-Korsakov Scheherazade",
+        "Le Coq d or; Prokofiev Symphony No. 5"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Roussel: Bacchus et Ariane, Le festin de l'araignée - Tortelier, BBC Philharmonic",
+      "url": "/albums/100-roussel-bacchus-et-ariane-le-festin-de-l-araign-e-tortelier-bbc-philharmonic/",
+      "artists": [
+        "Roussel Bacchus et Ariane",
+        "Le festin de l araignee"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Roussel: Evocations, Pour une fete de printemps, Suite in F - Tortelier, BBC Philharmonic",
+      "url": "/albums/101-roussel-evocations-pour-une-fete-de-printemps-suite-in-f-tortelier-bbc-philharmo/",
+      "artists": [
+        "Roussel Evocations",
+        "Pour une fete de printemps",
+        "Suite in F"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Satin Jackets - Diamonds Are Forever",
+      "url": "/albums/662-satin-jackets-diamonds-are-forever/",
+      "artists": [
+        "Satin Jackets"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Satin Jackets - Panorama Pacifico",
+      "url": "/albums/661-satin-jackets-panorama-pacifico/",
+      "artists": [
+        "Satin Jackets"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Scarlatti: 7 Sonates; Debussy: Pour le Piano; Schumann: Symphonic Etudes Op. 13 - Gilels",
+      "url": "/albums/143-scarlatti-7-sonates-debussy-pour-le-piano-schumann-symphonic-etudes-op-13-gilels/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Scarlatti: Sonatas; Mozart & Ravel: Piano Concerto - Michelangeli",
+      "url": "/albums/133-scarlatti-sonatas-mozart-ravel-piano-concerto-michelangeli/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Schoenberg: Violin Concerto Op.36; Sibelius: Violin Concerto Op.47 - Hahn, Salonen",
+      "url": "/albums/83-schoenberg-violin-concerto-op-36-sibelius-violin-concerto-op-47-hahn-salonen/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Schumann & Mozart & Liszt: Piano Concerto - Michelangeli, Mitropoulos",
+      "url": "/albums/130-schumann-mozart-liszt-piano-concerto-michelangeli-mitropoulos/",
+      "artists": [
+        "Schumann & Mozart & Liszt Piano Concerto"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Schumann: Fantasy; Franck: Sonata; Szymanowski: Myths; Ravel: Tzigane - Oistrakh, Yampolsky",
+      "url": "/albums/151-schumann-fantasy-franck-sonata-szymanowski-myths-ravel-tzigane-oistrakh-yampolsk/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Scriabin: Piano Concerto, Prometheus, Fantasy - Postnikova, Rozhdestvensky",
+      "url": "/albums/36-scriabin-piano-concerto-prometheus-fantasy-postnikova-rozhdestvensky/",
+      "artists": [
+        "Scriabin Piano Concerto",
+        "Prometheus",
+        "Fantasy"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Shostakovich: Cello Concertos - Capucon, Gergiev",
+      "url": "/albums/61-shostakovich-cello-concertos-capucon-gergiev/",
+      "artists": [
+        "Shostakovich Cello Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Stephanie Mills - Ultimate Collection",
+      "url": "/albums/1258-stephanie-mills-ultimate-collection/",
+      "artists": [
+        "Stephanie Mills"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Sylvester & the Hot Band - Bazaar",
+      "url": "/albums/1113-sylvester-the-hot-band-bazaar/",
+      "artists": [
+        "Sylvester & the Hot Band"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Sylvester - Sell My Soul",
+      "url": "/albums/1117-sylvester-sell-my-soul/",
+      "artists": [
+        "Sylvester"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Sylvester - Stars",
+      "url": "/albums/1116-sylvester-stars/",
+      "artists": [
+        "Sylvester"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Sylvester - Step II",
+      "url": "/albums/1115-sylvester-step-ii/",
+      "artists": [
+        "Sylvester"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Sylvester - Sylvester",
+      "url": "/albums/1114-sylvester-sylvester/",
+      "artists": [
+        "Sylvester"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Sylvia - Pillow Talk: The Very Best Of Sylvia",
+      "url": "/albums/1265-sylvia-pillow-talk-the-very-best-of-sylvia/",
+      "artists": [
+        "Sylvia"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Tchaikovsky & Korngold: Violin Concerto - Mutter, Previn",
+      "url": "/albums/116-tchaikovsky-korngold-violin-concerto-mutter-previn/",
+      "artists": [
+        "Tchaikovsky & Korngold Violin Concerto"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Tchaikovsky: Piano Concerto No. 1; Arensky: Piano Concerto in F minor - Blumental, Gielen, Waldhans",
+      "url": "/albums/43-tchaikovsky-piano-concerto-no-1-arensky-piano-concerto-in-f-minor-blumental-giel/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Tchaikovsky: Piano Concerto Nos. 1-3, Violin Concerto - Postnikova, Rozhdestvensky, Chung, Dutoit",
+      "url": "/albums/38-tchaikovsky-piano-concerto-nos-1-3-violin-concerto-postnikova-rozhdestvensky-chu/",
+      "artists": [
+        "Tchaikovsky Piano Concerto Nos. 1-3",
+        "Violin Concerto"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Tchaikovsky: Piano Concertos Nos. 1-3; Prokofiev: Piano Concerto No. 5; Bartok: Piano Concerto No. 2 - Gilels, Richter, Maazel",
+      "url": "/albums/147-tchaikovsky-piano-concertos-nos-1-3-prokofiev-piano-concerto-no-5-bartok-piano-c/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Tchaikovsky: Rococo Variations; Schumann: Cello Concerto - Gendron, Ansermet",
+      "url": "/albums/91-tchaikovsky-rococo-variations-schumann-cello-concerto-gendron-ansermet/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Tchaikovsky: Symphony No.5; Janacek: Taras Bulba - Rozhdestvensky, BBC Symphony Orchestra",
+      "url": "/albums/123-tchaikovsky-symphony-no-5-janacek-taras-bulba-rozhdestvensky-bbc-symphony-orches/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Teddy Pendergrass - The Essential Teddy Pendergrass",
+      "url": "/albums/1278-teddy-pendergrass-the-essential-teddy-pendergrass/",
+      "artists": [
+        "Teddy Pendergrass"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Teena Marie - I Need Your Lovin': The Very Best of Teena Marie",
+      "url": "/albums/1264-teena-marie-i-need-your-lovin-the-very-best-of-teena-marie/",
+      "artists": [
+        "Teena Marie"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Avalanches - Since I Left You",
+      "url": "/albums/472-the-avalanches-since-i-left-you/",
+      "artists": [
+        "The Avalanches"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Avalanches - We Will Always Love You",
+      "url": "/albums/470-the-avalanches-we-will-always-love-you/",
+      "artists": [
+        "The Avalanches"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Avalanches - Wildflower",
+      "url": "/albums/471-the-avalanches-wildflower/",
+      "artists": [
+        "The Avalanches"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Best of Barry White's Love Unlimited Orchestra",
+      "url": "/albums/865-the-best-of-barry-white-s-love-unlimited-orchestra/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Chi-Lites - Give It Away",
+      "url": "/albums/1251-the-chi-lites-give-it-away/",
+      "artists": [
+        "The Chi-Lites"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Delfonics - The Definitive Collection",
+      "url": "/albums/1268-the-delfonics-the-definitive-collection/",
+      "artists": [
+        "The Delfonics"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
     },
     {
       "title": "The Essential Teddy Pendergrass - Teddy Pendergrass",
@@ -583,6 +4606,476 @@
       "label": null,
       "favorite": false,
       "cover": "https://blog.kakaocdn.net/dna/xpYfT/btsHMBQOJDO/AAAAAAAAAAAAAAAAAAAAAMTtTlgJjJw5fV56czlc-2FTL520loUewe1vVV2vEwDj/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=OM%2FcXT%2FIT69HSIW3%2BYVHXIxcTvo%3D"
+    },
+    {
+      "title": "The Isley Brothers - Greatest Hits",
+      "url": "/albums/1269-the-isley-brothers-greatest-hits/",
+      "artists": [
+        "The Isley Brothers"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Jones Girls - The Best of the Jones Girls",
+      "url": "/albums/1266-the-jones-girls-the-best-of-the-jones-girls/",
+      "artists": [
+        "The Jones Girls"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - Let 'Em Dance",
+      "url": "/albums/861-the-love-unlimited-orchestra-let-em-dance/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - Music Maestro Please",
+      "url": "/albums/858-the-love-unlimited-orchestra-music-maestro-please/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - My Musical Bouquet",
+      "url": "/albums/863-the-love-unlimited-orchestra-my-musical-bouquet/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - My Sweet Summer Suite",
+      "url": "/albums/859-the-love-unlimited-orchestra-my-sweet-summer-suite/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - Rhapsody In White",
+      "url": "/albums/853-the-love-unlimited-orchestra-rhapsody-in-white/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - Rise",
+      "url": "/albums/862-the-love-unlimited-orchestra-rise/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - Super Movie Themes - Just A Little Bit Different",
+      "url": "/albums/860-the-love-unlimited-orchestra-super-movie-themes-just-a-little-bit-different/",
+      "artists": [
+        "The Love Unlimited Orchestra - Super Movie Themes"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - The 20th Century Records Albums (1973-1979)",
+      "url": "/albums/866-the-love-unlimited-orchestra-the-20th-century-records-albums-1973-1979/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - Together Brothers",
+      "url": "/albums/854-the-love-unlimited-orchestra-together-brothers/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra - White Gold",
+      "url": "/albums/855-the-love-unlimited-orchestra-white-gold/",
+      "artists": [
+        "The Love Unlimited Orchestra"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Love Unlimited Orchestra Presents Mr. Webster Lewis - Welcome Aboard",
+      "url": "/albums/864-the-love-unlimited-orchestra-presents-mr-webster-lewis-welcome-aboard/",
+      "artists": [
+        "The Love Unlimited Orchestra Presents Mr. Webster Lewis"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Magic Disco Machine - Disc-O-Tech",
+      "url": "/albums/731-the-magic-disco-machine-disc-o-tech/",
+      "artists": [
+        "The Magic Disco Machine"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Manhattans - I Kinda Miss You: The Anthology Columbia Records 1973-1987",
+      "url": "/albums/1270-the-manhattans-i-kinda-miss-you-the-anthology-columbia-records-1973-1987/",
+      "artists": [
+        "The Manhattans"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The O'Jays - Back On Top (Expanded Edition)",
+      "url": "/albums/951-the-o-jays-back-on-top-expanded-edition/",
+      "artists": [
+        "The O Jays"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The O'Jays - Comin' Through",
+      "url": "/albums/949-the-o-jays-comin-through/",
+      "artists": [
+        "The O Jays"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The O'Jays - Soul Sounds",
+      "url": "/albums/950-the-o-jays-soul-sounds/",
+      "artists": [
+        "The O Jays"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The O'Jays - The O'Jays In Philadelphia",
+      "url": "/albums/952-the-o-jays-the-o-jays-in-philadelphia/",
+      "artists": [
+        "The O Jays"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Prodigy - The Fat of the Land",
+      "url": "/albums/743-the-prodigy-the-fat-of-the-land/",
+      "artists": [
+        "The Prodigy"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Prodigy ‎- Experience",
+      "url": "/albums/741-the-prodigy-experience/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Prodigy ‎- Music For The Jilted Generation",
+      "url": "/albums/742-the-prodigy-music-for-the-jilted-generation/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Stylistics - The Greatest Hits Of The Stylistics - Let's Put It All Together",
+      "url": "/albums/1271-the-stylistics-the-greatest-hits-of-the-stylistics-let-s-put-it-all-together/",
+      "artists": [
+        "The Stylistics - The Greatest Hits Of The Stylistics"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Supremes - 70’s Greatest Hits And Rare Classics",
+      "url": "/albums/1272-the-supremes-70-s-greatest-hits-and-rare-classics/",
+      "artists": [
+        "The Supremes"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Syncophonic Orchestra - Columbia - A Space Symphony",
+      "url": "/albums/307-the-syncophonic-orchestra-columbia-a-space-symphony/",
+      "artists": [
+        "The Syncophonic Orchestra - Columbia"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Very Best Of Peter Jacques Band",
+      "url": "/albums/302-the-very-best-of-peter-jacques-band/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "The Very Best of Jaqueline du Pre",
+      "url": "/albums/57-the-very-best-of-jaqueline-du-pre/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Thelma Houston - Thelma Houston",
+      "url": "/albums/757-thelma-houston-thelma-houston/",
+      "artists": [
+        "Thelma Houston"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "7080s",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Virtuoso Music for Cello - Janos Starker",
+      "url": "/albums/75-virtuoso-music-for-cello-janos-starker/",
+      "artists": [
+        "Virtuoso Music for Cello"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Virtuoso Violin Concertos - Ricci, Sargent",
+      "url": "/albums/34-virtuoso-violin-concertos-ricci-sargent/",
+      "artists": [
+        "Virtuoso Violin Concertos"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Classical",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Yuksek - Nosso Ritmo",
+      "url": "/albums/473-yuksek-nosso-ritmo/",
+      "artists": [
+        "Yuksek"
+      ],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
+    },
+    {
+      "title": "Z Records presents Put Some Disco In The House",
+      "url": "/albums/15-z-records-presents-put-some-disco-in-the-house/",
+      "artists": [],
+      "composers": [],
+      "works": [],
+      "year": null,
+      "category": "Electronic",
+      "recording": null,
+      "label": null,
+      "favorite": false,
+      "cover": ""
     }
   ]
 }

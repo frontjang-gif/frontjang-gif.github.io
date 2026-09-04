@@ -55,7 +55,10 @@ def imported_post_ids(posts_root: Path, site_url: str) -> set[str]:
     pattern = re.compile(rf"https?://{host}/(\d+)(?!\d)", re.IGNORECASE)
     imported: set[str] = set()
     for path in posts_root.glob("**/*.md"):
-        imported.update(pattern.findall(path.read_text(encoding="utf-8")))
+        content = path.read_text(encoding="utf-8")
+        if re.search(r"^review:\s*true\s*$", content, re.MULTILINE):
+            continue
+        imported.update(pattern.findall(content))
     return imported
 
 
@@ -179,13 +182,11 @@ def main() -> None:
     parser.add_argument("--posts-root", type=Path, default=Path("_posts"), help="Existing destination posts directory.")
     parser.add_argument("--output", type=Path, required=True, help="Write the migration manifest JSON here.")
     parser.add_argument("--research", action="store_true", help="Fetch pending posts and add extracted source data to the manifest.")
-    parser.add_argument("--write-drafts", type=Path, metavar="DIRECTORY", help="Write review-only drafts here; requires --research.")
+    parser.add_argument("--write-drafts", type=Path, metavar="DIRECTORY", help="Write review-only drafts here and remove drafts for posts already imported.")
     parser.add_argument("--workers", type=int, default=6, help="Concurrent source requests while researching (default: 6).")
     parser.add_argument("--resume", type=Path, metavar="MANIFEST", help="Reuse research records from an earlier manifest.")
     parser.add_argument("--limit", type=int, help="Limit sitemap records, useful for a small migration batch.")
     args = parser.parse_args()
-    if args.write_drafts and not args.research:
-        parser.error("--write-drafts requires --research")
     if args.limit is not None and args.limit < 1:
         parser.error("--limit must be positive")
     if args.workers < 1:

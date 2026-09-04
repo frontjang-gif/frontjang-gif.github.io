@@ -76,6 +76,12 @@ defaults:
       layout: album
       permalink: /albums/:title/
   - scope:
+      path: "_posts/Classical"
+      type: "posts"
+    values:
+      layout: album
+      permalink: /albums/:title/
+  - scope:
       path: "_posts/Movie"
       type: "posts"
     values:

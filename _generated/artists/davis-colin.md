@@ -8,9 +8,9 @@ title: Davis, Colin
 
 [All artists]({{ site.baseurl }}/artists/)
 
-## Unknown
+## 2004
 
 <div class="posts album-list">
-{% assign post = site.posts | where: "url", "/albums/liszt-piano-concerto-no-1-piano-concerto-no-2-3-etudes-de-concert-arrau-davis-london-symphony-orchestra/" | first %}
+{% assign post = site.posts | where: "url", "/albums/elgar-violin-concerto-the-lark-ascending-hahn-davis-london-symphony-orchestra/" | first %}
 {% if post %}{% include post-card.html %}{% endif %}
 </div>
