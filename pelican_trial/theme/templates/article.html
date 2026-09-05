@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}{{ article.title | striptags }} — {{ SITENAME }}{% endblock %}
+{% block content %}<article><p><a href="/{{ article.source_folder }}/">{{ article.source_folder | e }}</a></p>
+<h1>{{ article.title }}</h1>
+{% if article.cover or article.poster %}<img class="cover" src="{{ article.cover or article.poster }}" alt="{{ article.title | striptags | e }}">{% endif %}
+{% if article.recording %}<p>{{ article.recording | e }}</p>{% endif %}
+<div class="entry">{{ article.content }}</div>
+<nav aria-label="Post tags">{% for tag in article.browse_tags %}<a class="tag" href="/{{ tag.url }}">{{ tag.name | e }}</a> {% endfor %}</nav>
+</article>{% endblock %}

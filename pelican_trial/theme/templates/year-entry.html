@@ -1,0 +1,3 @@
+<details><summary><a href="/{{ entry.url }}">{{ entry.name | e }} <small>{{ entry.articles | length }}</small></a></summary>
+{% for post in entry.articles %}<a class="tree-leaf" href="/{{ post.url }}">{{ post.title | striptags | e }}</a>{% endfor %}
+</details>

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}{{ navigator.name }} — {{ SITENAME }}{% endblock %}
+{% block content %}<h1>{{ navigator.name }}</h1>
+<div class="browse-tree">
+{% if navigator.year_mode or navigator.url == 'movies/years/' %}{% include 'year-tree.html' %}{% else %}
+{% for entry in navigator.entries %}<details><summary><a href="/{{ entry.url }}">{{ entry.name | e }} <small>{% if entry.children %}{{ entry.children | length }} works · {{ entry.articles | length }} albums{% else %}{{ entry.articles | length }}{% if entry.count_unit %} {{ entry.count_unit }}{% endif %}{% endif %}</small></a></summary>
+{% for post in entry.articles %}<a class="tree-leaf" href="/{{ post.url }}">{{ post.title | striptags | e }}</a>{% endfor %}
+</details>{% else %}<p>No entries yet.</p>{% endfor %}
+{% endif %}
+</div>
+{% endblock %}

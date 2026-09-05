@@ -27,10 +27,10 @@ standalone_work = File.join(ROOT, "_generated", "composers", "chopin-frederic", 
 assert(File.file?(standalone_work), "track 25 should be indexed as a separate work")
 assert(File.read(standalone_work).include?("Murray Perahia plays Chopin"), "the separate work should reference its album")
 
-perahia_source = File.read(File.join(ROOT, "_posts", "Music", "Classical", "Labels", "Sony Classical Masters", "2025-05-22-murray-perahia-plays-chopin.md"))
+perahia_source = File.read(File.join(ROOT, "_posts", "Classical", "Labels", "Sony Classical Masters", "2025-05-22-murray-perahia-plays-chopin.md"))
 assert(perahia_source.scan(/^#### Chopin, Frederic$/).one?, "an unchanged composer should be declared only once across CDs")
 
-wild_album = File.join(ROOT, "_posts", "Music", "Classical", "Pianists", "Wild, Earl", "2022-11-03-chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt.md")
+wild_album = File.join(ROOT, "_posts", "Classical", "Pianists", "Wild, Earl", "2022-11-03-chopin-piano-concerto-no-1-faure-ballade-liszt-piano-concerto-no-1-wild-sargent-gerhardt.md")
 wild_source = File.read(wild_album)
 assert(!wild_source.match?(/^### (?!CD).+\n\n(?:#### |\d)/), "composer headings should have no empty line before their work or first track")
 assert(!wild_source.match?(/^#### .+\n\n\d/), "work headings should have no empty line before their first track")
@@ -42,7 +42,7 @@ assert(liszt_source.include?("title: Liszt, Franz"), "the fuller composer name s
 assert(liszt_source.match?(/aliases:\s*\n- Liszt/), "the former surname-only name should remain an alias")
 assert(!File.exist?(File.join(ROOT, "_generated", "composers", "liszt.md")), "the obsolete surname-only composer page should not be regenerated")
 
-paik_album = File.join(ROOT, "_posts", "Music", "Classical", "Pianists", "Paik, Kun-Woo", "2022-11-02-chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra.md")
+paik_album = File.join(ROOT, "_posts", "Classical", "Pianists", "Paik, Kun-Woo", "2022-11-02-chopin-complete-works-for-piano-orchestra-paik-wit-warsaw-philharmonic-orchestra.md")
 assert(File.file?(paik_album), "an album identified by its recording company should not be filed as a label series")
 album_catalog = JSON.parse(File.read(File.join(ROOT, "data", "albums.json"))).fetch("albums")
 paik_catalog_entry = album_catalog.find { |album| album["title"] == "Chopin: Complete Works for Piano & Orchestra - Paik, Wit, Warsaw Philharmonic Orchestra" }

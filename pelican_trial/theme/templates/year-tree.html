@@ -1,0 +1,14 @@
+<div class="year-browser">
+<div class="year-mode" role="group" aria-label="Group movie years">
+<button type="button" data-year-mode="10" aria-pressed="true">10s</button>
+<button type="button" data-year-mode="1" aria-pressed="false">1s</button>
+</div>
+<div data-year-view="10">
+{% for decade in navigator.decades %}<details data-tree-key="movie-decade-{{ decade.name }}"><summary>{{ decade.name }}</summary>
+{% for entry in decade.children %}{% include 'year-entry.html' %}{% endfor %}
+</details>{% endfor %}
+</div>
+<div data-year-view="1" hidden>
+{% for entry in navigator.entries %}{% include 'year-entry.html' %}{% endfor %}
+</div>
+</div>

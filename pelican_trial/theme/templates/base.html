@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+<link rel="stylesheet" href="/theme/css/style.css">
+<link rel="stylesheet" href="/theme/css/browse.css">
+<link rel="stylesheet" href="/theme/css/tree.css">
+<link rel="stylesheet" href="/theme/css/catalog.css"></head>
+<body><header><a href="/">{{ SITENAME }}</a><small>Pelican preview</small><nav><a href="/search/">Search</a> · <a href="/tags/">Tags</a></nav></header>
+<div class="main-layout"><main>{% block content %}{% endblock %}</main>
+<aside aria-label="Site navigation"><details open><summary><a href="/">Home</a></summary>
+{% for node in folder_tree recursive %}
+<details><summary><a href="/{{ node.url }}">{{ node.name | e }} <small>{{ node.articles | length }}</small></a></summary>
+{% if node.children %}{{ loop(node.children) }}{% endif %}
+{% for post in node.articles if post.source_folder == node.path %}<a class="tree-leaf" href="/{{ post.url }}" title="{{ post.title | striptags | e }}">{{ post.title | striptags | e }}</a>{% endfor %}</details>
+{% endfor %}
+</details>
+<details class="special-navigation" data-tree-key="special-pages" open><summary>Special pages</summary>
+{% for section in browse_sections %}
+<details data-tree-key="browse-{{ section.name }}" open><summary>{{ section.name }}</summary>
+{% for navigator in section.navigators %}
+<details><summary><a href="/{{ navigator.url }}">{{ navigator.name }}{% if navigator.favorite_count is defined %} <small>{{ navigator.favorite_count }}</small>{% endif %}</a></summary>
+{% if navigator.year_mode %}{% include 'year-tree.html' %}{% else %}
+{% for post in navigator.articles | default([]) %}<a class="tree-leaf" href="/{{ post.url }}">{{ post.title | striptags | e }}</a>{% endfor %}
+{% for entry in navigator.entries %}
+<details><summary><a href="/{{ entry.url }}">{{ entry.name | e }} <small>{% if entry.children %}{{ entry.children | length }} works · {{ entry.articles | length }} albums{% else %}{{ entry.articles | length }}{% if entry.count_unit %} {{ entry.count_unit }}{% endif %}{% endif %}</small></a></summary>
+{% if entry.children %}{% for work in entry.children %}<details><summary><a href="/{{ work.url }}">{{ work.name | e }} <small>{{ work.articles | length }} albums</small></a></summary>
+{% for post in work.articles %}<a class="tree-leaf" href="/{{ post.url }}">{{ post.title | striptags | e }}</a>{% endfor %}</details>{% endfor %}{% else %}
+{% for post in entry.articles %}<a class="tree-leaf" href="/{{ post.url }}" title="{{ post.title | striptags | e }}">{{ post.title | striptags | e }}</a>{% endfor %}
+{% endif %}
+</details>{% endfor %}{% endif %}</details>{% endfor %}
+</details>{% endfor %}
+</details></aside></div>
+<script src="/theme/js/tree.js" defer></script>
+<script src="/theme/js/years.js" defer></script>
+<script src="/theme/js/catalog.js" defer></script>
+</body></html>

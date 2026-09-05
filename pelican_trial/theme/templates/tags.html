@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block title %}Tags — {{ SITENAME }}{% endblock %}
+{% block content %}<h1>Tags</h1>
+{% for tag in browse_tags %}<a class="tag" href="/{{ tag.url }}">{{ tag.name | e }} <small>{{ tag.articles | length }}</small></a> {% else %}<p>No tags yet.</p>{% endfor %}
+{% endblock %}

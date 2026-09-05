@@ -124,6 +124,7 @@ paginate_path: /page:num/
 
 # Exclude these files from your production _site
 exclude:
+  - pelican_trial
   - Gemfile
   - Gemfile.lock
   - LICENSE

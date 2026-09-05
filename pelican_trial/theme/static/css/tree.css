@@ -1,0 +1,4 @@
+.tree-leaf{display:block;margin-left:24px;white-space:nowrap;width:max-content;min-width:0}aside summary,.tree-leaf{padding:0;line-height:1.65}.tree-leaf[aria-current="page"]{font-weight:700;text-decoration:underline}aside>details{min-width:max-content}
+.special-navigation{margin-top:4px}.special-navigation>details{min-width:max-content}
+.browse-tree{overflow-x:auto;font-size:14px}.browse-tree summary{padding:0;line-height:1.65}
+.year-mode{display:flex;gap:4px;margin:4px 0 4px 24px}.year-mode button{font-size:12px;padding:1px 8px}.year-mode button[aria-pressed="true"]{background:#287487;color:white;border-color:#287487}.year-browser details{margin-left:14px;padding-left:10px;border-left:1px solid #ddd}

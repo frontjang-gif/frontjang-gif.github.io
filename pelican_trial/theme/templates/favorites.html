@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}<h1>Favorites</h1>
+<h2>Albums ({{ favorite_posts | length }})</h2>
+{% if favorite_posts %}{% set posts = favorite_posts %}{% include 'cards.html' %}{% else %}<p>No favorite albums yet.</p>{% endif %}
+<h2>Works ({{ favorite_work_entries | length }})</h2>
+{% for work in favorite_work_entries %}<p><a href="/{{ work.url }}">{{ work.name | e }}</a></p>{% else %}<p>No favorite works yet.</p>{% endfor %}
+{% endblock %}

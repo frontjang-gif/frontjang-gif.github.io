@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Search — {{ SITENAME }}{% endblock %}
+{% block content %}<h1>Search</h1>
+<form id="search-form" role="search">
+<label for="query">Title or text</label><input id="query" name="q" type="search" placeholder="Search in Korean or English">
+<label for="section">Section</label><select id="section" name="section"><option value="">All sections</option>{% for node in folder_tree %}<option>{{ node.name | e }}</option>{% endfor %}</select>
+<label for="tag-filter">Tag</label><select id="tag-filter" name="tag"><option value="">All tags</option>{% for tag in browse_tags %}<option>{{ tag.name | e }}</option>{% endfor %}</select>
+<button type="reset">Clear</button></form>
+<p id="search-status" role="status" aria-live="polite">Loading search index…</p>
+<noscript>Search requires JavaScript. You can still browse <a href="/tags/">tags</a> and the folder tree.</noscript>
+<div id="search-results"></div><button id="more-results" hidden>Show more</button>
+<script src="/theme/js/search.js" defer></script>{% endblock %}

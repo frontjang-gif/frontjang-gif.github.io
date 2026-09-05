@@ -1,0 +1,11 @@
+<section class="catalog" data-view="preview">
+<div class="catalog-controls" hidden>
+<label>Items <select class="item-count"><option>5</option><option>10</option><option selected>20</option><option value="all">All</option></select></label>
+<div role="group" aria-label="Layout"><button type="button" data-view="text" aria-pressed="false">Text</button><button type="button" data-view="preview" aria-pressed="true">Half preview</button><button type="button" data-view="tiles" aria-pressed="false">Tiles</button></div>
+</div>
+<div class="catalog-items">
+{% for post in posts %}<article class="card"><h2><a href="/{{ post.url }}">{{ post.title }}</a></h2>
+{% if post.cover or post.poster %}<img loading="lazy" src="{{ post.cover or post.poster }}" alt="{{ post.title | striptags | e }}">{% endif %}
+<p>{{ post.summary | striptags }}</p></article>{% endfor %}
+</div><nav class="catalog-pagination" aria-label="List pages" hidden><button type="button" class="previous">Previous</button><span role="status" aria-live="polite"></span><button type="button" class="next">Next</button></nav>
+</section>

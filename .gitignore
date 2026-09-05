@@ -1,4 +1,6 @@
 _site
+_site_pelican/
+.venv-pelican/
 .DS_Store
 .jekyll
 .jekyll-metadata

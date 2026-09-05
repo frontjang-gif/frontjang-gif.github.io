@@ -12,6 +12,7 @@
 
 - Store posts under `_posts/` using `YYYY-MM-DD-title.md`.
 - The filename must begin with a valid `YYYY-MM-DD` date. Korean titles are valid, but lowercase English words separated by hyphens are preferred for portable URLs.
+- Blog post URLs follow their physical folders under `_posts/Blog/`: `_posts/Blog/Daily/YYYY-MM-DD-title.md` becomes `/Blog/Daily/title/`. Blog folder indexes use the same hierarchy, such as `/Blog/Daily/`; category metadata does not determine these paths.
 - Use a date-only value such as `date: 2026-08-27` unless time is needed to order multiple posts on the same day.
 
 Use this front matter as the default:

@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}{{ folder.path | e }} — {{ SITENAME }}{% endblock %}
+{% block content %}<h1>{{ folder.path | e }}</h1>{% set posts = folder.articles %}{% include 'cards.html' %}{% endblock %}
