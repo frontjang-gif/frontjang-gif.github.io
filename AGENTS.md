@@ -103,8 +103,8 @@ tags: [tag1, tag2]
 - Keep movie metadata in front matter, including `title`, `titleKo`, `titleOrg`, `year`, `directors`, `cast`, `genres`, `language`, `source`, `poster`, `rating`, and `folder`. Use a numeric rating such as `2.5` or `null` when unrated.
 - Music albums and movies use `folder` for their media folder path. Use `frontmatterVersion: 2` for the current schema. Version 1 used `musicFolder` or `movieFolder`; readers must map those legacy fields to `folder`.
 - Music album filenames are normalized to `{record date}-{title slug}.md` within their current folder; nested folders are supported.
-- The sidebar is generated from the physical post structure as `Root > Blog | Music | Movie`. `scripts/generate_music_pages.rb` regenerates the nested Music folder tree in `_includes/generated-music-sidebar.html`; run it after moving Music folders or albums.
-- Keep top-level post folders capitalized: `_posts/Daily/`, `_posts/Tech/`, `_posts/Music/`, `_posts/Classical/`, and `_posts/Movie/`. Music category and label navigation are derived from the nested folder structure.
+- The sidebar mirrors the physical directory tree under `_posts/` as `Home > Blog | Classical | Movie | Music`. `_plugins/post_folder_navigation.rb` generates folder links, counts, and listing pages at build time. Do not merge Classical into Music or add virtual folders to this tree.
+- Keep top-level post folders capitalized: `_posts/Blog/`, `_posts/Music/`, `_posts/Classical/`, and `_posts/Movie/`. Blog topics live under `_posts/Blog/`, such as `Daily/` and `Tech/`. Folder navigation follows physical directories, not front matter categories.
 - Movie navigators are generated from `directors`, `cast`, `genres`, and `year`; years are grouped by decade.
 - Use performers' full names in the `artist` array. Put shortened or alternate names in the artist page's `aliases` front matter.
 - For Classical albums, use `Last name, First name` for ordinary performers, but preserve established exceptions such as `Lang Lang` in their commonly used form. For other genres, use the musician's commonly used name order.

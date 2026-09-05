@@ -1,0 +1,6 @@
+{% for folder in include.folders %}
+<details class="sidebar-subgroup sidebar-folder"{% if folder.top_level %} open{% endif %}>
+  <summary><a href="{{ site.baseurl }}{{ folder.url }}">{{ folder.name | escape }} <span>{{ folder.posts.size }}</span></a></summary>
+  {% include sidebar-folders.html folders=folder.children %}
+</details>
+{% endfor %}
